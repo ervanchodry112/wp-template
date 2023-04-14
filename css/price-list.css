@@ -1,0 +1,641 @@
+
+#pricing-with-accordion {
+	padding-top: 7rem;
+	padding-bottom: 3rem;
+}
+
+#pricing-with-accordion article {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 100;
+}
+
+#pricing-with-accordion article h6.item {
+	font-weight: bold;
+	font-size: 1rem;
+	line-height: 1;
+	text-align: center;
+	letter-spacing: 0.1em;
+	color: #3949ab;
+	text-transform: uppercase;
+}
+
+#pricing-with-accordion article .text {
+	font-size: 0.875rem;
+	margin-bottom: 1rem;
+}
+
+#pricing-with-accordion article .harga {
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+#pricing-with-accordion article ul {
+	display: flex;
+	top: 0px;
+	z-index: 10;
+	padding-bottom: 0.5rem;
+	padding-left: 0;
+	overflow-x: auto;
+}
+
+#pricing-with-accordion article ul li {
+	list-style: none !important;
+	flex: 1;
+}
+
+#pricing-with-accordion article ul li:last-child {
+	border-right: 1px solid #ddd;
+}
+
+#pricing-with-accordion article ul li h6.item {
+	font-size: 1rem;
+	text-transform: capitalize;
+	margin: 0;
+}
+
+#pricing-with-accordion article ul li.active button {
+	background: #fdf3e2;
+}
+
+#pricing-with-accordion article ul li.active button h6.item {
+	color: #000;
+}
+
+#pricing-with-accordion article ul button {
+	width: 100%;
+	border: 1px solid #ddd;
+	border-right: 0;
+	border-top: 0;
+	padding: 0 0.75rem;
+	background: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	height: 60px;
+	color: #999;
+}
+
+#pricing-with-accordion article table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%;
+}
+
+#pricing-with-accordion article table th {
+	position: relative;
+	background: #fff;
+	border: 1px solid #e2f4eb;
+	display: none;
+	empty-cells: show;
+	padding: 2rem 1rem;
+	text-align: center;
+}
+
+#pricing-with-accordion article table th:first-child {
+	width: 20%;
+}
+
+#pricing-with-accordion article table td {
+	border: 1px solid #e2f4eb;
+	empty-cells: show;
+	vertical-align: middle;
+	background: #fff;
+	text-align: center;
+	font-size: 1.125rem;
+}
+
+@media (max-width: 991.98px) {
+	#pricing-with-accordion article table td {
+		font-size: 0.875rem;
+	}
+}
+
+#pricing-with-accordion article table td i.uil-check-circle {
+	color: #3949ab;
+	font-size: 1.5rem;
+}
+
+#pricing-with-accordion article table td i.uil-times-circle {
+	color: rgba(79, 79, 79, 0.2);
+	font-size: 1.5rem;
+}
+
+#pricing-with-accordion article table td .alert-success {
+	font-size: 0.8rem;
+	line-height: 1.125rem;
+	position: relative;
+	padding: 0.25rem 1.75rem;
+	border-radius: 6px;
+	margin-top: 0.5rem;
+}
+
+#pricing-with-accordion article table td .alert-success i {
+	position: absolute;
+	font-size: 1rem;
+	position: absolute;
+	right: 1.25rem;
+	top: 50%;
+	-webkit-transform: translate(50%, -50%);
+	transform: translate(50%, -50%);
+}
+
+#pricing-with-accordion article table td.default {
+	display: table-cell;
+}
+
+#pricing-with-accordion article table td.default i.uil-check-circle {
+	color: #ffa000;
+	font-weight: bold;
+}
+
+#pricing-with-accordion article table td.default i.uil-times-circle {
+	color: rgba(255, 160, 0, 0.25);
+	font-weight: bold;
+}
+
+#pricing-with-accordion article table td + td,
+#pricing-with-accordion article table th + th {
+	text-align: center;
+	display: none;
+}
+
+#pricing-with-accordion article table .tick {
+	font-size: 18px;
+	color: #2ca01c;
+}
+
+#pricing-with-accordion article table .hide {
+	border: 0;
+	background: none;
+}
+
+@media (min-width: 992px) {
+	#pricing-with-accordion article ul {
+		display: none;
+	}
+	#pricing-with-accordion article th {
+		display: table-cell !important;
+		width: 25%;
+		padding-left: 0.75rem;
+	}
+	#pricing-with-accordion article th.header {
+		padding: 2.5rem 1rem;
+	}
+	#pricing-with-accordion article td {
+		display: table-cell !important;
+		width: 25%;
+		padding-left: 0.75rem;
+	}
+	#pricing-with-accordion article td.fitur {
+		font-size: 1.125rem !important;
+		padding-left: 1rem;
+	}
+	#pricing-with-accordion article td.fitur-child {
+		font-size: 0.875rem;
+	}
+	#pricing-with-accordion article td + td,
+	#pricing-with-accordion article th + th {
+		width: auto;
+	}
+	#pricing-with-accordion article .sep {
+		font-size: 1.25rem;
+	}
+}
+
+#pricing-with-accordion article p {
+	padding: 0;
+	margin: 0;
+}
+
+#pricing-with-accordion article .accordion-row .accordion-header td {
+	height: 70px;
+	padding: 1rem;
+	font-size: 1.125rem;
+}
+
+@media (max-width: 991.98px) {
+	#pricing-with-accordion article .accordion-row .accordion-header td {
+		font-size: 0.875rem;
+	}
+}
+
+#pricing-with-accordion
+	article
+	.accordion-row
+	.accordion-header.active
+	td.fitur {
+	position: relative;
+	padding-right: 3rem;
+}
+
+#pricing-with-accordion
+	article
+	.accordion-row
+	.accordion-header.active
+	td.fitur
+	i {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	right: 1.5rem;
+	top: 50%;
+	-webkit-transform: translate(50%, -50%);
+	transform: translate(50%, -50%);
+	height: 1.75rem;
+	width: 1.75rem;
+	border-radius: 50%;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	background: #ffa000;
+	color: #fff;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+#pricing-with-accordion
+	article
+	.accordion-row
+	.accordion-header.active
+	td.fitur
+	i:hover {
+	background: #ef6c00;
+	-webkit-box-shadow: 4px 4px 10px rgba(244, 208, 63, 0.5);
+	box-shadow: 4px 4px 10px rgba(244, 208, 63, 0.5);
+	color: #fff;
+}
+
+#pricing-with-accordion
+	article
+	.accordion-row
+	.accordion-header.active
+	td.bonus {
+	background: #ffa000;
+}
+
+#pricing-with-accordion article .accordion-row .accordion-child {
+	display: none;
+}
+
+#pricing-with-accordion article .accordion-row .accordion-child td {
+	padding: 0.5rem 1rem;
+	background: #fafafa;
+	border-top: none;
+	border-bottom: none;
+	font-size: 1rem;
+}
+
+@media (max-width: 991.98px) {
+	#pricing-with-accordion article .accordion-row .accordion-child td {
+		font-size: 0.825rem;
+	}
+}
+
+#pricing-with-accordion article .accordion-row .accordion-child td.fitur-child {
+	padding-left: 2rem;
+	text-align: left;
+}
+
+#pricing-with-accordion
+	article
+	.accordion-row
+	.accordion-child
+	td
+	.uil-info-circle {
+	font-size: 1rem;
+	color: #3949ab;
+}
+
+#pricing-with-accordion article .accordion-row .accordion-child:last-child {
+	border-bottom: 1px solid rgba(4, 28, 50, 0.15);
+}
+
+#pricing-with-accordion article .accordion-row.expanded .accordion-header td {
+	border-bottom: none;
+}
+
+#pricing-with-accordion
+	article
+	.accordion-row.expanded
+	.accordion-header
+	td:not(.fitur) {
+	background: #fafafa;
+}
+
+#pricing-with-accordion
+	article
+	.accordion-row.expanded
+	.accordion-header
+	td:not(.fitur)
+	i {
+	display: none;
+}
+
+#pricing-with-accordion article .accordion-row.expanded .accordion-child {
+	display: table-row;
+}
+
+#pricing-with-accordion button {
+	width: auto;
+	border: 1px solid #e2f4eb;
+	border-right: 0;
+	border-top: 0;
+	padding: 10px;
+	background: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	height: 60px;
+	color: #999;
+}
+
+#pricing-with-accordion a.btn-kontak {
+	background: #ffa000;
+	border-radius: 5px;
+	width: 100%;
+	font-weight: bold;
+	font-size: 0.875rem;
+	text-align: center;
+	color: #fff;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	margin-top: 0.75rem;
+}
+
+@media (max-width: 991.98px) {
+	#pricing-with-accordion a.btn-kontak {
+		font-size: 0.875rem;
+		margin: 0;
+	}
+}
+
+#pricing-with-accordion a.btn-kontak:hover {
+	background: #ef6c00;
+	-webkit-box-shadow: 4px 4px 10px rgba(244, 208, 63, 0.5);
+	box-shadow: 4px 4px 10px rgba(244, 208, 63, 0.5);
+	color: #fff;
+}
+
+#pricing-with-accordion tfoot a.btn-kontak {
+	margin-top: -0.25rem;
+	margin-bottom: 1rem;
+}
+
+@media (max-width: 991.98px) {
+	#pricing-with-accordion tfoot a.btn-kontak {
+		font-size: 0.875rem;
+		margin: 0;
+	}
+}
+
+#pricing-with-accordion .sep {
+	background: rgba(170, 187, 231, 0.25);
+	font-size: 1rem;
+	font-weight: bold;
+	text-align: left;
+}
+
+#pricing-with-accordion .fitur {
+	background: #3949ab;
+	color: #fff;
+	font-size: 1rem;
+	text-align: left !important;
+}
+
+#pricing-with-accordion .txt-l {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+#pricing-with-accordion .txt-top {
+	position: relative;
+	top: -9px;
+	left: -2px;
+}
+
+#pricing-with-accordion .col-11 {
+	padding: 0;
+	margin: 0;
+}
+
+#pricing-with-accordion .price-mobile {
+	position: relative;
+}
+
+#pricing-with-accordion .price-mobile .card {
+	border: none;
+	background: linear-gradient(212.16deg, #aabbe7 13.32%, #3949ab 90.99%);
+}
+
+#pricing-with-accordion .price-mobile .card a.btn-kontak {
+	background: #ffa000;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 1rem;
+	text-align: center;
+	color: #fff;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	margin-top: 0.75rem;
+}
+
+#pricing-with-accordion .price-mobile .card .item-mobile {
+	font-weight: bold;
+	font-size: 1.25rem;
+	line-height: 1;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 1rem;
+	text-align: center;
+}
+
+#pricing-with-accordion .price-mobile .card .box-harga {
+	background-color: white;
+	text-align: center;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	min-height: 97px;
+}
+
+#pricing-with-accordion .price-mobile .card .box-harga p {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+#pricing-with-accordion .price-mobile .card .box-harga .harga-mobile {
+	font-weight: bold;
+	font-size: 1.75rem;
+	line-height: 1;
+}
+
+#pricing-with-accordion .price-mobile .card .box-harga .bulan {
+	font-size: 1rem;
+	line-height: 1;
+	letter-spacing: 0.1em;
+	color: #3949ab;
+	font-weight: bold;
+}
+
+#pricing-with-accordion .price-mobile .card .box-harga .diskon {
+	font-size: 0.875rem;
+	padding-top: 1rem;
+}
+
+#pricing-with-accordion .price-mobile .card .card-konten {
+	color: #fff;
+	padding: 0 1rem 1rem 1rem;
+}
+
+#pricing-with-accordion .price-mobile .card .card-konten ul li {
+	list-style: none;
+	font-weight: bold;
+	font-size: 1rem;
+	text-align: left;
+	line-height: 2;
+	font-family: 'Hind', sans-serif;
+}
+
+#pricing-with-accordion .price-mobile .card .card-konten li.none {
+	color: rgba(255, 255, 255, 0.25);
+}
+
+#pricing-with-accordion .price-mobile .card .card-konten li.akreditasi {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+	border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+#pricing-with-accordion .price-mobile .owl-theme .custom-nav {
+	position: absolute;
+	top: 20%;
+	left: 0;
+	right: 0;
+}
+
+#pricing-with-accordion .price-mobile .owl-theme .custom-nav .owl-prev,
+#pricing-with-accordion .price-mobile .owl-theme .custom-nav .owl-next {
+	position: absolute;
+	height: 100px;
+	color: inherit;
+	background: none;
+	border: none;
+	z-index: 100;
+}
+
+#pricing-with-accordion .price-mobile .owl-theme .custom-nav .owl-prev i,
+#pricing-with-accordion .price-mobile .owl-theme .custom-nav .owl-next i {
+	font-size: 4rem;
+	color: #555;
+}
+
+#pricing-with-accordion .price-mobile .owl-theme .custom-nav .owl-prev {
+	left: -25px;
+	top: 50px;
+}
+
+#pricing-with-accordion .price-mobile .owl-theme .custom-nav .owl-next {
+	right: -25px;
+	top: 50px;
+}
+
+#pricing-with-accordion .pricing-footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+#pricing-with-accordion .pricing-footer .note {
+	max-width: 80vw;
+	padding: 1rem;
+}
+
+#pricing-with-accordion .pricing-footer .note p {
+	padding: 0;
+	margin: 0;
+	font-size: 0.825rem;
+	line-height: 1.125rem;
+	margin-bottom: 0.25rem;
+}
+
+@media (max-width: 991.98px) {
+	#pricing-with-accordion .pricing-footer .note p {
+		font-size: 0.75rem;
+		line-height: 1rem;
+	}
+}
+
+#pricing-with-accordion .pricing-footer a {
+	background: transparent;
+	border-radius: 6px;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	text-align: center;
+	padding: 0;
+	border: 1px solid #dedede;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+#pricing-with-accordion .pricing-footer a i {
+	padding: 0.25rem;
+	border-radius: 6px;
+	background: #f40f02;
+	color: #fff;
+}
+
+#pricing-with-accordion .pricing-footer a p {
+	font-weight: 500;
+	font-size: 0.875rem;
+	margin: 0;
+	padding: 0.25rem 1rem 0.25rem 0.5rem;
+	color: #707070;
+}
+
+#pricing-with-accordion .pricing-footer a:hover {
+	border: 1px solid #9d9d9d;
+	-webkit-box-shadow: 4px 4px 10px #dedede;
+	box-shadow: 4px 4px 10px #dedede;
+}
+
+#pricing-with-accordion .pricing-footer a:hover i {
+	background: #f40f02;
+}
+
+#pricing-with-accordion .pricing-footer a:hover p {
+	color: #545454;
+}
+
+@media (max-width: 575.98px) {
+	#pricing-with-accordion .pricing-footer {
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+		-webkit-box-align: start;
+		-ms-flex-align: start;
+		align-items: flex-start;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	#pricing-with-accordion .pricing-footer .note {
+		max-width: unset;
+		margin-bottom: 1rem;
+	}
+}
