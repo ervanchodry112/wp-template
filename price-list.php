@@ -7,6 +7,39 @@
  get_header();
 ?>
 
+<!-- 
+<section id="hero-promo">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 style="color: #fff; margin: 1rem 0;"></h1>
+        <p style="color: #fff; font-size: 20px; margin-bottom: 0"><b></b></p>
+        <div id="breadcrumb" ><a href="<?php echo home_url(); ?>/home/" style="color: #fff;">Home</a> > Harga siAkadCloud</div>
+        
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section id="hero-promo">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<div class="desc">
+						<!-- <label>Our Offering for You</label> -->
+						<h3>Paket Harga Sevima Platform</h3>
+						<p>Saatnya Upgrade Menuju Perguruan Tinggi Unggul</p>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-5">
+					<div class="image-hero">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/illu-promo.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 <!-- PRICING NEW -->
 <section id="pricing-with-accordion">
@@ -23,8 +56,8 @@
     </div> -->
     <div class="row justify-content-center">
       <div class="col-11">
-        <article>
-          <ul>
+        <article id="price">
+          <ul >
             <li class="bg-blue">
               <button>
                 <h6 class="item">Silver</h6>
@@ -56,7 +89,7 @@
               <thead>
                 <tr>
                   <th style="vertical-align: middle; font-size: 1.25rem">
-                    <p>Modul-modul<br> siAkadCloud </p>
+                    <p>Modul-modul<br> Sevima Platform </p>
                   </th>
                   <th>
                     <h6 class="item">Silver</h6>

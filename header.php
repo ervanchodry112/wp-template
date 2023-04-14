@@ -106,6 +106,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/modal-video.min.css?<?= md5(rand(100, 999)); ?>">
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slick.css?<?= md5(rand(100, 999)); ?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/price-list.css">
 
     <!-- select2 -->
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />

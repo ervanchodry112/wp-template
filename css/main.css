@@ -2684,6 +2684,28 @@ body {
 	font-family: 'Sarabun', sans-serif;
 }
 
+#hero-mitra {
+	background: url('../img/bg-promo.png');
+	-o-object-fit: cover;
+	object-fit: cover;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	height: 400px;
+	padding: 1.5rem;
+}
+
+#hero-mitra a {
+	text-decoration: underline;
+}
+
+#hero-mitra a:hover {
+	font-weight: bold;
+}
+
+#breadcrumb {
+	color: white;
+}
+
 .card-promo {
 	background: #ffffff;
 	border: 1px solid rgba(12, 19, 37, 0.1);
@@ -4801,7 +4823,7 @@ li.active-fitur > a.tabs-link {
 	margin-top: 3rem;
 	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: (1fr) [3];
+	--ms-grid-columns: (1fr) [3];
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 0.75rem;
 	grid-template-areas:
@@ -4811,46 +4833,46 @@ li.active-fitur > a.tabs-link {
 }
 
 #album-foto .foto1 {
-	-ms-grid-row: 1;
-	-ms-grid-column: 1;
-	-ms-grid-column-span: 2;
+	-grid-row: 1;
+	-grid-column: 1;
+	-grid-column-span: 2;
 	grid-area: foto1;
 }
 
 #album-foto .testimoni-1 {
-	-ms-grid-row: 1;
-	-ms-grid-column: 3;
+	-grid-row: 1;
+	-grid-column: 3;
 	grid-area: testimoni1;
 }
 
 #album-foto .testimoni-2 {
-	-ms-grid-row: 2;
-	-ms-grid-column: 1;
+	-grid-row: 2;
+	-grid-column: 1;
 	grid-area: testimoni2;
 }
 
 #album-foto .testimoni-3 {
-	-ms-grid-row: 2;
-	-ms-grid-column: 2;
+	-grid-row: 2;
+	-grid-column: 2;
 	grid-area: testimoni3;
 }
 
 #album-foto .testimoni-4 {
-	-ms-grid-row: 2;
-	-ms-grid-column: 3;
+	-grid-row: 2;
+	-grid-column: 3;
 	grid-area: testimoni4;
 }
 
 #album-foto .testimoni-5 {
-	-ms-grid-row: 3;
-	-ms-grid-column: 1;
+	-grid-row: 3;
+	-grid-column: 1;
 	grid-area: testimoni5;
 }
 
 #album-foto .foto2 {
-	-ms-grid-row: 3;
-	-ms-grid-column: 2;
-	-ms-grid-column-span: 2;
+	-grid-row: 3;
+	-grid-column: 2;
+	-grid-column-span: 2;
 	grid-area: foto2;
 }
 
@@ -5074,9 +5096,9 @@ li.active-fitur > a.tabs-link {
 
 #coba-album-foto .grid-album {
 	margin-top: 3rem;
-	display: -ms-grid;
+	display: -grid;
 	display: grid;
-	-ms-grid-columns: (1fr) [3];
+	-grid-columns: (1fr) [3];
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 0.75rem;
 	grid-template-areas:
@@ -5086,46 +5108,46 @@ li.active-fitur > a.tabs-link {
 }
 
 #coba-album-foto .foto1 {
-	-ms-grid-row: 1;
-	-ms-grid-column: 1;
-	-ms-grid-column-span: 2;
+	-grid-row: 1;
+	-grid-column: 1;
+	-grid-column-span: 2;
 	grid-area: foto1;
 }
 
 #coba-album-foto .testimoni-1 {
-	-ms-grid-row: 1;
-	-ms-grid-column: 3;
+	-grid-row: 1;
+	-grid-column: 3;
 	grid-area: testimoni1;
 }
 
 #coba-album-foto .testimoni-2 {
-	-ms-grid-row: 2;
-	-ms-grid-column: 1;
+	-grid-row: 2;
+	-grid-column: 1;
 	grid-area: testimoni2;
 }
 
 #coba-album-foto .testimoni-3 {
-	-ms-grid-row: 2;
-	-ms-grid-column: 2;
+	-grid-row: 2;
+	-grid-column: 2;
 	grid-area: testimoni3;
 }
 
 #coba-album-foto .testimoni-4 {
-	-ms-grid-row: 2;
-	-ms-grid-column: 3;
+	-grid-row: 2;
+	-grid-column: 3;
 	grid-area: testimoni4;
 }
 
 #coba-album-foto .testimoni-5 {
-	-ms-grid-row: 3;
-	-ms-grid-column: 1;
+	-grid-row: 3;
+	-grid-column: 1;
 	grid-area: testimoni5;
 }
 
 #coba-album-foto .foto2 {
-	-ms-grid-row: 3;
-	-ms-grid-column: 2;
-	-ms-grid-column-span: 2;
+	-grid-row: 3;
+	-grid-column: 2;
+	-grid-column-span: 2;
 	grid-area: foto2;
 }
 
@@ -5287,11 +5309,11 @@ li.active-fitur > a.tabs-link {
 }
 
 #foto-karyawan .c-level .column {
-	display: -ms-grid;
+	display: -grid;
 	display: grid;
-	-ms-grid-columns: (minmax(225px, 1fr)) [auto-fill];
+	-grid-columns: (minmax(225px, 1fr)) [auto-fill];
 	grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-	-ms-grid-rows: auto;
+	-grid-rows: auto;
 	grid-template-rows: auto;
 	grid-gap: 2rem;
 }
@@ -5433,11 +5455,11 @@ li.active-fitur > a.tabs-link {
 }
 
 #foto-karyawan .cf {
-	display: -ms-grid;
+	display: -grid;
 	display: grid;
-	-ms-grid-columns: (minmax(125px, 1fr)) [auto-fill];
+	-grid-columns: (minmax(125px, 1fr)) [auto-fill];
 	grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
-	-ms-grid-rows: auto;
+	-grid-rows: auto;
 	grid-template-rows: auto;
 	grid-gap: 1rem;
 	*zoom: 1;
@@ -5501,7 +5523,7 @@ li.active-fitur > a.tabs-link {
 #foto-karyawan .nav {
 	margin: 1rem 0 3rem;
 	-webkit-box-pack: center;
-	-ms-flex-pack: center;
+	-flex-pack: center;
 	justify-content: center;
 }
 
@@ -5643,10 +5665,10 @@ a.link-alert:hover {
 
 #section-header-testimoni .title-header .button-selengkapnya {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-pack: start;
-	-ms-flex-pack: start;
+	-flex-pack: start;
 	justify-content: start;
 	padding-top: 1.5rem;
 }
@@ -5655,10 +5677,10 @@ a.link-alert:hover {
 	cursor: pointer;
 	position: relative;
 	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
+	display: -inline-flexbox;
 	display: inline-flex;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 	padding: 0.8125rem 1.875rem;
 	overflow: hidden;
@@ -5895,13 +5917,13 @@ a.link-alert:hover {
 
 #section-video-testimoni .video-testimoni {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-pack: center;
-	-ms-flex-pack: center;
+	-flex-pack: center;
 	justify-content: center;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 	margin-bottom: 2rem;
 }
@@ -6030,8 +6052,8 @@ a.link-alert:hover {
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
 	z-index: 10;
-	-ms-flex-item-align: center;
-	-ms-grid-row-align: center;
+	-flex-item-align: center;
+	-grid-row-align: center;
 	align-self: center;
 }
 
@@ -6151,11 +6173,11 @@ a.link-alert:hover {
 }
 
 #section-tab-testimoni .grid-card {
-	display: -ms-grid;
+	display: -grid;
 	display: grid;
-	-ms-grid-columns: (minmax(275px, 1fr)) [auto-fill];
+	-grid-columns: (minmax(275px, 1fr)) [auto-fill];
 	grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
-	-ms-grid-rows: auto;
+	-grid-rows: auto;
 	grid-template-rows: auto;
 	gap: 2rem;
 	padding-left: 5rem;
@@ -6183,10 +6205,10 @@ a.link-alert:hover {
 	background-color: #fff;
 	border-top: none;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-align: start;
-	-ms-flex-align: start;
+	-flex-align: start;
 	align-items: flex-start;
 }
 
@@ -6321,11 +6343,11 @@ a.link-alert:hover {
 }
 
 #section-gambar-testimoni .grid-gambar-testimoni {
-	display: -ms-grid;
+	display: -grid;
 	display: grid;
-	-ms-grid-columns: (minmax(250px, 1fr)) [auto-fill];
+	-grid-columns: (minmax(250px, 1fr)) [auto-fill];
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-	-ms-grid-rows: auto;
+	-grid-rows: auto;
 	grid-template-rows: auto;
 	gap: 2rem;
 }
@@ -6366,12 +6388,12 @@ a.link-alert:hover {
 }
 
 #section-jumlah-universitas .grid-konten-peta {
-	display: -ms-grid;
+	display: -grid;
 	display: grid;
 	gap: 1rem;
-	-ms-grid-columns: (1fr) [4];
+	-grid-columns: (1fr) [4];
 	grid-template-columns: repeat(4, 1fr);
-	-ms-grid-rows: auto;
+	-grid-rows: auto;
 	grid-template-rows: auto;
 	margin: 0 auto;
 	width: 90%;
@@ -6401,19 +6423,19 @@ a.link-alert:hover {
 }
 
 #section-pricing-sevima .grid-harga {
-	display: -ms-grid;
+	display: -grid;
 	display: grid;
-	-ms-grid-columns: (minmax(300px, 1fr)) [auto-fill];
+	-grid-columns: (minmax(300px, 1fr)) [auto-fill];
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	-ms-grid-rows: auto;
+	-grid-rows: auto;
 	grid-template-rows: auto;
 	gap: 1rem;
 }
 
 #section-pricing-sevima .item-produk {
-	display: -ms-grid;
+	display: -grid;
 	display: grid;
-	-ms-grid-columns: (minmax(275px, 1fr)) [auto-fill];
+	-grid-columns: (minmax(275px, 1fr)) [auto-fill];
 	grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
 	grid-row: auto;
 	-webkit-column-gap: 2rem;
@@ -6425,7 +6447,7 @@ a.link-alert:hover {
 	background: none;
 	border: none;
 	-webkit-box-pack: end;
-	-ms-flex-pack: end;
+	-flex-pack: end;
 	justify-content: flex-end;
 }
 
@@ -6661,10 +6683,10 @@ a.link-alert:hover {
 
 #section-pricing-sevima .button-selengkapnya {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-pack: center;
-	-ms-flex-pack: center;
+	-flex-pack: center;
 	justify-content: center;
 }
 
@@ -6672,7 +6694,7 @@ a.link-alert:hover {
 	cursor: pointer;
 	position: relative;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 	padding: 0.5rem 1.875rem;
 	overflow: hidden;
@@ -6785,10 +6807,10 @@ a.link-alert:hover {
 	margin-bottom: 30px;
 	border-bottom: 2px solid #3949ab;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
+	-flex-pack: justify;
 	justify-content: space-between;
 }
 
@@ -7027,10 +7049,10 @@ a.link-alert:hover {
 	margin-bottom: 30px;
 	border-bottom: 2px solid #3949ab;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
+	-flex-pack: justify;
 	justify-content: space-between;
 }
 
@@ -7059,21 +7081,21 @@ a.link-alert:hover {
 }
 
 #section-berita-terbaru .grid-card-beritaterbaru {
-	display: -ms-grid;
+	display: -grid;
 	display: grid;
-	-ms-grid-columns: (1fr) [3];
+	-grid-columns: (1fr) [3];
 	grid-template-columns: repeat(3, 1fr);
-	-ms-grid-rows: auto;
+	-grid-rows: auto;
 	grid-template-rows: auto;
 	grid-column-gap: 1rem;
 	grid-row-gap: 1rem;
 }
 
 #section-berita-terbaru .utama {
-	-ms-grid-row: 1;
-	-ms-grid-row-span: 2;
-	-ms-grid-column: 1;
-	-ms-grid-column-span: 1;
+	-grid-row: 1;
+	-grid-row-span: 2;
+	-grid-column: 1;
+	-grid-column-span: 1;
 	grid-area: 1 / 1 / 3 / 2;
 }
 
@@ -7119,9 +7141,9 @@ a.link-alert:hover {
 	font-size: 0.75rem;
 	text-transform: uppercase;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-top: 1rem;
 	margin-bottom: 0;
@@ -7132,12 +7154,12 @@ a.link-alert:hover {
 
 #section-berita-terbaru .utama .card .card-body .post-meta > li {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 }
 
@@ -7242,9 +7264,9 @@ a.link-alert:hover {
 	font-size: 0.75rem;
 	text-transform: uppercase;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-top: 1rem;
 	margin-bottom: 0;
@@ -7255,12 +7277,12 @@ a.link-alert:hover {
 
 #section-berita-terbaru .konten .card .card-body .post-meta > li {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 }
 
@@ -7297,10 +7319,10 @@ a.link-alert:hover {
 	margin-bottom: 30px;
 	border-bottom: 2px solid #3949ab;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
+	-flex-pack: justify;
 	justify-content: space-between;
 }
 
@@ -7341,11 +7363,11 @@ a.link-alert:hover {
 }
 
 #section-dunia-kampus .content-section {
-	display: -ms-grid;
+	display: -grid;
 	display: grid;
-	-ms-grid-columns: 1fr 1fr;
+	-grid-columns: 1fr 1fr;
 	grid-template-columns: 1fr 1fr;
-	-ms-grid-rows: auto;
+	-grid-rows: auto;
 	grid-template-rows: auto;
 	gap: 1rem;
 }
@@ -7393,9 +7415,9 @@ a.link-alert:hover {
 	font-size: 0.75rem;
 	text-transform: uppercase;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-top: 1rem;
 	margin-bottom: 0;
@@ -7406,12 +7428,12 @@ a.link-alert:hover {
 
 #section-dunia-kampus .content-section .card-body .post-meta > li {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 }
 
@@ -7551,9 +7573,9 @@ a.link-alert:hover {
 	font-size: 0.75rem;
 	text-transform: uppercase;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-top: 1rem;
 	margin-bottom: 0;
@@ -7570,12 +7592,12 @@ a.link-alert:hover {
 	.post-meta
 	> li {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 }
 
@@ -7632,10 +7654,10 @@ a.link-alert:hover {
 	margin-bottom: 30px;
 	border-bottom: 2px solid #3949ab;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
+	-flex-pack: justify;
 	justify-content: space-between;
 }
 
@@ -7664,11 +7686,11 @@ a.link-alert:hover {
 }
 
 #section-all-berita .grid-all-berita {
-	display: -ms-grid;
+	display: -grid;
 	display: grid;
-	-ms-grid-columns: (minmax(300px, 1fr)) [auto-fill];
+	-grid-columns: (minmax(300px, 1fr)) [auto-fill];
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	-ms-grid-rows: auto;
+	-grid-rows: auto;
 	grid-template-rows: auto;
 	gap: 1rem;
 }
@@ -7716,9 +7738,9 @@ a.link-alert:hover {
 	font-size: 0.75rem;
 	text-transform: uppercase;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-top: 1rem;
 	margin-bottom: 0;
@@ -7729,12 +7751,12 @@ a.link-alert:hover {
 
 #section-all-berita .grid-all-berita .card-body .post-meta > li {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 }
 
@@ -7806,9 +7828,9 @@ a.link-alert:hover {
 	font-size: 0.75rem;
 	text-transform: uppercase;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-top: 1rem;
 	margin-bottom: 2rem;
@@ -7819,12 +7841,12 @@ a.link-alert:hover {
 
 #header-detailberita .title-header .post-meta > li {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 }
 
@@ -7920,7 +7942,7 @@ a.link-alert:hover {
 	position: sticky;
 	top: 1rem;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	padding: 0 15px;
 }
@@ -8055,11 +8077,11 @@ a.link-alert:hover {
 }
 
 .conten-tambahan #section-artikel-menarik .list-artikelterkait {
-	display: -ms-grid;
+	display: -grid;
 	display: grid;
-	-ms-grid-columns: (1fr) [4];
+	-grid-columns: (1fr) [4];
 	grid-template-columns: repeat(4, 1fr);
-	-ms-grid-rows: (1fr) [1];
+	-grid-rows: (1fr) [1];
 	grid-template-rows: repeat(1, 1fr);
 	gap: 1rem;
 }
@@ -8129,9 +8151,9 @@ a.link-alert:hover {
 	font-size: 0.75rem;
 	text-transform: uppercase;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-top: 1rem;
 	margin-bottom: 0;
@@ -8148,12 +8170,12 @@ a.link-alert:hover {
 	.post-meta
 	> li {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 }
 
@@ -8219,11 +8241,11 @@ a.link-alert:hover {
 }
 
 .conten-tambahan #section-berita-penting .list-beritapenting {
-	display: -ms-grid;
+	display: -grid;
 	display: grid;
-	-ms-grid-columns: (1fr) [3];
+	-grid-columns: (1fr) [3];
 	grid-template-columns: repeat(3, 1fr);
-	-ms-grid-rows: (1fr) [2];
+	-grid-rows: (1fr) [2];
 	grid-template-rows: repeat(2, 1fr);
 	gap: 1rem;
 }
@@ -8276,9 +8298,9 @@ a.link-alert:hover {
 	font-size: 0.75rem;
 	text-transform: uppercase;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-top: 1rem;
 	margin-bottom: 0;
@@ -8295,12 +8317,12 @@ a.link-alert:hover {
 	.post-meta
 	> li {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 }
 
@@ -8392,11 +8414,11 @@ a.link-alert:hover {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
 	.conten-tambahan #section-berita-penting {
-		display: -ms-grid;
+		display: -grid;
 		display: grid;
-		-ms-grid-columns: (1fr) [2];
+		-grid-columns: (1fr) [2];
 		grid-template-columns: repeat(2, 1fr);
-		-ms-grid-rows: (1fr) [3];
+		-grid-rows: (1fr) [3];
 		grid-template-rows: repeat(3, 1fr);
 		gap: 1rem;
 	}
@@ -8404,11 +8426,11 @@ a.link-alert:hover {
 
 @media (max-width: 767.98px) {
 	.conten-tambahan #section-berita-penting .list-beritapenting {
-		display: -ms-grid;
+		display: -grid;
 		display: grid;
-		-ms-grid-columns: 1fr;
+		-grid-columns: 1fr;
 		grid-template-columns: 1fr;
-		-ms-grid-rows: auto;
+		-grid-rows: auto;
 		grid-template-rows: auto;
 		gap: 1rem;
 	}
@@ -8593,10 +8615,10 @@ a.link-alert:hover {
 
 #section-header-listpartner .title-header .button-selengkapnya {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-pack: start;
-	-ms-flex-pack: start;
+	-flex-pack: start;
 	justify-content: start;
 	padding-top: 1.5rem;
 }
@@ -8605,10 +8627,10 @@ a.link-alert:hover {
 	cursor: pointer;
 	position: relative;
 	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
+	display: -inline-flexbox;
 	display: inline-flex;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 	padding: 0.8125rem 1.875rem;
 	overflow: hidden;
@@ -8738,11 +8760,11 @@ a.link-alert:hover {
 }
 
 #section-list-partner .card-listberita {
-	display: -ms-grid;
+	display: -grid;
 	display: grid;
-	-ms-grid-rows: auto;
+	-grid-rows: auto;
 	grid-template-rows: auto;
-	-ms-grid-columns: 1fr 2fr;
+	-grid-columns: 1fr 2fr;
 	grid-template-columns: 1fr 2fr;
 	grid-template-areas: 'img content';
 	margin-top: 3rem;
@@ -8750,17 +8772,17 @@ a.link-alert:hover {
 }
 
 #section-list-partner .card-listberita .img-berita {
-	-ms-grid-row: 1;
-	-ms-grid-column: 2;
+	-grid-row: 1;
+	-grid-column: 2;
 	grid-area: img;
 	height: 150px;
 	width: 300px;
 	padding: 2rem;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 	-webkit-box-shadow: 7px 10px 20px rgba(139, 159, 216, 0.15);
 	box-shadow: 7px 10px 20px rgba(139, 159, 216, 0.15);
@@ -8775,15 +8797,15 @@ a.link-alert:hover {
 }
 
 #section-list-partner .card-listberita .konten-berita {
-	-ms-grid-row: 1;
-	-ms-grid-column: 3;
+	-grid-row: 1;
+	-grid-column: 3;
 	grid-area: content;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
+	-flex-direction: column;
 	flex-direction: column;
 }
 
@@ -8894,10 +8916,10 @@ a.link-alert:hover {
 
 #section-afiliasi .section-header-afiliasi .button-selengkapnya {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-pack: start;
-	-ms-flex-pack: start;
+	-flex-pack: start;
 	justify-content: start;
 	padding-top: 1.5rem;
 }
@@ -8906,10 +8928,10 @@ a.link-alert:hover {
 	cursor: pointer;
 	position: relative;
 	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
+	display: -inline-flexbox;
 	display: inline-flex;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 	padding: 0.8125rem 1.875rem;
 	overflow: hidden;
@@ -9057,7 +9079,7 @@ a.link-alert:hover {
 #section-afiliasi .section-problem-afiliasi ul li {
 	list-style: none;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	font-family: 'Sarabun', sans-serif;
 	font-weight: 500;
@@ -9138,7 +9160,7 @@ a.link-alert:hover {
 
 #section-afiliasi .section-simulasi-afiliasi .img-chat {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 }
 
@@ -9205,7 +9227,7 @@ a.link-alert:hover {
 
 #section-afiliasi .section-pelajari-afiliasi .button-download {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	margin-top: 1.25rem;
 }
@@ -9250,12 +9272,12 @@ a.link-alert:hover {
 }
 
 #section-afiliasi .section-jumlah-universitas .grid-konten-peta {
-	display: -ms-grid;
+	display: -grid;
 	display: grid;
 	gap: 1rem;
-	-ms-grid-columns: (1fr) [4];
+	-grid-columns: (1fr) [4];
 	grid-template-columns: repeat(4, 1fr);
-	-ms-grid-rows: auto;
+	-grid-rows: auto;
 	grid-template-rows: auto;
 	margin: 0 auto;
 	width: 90%;
@@ -9308,11 +9330,11 @@ a.link-alert:hover {
 }
 
 #section-header-listberita .card-listberita {
-	display: -ms-grid;
+	display: -grid;
 	display: grid;
-	-ms-grid-rows: 275px;
+	-grid-rows: 275px;
 	grid-template-rows: 275px;
-	-ms-grid-columns: auto 1fr 1fr;
+	-grid-columns: auto 1fr 1fr;
 	grid-template-columns: auto 1fr 1fr;
 	grid-template-areas: 'date img content';
 	margin-top: 3rem;
@@ -9320,8 +9342,8 @@ a.link-alert:hover {
 }
 
 #section-header-listberita .card-listberita .date-berita {
-	-ms-grid-row: 1;
-	-ms-grid-column: 1;
+	-grid-row: 1;
+	-grid-column: 1;
 	grid-area: date;
 	margin-right: 2.5rem;
 	color: rgba(12, 19, 37, 0.75);
@@ -9343,8 +9365,8 @@ a.link-alert:hover {
 }
 
 #section-header-listberita .card-listberita .img-berita {
-	-ms-grid-row: 1;
-	-ms-grid-column: 2;
+	-grid-row: 1;
+	-grid-column: 2;
 	grid-area: img;
 }
 
@@ -9357,15 +9379,15 @@ a.link-alert:hover {
 }
 
 #section-header-listberita .card-listberita .konten-berita {
-	-ms-grid-row: 1;
-	-ms-grid-column: 3;
+	-grid-row: 1;
+	-grid-column: 3;
 	grid-area: content;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
+	-flex-direction: column;
 	flex-direction: column;
 }
 
@@ -9437,9 +9459,9 @@ a.link-alert:hover {
 	font-size: 0.75rem;
 	text-transform: uppercase;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-top: 1rem;
 	margin-bottom: 0;
@@ -9455,12 +9477,12 @@ a.link-alert:hover {
 	.post-meta
 	> li {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 }
 
@@ -9525,7 +9547,7 @@ a.link-alert:hover {
 	background: #fff;
 	border: none;
 	-webkit-box-pack: end;
-	-ms-flex-pack: end;
+	-flex-pack: end;
 	justify-content: flex-end;
 }
 
@@ -9556,9 +9578,9 @@ a.link-alert:hover {
 		grid-template-areas:
 			'date img'
 			'content content';
-		-ms-grid-columns: 100px 1fr;
+		-grid-columns: 100px 1fr;
 		grid-template-columns: 100px 1fr;
-		-ms-grid-rows: auto;
+		-grid-rows: auto;
 		grid-template-rows: auto;
 	}
 	#section-header-listberita .card-listberita .konten-berita .card-body,
@@ -9658,9 +9680,9 @@ a.link-alert:hover {
 	font-size: 0.75rem;
 	text-transform: uppercase;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-top: 1rem;
 	margin-bottom: 0;
@@ -9676,12 +9698,12 @@ a.link-alert:hover {
 	.post-meta
 	> li {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 }
 
@@ -9782,10 +9804,10 @@ a.link-alert:hover {
 
 #section-header-sla .title-header .button-selengkapnya {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-pack: start;
-	-ms-flex-pack: start;
+	-flex-pack: start;
 	justify-content: start;
 	padding-top: 1.5rem;
 }
@@ -9794,10 +9816,10 @@ a.link-alert:hover {
 	cursor: pointer;
 	position: relative;
 	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
+	display: -inline-flexbox;
 	display: inline-flex;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 	padding: 0.8125rem 1.875rem;
 	overflow: hidden;
@@ -10058,11 +10080,11 @@ a.link-alert:hover {
 }
 
 #section-card-event .grid-all-berita {
-	display: -ms-grid;
+	display: -grid;
 	display: grid;
-	-ms-grid-columns: (minmax(300px, 1fr)) [auto-fill];
+	-grid-columns: (minmax(300px, 1fr)) [auto-fill];
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	-ms-grid-rows: auto;
+	-grid-rows: auto;
 	grid-template-rows: auto;
 	gap: 2rem;
 }
@@ -10185,10 +10207,10 @@ a.link-alert:hover {
 	cursor: pointer;
 	position: relative;
 	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
+	display: -inline-flexbox;
 	display: inline-flex;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 	max-width: 100%;
 	padding: 0.8125rem 1.875rem;
@@ -10358,10 +10380,10 @@ a.link-alert:hover {
 
 #section-gabung-event .button-selengkapnya {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-pack: start;
-	-ms-flex-pack: start;
+	-flex-pack: start;
 	justify-content: start;
 	padding-top: 1.5rem;
 }
@@ -10370,10 +10392,10 @@ a.link-alert:hover {
 	cursor: pointer;
 	position: relative;
 	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
+	display: -inline-flexbox;
 	display: inline-flex;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 	max-width: 18.75rem;
 	padding: 0.8125rem 1.875rem;
@@ -10478,11 +10500,11 @@ a.link-alert:hover {
 }
 
 #section-gabung-event .item {
-	display: -ms-grid;
+	display: -grid;
 	display: grid;
-	-ms-grid-columns: 50% 50%;
+	-grid-columns: 50% 50%;
 	grid-template-columns: 50% 50%;
-	-ms-grid-rows: auto;
+	-grid-rows: auto;
 	grid-template-rows: auto;
 	gap: 2rem;
 }
@@ -10578,11 +10600,11 @@ a.link-alert:hover {
 }
 
 .livechat .grid-livechat {
-	display: -ms-grid;
+	display: -grid;
 	display: grid;
-	-ms-grid-columns: (minmax(240px, 1fr)) [auto-fit];
+	-grid-columns: (minmax(240px, 1fr)) [auto-fit];
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-	-ms-grid-rows: auto;
+	-grid-rows: auto;
 	grid-template-rows: auto;
 	gap: 1.5rem;
 }
@@ -10689,12 +10711,12 @@ a.link-alert:hover {
 /*-------- HOMEPAGE--------*/
 #section-hero {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	width: 100%;
 	max-width: 100%;
 	-webkit-box-pack: center;
-	-ms-flex-pack: center;
+	-flex-pack: center;
 	justify-content: center;
 }
 
@@ -10734,7 +10756,7 @@ a.link-alert:hover {
 
 #section-hero .cs-hero-layout {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	position: relative;
 	width: 100%;
@@ -10754,10 +10776,10 @@ a.link-alert:hover {
 #section-hero .cs-hero-layout-fullwidth .cs-hero {
 	padding: 3rem 0;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	height: 100%;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
 
@@ -10765,14 +10787,14 @@ a.link-alert:hover {
 	color: #fff;
 	padding-right: 2.5rem;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	width: 100%;
 	-webkit-box-align: end;
-	-ms-flex-align: end;
+	-flex-align: end;
 	align-items: flex-end;
 	-webkit-box-flex: 0;
-	-ms-flex: 0 0 calc(100% - 380px);
+	-flex: 0 0 calc(100% - 380px);
 	flex: 0 0 calc(100% - 380px);
 	max-width: calc(100% - 380px);
 }
@@ -10816,9 +10838,9 @@ a.link-alert:hover {
 	font-size: 0.875rem;
 	text-transform: uppercase;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-top: 1rem;
 	margin-bottom: 0;
@@ -10827,12 +10849,12 @@ a.link-alert:hover {
 
 #section-hero .cs-hero-layout-fullwidth .cs-hero .hero-title .post-meta > li {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 }
 
@@ -10933,7 +10955,7 @@ a.link-alert:hover {
 
 #section-hero .cs-hero-layout-fullwidth .cs-hero .hero-list .cs-post {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 }
 
@@ -10999,9 +11021,9 @@ a.link-alert:hover {
 	font-size: 0.65rem;
 	text-transform: uppercase;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-top: 1rem;
 	margin-bottom: 0;
@@ -11019,12 +11041,12 @@ a.link-alert:hover {
 	.post-meta
 	> li {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 }
 
@@ -11122,7 +11144,7 @@ a.link-alert:hover {
 	> .carousel-item.active.carousel-item-right {
 	transform: translate3d(0, 100%, 0);
 	-webkit-transform: translate3d(0, 100%, 0);
-	-ms-transform: translate3d(0, 100%, 0);
+	-transform: translate3d(0, 100%, 0);
 	-moz-transform: translate3d(0, 100%, 0);
 	-o-transform: translate3d(0, 100%, 0);
 	top: 0;
@@ -11143,7 +11165,7 @@ a.link-alert:hover {
 	transform: translate3d(0, -100%, 0);
 	-webkit-transform: translate3d(0, -100%, 0);
 	-moz-transform: translate3d(0, -100%, 0);
-	-ms-transform: translate3d(0, -100%, 0);
+	-transform: translate3d(0, -100%, 0);
 	-o-transform: translate3d(0, -100%, 0);
 	top: 0;
 }
@@ -11168,7 +11190,7 @@ a.link-alert:hover {
 	> .carousel-item.active {
 	transform: translate3d(0, 0, 0);
 	-webkit-transform: translate3d(0, 0, 0);
-	-ms-transform: translate3d(0, 0, 0);
+	-transform: translate3d(0, 0, 0);
 	-moz-transform: translate3d(0, 0, 0);
 	-o-transform: translate3d(0, 0, 0);
 	top: 0;
@@ -11376,10 +11398,10 @@ a.link-alert:hover {
 
 #section-tentang-v3 .button-selengkapnya {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-pack: start;
-	-ms-flex-pack: start;
+	-flex-pack: start;
 	justify-content: start;
 	padding-top: 1.5rem;
 }
@@ -11388,10 +11410,10 @@ a.link-alert:hover {
 	cursor: pointer;
 	position: relative;
 	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
+	display: -inline-flexbox;
 	display: inline-flex;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 	max-width: 18.75rem;
 	padding: 0.8125rem 1.875rem;
@@ -11558,10 +11580,10 @@ a.link-alert:hover {
 
 #section-testimoni-event .button-selengkapnya {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-pack: start;
-	-ms-flex-pack: start;
+	-flex-pack: start;
 	justify-content: start;
 	padding-top: 1.5rem;
 }
@@ -11570,10 +11592,10 @@ a.link-alert:hover {
 	cursor: pointer;
 	position: relative;
 	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
+	display: -inline-flexbox;
 	display: inline-flex;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 	max-width: 18.75rem;
 	padding: 0.8125rem 1.875rem;
@@ -11693,7 +11715,7 @@ a.link-alert:hover {
 	min-height: 325px;
 	padding: 40px 3rem;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 }
 
@@ -11709,11 +11731,11 @@ a.link-alert:hover {
 
 #section-testimoni-event .quote-desc {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
+	-flex-direction: column;
 	flex-direction: column;
 }
 
@@ -11730,21 +11752,21 @@ a.link-alert:hover {
 	font-size: 14px;
 	font-family: 'Sarabun', sans-serif;
 	-webkit-box-align: end;
-	-ms-flex-align: end;
+	-flex-align: end;
 	align-items: flex-end;
 }
 
 #section-testimoni-event .quote {
 	margin-left: 2rem;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
+	-flex-direction: column;
 	flex-direction: column;
 	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
+	-flex-pack: justify;
 	justify-content: space-between;
 }
 
@@ -11868,9 +11890,9 @@ a.link-alert:hover {
 }
 
 #section-produk-v2 .item-produk {
-	display: -ms-grid;
+	display: -grid;
 	display: grid;
-	-ms-grid-columns: (minmax(275px, 1fr)) [auto-fill];
+	-grid-columns: (minmax(275px, 1fr)) [auto-fill];
 	grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
 	grid-row: auto;
 	-webkit-column-gap: 2rem;
@@ -12066,10 +12088,10 @@ a.link-alert:hover {
 
 #section-produk-v2 .button-selengkapnya {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-pack: center;
-	-ms-flex-pack: center;
+	-flex-pack: center;
 	justify-content: center;
 }
 
@@ -12077,7 +12099,7 @@ a.link-alert:hover {
 	cursor: pointer;
 	position: relative;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 	padding: 0.5rem 1.875rem;
 	overflow: hidden;
@@ -12198,15 +12220,15 @@ a.link-alert:hover {
 
 #section-peta .st-row-peta {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	-webkit-box-pack: center;
-	-ms-flex-pack: center;
+	-flex-pack: center;
 	justify-content: center;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 }
 
@@ -12291,7 +12313,7 @@ a.link-alert:hover {
 	margin: 0;
 	padding: 0;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 }
 
@@ -12503,10 +12525,10 @@ a.link-alert:hover {
 
 #section-peta .button-selengkapnya {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-pack: center;
-	-ms-flex-pack: center;
+	-flex-pack: center;
 	justify-content: center;
 	padding-top: 1.5rem;
 }
@@ -12515,10 +12537,10 @@ a.link-alert:hover {
 	cursor: pointer;
 	position: relative;
 	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
+	display: -inline-flexbox;
 	display: inline-flex;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 	max-width: 18.75rem;
 	padding: 0.8125rem 1.875rem;
@@ -12719,20 +12741,20 @@ a.link-alert:hover {
 
 #berita-home .button-selengkapnya {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-pack: center;
-	-ms-flex-pack: center;
+	-flex-pack: center;
 	justify-content: center;
 }
 
 #berita-home .btn {
 	position: relative;
 	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
+	display: -inline-flexbox;
 	display: inline-flex;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 	max-width: -webkit-max-content;
 	max-width: -moz-max-content;
@@ -13126,7 +13148,7 @@ a.link-alert:hover {
 
 #section-video-v2 .video-wrapper {
 	-webkit-box-pack: end;
-	-ms-flex-pack: end;
+	-flex-pack: end;
 	justify-content: end;
 	position: relative;
 }
@@ -13203,8 +13225,8 @@ a.link-alert:hover {
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
 	z-index: 10;
-	-ms-flex-item-align: center;
-	-ms-grid-row-align: center;
+	-flex-item-align: center;
+	-grid-row-align: center;
 	align-self: center;
 }
 
@@ -13428,10 +13450,10 @@ a.link-alert:hover {
 	cursor: pointer;
 	position: relative;
 	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
+	display: -inline-flexbox;
 	display: inline-flex;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 	max-width: 100%;
 	padding: 0.8125rem 1.875rem;
@@ -13698,10 +13720,10 @@ a.link-alert:hover {
 	margin-bottom: 30px;
 	border-bottom: 2px solid #3949ab;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
+	-flex-pack: justify;
 	justify-content: space-between;
 }
 
@@ -13840,9 +13862,9 @@ a.link-alert:hover {
 	font-size: 0.75rem;
 	text-transform: uppercase;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-bottom: 0;
 	padding: 0;
@@ -13852,12 +13874,12 @@ a.link-alert:hover {
 
 #section-kisah-sukses .item .card .card-body .post-meta > li {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 }
 
@@ -13926,10 +13948,10 @@ a.link-alert:hover {
 	background-size: auto;
 	height: 100vh;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-pack: center;
-	-ms-flex-pack: center;
+	-flex-pack: center;
 	justify-content: center;
 	max-width: 90rem;
 	margin: 0 auto;
@@ -13937,7 +13959,7 @@ a.link-alert:hover {
 
 #section-komunitas-v2 .konten .kosong {
 	-webkit-box-flex: 0;
-	-ms-flex: 0 0 calc(100% - 500px);
+	-flex: 0 0 calc(100% - 500px);
 	flex: 0 0 calc(100% - 500px);
 	max-width: calc(100% - 500px);
 }
@@ -13977,10 +13999,10 @@ a.link-alert:hover {
 	cursor: pointer;
 	position: relative;
 	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
+	display: -inline-flexbox;
 	display: inline-flex;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 	max-width: 100%;
 	padding: 0.8125rem 1.875rem;
@@ -14164,32 +14186,32 @@ a.link-alert:hover {
 }
 
 #section-logo-partnership .grid-logo {
-	display: -ms-grid;
+	display: -grid;
 	display: grid;
-	-ms-grid-rows: auto;
+	-grid-rows: auto;
 	grid-template-rows: auto;
-	-ms-grid-columns: (auto) [9];
+	-grid-columns: (auto) [9];
 	grid-template-columns: repeat(9, auto);
 	gap: 2rem;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 }
 
 @media (max-width: 991.98px) {
 	#section-logo-partnership .grid-logo {
-		-ms-grid-columns: (auto) [3];
+		-grid-columns: (auto) [3];
 		grid-template-columns: repeat(3, auto);
 	}
 }
 
 #section-logo-partnership .button-selengkapnya {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	padding-top: 1.5rem;
 	-webkit-box-pack: center;
-	-ms-flex-pack: center;
+	-flex-pack: center;
 	justify-content: center;
 }
 
@@ -14197,10 +14219,10 @@ a.link-alert:hover {
 	cursor: pointer;
 	position: relative;
 	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
+	display: -inline-flexbox;
 	display: inline-flex;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 	max-width: 18.75rem;
 	padding: 0.8125rem 1.875rem;
@@ -14482,10 +14504,10 @@ a.link-alert:hover {
 	margin-bottom: 30px;
 	border-bottom: 2px solid #3949ab;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
+	-flex-pack: justify;
 	justify-content: space-between;
 }
 
@@ -14542,9 +14564,9 @@ a.link-alert:hover {
 	font-size: 0.75rem;
 	text-transform: uppercase;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-top: 1rem;
 	margin-bottom: 0;
@@ -14555,12 +14577,12 @@ a.link-alert:hover {
 
 #section-event-berita .item .card .card-body .post-meta > li {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
+	-flex-wrap: wrap;
 	flex-wrap: wrap;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 }
 
@@ -14648,7 +14670,7 @@ a.link-alert:hover {
 
 #section-cta-v2 .text-konten .button-selengkapnya {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	padding-top: 1.5rem;
 }
@@ -14657,10 +14679,10 @@ a.link-alert:hover {
 	cursor: pointer;
 	position: relative;
 	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
+	display: -inline-flexbox;
 	display: inline-flex;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
+	-flex-align: center;
 	align-items: center;
 	max-width: 18.75rem;
 	padding: 0.8125rem 1.875rem;
@@ -14774,10 +14796,10 @@ a.link-alert:hover {
 
 #section-cta-v2 .gambar-konten {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -flexbox;
 	display: flex;
 	-webkit-box-pack: end;
-	-ms-flex-pack: end;
+	-flex-pack: end;
 	justify-content: flex-end;
 }
 
@@ -14878,7 +14900,7 @@ a.link-alert:hover {
 	}
 	#section-hero .cs-hero .hero-list {
 		-webkit-box-flex: 0;
-		-ms-flex: 0 0 380px;
+		-flex: 0 0 380px;
 		flex: 0 0 380px;
 		max-width: 380px;
 	}
@@ -15018,7 +15040,7 @@ a.link-alert:hover {
 	}
 	#section-hero .cs-hero-layout-fullwidth .cs-hero .hero-title {
 		-webkit-box-flex: 1;
-		-ms-flex: 1;
+		-flex: 1;
 		flex: 1;
 		max-width: 100%;
 	}
@@ -15155,9 +15177,9 @@ a.link-alert:hover {
 		font-size: 0.75rem;
 		text-transform: uppercase;
 		display: -webkit-box;
-		display: -ms-flexbox;
+		display: -flexbox;
 		display: flex;
-		-ms-flex-wrap: wrap;
+		-flex-wrap: wrap;
 		flex-wrap: wrap;
 		margin-bottom: 0;
 		padding: 0;
@@ -19601,3 +19623,278 @@ h8 {
 	padding-top: 0.5rem !important;
 }
 /*# sourceMappingURL=main.css.map */
+
+#pricing-new {
+	padding-top: 7rem;
+	padding-bottom: 3rem;
+}
+
+#pricing-new h6.item {
+	font-weight: bold;
+	font-size: 1rem;
+	line-height: 1;
+	text-align: center;
+	letter-spacing: 0.1em;
+	color: #3949ab;
+	text-transform: uppercase;
+}
+
+#pricing-new .text {
+	font-size: 0.875rem;
+	margin-bottom: 1rem;
+}
+
+#pricing-new .harga {
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+#pricing-new article {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 100;
+}
+
+#pricing-new button {
+	width: auto;
+	border: 1px solid #e2f4eb;
+	border-right: 0;
+	border-top: 0;
+	padding: 10px;
+	background: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	height: 60px;
+	color: #999;
+}
+
+#pricing-new a.btn-kontak {
+	background: #ffa000;
+	border-radius: 5px;
+	width: 100%;
+	font-weight: bold;
+	font-size: 0.875rem;
+	text-align: center;
+	color: #fff;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	margin-top: 0.75rem;
+}
+
+#pricing-new a.btn-kontak:hover {
+	background: #ef6c00;
+	-webkit-box-shadow: 4px 4px 10px rgba(244, 208, 63, 0.5);
+	box-shadow: 4px 4px 10px rgba(244, 208, 63, 0.5);
+	color: #fff;
+}
+
+#pricing-new table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%;
+}
+
+#pricing-new th {
+	background: #f9fffc;
+	border: 1px solid #e2f4eb;
+	display: none;
+	padding: 2rem 1rem;
+}
+
+#pricing-new td,
+#pricing-new th {
+	height: 53px;
+}
+
+#pricing-new td {
+	border: 1px solid #e2f4eb;
+	empty-cells: show;
+	vertical-align: middle;
+	background: #f9fffc;
+}
+
+#pricing-new td i.uil-check-circle {
+	color: #3949ab;
+	font-size: 1.5rem;
+}
+
+#pricing-new td i.uil-times-circle {
+	color: rgba(79, 79, 79, 0.2);
+	font-size: 1.5rem;
+}
+
+#pricing-new td,
+#pricing-new th {
+	text-align: center;
+}
+
+#pricing-new td.default i.uil-check-circle {
+	color: #ffa000;
+	font-weight: bold;
+}
+
+#pricing-new td.default i.uil-times-circle {
+	color: rgba(255, 160, 0, 0.25);
+	font-weight: bold;
+}
+
+#pricing-new .sep {
+	background: rgba(170, 187, 231, 0.25);
+	font-size: 1.25rem;
+	font-weight: bold;
+	text-align: left;
+}
+
+#pricing-new .fitur {
+	background: #3949ab;
+	color: #fff;
+	font-size: 1rem;
+	text-align: left !important;
+}
+
+#pricing-new .txt-l {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+#pricing-new .txt-top {
+	position: relative;
+	top: -9px;
+	left: -2px;
+}
+
+#pricing-new .tick {
+	font-size: 18px;
+	color: #2ca01c;
+}
+
+#pricing-new .hide {
+	border: 0;
+	background: none;
+}
+
+#pricing-new .col-11 {
+	padding: 0;
+	margin: 0;
+}
+
+#pricing-new .price-mobile {
+	position: relative;
+}
+
+#pricing-new .price-mobile .card {
+	border: none;
+	background: linear-gradient(212.16deg, #aabbe7 13.32%, #3949ab 90.99%);
+}
+
+#pricing-new .price-mobile .card a.btn-kontak {
+	background: #ffa000;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 1rem;
+	text-align: center;
+	color: #fff;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	margin-top: 0.75rem;
+}
+
+#pricing-new .price-mobile .card .item-mobile {
+	font-weight: bold;
+	font-size: 1.25rem;
+	line-height: 1;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 1rem;
+	text-align: center;
+}
+
+#pricing-new .price-mobile .card .box-harga {
+	background-color: white;
+	text-align: center;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	min-height: 97px;
+}
+
+#pricing-new .price-mobile .card .box-harga p {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+#pricing-new .price-mobile .card .box-harga .harga-mobile {
+	font-weight: bold;
+	font-size: 1.75rem;
+	line-height: 1;
+}
+
+#pricing-new .price-mobile .card .box-harga .bulan {
+	font-size: 1rem;
+	line-height: 1;
+	letter-spacing: 0.1em;
+	color: #3949ab;
+	font-weight: bold;
+}
+
+#pricing-new .price-mobile .card .box-harga .diskon {
+	font-size: 0.875rem;
+	padding-top: 1rem;
+}
+
+#pricing-new .price-mobile .card .card-konten {
+	color: #fff;
+	padding: 0 1rem 1rem 1rem;
+}
+
+#pricing-new .price-mobile .card .card-konten ul li {
+	list-style: none;
+	font-weight: bold;
+	font-size: 1rem;
+	text-align: left;
+	line-height: 2;
+	font-family: 'Hind', sans-serif;
+}
+
+#pricing-new .price-mobile .card .card-konten li.none {
+	color: rgba(255, 255, 255, 0.25);
+}
+
+#pricing-new .price-mobile .card .card-konten li.akreditasi {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+	border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+#pricing-new .price-mobile .owl-theme .custom-nav {
+	position: absolute;
+	top: 20%;
+	left: 0;
+	right: 0;
+}
+
+#pricing-new .price-mobile .owl-theme .custom-nav .owl-prev,
+#pricing-new .price-mobile .owl-theme .custom-nav .owl-next {
+	position: absolute;
+	height: 100px;
+	color: inherit;
+	background: none;
+	border: none;
+	z-index: 100;
+}
+
+#pricing-new .price-mobile .owl-theme .custom-nav .owl-prev i,
+#pricing-new .price-mobile .owl-theme .custom-nav .owl-next i {
+	font-size: 4rem;
+	color: #555;
+}
+
+#pricing-new .price-mobile .owl-theme .custom-nav .owl-prev {
+	left: -25px;
+	top: 50px;
+}
+
+#pricing-new .price-mobile .owl-theme .custom-nav .owl-next {
+	right: -25px;
+	top: 50px;
+}
