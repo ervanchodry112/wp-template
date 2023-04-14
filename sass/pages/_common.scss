@@ -1,0 +1,25 @@
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    overflow-x: hidden;
+  }
+}
+body {
+  position: relative;
+  min-height: 100vh;
+  font-family: $font-konten;
+  scroll-behavior: smooth;
+}
+
+// .modal-backdrop {
+//   backdrop-filter: blur(8px);
+//   transition: backdrop-filter 0s;
+// }
+
+@media (max-width: 767.98px) {
+  html {
+    font-size: 15px;
+  }
+}

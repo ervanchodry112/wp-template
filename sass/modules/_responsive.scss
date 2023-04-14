@@ -1,0 +1,2846 @@
+@media only screen and (min-width: 991px) and (max-width: 1199.98px) {
+  #hero-image-karir {
+    height: 60vh;
+
+    .title {
+      h2 {
+        zoom: 0.8;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .tiket-promo h3 {
+    font-size: 18px;
+    padding: 1.1rem 0 0 2rem;
+  }
+
+  .kode-kupon {
+    margin-top: 1.2rem;
+  }
+
+  #hero-image-magang,
+  #magang-beneran,
+  #menang-banyak,
+  #KataTemanMagang,
+  #kontak-kami-magang {
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  #hero-image-magang {
+    .title {
+      padding-top: 0;
+
+      h2 {
+        zoom: 0.6;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+    }
+
+    .arrow {
+      position: relative;
+      top: 50%;
+      transform: translateY(-100%);
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  #section-header-berita {
+    height: auto;
+    .sidebar-item {
+      position: relative;
+    }
+    .header-berita-mobile {
+      margin-top: 1rem;
+    }
+
+    .video-utama .btn-playvideo .video-btn {
+      right: 120px;
+      top: 80px;
+    }
+
+    .card-video .video-list .btn-playvideo .video-btn {
+      right: 30px;
+      top: 20px;
+      .btn-play {
+        width: 35px;
+      }
+    }
+  }
+
+  .zoom-me {
+    .img-header {
+      .gbr-header {
+        height: 100vh;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .conten-tambahan {
+    #section-artikel-menarik {
+      .list-artikelterkait {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 1rem;
+      }
+    }
+  }
+
+  .hiden-xs {
+    display: none;
+  }
+
+  .visible-xs {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    padding: 1rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='17' viewBox='0 0 20 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='1.5' y1='1.5' x2='18.5' y2='1.5' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3Cline x1='1.5' y1='8.5' x2='18.5' y2='8.5' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3Cline x1='1.5' y1='15.5' x2='18.5' y2='15.5' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+  }
+
+  .navbar-toggler {
+    background: #3754a4;
+  }
+
+  .hide-xs {
+    display: none;
+  }
+
+  .head-sevima {
+    display: none;
+  }
+
+  .navbar-hide {
+    display: block;
+  }
+
+  .navbar-collapse-sevima-2 {
+    z-index: 1000;
+    background-color: #fff;
+    position: fixed;
+    padding-top: 3rem;
+    max-height: auto;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-transition-duration: 0.1s;
+
+    .navbar-480 {
+      display: block;
+    }
+
+    .navigation-res {
+      display: block;
+      // border-bottom: 1px solid #D7DDF0;
+      padding-bottom: 1rem;
+      margin-bottom: 0.5rem;
+
+      ul {
+        padding-left: 0;
+        list-style: none;
+
+        .promo-mobile {
+          background: #3754a4;
+          border-radius: 4px;
+          padding-left: 1rem;
+
+          a {
+            color: #fff;
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+
+        li {
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          border-bottom: 1px solid #d7ddf0;
+
+          a {
+            color: rgba(12, 19, 37, 0.5);
+            font-size: 1.1rem;
+            text-decoration: none;
+            display: block;
+
+            i {
+              float: right;
+            }
+
+            &:hover {
+              color: rgba(12, 19, 37, 0.8);
+            }
+          }
+        }
+      }
+
+      h4 {
+        font-size: 1.2rem;
+        font-family: $font-title;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+      }
+
+      a {
+        color: rgba(0, 0, 0, 0.5);
+        text-decoration: none;
+      }
+
+      .card {
+        font-family: "Exo", sans-serif;
+        height: auto;
+        padding: 15px 15px 0px 15px;
+        margin-bottom: 20px;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        -webkit-transition: border-color 300ms;
+        transition: border-color 300ms;
+
+        p {
+          font-size: 0.9rem;
+          line-height: 1.4;
+        }
+
+        &:hover {
+          border: 1px solid #3754a4;
+          text-decoration: none;
+        }
+
+        img {
+          height: auto;
+          width: 100px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .navbar-toggler {
+      float: right;
+      margin-top: 4%;
+    }
+  }
+
+  .navbar-collapse-sevima {
+    z-index: 999;
+    background-color: #fff;
+    position: fixed;
+    padding-top: 3rem;
+    max-height: auto;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-transition-duration: 0.1s;
+
+    .navbar-480 {
+      display: block;
+    }
+
+    .navigation-res {
+      display: block;
+      border-bottom: 1px solid #d7ddf0;
+      padding-bottom: 1rem;
+      margin-bottom: 0.5rem;
+      .search-box {
+        width: auto;
+        position: relative;
+        margin-top: 1rem;
+      }
+
+      .search-box input[type="text"] {
+        width: 100%;
+        padding: 0.6rem 1rem;
+        padding-right: 60px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        border: 1px solid #9c9fa5;
+      }
+
+      .fa-search {
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-50%);
+        font-size: 1.25rem;
+        color: #9c9fa5;
+      }
+
+      ul {
+        padding-left: 0;
+        list-style: none;
+
+        .promo-mobile {
+          background: #3754a4;
+          border-radius: 4px;
+          padding-left: 1rem;
+
+          a {
+            color: #fff;
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+
+        li {
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          border-bottom: 1px solid #d7ddf0;
+
+          a {
+            color: rgba(12, 19, 37, 0.5);
+            font-size: 1.1rem;
+            text-decoration: none;
+            display: block;
+
+            i {
+              float: right;
+            }
+
+            &:hover {
+              color: rgba(12, 19, 37, 0.8);
+            }
+          }
+        }
+      }
+
+      .btn-kontak {
+        text-align: center;
+        font-size: 1rem;
+        width: 100%;
+        border-radius: 4px;
+        font-family: $font-title;
+        background: #fff;
+      }
+
+      .btn-wa {
+        border: 1px solid #0dc152;
+        .uil-whatsapp {
+          color: #0dc152;
+        }
+        h4 {
+          font-size: 1rem;
+          font-weight: 600;
+          color: $color-title;
+          margin: 0;
+        }
+      }
+
+      .btn-email {
+        border: 1px solid $color-merah;
+        .uil-envelope {
+          color: $color-merah;
+        }
+        h4 {
+          font-size: 1rem;
+          font-weight: 600;
+          color: $color-title;
+        }
+      }
+
+      .link-sosmed {
+        text-align: center;
+        padding-top: 14px;
+        display: inline-block;
+
+        a {
+          color: #9c9fa5;
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .navbar-toggler {
+      float: right;
+      margin-top: 4%;
+    }
+  }
+
+  .navbar-collapse-sevima-3 {
+    z-index: 999;
+    background-color: #fff;
+    position: fixed;
+    padding-top: 3rem;
+    max-height: auto;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-transition-duration: 0.1s;
+
+    .navbar-480 {
+      display: block;
+    }
+
+    .navigation-res {
+      display: block;
+      // border-bottom: 1px solid #D7DDF0;
+      padding-bottom: 1rem;
+      margin-bottom: 0.5rem;
+
+      ul {
+        padding-left: 0;
+        list-style: none;
+
+        .promo-mobile {
+          background: #3754a4;
+          border-radius: 4px;
+          padding-left: 1rem;
+
+          a {
+            color: #fff;
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+
+        li {
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          border-bottom: 1px solid #d7ddf0;
+
+          a {
+            color: rgba(12, 19, 37, 0.5);
+            font-size: 1.1rem;
+            text-decoration: none;
+            display: block;
+
+            i {
+              float: right;
+            }
+
+            &:hover {
+              color: rgba(12, 19, 37, 0.8);
+            }
+          }
+        }
+      }
+    }
+
+    .navbar-toggler {
+      float: right;
+      margin-top: 4%;
+    }
+  }
+
+  .navbar-collapse-sevima-5,
+  .navbar-collapse-sevima-1 {
+    z-index: 999;
+    background-color: #fff;
+    position: fixed;
+    padding-top: 3rem;
+    max-height: auto;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-transition-duration: 0.1s;
+
+    .navbar-480 {
+      display: block;
+    }
+
+    .navigation-res {
+      display: block;
+      // border-bottom: 1px solid #D7DDF0;
+      padding-bottom: 1rem;
+      margin-bottom: 0.5rem;
+
+      ul {
+        padding-left: 0;
+        list-style: none;
+
+        .promo-mobile {
+          background: #3754a4;
+          border-radius: 4px;
+          padding-left: 1rem;
+
+          a {
+            color: #fff;
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+
+        li {
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          border-bottom: 1px solid #d7ddf0;
+
+          a {
+            color: rgba(12, 19, 37, 0.5);
+            font-size: 1.1rem;
+            text-decoration: none;
+            display: block;
+
+            i {
+              float: right;
+            }
+
+            &:hover {
+              color: rgba(12, 19, 37, 0.8);
+            }
+          }
+        }
+      }
+    }
+
+    .navbar-toggler {
+      float: right;
+      margin-top: 4%;
+    }
+  }
+
+  #hero-image-magang {
+    background-image: none;
+    text-align: center;
+    height: 100%;
+
+    .title {
+      padding-top: 4rem;
+      color: $color-title;
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      p {
+        color: $color-title;
+        margin: auto;
+      }
+    }
+
+    .video_wrapper {
+      width: 100%;
+      position: relative;
+    }
+
+    .videoIframe {
+      zoom: 0.5;
+    }
+
+    .videoPoster {
+      zoom: 0.5;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin: -40px 0 0 -40px;
+        background-color: $color-merah;
+        border-radius: 100%;
+        -webkit-transition: border-color 300ms;
+        -moz-transition: border-color 300ms;
+        transition: border-color 300ms;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 42px;
+        height: 48px;
+        margin: -15px 0 0 -10px;
+        border-left: 40px solid #fff;
+        border-top: 23px solid transparent;
+        border-bottom: 23px solid transparent;
+        -webkit-transition: border-color 300ms;
+        -moz-transition: border-color 300ms;
+        transition: border-color 300ms;
+      }
+    }
+  }
+
+  #magang-beneran {
+    .grid-gambar {
+      grid-template-columns: repeat(2, 1fr);
+
+      .horizontal {
+        grid-column: span 2;
+      }
+
+      .img-full {
+        object-fit: cover;
+        min-height: 200px;
+      }
+    }
+  }
+
+  #menang-banyak {
+    .title {
+      margin-top: 1rem;
+    }
+  }
+
+  #KataTemanMagang {
+    .video_wrapper {
+      width: 100%;
+      position: relative;
+      margin: 2rem 0;
+      z-index: 3000;
+    }
+
+    .videoIframe {
+      zoom: 0.85;
+    }
+
+    .videoPoster {
+      zoom: 0.85;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin: -40px 0 0 -40px;
+        background-color: $color-merah;
+        border-radius: 100%;
+        -webkit-transition: border-color 300ms;
+        -moz-transition: border-color 300ms;
+        transition: border-color 300ms;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 51%;
+        width: 42px;
+        height: 48px;
+        margin: -15px 0 0 -10px;
+        border-left: 40px solid #fff;
+        border-top: 23px solid transparent;
+        border-bottom: 23px solid transparent;
+        -webkit-transition: border-color 300ms;
+        -moz-transition: border-color 300ms;
+        transition: border-color 300ms;
+      }
+
+      &:hover:before,
+      &:focus:before {
+        border-color: #fff;
+      }
+
+      &:hover:after,
+      &:focus:after {
+        border-left-color: #fff;
+      }
+    }
+
+    .videoWrapperActive .videoPoster {
+      opacity: 0;
+      height: 0;
+      -webkit-transition-delay: 0s, 800ms;
+      -moz-transition-delay: 0s, 800ms;
+      transition-delay: 0s, 800ms;
+    }
+
+    .owl-carousel {
+      padding: 0 !important;
+    }
+  }
+
+  #hero-image-sevima {
+    ul#slider-header {
+      height: max-content !important;
+    }
+
+    .card-blue,
+    .card-red {
+      width: auto;
+    }
+
+    .kolom1 {
+      .card {
+        margin-bottom: 2rem;
+      }
+
+      img {
+        object-fit: cover;
+        height: 250px !important;
+      }
+    }
+  }
+
+  #hero-image-karir {
+    background-image: none;
+    text-align: center;
+    height: 100%;
+    margin-bottom: 0rem;
+
+    .title {
+      padding-top: 4rem;
+      color: $color-title;
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      p {
+        color: $color-title;
+        margin: auto;
+      }
+    }
+
+    .video_wrapper {
+      width: 100%;
+      position: relative;
+    }
+
+    .videoIframe {
+      zoom: 0.5;
+    }
+
+    .videoPoster {
+      height: 100vh;
+      zoom: 0.5;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin: -40px 0 0 -40px;
+        border-radius: 100%;
+        -webkit-transition: border-color 300ms;
+        -moz-transition: border-color 300ms;
+        transition: border-color 300ms;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 42px;
+        height: 48px;
+        margin: -15px 0 0 -10px;
+        border-left: 40px solid #fff;
+        border-top: 23px solid transparent;
+        border-bottom: 23px solid transparent;
+        -webkit-transition: border-color 300ms;
+        -moz-transition: border-color 300ms;
+        transition: border-color 300ms;
+      }
+    }
+  }
+
+  .tiket-promo {
+    display: none;
+  }
+
+  .tiket-promo-res {
+    display: block;
+    box-shadow: 0px 4px 30px rgba(137, 145, 166, 0.25);
+    background: #fff;
+    padding: 20px;
+  }
+
+  #foto-karyawan {
+    .cf {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      grid-template-rows: auto;
+      grid-gap: 1rem;
+
+      img {
+        height: 100px;
+      }
+    }
+  }
+
+  #section-afiliasi {
+    .title {
+      width: 100%;
+      h2 {
+        font-size: 1.75rem;
+      }
+    }
+
+    .section-header-afiliasi {
+      background-image: none;
+      margin-bottom: 2rem;
+      .title-header {
+        width: 100%;
+        h2 {
+          font-size: 2.5rem;
+        }
+      }
+      .gbr-header {
+        display: none;
+      }
+    }
+
+    .section-problem-afiliasi {
+      background-image: none;
+      padding: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .section-step-afiliasi {
+      background-image: none;
+      padding: 1rem;
+    }
+
+    .section-pelajari-afiliasi {
+      .card {
+        height: auto;
+        margin-bottom: 1rem;
+      }
+      .button-download {
+        display: block;
+      }
+      .btn-gofeeder {
+        margin-left: 0;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  #section-header-testimoni {
+    .gbr-header {
+      display: none;
+    }
+  }
+
+  #section-tab-testimoni {
+    .grid-card {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  #section-kisah-sukses-testimoni {
+    .sks-container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  #section-gabung-event {
+    .title-kolom {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 0rem;
+      margin-bottom: 2rem;
+      .title h2 {
+        font-size: 1.75rem;
+      }
+    }
+    .ornamen1,
+    .ornamen2 {
+      display: none;
+    }
+    .card {
+      padding: 1rem;
+      .point {
+        font-size: 36px !important;
+      }
+    }
+    .item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 1rem;
+
+      .card:nth-child(even) {
+        transform: none;
+      }
+    }
+  }
+
+  #section-testimoni-event {
+    background: none;
+    background-color: rgba(245, 244, 255, 0.5);
+    margin-top: 1rem;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    height: auto;
+    .ornamen1,
+    .ornamen2 {
+      display: none;
+    }
+    .title h2 {
+      font-size: 1.5rem;
+      line-height: 34px;
+    }
+    .kotak-testi {
+      margin-top: 2rem;
+    }
+
+    .img-profil {
+      margin: 0 auto;
+    }
+
+    #quote-wrapper {
+      padding: 1rem;
+      flex-direction: column;
+      min-height: auto;
+    }
+
+    blockquote {
+      font-size: 1rem;
+    }
+    .owl-theme {
+      .custom-nav {
+        bottom: 50%;
+
+        .owl-prev {
+          left: 0;
+          height: 40px;
+          width: 40px;
+          background-size: contain;
+        }
+        .owl-next {
+          right: 0;
+          height: 40px;
+          width: 40px;
+          background-size: contain;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) and (min-width: 300px) {
+  .img-sales-partner {
+    width: 200px !important;
+    height: 200px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #core-value #slider h4 {
+    font-size: 18px;
+  }
+
+  .img-sales-partner {
+    width: 220px !important;
+    height: 220px !important;
+  }
+
+  #contact-wa {
+    span {
+      font-size: 18px;
+    }
+
+    h3 {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-top: 8px;
+    }
+  }
+
+  .next-back {
+    font-size: 14px;
+    font-family: poppins;
+  }
+
+  .title-detail-berita h3 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .content-detail-berita {
+    font-family: hind;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 18px !important;
+  }
+
+  #kisah-sukses .heading,
+  #studi-kasus .heading {
+    display: block !important;
+  }
+
+  #owl-testimoni img {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .card-iklan {
+    margin-left: 0;
+  }
+
+  .testimoni-scroll img {
+    width: 50px;
+    height: auto !important;
+    margin-top: 50px;
+  }
+
+  .berita-home h3,
+  .tentang-kami h3 {
+    font-size: 2.3em;
+  }
+
+  .produk-sevima h3,
+  .kata-mereka h3,
+  .kontak-kami h3 {
+    font-size: 2.3em;
+    line-height: 1.5;
+  }
+
+  .card-testimoni {
+    h3 {
+      font-size: 1.5em;
+      line-height: 1.3;
+      margin-bottom: 5px;
+    }
+
+    margin-top: 10px;
+
+    span {
+      font-size: 1.3em;
+    }
+  }
+
+  .kata-mereka p,
+  .kontak-kami p,
+  .tentang-kami p,
+  .produk-sevima p {
+    font-size: 1.3em;
+  }
+
+  .info-produk {
+    h4 a {
+      font-size: 1.1em;
+      padding: 0 10px;
+    }
+
+    p {
+      font-size: 1em;
+      padding: 0 10px;
+    }
+  }
+
+  .border-red {
+    border-bottom: 5px solid #f14a4b;
+    width: 50px;
+  }
+
+  .maps iframe {
+    height: 400px;
+  }
+
+  #tentang-kami {
+    margin-top: 0;
+  }
+
+  .title-detail-berita {
+    padding: 8px 24px;
+  }
+
+  .content-detail-berita {
+    padding: 15px 24px;
+  }
+
+  .iklan-sevima img {
+    padding: 10px 24px 30px;
+  }
+
+  .baca-juga {
+    padding: 10px 24px;
+  }
+
+  .baca-content {
+    img {
+      margin-bottom: 20px;
+    }
+
+    a {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 12px;
+      margin-top: 2px;
+    }
+  }
+
+  .berita-terkait a > h4 {
+    font-size: 16px !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+  }
+
+  .title-detail-berita h3 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .btn-selengkapnya {
+    font-size: 14px;
+    padding: 10px 25px 10px 25px;
+  }
+
+  .small-text {
+    font-size: 25px;
+  }
+
+  .card-iklan {
+    margin-left: 0;
+  }
+
+  .nav-text {
+    font-size: 14px;
+  }
+
+  .hidden-1080 {
+    display: block;
+  }
+
+  .testimoni-scroll img {
+    width: 50px;
+    height: auto !important;
+    margin-top: 50px;
+  }
+
+  .berita-kanan {
+    margin-left: 0px !important;
+  }
+
+  .card-pencarian,
+  .card-kategori,
+  .card-berita-kanan {
+    margin-left: 0px !important;
+    width: 97% !important;
+  }
+
+  .list-iklan img {
+    width: 100% !important;
+  }
+
+  .content-detail-berita {
+    font-family: hind;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 15px 24px;
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .sumome-share-client-light.sumome-share-client-small.sumome-share-client-wrapper.sumome-share-client-wrapper-mobile-bottom-bar.sumome-share-client-wrapper-mobile-bottom-bar-scroll {
+    display: none !important;
+  }
+
+  /*--- berita ---*/
+  #section-berita-terbaru {
+    .grid-card-beritaterbaru {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-column-gap: 1rem;
+      grid-row-gap: 1rem;
+    }
+
+    .utama {
+      grid-area: 1 / 1 / 2 / 3;
+    }
+    .konten1 {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    .konten2 {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    .konten3 {
+      grid-area: 3 / 1 / 4 / 2;
+    }
+    .konten4 {
+      grid-area: 3 / 2 / 4 / 3;
+    }
+  }
+
+  #section-dunia-kampus {
+    .sidebar-item {
+      position: relative;
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+    .content-section {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .conten-tambahan {
+    #section-artikel-menarik {
+      .list-artikelterkait {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+      }
+    }
+  }
+  /*--- end berita ---*/
+
+  #section-header-testimoni {
+    background: url("../img/ornamen2-testimoninew.png");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: #2a2eb5;
+    .title-header {
+      width: 100%;
+      h2 {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  #section-video-testimoni {
+    background: none;
+    background-color: #f5f4ff;
+    padding: 3rem 0;
+
+    .video-testimoni {
+      display: inline;
+      .text {
+        margin-left: 0;
+        width: 100%;
+      }
+      .btn-playvideo .video-btn {
+        top: 50px;
+      }
+    }
+  }
+
+  #section-tab-testimoni {
+    .card {
+      border: 1px solid rgba(0, 0, 0, 0.125);
+    }
+  }
+
+  #section-kisah-sukses-testimoni {
+    background: none;
+    .title {
+      width: 100%;
+    }
+  }
+
+  #section-gambar-testimoni {
+    width: 100%;
+    .grid-gambar-testimoni {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+  }
+
+  #hero-promo .image-hero img {
+    display: none;
+  }
+
+  #hero-image-sevima {
+    h1 {
+      line-height: 1;
+      font-size: 1.75rem;
+    }
+
+    .greeting {
+      img {
+        width: 70% !important;
+      }
+    }
+  }
+
+  #foto-karyawan {
+    .marketing,
+    .c-level {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+  }
+
+  #album-foto {
+    .grid-album {
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+      grid-template-areas:
+        "foto1"
+        "testimoni1"
+        "testimoni2"
+        "testimoni3"
+        "testimoni4"
+        "testimoni5"
+        "foto2";
+    }
+
+    .foto1,
+    .foto2 {
+      img {
+        object-fit: cover;
+        height: 355px;
+      }
+    }
+  }
+
+  #core-value {
+    background-image: none;
+
+    #slider {
+      zoom: 0.9;
+
+      .arrow {
+        top: 40%;
+      }
+    }
+  }
+
+  #hero-promo .desc {
+    padding-top: 3rem;
+    text-align: center;
+  }
+
+  .info-produk-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .berita-item h4 {
+    font-size: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+
+  .left-name {
+    h4 {
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .berita-terkait a > h4 {
+    top: 40%;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+  }
+
+  .card-testimoni {
+    h3 {
+      font-size: 1.5em;
+      line-height: 1.3;
+      margin-bottom: 5px;
+    }
+
+    margin-top: 10px;
+
+    span {
+      font-size: 1.3em;
+    }
+  }
+
+  .column-flex {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .info-produk {
+    h4 a {
+      font-size: 1.1em;
+      padding: 0 10px;
+    }
+
+    p {
+      font-size: 1em;
+      padding: 0 10px;
+    }
+  }
+
+  .next-back {
+    font-size: 16px;
+    font-family: poppins;
+  }
+
+  .content-detail-berita {
+    font-family: hind;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 15px 40px;
+    font-size: 18px !important;
+  }
+
+  .kerjasevima {
+    text-align: center !important;
+
+    h4 {
+      margin-top: 15px;
+    }
+  }
+
+  .berita-terkait img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .baca-content a,
+  .title-detail-berita .date {
+    margin-top: 15px !important;
+  }
+
+  .small-text {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .main-text {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .caption-slider {
+    padding: 5% 0px 0px 40px;
+  }
+
+  .img-tentang-kami img {
+    width: 100%;
+    padding-left: 10px;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .berita-home {
+    position: relative !important;
+    margin-top: 0px;
+  }
+
+  .slide-berita {
+    border: 1px solid #c4c4c4;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+
+  #owl-testimoni {
+    margin-top: 20px;
+  }
+
+  .padding-0 {
+    padding-left: 15px;
+  }
+
+  .maps-overlay {
+    visibility: hidden !important;
+  }
+
+  .hide-780 {
+    display: none !important;
+  }
+
+  .img-hidden {
+    margin-top: 20px;
+    display: block !important;
+  }
+
+  .testimoni-scroll img {
+    width: 80px;
+    height: auto !important;
+    margin-top: 50px;
+  }
+
+  #section-header-listpartner {
+    margin-top: 1rem;
+    .title-header {
+      width: auto;
+      h2 {
+        line-height: 1.25;
+        font-size: 2.75rem;
+      }
+    }
+
+    .img-partner {
+      display: none;
+    }
+  }
+
+  #section-list-partner {
+    .card-listberita {
+      grid-template-areas:
+        "img"
+        "content";
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      margin-top: 1rem;
+      .img-berita {
+        width: auto;
+      }
+      .konten-berita .card-body {
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1190px) {
+  .img-sales-partner {
+    width: 380px;
+    height: 380px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #hero-image-sevima {
+    h1 {
+      line-height: 1;
+      font-size: 2rem;
+    }
+
+    .card-blue,
+    .card-red {
+      margin: auto;
+      width: 500px !important;
+    }
+
+    .kolom1 {
+      padding-right: 5rem;
+      padding-left: 5rem;
+    }
+
+    .medium-kiri {
+      padding-left: 5rem;
+    }
+
+    .medium-kanan {
+      padding-right: 5rem;
+    }
+  }
+
+  #hero-image-karir {
+    background-image: none;
+    text-align: center;
+    height: 100%;
+
+    .video_wrapper {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .videoIframe {
+      zoom: 0.8;
+    }
+
+    .videoPoster {
+      zoom: 0.8;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin: -40px 0 0 -40px;
+        border-radius: 100%;
+        -webkit-transition: border-color 300ms;
+        -moz-transition: border-color 300ms;
+        transition: border-color 300ms;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 42px;
+        height: 48px;
+        margin: -15px 0 0 -10px;
+        border-left: 40px solid #fff;
+        border-top: 23px solid transparent;
+        border-bottom: 23px solid transparent;
+        -webkit-transition: border-color 300ms;
+        -moz-transition: border-color 300ms;
+        transition: border-color 300ms;
+      }
+    }
+  }
+
+  #foto-karyawan {
+    .c-level {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .nav {
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+    }
+  }
+
+  #album-foto {
+    .grid-album {
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+      grid-template-areas:
+        "foto1 foto1"
+        "testimoni1 testimoni2"
+        "testimoni5 testimoni4"
+        "testimoni3 foto2";
+    }
+  }
+
+  #section-header-testimoni {
+    background: url("../img/ornamen2-testimoninew.png"),
+      url("../img/ornamen4-testimoninew.png");
+    background-position: bottom left, top right;
+    background-repeat: no-repeat;
+    background-size: auto, contain;
+    background-color: #2a2eb5;
+
+    .title-header {
+      width: 400px;
+      margin-left: 4rem;
+      float: left;
+      color: #fff;
+    }
+  }
+
+  #section-kisah-sukses-testimoni {
+    .title {
+      width: 70%;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  #hero-image-magang {
+    .title {
+      h2 {
+        zoom: 0.7;
+      }
+
+      p {
+        width: 80%;
+      }
+    }
+
+    .arrow {
+      position: relative;
+      top: 35%;
+      transform: translateY(-100%);
+    }
+
+    .video_wrapper {
+      width: 100%;
+      position: relative;
+    }
+
+    .videoIframe {
+      zoom: 0.8;
+    }
+
+    .videoPoster {
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 43%;
+        left: 14%;
+        width: 100px;
+        height: 100px;
+        margin: -40px 0 0 -40px;
+        background-color: $color-merah;
+        border-radius: 100%;
+        -webkit-transition: border-color 300ms;
+        -moz-transition: border-color 300ms;
+        transition: border-color 300ms;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 43%;
+        left: 14%;
+        width: 42px;
+        height: 48px;
+        margin: -15px 0 0 -10px;
+        border-left: 40px solid #fff;
+        border-top: 23px solid transparent;
+        border-bottom: 23px solid transparent;
+        -webkit-transition: border-color 300ms;
+        -moz-transition: border-color 300ms;
+        transition: border-color 300ms;
+      }
+    }
+  }
+
+  #hero-image-karir {
+    zoom: 0.9;
+
+    .title {
+      padding-top: 5rem;
+    }
+
+    .videoIframe {
+      position: relative;
+      margin-top: 5rem;
+      width: 100%;
+      height: 400px;
+      border-radius: 5px;
+      background-color: none !important;
+      border-radius: 1rem;
+    }
+  }
+}
+
+@media (min-width: 1440.98px) {
+  #hero-image-magang,
+  #magang-beneran,
+  #menang-banyak,
+  #KataTemanMagang,
+  #kontak-kami-magang {
+    p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+  }
+
+  #hero-image-magang {
+    .title {
+      p {
+        width: 80%;
+      }
+    }
+
+    .arrow {
+      position: relative;
+      top: 40%;
+      transform: translateY(-100%);
+    }
+  }
+}
+
+/*--------- TES HOMEPAGE-----------*/
+@media (min-width: 1600px) {
+  #section-hero {
+    .cs-hero-layout-fullwidth .cs-hero-container {
+      max-width: 90rem !important;
+    }
+  }
+
+  #section-berita-v2 {
+    .sb-container-berita {
+      max-width: 90rem !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  #section-produk-v2 {
+    .sp-container-produk {
+      max-width: 90rem !important;
+    }
+  }
+
+  #section-cta-form {
+    .scf-wrapper-layout {
+      background: #f1f3fa;
+    }
+
+    .scf-container-form {
+      .scf-row {
+        max-width: 90rem !important;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  #section-form-page {
+    .fp-container {
+      margin: 0 auto !important;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #section-hero {
+    .cs-hero-layout-fullwidth .cs-hero-container {
+      max-width: 75rem;
+    }
+  }
+
+  #section-kisah-sukses-v2 {
+    .container {
+      max-width: 75rem;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #section-hero {
+    .cs-hero-right-column .hero-konten {
+      width: 100%;
+    }
+
+    .cs-hero .hero-list {
+      -webkit-box-flex: 0;
+      flex: 0 0 380px;
+      max-width: 380px;
+    }
+
+    .cs-hero-layout-fullwidth .cs-hero .hero-list {
+      margin-top: 0 !important;
+    }
+  }
+
+  #section-kisah-sukses {
+    .artikel-portofolio-mobile {
+      display: none;
+    }
+  }
+
+  section#partners {
+    min-height: 705px;
+    max-height: 705px;
+
+    img {
+      position: absolute;
+
+      &#disney {
+        top: -53px;
+        left: 200px;
+      }
+
+      &#bb {
+        top: 60px;
+        left: 28rem;
+      }
+
+      &#heetch {
+        top: 212px;
+        left: 85px;
+      }
+
+      &#marionnaud {
+        left: -90px;
+      }
+
+      &#shine {
+        left: 0rem;
+        bottom: 110px;
+      }
+
+      &#dougs {
+        left: 21rem;
+        bottom: 0;
+      }
+
+      &#cityscoot {
+        top: -20px;
+        right: 20rem;
+      }
+
+      &#gaumont {
+        top: 150px;
+        right: 75px;
+      }
+
+      &#coverd {
+        top: 280px;
+        right: 70px;
+      }
+
+      &#rc {
+        right: 15rem;
+      }
+
+      &#mimabio {
+        right: 30rem;
+        bottom: -3rem;
+      }
+
+      &#clubmed {
+        right: 1rem;
+        bottom: 30px;
+      }
+    }
+
+    #category {
+      color: rgba(18, 33, 62, 0.2);
+
+      #activities {
+        position: absolute;
+        top: -20px;
+        left: 0;
+      }
+
+      #health {
+        position: absolute;
+        top: 145px;
+        left: 120px;
+      }
+
+      #traveling {
+        position: absolute;
+        top: 275px;
+        left: -70px;
+      }
+
+      #sale {
+        position: absolute;
+        left: -30px;
+        bottom: 125px;
+      }
+
+      #needs {
+        position: absolute;
+        left: 180px;
+        bottom: 70px;
+      }
+
+      #supply {
+        position: absolute;
+        bottom: 120px;
+        right: 400px;
+      }
+
+      #hotel {
+        position: absolute;
+        right: 100px;
+        bottom: 200px;
+      }
+
+      #technology {
+        position: absolute;
+        top: 300px;
+        right: 15rem;
+      }
+
+      #shopping {
+        position: absolute;
+        top: 6rem;
+        right: 170px;
+      }
+
+      #decoration {
+        position: absolute;
+        top: 0;
+        right: 37rem;
+      }
+    }
+  }
+
+  #section-komunitas-v2 {
+    .konten-mobile {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  #section-hero {
+    .background-image {
+      border-bottom-right-radius: none;
+
+      img {
+        border-bottom-right-radius: none;
+      }
+
+      &::after {
+        border-bottom-right-radius: none;
+      }
+    }
+
+    .cs-hero-layout-fullwidth {
+      .cs-hero-container {
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+
+      .cs-hero {
+        padding-bottom: 5rem;
+
+        .hero-title {
+          flex: 1;
+          max-width: 100%;
+          .hero-desc {
+            margin-top: 1.5rem;
+            font-family: $font-konten;
+            font-size: 1rem !important;
+            line-height: 1.5;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+          }
+        }
+
+        .hero-list {
+          margin-top: 3rem;
+
+          .carousel-indicators {
+            margin: none;
+            bottom: -6.5rem;
+            top: auto;
+            right: 0;
+            left: 0;
+            height: 20px;
+            width: auto;
+            transform: none;
+          }
+        }
+      }
+    }
+  }
+
+  #section-tentang-v3 {
+    .gambar-konten {
+      margin-top: 3rem;
+
+      .img-pattern {
+        width: 300px;
+        height: 260px;
+        right: 0;
+      }
+    }
+
+    .text-konten {
+      .title {
+        h2 {
+          font-size: 1.75rem;
+        }
+      }
+    }
+  }
+
+  #section-produk-v2 {
+    .sp-container-produk {
+      padding: 0 1rem;
+    }
+
+    .title {
+      width: 100%;
+
+      h2 {
+        font-size: 1.5rem;
+        line-height: 34px;
+      }
+    }
+  }
+
+  #section-peta {
+    .sp-container-peta {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .item-peta {
+      h3 {
+        font-size: 1.5rem;
+        line-height: 34px;
+      }
+    }
+    .title {
+      width: 100%;
+
+      h2 {
+        font-size: 1.5rem;
+        line-height: 34px;
+      }
+    }
+  }
+
+  #section-video-v2 {
+    .testimoni-slider {
+      padding-top: 3rem;
+
+      .data-diri {
+        padding-bottom: 0;
+      }
+    }
+
+    .title {
+      margin-bottom: 0;
+
+      h2 {
+        font-size: 1.5rem;
+        line-height: 34px;
+      }
+    }
+  }
+
+  #section-kisah-sukses {
+    .artikel-portofolio {
+      display: none;
+    }
+
+    .artikel-portofolio-mobile {
+      padding: 1rem;
+
+      .item {
+        .card {
+          border: none;
+          border-radius: 10px;
+          min-height: 300px;
+        }
+
+        .card-img-top {
+          height: 150px;
+          object-fit: cover;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+
+        .card-body {
+          padding: 0.75rem;
+
+          span a {
+            font-size: 0.75rem;
+            font-family: $font-konten;
+            color: $color-merah;
+            font-weight: bold;
+          }
+
+          .cs-title {
+            font-size: 0.875rem;
+            line-height: 1.5;
+            font-family: $font-title;
+
+            a {
+              color: $color-title;
+              font-weight: 500;
+
+              &:hover {
+                text-decoration: none;
+                color: $color-biru;
+              }
+            }
+          }
+
+          .post-meta {
+            font-family: $font-konten;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 0;
+            padding: 0;
+            color: #7d89aa;
+            letter-spacing: 0.1em;
+
+            > li {
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+            }
+
+            > li:not(:last-child):after {
+              margin-right: 0.5rem;
+              content: "\b7";
+              margin-left: 0.5rem;
+            }
+
+            a {
+              text-decoration: none;
+              color: #7d89aa;
+              font-weight: bold;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #section-komunitas-v2 {
+    .konten {
+      display: none;
+    }
+
+    .title {
+      margin-bottom: 1rem;
+
+      h2 {
+        font-size: 1.75rem;
+      }
+    }
+
+    .konten-mobile {
+      text-align: center;
+
+      img {
+        height: 300px;
+        object-fit: cover;
+      }
+
+      .text-konten {
+        width: 100%;
+        padding-top: 2rem;
+
+        h4 {
+          width: 70%;
+          margin: 0 auto;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 1.25;
+          font-family: $font-konten;
+          color: $color-title;
+        }
+
+        p {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          font-family: $font-konten;
+          color: $color-paragraph;
+        }
+      }
+
+      .button-selengkapnya {
+        padding-top: 1.5rem;
+
+        .btn {
+          cursor: pointer;
+          position: relative;
+          display: -webkit-inline-box;
+          display: inline-flex;
+          -webkit-box-align: center;
+          align-items: center;
+          max-width: 100%;
+          padding: 0.8125rem 1.875rem;
+          overflow: hidden;
+          font-weight: 600;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          box-shadow: 6px 6px 0 0 rgba(239, 36, 39, 0.2);
+          -webkit-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out;
+          border-radius: 100vh;
+        }
+
+        .btn-primary {
+          color: #fff;
+          background-color: $color-merah;
+          border-color: $color-merah;
+          padding-right: 5.0625rem;
+          min-height: 3.25rem;
+
+          &:focus {
+            &:after {
+              background-position: 18px;
+            }
+
+            &:before {
+              right: 30px;
+              width: 10px;
+              opacity: 1;
+            }
+
+            color: #fff;
+            background-color: $color-merah;
+            border: 1px solid transparent;
+          }
+
+          &:hover {
+            &:after {
+              background-position: 18px;
+            }
+
+            &:before {
+              right: 30px;
+              width: 10px;
+              opacity: 1;
+            }
+
+            color: #fff;
+            background-color: $color-merah;
+            border-color: #e1e1e1;
+            box-shadow: none;
+          }
+
+          &:before {
+            position: absolute;
+            top: 50%;
+            right: 32px;
+            z-index: 1;
+            width: 0;
+            height: 2px;
+            background-color: #fff;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            opacity: 0;
+            -webkit-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out;
+            -webkit-transition: opacity 0.3s ease-in-out,
+              width right 0.3s ease-in-out ease-in 0.3s;
+            transition: opacity 0.3s ease-in-out,
+              width right 0.3s ease-in-out ease-in 0.3s;
+            content: "";
+          }
+
+          &:after {
+            position: absolute;
+            top: 50%;
+            right: 0.375rem;
+            width: 3.4375rem;
+            height: 2.5rem;
+            background-color: #c10205;
+            background-image: url("../img/ico_arrow-right.svg");
+            background-repeat: no-repeat;
+            background-position: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            -webkit-transition: background-position 0.3s ease-in-out;
+            transition: background-position 0.3s ease-in-out;
+            content: "";
+            border-radius: 100vh;
+          }
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .btn-primary {
+          &:focus {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+
+  #section-cta-v2 {
+    .text-konten {
+      margin-top: 3rem;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  #section-footer {
+    .footer-location {
+      position: relative;
+    }
+
+    .bottom-footer {
+      margin: 0 auto;
+      text-align: center;
+
+      .icon-medsos {
+        text-align: center !important;
+      }
+    }
+  }
+
+  #section-form-page {
+    .fp-container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      .fp-text {
+        padding-right: 0;
+
+        h2 {
+          font-size: 3rem;
+        }
+      }
+
+      .fp-form {
+        .contact-form .nav-tabs .radio-text {
+          text-align: start;
+        }
+      }
+    }
+
+    .fp-container.flex.wrapper {
+      text-align: center;
+    }
+
+    .scroll {
+      position: relative;
+      margin: 0 auto;
+      background-position: center;
+      margin-bottom: 2rem;
+    }
+
+    .gradient-bg.gradient-bg-contact-us {
+      height: 100%;
+    }
+  }
+
+  #kontak-kami-magang {
+    .title-magang {
+      padding: 15rem 1rem;
+    }
+  }
+
+  #kontak-kami-karir {
+    padding: 4rem 0 6rem;
+  }
+
+  #kontak-kami {
+    .maps-form {
+      padding-top: 3rem;
+      padding-bottom: 6rem;
+      padding-left: 1rem;
+    }
+  }
+
+  #berita {
+    .card-kategori {
+      margin-bottom: 7rem;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-video {
+    iframe {
+      height: 200px;
+    }
+  }
+  .background-video {
+    .title-list {
+      margin-top: 1rem;
+    }
+  }
+  #section-hero {
+    .cs-hero-layout-fullwidth {
+      .cs-hero {
+        .hero-title {
+          .hero-title-berita {
+            font-family: $font-title;
+            font-size: 2rem;
+            line-height: 1.25;
+          }
+
+          .hero-desc {
+            margin-top: 1.5rem;
+            font-family: $font-konten;
+            font-size: 1rem;
+            line-height: 1.5;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+          }
+        }
+
+        .hero-list {
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+
+  // #section-produk-v2 {
+  //   background-image: url('../img/aksen-merah.png'), url('../img/aksen-biru.png');
+  //   background-position: top right, bottom left;
+  //   background-size: auto, auto;
+  //   background-repeat: no-repeat, no-repeat;
+  // }
+
+  #section-peta {
+    border-radius: 0px;
+  }
+
+  #section-video-v2 {
+    .video-wrapper {
+      padding: 0 1rem;
+    }
+
+    .video-wrapper .video-trigger .text .btn-play {
+      width: 100%;
+      float: none;
+    }
+  }
+
+  #section-kisah-sukses-v2 {
+    padding-bottom: 2rem;
+
+    .pattern-kiri,
+    .pattern-kanan {
+      display: none;
+    }
+
+    .grid-kisah-sukses {
+      display: none;
+    }
+
+    .grid-mobile-kisahsukses {
+      .card {
+        border-radius: 10px;
+        margin-bottom: 1rem;
+
+        .card-body {
+          .card-title {
+            font-size: 1rem;
+            font-weight: bold;
+            font-family: $font-title;
+            color: $color-paragraph;
+          }
+
+          blockquote {
+            padding-left: 1rem;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.5;
+            font-family: $font-title;
+            color: $color-paragraph;
+
+            p {
+              padding: 1rem 1rem 0 1.5rem;
+            }
+
+            &:before,
+            &:after {
+              font-family: "FontAwesome";
+              content: "\201C";
+              position: absolute;
+              font-size: 2rem;
+              font-weight: 600;
+              opacity: 0.8;
+              font-style: normal;
+              color: $color-merah;
+            }
+
+            &:before {
+              left: 20px;
+            }
+
+            &:after {
+              content: "\201D";
+              right: 20px;
+              bottom: 1px;
+            }
+          }
+        }
+      }
+
+      .item {
+        .card {
+          border: none;
+          border-radius: 10px;
+          min-height: 300px;
+        }
+
+        .card-img-top {
+          height: 150px;
+          object-fit: cover;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+
+        .card-body {
+          padding: 0.75rem;
+
+          span a {
+            font-size: 0.75rem;
+            font-family: $font-konten;
+            color: $color-merah;
+            font-weight: bold;
+          }
+
+          .cs-title {
+            font-size: 0.875rem;
+            line-height: 1.5;
+            font-family: $font-title;
+
+            a {
+              color: $color-paragraph;
+              font-weight: 500;
+
+              &:hover {
+                text-decoration: none;
+                color: $color-biru;
+              }
+            }
+          }
+
+          .post-meta {
+            font-family: $font-konten;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 0;
+            padding: 0;
+            color: #7d89aa;
+            letter-spacing: 0.1em;
+
+            > li {
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+            }
+
+            > li:not(:last-child):after {
+              margin-right: 0.5rem;
+              content: "\b7";
+              margin-left: 0.5rem;
+            }
+
+            a {
+              text-decoration: none;
+              color: #7d89aa;
+              font-weight: bold;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #section-cta-v2 {
+    border-top-left-radius: 0px;
+
+    .text-konten {
+      margin-bottom: 3rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      text-align: center;
+
+      .button-selengkapnya {
+        justify-content: center;
+      }
+    }
+
+    .gambar-konten {
+      margin-bottom: 6rem;
+    }
+  }
+
+  #section-form {
+    .title-about {
+      h2 {
+        width: 100%;
+      }
+    }
+
+    .sf-konten {
+      padding: 2rem;
+
+      .nav-tabs {
+        margin-bottom: 2rem;
+
+        .radio {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+
+  #section-form-page {
+    #fp-contact {
+      .fp-container-contact {
+        grid-template-columns: 250px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #section-video {
+    .video-wrapper {
+      .video-trigger {
+        .text {
+          top: 40%;
+
+          .text-testimoni {
+            padding-left: 1rem;
+
+            p {
+              font-size: 1rem;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #section-kisah-sukses-v2 {
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+
+    .grid-kisah-sukses {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 1fr 415px 225px;
+      grid-column-gap: 1rem;
+      grid-row-gap: 1rem;
+    }
+
+    .grid7 {
+      grid-area: 1 / 1 / 2 / 13;
+    }
+
+    .grid1 {
+      grid-area: 2 / 1 / 3 / 5;
+    }
+
+    .grid2 {
+      grid-area: 3 / 1 / 4 / 5;
+    }
+
+    .grid3 {
+      grid-area: 2 / 5 / 3 / 9;
+    }
+
+    .grid4 {
+      grid-area: 3 / 5 / 4 / 9;
+    }
+
+    .grid6 {
+      grid-area: 2 / 9 / 3 / 13;
+    }
+
+    .grid5 {
+      grid-area: 3 / 9 / 4 / 13;
+    }
+
+    .grid1,
+    .grid3,
+    .grid6 {
+      .card {
+        min-height: 415px;
+      }
+    }
+
+    .grid2,
+    .grid4,
+    .grid5 {
+      .card {
+        height: 225px;
+      }
+
+      .card-img-overlay {
+        padding-top: 3rem !important;
+      }
+    }
+
+    .pattern-kanan {
+      width: 200px;
+      height: 400px;
+      position: absolute;
+      background: $color-merah;
+      border-radius: 0px;
+      right: -10px;
+      bottom: 130px;
+      z-index: 0;
+    }
+
+    .pattern-kiri {
+      border-radius: 0px;
+    }
+
+    .grid7 {
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      .card-body blockquote:after {
+        bottom: 1px;
+      }
+    }
+  }
+
+  #section-form {
+    .sf-konten {
+      padding: 3rem;
+    }
+
+    .title-about {
+      h2 {
+        width: 60%;
+      }
+    }
+  }
+}

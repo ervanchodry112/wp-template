@@ -1,0 +1,11 @@
+@keyframes borderPulse {
+  0% {
+    box-shadow: inset 0px 0px 0px 5px rgba(209, 25, 28, 0.2),
+      0px 0px 0px 0px rgba(230, 45, 49, 0.2);
+  }
+
+  100% {
+    box-shadow: inset 0px 0px 0px 3px rgba(209, 25, 28, 0.4),
+      0px 0px 0px 8px rgba(230, 45, 49, 0.2);
+  }
+}

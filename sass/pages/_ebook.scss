@@ -1,0 +1,586 @@
+// .alert.alert-ebook {
+//   position: fixed;
+//   top: 1rem;
+//   left: 1rem;
+//   right: 1rem;
+//   z-index: 999;
+// }
+
+.ebook-page {
+  .hero-ebook {
+    background: url("../img/ornamen2-testimoninew.png");
+    background-position: bottom left, top right;
+    background-repeat: no-repeat;
+    background-size: auto, contain;
+    background-color: #2a2eb5;
+    color: #fff;
+    .hero-ebook-text {
+      padding: 5rem 0 3rem;
+      h1 {
+        font-weight: bold;
+        font-size: 2.25rem;
+        font-family: $font-title;
+        @media (max-width: 575.98px) {
+          font-size: 1.85rem;
+          line-height: 2.5rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+      p {
+        margin-top: 1rem;
+        font-weight: normal;
+        font-size: 1rem;
+        font-family: $font-konten;
+        line-height: 1.5rem;
+      }
+    }
+    .hero-ebook-img {
+      width: 30%;
+      img {
+        height: 25rem;
+      }
+      @media (max-width: 996px) {
+        img {
+          height: 15rem;
+        }
+      }
+    }
+  }
+
+  #section-all-ebook {
+    margin-bottom: 5rem;
+    .title-section {
+      margin-bottom: 3rem;
+      text-align: center;
+      h2 {
+        font-size: 2rem;
+        line-height: 3rem;
+        font-weight: 600;
+        font-family: $font-konten;
+        margin-bottom: 0;
+      }
+    }
+
+    .grid-all-ebook {
+      margin: 0 -0.5rem;
+      .card {
+        padding: 1rem 0.5rem;
+        height: 100%;
+        border: none;
+      }
+
+      .card-img-top {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        box-shadow: -4px -4px 18px -3px rgba(0, 0, 0, 0.36);
+      }
+
+      .card-body {
+        padding: 1.5rem 1rem 0;
+        a {
+          text-decoration: none;
+        }
+
+        .title-ebook {
+          text-align: center;
+          font-size: 1.5rem;
+          line-height: 2.25rem;
+          font-weight: 500;
+          color: $color-title;
+          font-family: $font-konten;
+          margin: 0;
+          &:hover {
+            color: $color-biru;
+          }
+        }
+      }
+    }
+    @media (max-width: 575.98px) {
+      .title-section {
+        margin-bottom: 2rem;
+        h3 {
+          font-size: 1.675rem;
+          line-height: 2.5rem;
+        }
+      }
+      .grid-all-ebook {
+        .card-body {
+          padding: 1rem 0.625rem 0;
+          .title-ebook {
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+          }
+        }
+      }
+    }
+    .nav-page {
+      margin: auto 0;
+    }
+  }
+
+  // page single ebook
+
+  #header-single-ebook {
+    background: url("../img/ornamen2-testimoninew.png");
+    background-position: bottom left, top right;
+    background-repeat: no-repeat;
+    background-size: auto, contain;
+    background-color: #2a2eb5;
+    color: #fff;
+    padding: 5rem 0 3rem;
+    margin-bottom: 5rem;
+
+    .container {
+      .row {
+        margin: 0 -1.5rem;
+        .col {
+          padding: 0 1.5rem;
+          &.left {
+            .cover-image {
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+              border-radius: 1rem;
+            }
+          }
+          &.right {
+            .title-ebook {
+              font-weight: bold;
+              font-size: 2.25rem;
+              font-family: $font-title;
+              margin-bottom: 2rem;
+              line-height: 3rem;
+            }
+            .abstrak-ebook {
+              margin: 0;
+              font-weight: normal;
+              font-size: 1.125rem;
+              line-height: 1.6rem;
+              font-family: $font-konten;
+            }
+            .button-selengkapnya {
+              margin-top: 2.5rem;
+              .btn {
+                cursor: pointer;
+                position: relative;
+                display: -webkit-inline-box;
+                display: inline-flex;
+                -webkit-box-align: center;
+                align-items: center;
+                max-width: 18.75rem;
+                padding: 0.8125rem 1.875rem;
+                overflow: hidden;
+                font-weight: 600;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                box-shadow: 6px 6px 0 0 rgba(239, 36, 39, 0.2);
+                -webkit-transition: 0.3s ease-in-out;
+                transition: 0.3s ease-in-out;
+                border-radius: 100vh;
+              }
+              .btn-red {
+                color: #fff;
+                background-color: $color-merah;
+                border-color: $color-merah;
+                min-height: 3.25rem;
+
+                &:focus {
+                  &:after {
+                    background-position: 18px;
+                  }
+
+                  &:before {
+                    right: 30px;
+                    width: 10px;
+                    opacity: 1;
+                  }
+
+                  color: #fff;
+                  background-color: $color-merah;
+                  border: 1px solid transparent;
+                }
+
+                &:hover {
+                  &:after {
+                    background-position: 18px;
+                  }
+
+                  &:before {
+                    right: 30px;
+                    width: 10px;
+                    opacity: 1;
+                  }
+
+                  color: #fff;
+                  background-color: $color-merah;
+                  border-color: rgba(255, 255, 255, 0.5);
+                  box-shadow: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 575.98px) {
+      padding: 3rem 0 2rem;
+      margin-bottom: 3rem;
+      .container {
+        .row {
+          margin: 0 -1rem;
+          .col {
+            padding: 0 1rem;
+            &.right {
+              margin-top: 1rem;
+              .title-ebook {
+                font-size: 1.85rem;
+                line-height: 2.5rem;
+                margin-bottom: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #ebook-content {
+    .container {
+      .row {
+        .col-12 {
+          .content-section {
+            font-family: $font-konten;
+            p {
+              font-size: 1.125rem;
+              line-height: 1.6rem;
+              margin-bottom: 1.325rem;
+            }
+            .title-form {
+              margin: 5rem 0 3rem;
+              text-align: center;
+            }
+            select,
+            input,
+            .select2-selection {
+              border-radius: 4px !important;
+            }
+            .wpcf7 {
+              margin: 0 auto 7rem;
+              max-width: 480px;
+              font-family: $font-konten;
+              label {
+                font-size: 1rem;
+                font-weight: 400;
+              }
+              .btn-selengkapnya2 {
+                margin: 2rem 0 0;
+                width: 100%;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                padding: 1rem;
+              }
+            }
+            @media (max-width: 575.98px) {
+              .title-form {
+                margin: 3rem 0 2rem;
+              }
+              .wpcf7 {
+                margin-bottom: 4rem;
+              }
+              .btn-selengkapnya2 {
+                margin: 2rem 0 0;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #rekomendasi-ebook {
+    margin-bottom: 5rem;
+    .title-section {
+      margin-bottom: 3rem;
+      text-align: center;
+      h3 {
+        font-size: 2rem;
+        line-height: 3rem;
+        font-weight: 600;
+        font-family: $font-konten;
+        margin-bottom: 0;
+      }
+    }
+
+    .rekomendasi-ebook {
+      margin: 0 -0.5rem;
+      .card {
+        padding: 1rem 0.5rem;
+        height: 100%;
+        border: none;
+      }
+
+      .card-img-top {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        box-shadow: -4px -4px 18px -3px rgba(0, 0, 0, 0.36);
+      }
+
+      .card-body {
+        padding: 1.5rem 1rem 0;
+        a {
+          text-decoration: none;
+        }
+
+        .title-ebook {
+          text-align: center;
+          font-size: 1.5rem;
+          line-height: 2.25rem;
+          font-weight: 500;
+          color: $color-title;
+          font-family: $font-konten;
+          margin: 0;
+          &:hover {
+            color: $color-biru;
+          }
+        }
+      }
+    }
+
+    .link-list {
+      a {
+        text-decoration: none;
+        h4 {
+          text-align: right;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          font-family: $font-konten;
+          color: $color-biru;
+          margin: 0;
+          text-decoration: underline;
+          &:hover {
+            color: $color-title;
+          }
+        }
+      }
+    }
+    @media (max-width: 575.98px) {
+      .title-section {
+        margin-bottom: 2rem;
+        h3 {
+          font-size: 1.675rem;
+          line-height: 2.5rem;
+        }
+      }
+      .rekomendasi-ebook {
+        .card-body {
+          padding: 1rem 0.625rem 0;
+          .title-ebook {
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  #cta-siakadcloud {
+    .container {
+      background-color: #0f4b89;
+      border-radius: 50px;
+      margin: 2rem auto 10rem;
+      @media (max-width: 991.98px) {
+        margin-top: 4rem;
+      }
+      @media (max-width: 575.98px) {
+        margin-top: 10rem;
+      }
+      width: 75vw;
+      .row {
+        border-radius: 50px;
+        position: relative;
+        overflow: hidden;
+        & > img {
+          position: absolute;
+          &#topright {
+            top: 20px;
+            right: 30px;
+          }
+          &#botright {
+            bottom: 0;
+            right: 0;
+          }
+        }
+        .left {
+          background-image: url("../img/ebook/siakad-ad/bg-info-header-2.svg");
+          background-repeat: no-repeat;
+          background-position: top left;
+          background-size: contain;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .mockup {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: auto;
+              height: auto;
+              max-width: 85%;
+              max-height: 85%;
+              object-fit: contain;
+              @media (max-width: 991.98px) {
+                width: 320px;
+                max-width: 90%;
+                margin: 1rem;
+                margin-top: 2rem;
+              }
+            }
+          }
+        }
+        .right {
+          padding: 4rem;
+          padding-left: 2rem;
+          @media (max-width: 991.98px) {
+            padding: 2rem 3rem !important;
+          }
+
+          h2 {
+            font-size: 2.4rem;
+            line-height: 52px;
+            color: #fff;
+            margin-bottom: 16px;
+          }
+          p {
+            font-size: 1rem;
+            line-height: 28px;
+            color: #fff;
+            margin-bottom: 40px;
+          }
+          .cta-button {
+            .btn {
+              cursor: pointer;
+              position: relative;
+              display: -webkit-inline-box;
+              display: inline-flex;
+              -webkit-box-align: center;
+              align-items: center;
+              max-width: 100%;
+              padding: 0.8125rem 1.875rem;
+              overflow: hidden;
+              font-weight: 600;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              box-shadow: 6px 6px 0 0 rgba(255, 160, 0, 0.2);
+              -webkit-transition: 0.3s ease-in-out;
+              transition: 0.3s ease-in-out;
+              border-radius: 100vh;
+            }
+
+            .btn-primary {
+              color: #fff;
+              background-color: #ffb300;
+              border-color: #ffb300;
+              padding-right: 5.0625rem;
+              min-height: 3.25rem;
+
+              &:focus {
+                &:after {
+                  background-position: 18px;
+                }
+
+                &:before {
+                  right: 30px;
+                  width: 10px;
+                  opacity: 1;
+                }
+
+                color: #fff;
+                background-color: #ffb300;
+                border: 1px solid transparent;
+              }
+
+              &:hover {
+                &:after {
+                  background-position: 18px;
+                }
+
+                &:before {
+                  right: 30px;
+                  width: 10px;
+                  opacity: 1;
+                }
+
+                color: #fff;
+                background-color: #ffb300;
+                border-color: #ffb300;
+                box-shadow: none;
+              }
+
+              &:before {
+                position: absolute;
+                top: 50%;
+                right: 32px;
+                z-index: 1;
+                width: 0;
+                height: 2px;
+                background-color: #fff;
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                opacity: 0;
+                -webkit-transition: 0.3s ease-in-out;
+                transition: 0.3s ease-in-out;
+                -webkit-transition: opacity 0.3s ease-in-out,
+                  width right 0.3s ease-in-out ease-in 0.3s;
+                transition: opacity 0.3s ease-in-out,
+                  width right 0.3s ease-in-out ease-in 0.3s;
+                content: "";
+              }
+
+              &:after {
+                position: absolute;
+                top: 50%;
+                right: 0.375rem;
+                width: 3.4375rem;
+                height: 2.5rem;
+                background-color: #ef6c00;
+                background-image: url("../img/ico_arrow-right.svg");
+
+                background-repeat: no-repeat;
+                background-position: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                -webkit-transition: background-position 0.3s ease-in-out;
+                transition: background-position 0.3s ease-in-out;
+                content: "";
+                border-radius: 100vh;
+              }
+            }
+          }
+          @media (max-width: 767.98px) {
+            h2 {
+              font-size: 1.5rem;
+              line-height: 2.25rem;
+              margin-bottom: 1rem;
+            }
+            p {
+              font-size: 0.875rem;
+              line-height: 1.375rem;
+              margin-bottom: 2rem;
+            }
+            .btn {
+              font-size: 0.875rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

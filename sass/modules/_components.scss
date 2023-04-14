@@ -1,0 +1,76 @@
+.navbar-480,
+.navigation-res {
+  display: none;
+}
+
+.navbar-collapse-sevima-2 {
+  display: none;
+}
+
+.navbar-collapse-sevima-1 {
+  display: none;
+}
+
+.navbar-collapse-sevima-3 {
+  display: none;
+}
+
+.navbar-collapse-sevima-4 {
+  display: none;
+}
+
+.navbar-collapse-sevima-5 {
+  display: none;
+}
+
+.toggle-responsive {
+  display: block !important;
+}
+
+.nav-back {
+  font-size: 2rem;
+  color: $color-biru;
+}
+
+.nav-fix {
+  width: 100%;
+  height: fit-content;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  background: #f2f3f7;
+}
+
+.nav-fix .container {
+  position: relative;
+}
+
+.nav-fix__body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-fix__body__nav-list {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.nopadding {
+  padding: 0 0 0 0;
+}
+
+.hidden-1080 {
+  display: none;
+}
+
+.hiden-xs {
+  display: block;
+}
+
+.visible-xs {
+  display: none;
+}
