@@ -1228,7 +1228,6 @@ get_header();
                   <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td>Personalized (*)</td>
                   <td>Whitelabel (*)</td>
                   <td>Whitelabel (*)</td>
@@ -1787,7 +1786,7 @@ get_header();
               <!-- add-on -->
               <tbody class="accordion-row bonus">
                 <tr>
-                  <td colspan="6" class="sep">Add-On</td>
+                  <td colspan="10" class="sep">Add-On</td>
                 </tr>
                 <tr class="accordion-header">
                   <td class="fitur">Pelaporan PPSDM (Pusat Pengembangan Sumber Daya Manusia Minyak dan Gas)</td>
@@ -1857,7 +1856,7 @@ get_header();
                   <td class="default" style="font-weight: bold"></td>
                   <td></td>
                   <td></td>
-                  <td><td>
+                  <td></td>
                   <td colspan="3">Dengan kontrak terpisah (*)
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
                   </td>
@@ -1871,7 +1870,7 @@ get_header();
                   <td class="default" style="font-weight: bold"></td>
                   <td></td>
                   <td></td>
-                  <td><td>
+                  <td></td>
                   <td colspan="3">Dengan kontrak terpisah (*)
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
                   </td>
@@ -1885,8 +1884,8 @@ get_header();
                   <td class="default" style="font-weight: bold"></td>
                   <td></td>
                   <td></td>
-                  <td><td>
-                  <td><td>
+                  <td></td>
+                  <td></td>
                   <td colspan="2">Dengan kontrak terpisah (*)
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 15.000 / sign"></i>
                   </td>
