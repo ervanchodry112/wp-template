@@ -26,6 +26,7 @@
     <!-- <link rel="shortcut icon" href="/favicon.ico" /> -->
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico" type="image/x-icon">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!-- Google Tag Manager edit by Febri 270220-->
     <script>
         (function(w, d, s, l, i) {
@@ -125,6 +126,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
+
+    
 </head>
 
 <body style="overflow-x:hidden;">

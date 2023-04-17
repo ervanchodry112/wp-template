@@ -4,9 +4,21 @@
  * Template Name: Price List
  */
 
- get_header();
+get_header();
 ?>
 
+
+<script>
+  const accordionHeader = document.querySelectorAll('.fitur');
+  accordionHeader.forEach((accordion) => {
+    accordion.addEventListener('click', (e) => {
+      console.log('clicked')
+      //get child
+      const accordionBody = accordion.nextElementSibling;
+      console.log(accordionBody)
+    });
+  });
+</script>
 <!-- 
 <section id="hero-promo">
   <div class="container">
@@ -22,24 +34,24 @@
 </section> -->
 
 <section id="hero-promo">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-sm-12">
-					<div class="desc">
-						<!-- <label>Our Offering for You</label> -->
-						<h3>Paket Harga Sevima Platform</h3>
-						<p>Saatnya Upgrade Menuju Perguruan Tinggi Unggul</p>
-					</div>
-				</div>
-				<div class="col-md-1"></div>
-				<div class="col-md-5">
-					<div class="image-hero">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/illu-promo.png" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="desc">
+            <!-- <label>Our Offering for You</label> -->
+            <h3>Paket Harga Sevima Platform</h3>
+            <p>Saatnya Upgrade Menuju Perguruan Tinggi Unggul</p>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <div class="image-hero">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/illu-promo.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 <!-- PRICING NEW -->
 <section id="pricing-with-accordion">
@@ -216,7 +228,7 @@
       <td><i class='uil uil-check-circle'></i></td>
       <td><i class='uil uil-check-circle'></i></td>
     </tr>
-    <tr class="accordion-child">
+<tr class="accordion-child">
       <td class="fitur-child">Statistik Peminat & Pendaftar</td>
       <td><i class='uil uil-times-circle'></i></td>
       <td><i class='uil uil-times-circle'></i></td>
@@ -1057,13 +1069,16 @@
   <!-- 19 -->
   <tbody class="accordion-row">
     <tr class="accordion-header">
-      <td class="fitur">Layanan Tambahan</td>
+      <td class="fitur">
+        Layanan Tambahan
+      </td>
       <td><i class='uil uil-check-circle'></i></td>
       <td><i class='uil uil-check-circle'></i></td>
       <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
       <td><i class='uil uil-check-circle'></i></td>
       <td><i class='uil uil-check-circle'></i></td>
     </tr>
+    
     <tr class="accordion-child">
       <td class="fitur-child">Automatic Daily Backup Database</td>
       <td><i class='uil uil-check-circle'></i></td>

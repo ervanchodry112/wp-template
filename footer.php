@@ -20,9 +20,11 @@
             <br> MA 2 Q-16, Surabaya
             <br> Jawa Timur - Indonesia
           </h6>
-          <img src="<?php echo get_template_directory_uri(); ?>/img/maps.JPG" class="img-fluid" style="height: 175px;" target="_blank" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/maps.JPG" class="img-fluid" style="height: 175px;"
+            target="_blank" alt="">
           <div class="link-maps">
-            <a href="https://goo.gl/maps/e7bKps1sGRRMdfto7" target="_blank"> Petunjuk Jalan Maps <i class="uil uil-arrow-right"></i></a>
+            <a href="https://goo.gl/maps/e7bKps1sGRRMdfto7" target="_blank"> Petunjuk Jalan Maps <i
+                class="uil uil-arrow-right"></i></a>
           </div>
           <ul>
             <li>
@@ -31,7 +33,8 @@
             </li>
             <li>
               <i class="uil uil-whatsapp"></i>
-              <a href="https://wa.me/6282261610404?text=[SVM3204]%20Halo,%20saya%20ingin%20tanya%20layanan%20dan%20produk%20SEVIMA" target="_blank">+62 822-6161-0404</a>
+              <a href="https://wa.me/6282261610404?text=[SVM3204]%20Halo,%20saya%20ingin%20tanya%20layanan%20dan%20produk%20SEVIMA"
+                target="_blank">+62 822-6161-0404</a>
             </li>
             <li>
               <i class="uil uil-envelope"></i>
@@ -76,10 +79,13 @@
               <li><a href="https://sevima.com/sales-partner/">Sales Partner</a></li>
               <li><a href="https://sevima.com/portofolio/#klien-kami">Mitra SEVIMA</a></li>
             </ul>
-<br />
-<a href="https://pse.kominfo.go.id/tdpse-detail/2584" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/pse-terdaftar.png" style="max-width:60px"></a>
-            <a href="" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/aws_partner.png" style="max-width:60px"></a>
-            <a href="" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/qualified_software.png" style="max-width:60px"></a>
+            <br />
+            <a href="https://pse.kominfo.go.id/tdpse-detail/2584" target="_blank"><img
+                src="<?php echo get_template_directory_uri(); ?>/img/pse-terdaftar.png" style="max-width:60px"></a>
+            <a href="" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/aws_partner.png"
+                style="max-width:60px"></a>
+            <a href="" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/qualified_software.png"
+                style="max-width:60px"></a>
 
           </div>
           <div class="col-6 col-lg-3">
@@ -126,11 +132,13 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
 </script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-</script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
 
 <script async src="https://www.google.com/recaptcha/api.js"></script>
 <script async src="https://connect.facebook.net/signals/config/843964966343202?v=2.9.31&r=stable"></script>
@@ -140,6 +148,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/owlcarousel/owl.carousel.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/slick.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/slick.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/price-list.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/TweenMax.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/eventHandler.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-modal-video.min.js"></script>
@@ -148,7 +157,7 @@
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 <script type="text/javascript">
-  $(document).on('DOMNodeInserted', function(e) {
+  $(document).on('DOMNodeInserted', function (e) {
     if ($(e.target).hasClass('wptwa-container')) {
       if (window.location.href === "https://sevima.com/livechat/") {
         $('.wptwa-container').hide();
@@ -160,7 +169,7 @@
   });
 </script>
 <script>
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     $(".zoom-me img").css({
       width: (100 + scroll / 5) + "%",
