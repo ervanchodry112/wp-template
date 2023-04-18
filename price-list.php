@@ -264,6 +264,7 @@ const collapseControl = (id) => {
                         </div>
                   </td>
                 </tr>
+
                 <tr class="d-lg-none">
                   <td>
                     <p><b>Hubungi Kami</b></p>
@@ -459,8 +460,7 @@ const collapseControl = (id) => {
                             class="btn btn-sm btn-warning rounded-lg" id="collapseManajemenPMBBtn">
                       <i class='uil uil-angle-down'></i>
                     </a>
-</div>
-                    </td>
+                  </td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1276,7 +1276,20 @@ const collapseControl = (id) => {
               </tbody>
 
               <!---- 6 ----->
-              
+              <tbody>
+                <tr>
+                  <td class="sep">Karirlink - Modul Career Center</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td>Personalized (*)</td>
+                  <td>Whitelabel (*)</td>
+                  <td>Whitelabel (*)</td>
+                </tr>
+              </tbody>
               <tbody class="accordion-row">
                 <tr class="accordion-header">
                   <td class="fitur">Portal Info Karir, Lowongan, Event (Web & Mobile)</td>
@@ -1295,19 +1308,7 @@ const collapseControl = (id) => {
                 <tr class="accordion-header">
                   <td class="fitur">Daftar Riwayat Hidup Lulusan (CV)</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle<tbody>
-                <tr>
-                  <td class="sep">Karirlink - Modul Career Center</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td>Personalized (*)</td>
-                  <td>Whitelabel (*)</td>
-                  <td>Whitelabel (*)</td>
-                </tr>
-              </tbody>'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
@@ -1974,39 +1975,60 @@ const collapseControl = (id) => {
                   </td>
                 </tr>
               </tbody>
-              
+
+              <!-- Footer -->
               <tfoot>
                 <tr>
-
                   <th style="vertical-align: middle; font-size: 1.25rem">
                     <p>Harga</p>
                   </th>
                   <th>
-                    <h6 class="item">Silver</h6>
-                    <p class="harga">Rp7JT<br><small>per-Bulan</small></p>
+                    <h6 class="item">Community</h6>
+                    <p class="harga">Rp0<br><small>per-Bulan</small></p>
                     <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
                   </th>
                   <th>
+                    <h6 class="item">Lite</h6>
+                    <p class="harga">Rp2.5JT<br><small>per-Bulan</small></p>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
+                  </th>
+                  <th>
+                    <h6 class="item">Starter</h6>
+                    <p class="harga">Rp4.4JT<br><small>per-Bulan</small></p>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
+                  </th>
+                  <th class="gold">
+                    <h6 class="item">Basic</h6>
+                    <p class="harga">Rp6JT<br><small>per-Bulan</small></p>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
+                  </th>
+                  <th class="gold">
+                    <h6 class="item">Silver</h6>
+                    <p class="harga">Rp9JT<br><small>per-Bulan</small></p>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
+                  </th>
+                  <th class="gold">
                     <h6 class="item">Gold</h6>
-                    <p class="harga">Rp10JT<br><small>per-Bulan</small></p>
+                    <p class="harga">Rp13JT<br><small>per-Bulan</small></p>
                     <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
                   </th>
                   <th class="gold">
                     <h6 class="item">Titanium</h6>
-                    <p class="harga">Rp15JT<br><small>per-Bulan</small></p>
+                    <p class="harga">Rp19JT<br><small>per-Bulan</small></p>
                     <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
                   </th>
-                  <th>
+                  <th class="gold">
                     <h6 class="item">Platinum</h6>
-                    <p class="harga">Rp18JT<br><small>per-Bulan</small></p>
+                    <p class="harga">Rp31JT<br><small>per-Bulan</small></p>
                     <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
                   </th>
                   <th>
                     <h6 class="item">Palladium</h6>
-                    <p class="harga">Rp25JT<br><small>per-Bulan</small></p>
+                    <p class="harga">Rp43.5JT<br><small>per-Bulan</small></p>
                     <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
-                  </th>
+                  </th> 
                 </tr>
+
                 <tr class="d-none d-lg-table-row">
                   <td style="background: #fff; font-size: 1.125rem; text-align: center;">
                     <p>Jumlah Mahasiswa</p>
@@ -2014,33 +2036,34 @@ const collapseControl = (id) => {
                   <td>
                     < 2.000 mhs <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
                       <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,- per Mahasiswa tiap Bulannya"></i>
-          </div>
-          </td>
-          <td>
-            < 3.000 mhs <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
-              <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,- per Mahasiswa tiap Bulannya"></i>
-      </div>
-      </td>
-      <td class="default" style="font-weight: bold;">
-        < 5.000 mhs <div class="alert-success">Investasi<br>±Rp3.750,- /mhs
-          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp3.750,- per Mahasiswa tiap Bulannya"></i>
-    </div>
-    </td>
-    <td>
-      < 10.000 mhs <div class="alert-success">Investasi<br>±Rp2.400,- /mhs
-        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp2.400,- per Mahasiswa tiap Bulannya"></i>
-  </div>
-  </td>
-  <td>
-    < 20.000 mhs <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-      </div>
-  </td>
-  </tr>
-  </tfoot>
-  </table>
-  </div>
-  </article>
+                    </div>
+                  </td>
+                  <td>
+                    < 3.000 mhs <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
+                      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,- per Mahasiswa tiap Bulannya"></i>
+                    </div>
+                  </td>
+                  <td class="default" style="font-weight: bold;">
+                    < 5.000 mhs <div class="alert-success">Investasi<br>±Rp3.750,- /mhs
+                      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp3.750,- per Mahasiswa tiap Bulannya"></i>
+                    </div>
+                  </td>
+                  <td>
+                    < 10.000 mhs <div class="alert-success">Investasi<br>±Rp2.400,- /mhs
+                      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp2.400,- per Mahasiswa tiap Bulannya"></i>
+                    </div>
+                  </td>
+                  <td>
+                    < 20.000 mhs <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+                      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+                      </div>
+                  </td>
+                </tr>
+           </tfoot>
+           
+          </table>
+        </div>
+    </article>
 
   <div class="pricing-footer">
     <div class="note">
