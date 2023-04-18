@@ -7,39 +7,7 @@ get_header();
 ?>
 
 <script>
-    // Set Display attribute of all element with class .accordion-child to none
-    $(document).ready(function () {
-        $('.accordion-child').css('display', 'none');
-    });
 
-    const fun = (id) => {
-        var col = $(id);
-        console.log(id);
-
-        // Get the button from id
-        var btn = $(id + 'Btn').children();
-
-        // get the same element at the same level with class .accordion-child
-        var sib = col.siblings('.accordion-child');
-
-        // Get the value of display attribute
-        var display = col.css('display');
-
-        if (display == 'none') {
-            btn.removeClass('uil-angle-down');
-            btn.addClass('uil-angle-up');
-            col.css('display', '');
-            sib.css('display', '');
-        } else {
-            // Change the arrow icon
-            btn.removeClass('uil-angle-up');
-            btn.addClass('uil-angle-down');
-            // change the display attribute to none
-            col.css('display', 'none');
-            sib.css('display', 'none');
-        }
-
-    }
 </script>
 
 <section id="hero-promo">

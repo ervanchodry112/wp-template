@@ -19,6 +19,41 @@ get_header();
     });
   });
 </script>
+
+<script>
+  // Set Display attribute of all element with class .accordion-child to none
+$(document).ready(function () {
+  $('.accordion-child').css('display', 'none');
+});
+
+const collapseControl = (id) => {
+  var col = $(id);
+  console.log(id);
+
+  // Get the button from id
+  var btn = $(id + 'Btn').children();
+
+  // get the same element at the same level with class .accordion-child
+  var sib = col.siblings('.accordion-child');
+
+  // Get the value of display attribute
+  var display = col.css('display');
+
+  if (display == 'none') {
+    btn.removeClass('uil-angle-down');
+    btn.addClass('uil-angle-up');
+    col.css('display', '');
+    sib.css('display', '');
+  } else {
+    // Change the arrow icon
+    btn.removeClass('uil-angle-up');
+    btn.addClass('uil-angle-down');
+    // change the display attribute to none
+    col.css('display', 'none');
+    sib.css('display', 'none');
+  }
+};
+</script>
 <!-- 
 <section id="hero-promo">
   <div class="container">
@@ -121,7 +156,7 @@ get_header();
               <thead>
                 <tr>
                   <th style="vertical-align: middle; font-size: 1.25rem">
-                    <p>Modul-modul<br> siAkadCloud </p>
+                    <p>Modul-modul<br> Sevima Platform </p>
                   </th>
                   <th>
                     <h6 class="item">Community</h6>
@@ -359,7 +394,15 @@ get_header();
               </tbody>
               <tbody class="accordion-row">
                 <tr class="accordion-header">
-                  <td class="fitur">Website Penerimaan Mahasiswa Baru sesuai branding perguruan tinggi (ac.id)</td>
+                  <td class="fitur">
+                    <div class=" d-flex justify-content-between align-items-center">
+                      <div>Website Penerimaan Mahasiswa Baru sesuai branding perguruan tinggi (ac.id)</div>
+                      <a onclick="collapseControl('#collapsePMB')"
+                          class="btn btn-sm btn-warning rounded-lg" id="collapsePMBBtn">
+                          <i class='uil uil-angle-down'></i>
+                      </a>
+                    </div>
+                  </td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -370,7 +413,7 @@ get_header();
                   <td>Lebih Lengkap</td>
                   <td>Lebih Lengkap</td>
                 </tr>
-                <tr class="accordion-child">
+                <tr class="accordion-child" id="collapsePMB">
                   <td class="fitur-child">- Portal pendaftaran sesuai jalur dan gelombang pendaftaran</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -409,7 +452,15 @@ get_header();
               </tbody>
               <tbody class="accordion-row">
                 <tr class="accordion-header">
-                  <td class="fitur">Manajemen Siklus PMB</td>
+                  <td class="fitur">
+                    <div class=" d-flex justify-content-between align-items-center">
+                    <div>Manajemen Siklus PMB</div>
+                    <a onclick="collapseControl('#collapseManajemenPMB')"
+                            class="btn btn-sm btn-warning rounded-lg" id="collapseManajemenPMBBtn">
+                      <i class='uil uil-angle-down'></i>
+                    </a>
+</div>
+                    </td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -420,7 +471,7 @@ get_header();
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
-                <tr class="accordion-child">
+                <tr class="accordion-child" id="collapseManajemenPMB">
                   <td class="fitur-child">- Manajemen jalur, gelombang pendaftaran, dan sistem kuliah</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -611,7 +662,15 @@ get_header();
               </tbody>
               <tbody class="accordion-row">
                 <tr class="accordion-header">
-                  <td class="fitur">Fasilitas Penyebaran Informasi Ke Pendaftar</td>
+                  <td class="fitur">
+                    <div class=" d-flex justify-content-between align-items-center">
+                      <div>Fasilitas Penyebaran Informasi Ke Pendaftar</div>
+                      <a onclick="collapseControl('#collapsePenyebaranInformasi')"
+                            class="btn btn-sm btn-warning rounded-lg" id="collapsePenyebaranInformasiBtn">
+                        <i class='uil uil-angle-down'></i>
+                      </a>
+                    </div>
+                  </td>
                   <td>Terbatas</td>
                   <td>Terbatas</td>
                   <td class="default" style="font-weight: bold">Terbatas</td>
@@ -622,7 +681,7 @@ get_header();
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
-                <tr class="accordion-child">
+                <tr class="accordion-child" id="collapsePenyebaranInformasi">
                   <td class="fitur-child">- Quick chat ke panitia PMB</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -728,7 +787,15 @@ get_header();
               </tbody>
               <tbody class="accordion-row">
                 <tr class="accordion-header">
-                  <td class="fitur">Manajemen Siklus Perkuliahan</td>
+                  <td class="fitur">
+                    <div class=" d-flex justify-content-between align-items-center">
+                    <div>Manajemen Siklus Perkuliahan</div>
+                    <a onclick="collapseControl('#collapseSiklusPerkuliahan')"
+                          class="btn btn-sm btn-warning rounded-lg" id="collapseSiklusPerkuliahanBtn">
+                          <i class='uil uil-angle-down'></i>
+                      </a>
+                    </div>
+                  </td>
                   <td>Terbatas</td>
                   <td>Terbatas</td>
                   <td class="default" style="font-weight: bold">Terbatas</td>
@@ -739,7 +806,7 @@ get_header();
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
-                <tr class="accordion-child">
+                <tr class="accordion-child" id="collapseSiklusPerkuliahan">
                   <td class="fitur-child">- Manajamen Kelas Perkuliahan, Jadwal Perkuliahan & Dosen Pengajar</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -776,7 +843,7 @@ get_header();
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child">
-                  <td><i class='uil uil-times-circle'>- Fasilitas Paket MataKuliah</i></td>
+                  <td class="fitur-child">- Fasilitas Paket MataKuliah</td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
@@ -985,7 +1052,15 @@ get_header();
               </tbody>
               <tbody class="accordion-row">
                 <tr class="accordion-header">
-                  <td class="fitur">Manajemen Administrasi Keuangan</td>
+                  <td class="fitur">
+                    <div class=" d-flex justify-content-between align-items-center">
+                      <div>Manajemen Administrasi Keuangan</div>
+                      <a onclick="collapseControl('#collapseManajemenKeuangan')"
+                            class="btn btn-sm btn-warning rounded-lg" id="collapseManajemenKeuanganBtn">
+                            <i class='uil uil-angle-down'></i>
+                      </a>
+                    </div>
+                    </td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td>Terbatas</td>
                   <td class="default" style="font-weight: bold">Terbatas</td>
@@ -996,7 +1071,7 @@ get_header();
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
-                <tr class="accordion-child">
+                <tr class="accordion-child" id="collapseManajemenKeuangan">
                   <td class="fitur-child">- Manajemen Tarif Uang Kuliah</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1288,7 +1363,15 @@ get_header();
               </tbody>
               <tbody class="accordion-row">
                 <tr class="accordion-header">
-                  <td class="fitur">Manajemen Data Kepegawaian</td>
+                  <td class="fitur">
+                    <div class=" d-flex justify-content-between align-items-center">
+                    <div>Manajemen Data Kepegawaian</div>
+                    <a onclick="collapseControl('#collapseDataKepegawaian')"
+                          class="btn btn-sm btn-warning rounded-lg" id="collapseDataKepegawaianBtn">
+                          <i class='uil uil-angle-down'></i>
+                      </a>
+                    </div>
+                  </td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
@@ -1299,7 +1382,7 @@ get_header();
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
-                <tr class="accordion-child">
+                <tr class="accordion-child" id="collapseDataKepegawaian">
                   <td class="fitur-child">- Presensi online / integrasi fingerprint oleh Pegawai dan Dosen</td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
