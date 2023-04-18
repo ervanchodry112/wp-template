@@ -122,6 +122,7 @@
     <script>
         theme_directory = "<?php echo get_template_directory_uri() ?>";
     </script>
+    
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

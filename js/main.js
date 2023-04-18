@@ -1,6 +1,8 @@
+/** @format */
+
 // --- BERITA ----//
 
-$("#owl-event-berita").owlCarousel({
+$('#owl-event-berita').owlCarousel({
   loop: true,
   margin: 10,
   nav: false,
@@ -17,7 +19,7 @@ $("#owl-event-berita").owlCarousel({
     },
   },
 });
-$("#owl-event-media").owlCarousel({
+$('#owl-event-media').owlCarousel({
   loop: true,
   margin: 10,
   nav: false,
@@ -35,7 +37,7 @@ $("#owl-event-media").owlCarousel({
   },
 }); //beranda
 
-$("#inner .owl-carousel").owlCarousel({
+$('#inner .owl-carousel').owlCarousel({
   loop: true,
   margin: 10,
   dots: false,
@@ -53,25 +55,25 @@ $("#inner .owl-carousel").owlCarousel({
       items: 1,
     },
   },
-  navContainer: "#inner .custom-nav",
+  navContainer: '#inner .custom-nav',
 });
 
 // ---- NAVBAR ----//
 $(document).ready(function () {
-  $(".navbar-toggler").click(function () {
-    $(".navbar-collapse").toggleClass("right");
+  $('.navbar-toggler').click(function () {
+    $('.navbar-collapse').toggleClass('right');
   });
-  $(".produk-click").click(function () {
-    $(".navbar-collapse-sevima-2").toggleClass("toggle-responsive");
+  $('.produk-click').click(function () {
+    $('.navbar-collapse-sevima-2').toggleClass('toggle-responsive');
   });
-  $(".produk-click-2").click(function () {
-    $(".navbar-collapse-sevima-3").toggleClass("toggle-responsive");
+  $('.produk-click-2').click(function () {
+    $('.navbar-collapse-sevima-3').toggleClass('toggle-responsive');
   });
-  $(".produk-click-3").click(function () {
-    $(".navbar-collapse-sevima-5").toggleClass("toggle-responsive");
+  $('.produk-click-3').click(function () {
+    $('.navbar-collapse-sevima-5').toggleClass('toggle-responsive');
   });
-  $(".produk-click-1").click(function () {
-    $(".navbar-collapse-sevima-1").toggleClass("toggle-responsive");
+  $('.produk-click-1').click(function () {
+    $('.navbar-collapse-sevima-1').toggleClass('toggle-responsive');
   });
 });
 
@@ -80,24 +82,24 @@ $(document).ready(function () {
   // Gets the video src from the data-src on each button
 
   var $videoSrc;
-  $(".video-btn").click(function () {
-    $videoSrc = $(this).data("src");
+  $('.video-btn').click(function () {
+    $videoSrc = $(this).data('src');
   });
   console.log($videoSrc);
 
   // when the modal is opened autoplay it
-  $("#myModal").on("shown.bs.modal", function (e) {
+  $('#myModal').on('shown.bs.modal', function (e) {
     // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
-    $("#video").attr(
-      "src",
-      $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+    $('#video').attr(
+      'src',
+      $videoSrc + '?autoplay=1&amp;modestbranding=1&amp;showinfo=0'
     );
   });
 
   // stop playing the youtube video when I close the modal
-  $("#myModal").on("hide.bs.modal", function (e) {
+  $('#myModal').on('hide.bs.modal', function (e) {
     // a poor man's stop video
-    $("#video").attr("src", $videoSrc);
+    $('#video').attr('src', $videoSrc);
   });
 
   // document ready
@@ -105,21 +107,21 @@ $(document).ready(function () {
 
 //----KUMPULAN OWL ----//
 
-$("#owl-testimoni-video").owlCarousel({
+$('#owl-testimoni-video').owlCarousel({
   items: 1,
   itemsDesktop: [1000, 1],
   itemsDesktopSmall: [979, 1],
   itemsTablet: [768, 1],
   dots: true,
   navigation: true,
-  navigationText: ["", ""],
+  navigationText: ['', ''],
   slideSpeed: 1000,
   autoplay: true,
   autoplayHoverPause: true,
   loop: true,
 });
 
-$("#owl-kisah-sukses-tes").owlCarousel({
+$('#owl-kisah-sukses-tes').owlCarousel({
   autoplay: true,
   autoplayTimeout: 5000,
   autoplayHoverPause: true,
@@ -146,7 +148,7 @@ $("#owl-kisah-sukses-tes").owlCarousel({
   },
 });
 
-$("#owl-kisahsukses-home").owlCarousel({
+$('#owl-kisahsukses-home').owlCarousel({
   loop: true,
   margin: 10,
   nav: false,
@@ -163,7 +165,7 @@ $("#owl-kisahsukses-home").owlCarousel({
   },
 });
 
-$("#owl-magang").owlCarousel({
+$('#owl-magang').owlCarousel({
   loop: true,
   margin: 10,
   nav: true,
@@ -171,7 +173,7 @@ $("#owl-magang").owlCarousel({
     "<i class='uil uil-angle-left'></i>",
     "<i class='uil uil-angle-right'></i>",
   ],
-  navContainer: "#KataTemanMagang .custom-nav",
+  navContainer: '#KataTemanMagang .custom-nav',
   autoplay: true,
   autoplayHoverPause: true,
   responsive: {
@@ -187,7 +189,7 @@ $("#owl-magang").owlCarousel({
   },
 });
 
-$("#owl-kisah-sukses").owlCarousel({
+$('#owl-kisah-sukses').owlCarousel({
   loop: true,
   autoplay: true,
   autoplayTimeout: 3000,
@@ -213,32 +215,32 @@ $("#owl-kisah-sukses").owlCarousel({
 
 //---- HOME ----//
 /* ---- SLIDER HEADER ---- */
-$("#carousel-listberita").carousel({
+$('#carousel-listberita').carousel({
   interval: 5000,
 });
 
-$("#carousel-listberita").on("touchstart", function (event) {
+$('#carousel-listberita').on('touchstart', function (event) {
   var yClick = event.originalEvent.touches[0].pageY;
-  $(this).one("touchmove", function (event) {
+  $(this).one('touchmove', function (event) {
     var yMove = event.originalEvent.touches[0].pageY;
     if (Math.floor(yClick - yMove) > 1) {
-      $(".carousel").carousel("next");
+      $('.carousel').carousel('next');
     } else if (Math.floor(yClick - yMove) < -1) {
-      $(".carousel").carousel("prev");
+      $('.carousel').carousel('prev');
     }
   });
-  $(".carousel").on("touchend", function () {
-    $(this).off("touchmove");
+  $('.carousel').on('touchend', function () {
+    $(this).off('touchmove');
   });
 });
 
 /* ---- PLAY VIDEO ---- */
 $(document).ready(function () {
-  $("#play-video").on("click", function (event) {
-    $("#video-trigger").addClass("removed");
+  $('#play-video').on('click', function (event) {
+    $('#video-trigger').addClass('removed');
 
-    $("#video").addClass("watch");
-    $("#video")[0].src += "&autoplay=1";
+    $('#video').addClass('watch');
+    $('#video')[0].src += '&autoplay=1';
 
     event.preventDefault();
   });
@@ -246,45 +248,45 @@ $(document).ready(function () {
 
 $(function () {
   var youtubeUrl =
-    "https://www.youtube.com/embed/" +
-    $("#youtubevideotabs li:first-child").addClass("active").attr("youtubeid") +
-    "?rel=0";
-  $("#youtubeplayer iframe").attr("src", youtubeUrl);
+    'https://www.youtube.com/embed/' +
+    $('#youtubevideotabs li:first-child').addClass('active').attr('youtubeid') +
+    '?rel=0';
+  $('#youtubeplayer iframe').attr('src', youtubeUrl);
 
-  $("#youtubevideotabs li").click(function () {
+  $('#youtubevideotabs li').click(function () {
     youtubeUrl =
-      "https://www.youtube.com/embed/" +
-      $(this).addClass("active").attr("youtubeid") +
-      "?rel=0";
-    $("#youtubeplayer iframe").attr("src", youtubeUrl);
+      'https://www.youtube.com/embed/' +
+      $(this).addClass('active').attr('youtubeid') +
+      '?rel=0';
+    $('#youtubeplayer iframe').attr('src', youtubeUrl);
     youtubeUrl =
-      "https://www.youtube.com/embed/" +
-      $(this).siblings().removeClass("active").attr("youtubeid");
+      'https://www.youtube.com/embed/' +
+      $(this).siblings().removeClass('active').attr('youtubeid');
   });
 });
 
 //---- KARIR  ----//
 /* VIDEO */
-$(document).on("click", ".js-videoPoster", function (e) {
+$(document).on('click', '.js-videoPoster', function (e) {
   e.preventDefault();
   var poster = $(this);
-  var wrapper = poster.closest(".js-videoWrapper");
+  var wrapper = poster.closest('.js-videoWrapper');
   videoPlay(wrapper);
 });
 
 function videoPlay(wrapper) {
-  var iframe = wrapper.find(".js-videoIframe");
-  var src = iframe.data("src");
-  wrapper.addClass("videoWrapperActive");
-  iframe.attr("src", src);
+  var iframe = wrapper.find('.js-videoIframe');
+  var src = iframe.data('src');
+  wrapper.addClass('videoWrapperActive');
+  iframe.attr('src', src);
 }
 
 /* SLIDER ROTI */
-$("#slider").slick({
+$('#slider').slick({
   dots: true,
   customPaging: function (slider, i) {
     return (
-      '<button class="tab">' + $(slider.$slides[i]).attr("title") + "</button>"
+      '<button class="tab">' + $(slider.$slides[i]).attr('title') + '</button>'
     );
   },
   arrows: true,
@@ -305,13 +307,13 @@ function closestEdge(x, y, w, h) {
   var min = Math.min(topEdgeDist, bottomEdgeDist, leftEdgeDist, rightEdgeDist);
   switch (min) {
     case leftEdgeDist:
-      return "left";
+      return 'left';
     case rightEdgeDist:
-      return "right";
+      return 'right';
     case topEdgeDist:
-      return "top";
+      return 'top';
     case bottomEdgeDist:
-      return "bottom";
+      return 'bottom';
   }
 }
 
@@ -321,7 +323,7 @@ function distMetric(x, y, x2, y2) {
   return xDiff * xDiff + yDiff * yDiff;
 }
 
-var boxes = document.querySelectorAll(".boxes");
+var boxes = document.querySelectorAll('.boxes');
 for (var i = 0; i < boxes.length; i++) {
   boxes[i].onmouseenter = function (e) {
     var x = e.pageX - this.offsetLeft;
@@ -331,45 +333,45 @@ for (var i = 0; i < boxes.length; i++) {
     var image = this.childNodes[0];
 
     switch (edge) {
-      case "left":
+      case 'left':
         //tween overlay from the left
-        overlay.style.top = "0%";
-        overlay.style.left = "-100%";
+        overlay.style.top = '0%';
+        overlay.style.left = '-100%';
         TweenMax.to(overlay, 0.5, {
-          left: "0%",
+          left: '0%',
         });
         TweenMax.to(image, 0.5, {
           scale: 1.2,
         });
         break;
-      case "right":
-        overlay.style.top = "0%";
-        overlay.style.left = "100%";
+      case 'right':
+        overlay.style.top = '0%';
+        overlay.style.left = '100%';
         //tween overlay from the right
         TweenMax.to(overlay, 0.5, {
-          left: "0%",
+          left: '0%',
         });
         TweenMax.to(image, 0.5, {
           scale: 1.2,
         });
         break;
-      case "top":
-        overlay.style.top = "-100%";
-        overlay.style.left = "0%";
+      case 'top':
+        overlay.style.top = '-100%';
+        overlay.style.left = '0%';
         //tween overlay from the right
         TweenMax.to(overlay, 0.5, {
-          top: "0%",
+          top: '0%',
         });
         TweenMax.to(image, 0.5, {
           scale: 1.2,
         });
         break;
-      case "bottom":
-        overlay.style.top = "100%";
-        overlay.style.left = "0%";
+      case 'bottom':
+        overlay.style.top = '100%';
+        overlay.style.left = '0%';
         //tween overlay from the right
         TweenMax.to(overlay, 0.5, {
-          top: "0%",
+          top: '0%',
         });
         TweenMax.to(image, 0.5, {
           scale: 1.2,
@@ -386,33 +388,33 @@ for (var i = 0; i < boxes.length; i++) {
     var image = this.childNodes[0];
 
     switch (edge) {
-      case "left":
+      case 'left':
         TweenMax.to(overlay, 0.5, {
-          left: "-100%",
+          left: '-100%',
         });
         TweenMax.to(image, 0.5, {
           scale: 1.0,
         });
         break;
-      case "right":
+      case 'right':
         TweenMax.to(overlay, 0.5, {
-          left: "100%",
+          left: '100%',
         });
         TweenMax.to(image, 0.5, {
           scale: 1.0,
         });
         break;
-      case "top":
+      case 'top':
         TweenMax.to(overlay, 0.5, {
-          top: "-100%",
+          top: '-100%',
         });
         TweenMax.to(image, 0.5, {
           scale: 1.0,
         });
         break;
-      case "bottom":
+      case 'bottom':
         TweenMax.to(overlay, 0.5, {
-          top: "100%",
+          top: '100%',
         });
         TweenMax.to(image, 0.5, {
           scale: 1.0,
@@ -424,9 +426,9 @@ for (var i = 0; i < boxes.length; i++) {
 
 //---- EVENT  ----//
 /* DAFTAR EVENT */
-$("form").submit(function () {
-  $(this).find(".btn-selengkapnya2").prop("disabled", true);
-  $("body").css("cursor", "wait");
+$('form').submit(function () {
+  $(this).find('.btn-selengkapnya2').prop('disabled', true);
+  $('body').css('cursor', 'wait');
 });
 // });
 
