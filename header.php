@@ -4,15 +4,17 @@
 <head>
     <?php //$blog_title = get_bloginfo( 'name' ); 
     ?>
-    <title><?php wp_title('|', true, 'right'); ?></title>
+    <title>
+        <?php wp_title('|', true, 'right'); ?>
+    </title>
     <!-- <title><?php //echo $blog_title 
-                ?></title> -->
+    ?></title> -->
     <meta property="og:title" content="<?php wp_title('|', true, 'right'); ?>" />
     <meta expr:content='data:blog.metaDescription' property='og:description' />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://sevima.com<?php echo $_SERVER['REQUEST_URI']; ?>" />
     <meta property="og:image" content="<?php $post_thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
-                                        echo $post_thumbnail[0]; ?>" />
+    echo $post_thumbnail[0]; ?>" />
     <meta property="og:image:width" content="640" />
     <meta property="og:image:height" content="360" />
     <meta charset="<?php bloginfo('charset'); ?>">
@@ -20,7 +22,9 @@
     <meta name="google-site-verification" content="c3jNIdvM08_y0lw9p7Ik0aACqKV5VcTkqkrKfPqG8vY" />
     <meta name="yandex-verification" content="41b66e120e46b231" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta content='Edutech, Edutech Institution, Edutech perguruan tinggi, Edutech kampus, digital learning, Educational Technology, learning management system, lms, sevima, sevima siakad, sistem informasi akademik, sistem informasi manajemen, perusahaan it, pt sentra vidya utama, konsultan it, teknologi informasi, siakad online, PDDikti, pelaporan Neo Feeder, forlap, e-learning, blended learning, SEO, aplikasi, software, aplikasi online, mobile, akreditasi kampus, akreditasi prodi, pin, penomoran ijazah nasional, pin eligible' name='keywords' />
+    <meta
+        content='Edutech, Edutech Institution, Edutech perguruan tinggi, Edutech kampus, digital learning, Educational Technology, learning management system, lms, sevima, sevima siakad, sistem informasi akademik, sistem informasi manajemen, perusahaan it, pt sentra vidya utama, konsultan it, teknologi informasi, siakad online, PDDikti, pelaporan Neo Feeder, forlap, e-learning, blended learning, SEO, aplikasi, software, aplikasi online, mobile, akreditasi kampus, akreditasi prodi, pin, penomoran ijazah nasional, pin eligible'
+        name='keywords' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <!-- <link rel="shortcut icon" href="/favicon.ico" /> -->
@@ -29,7 +33,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!-- Google Tag Manager edit by Febri 270220-->
     <script>
-        (function(w, d, s, l, i) {
+        (function (w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
                 'gtm.start': new Date().getTime(),
@@ -82,29 +86,42 @@
     <link rel="preconnect" href="https://unicons.iconscout.com">
     <link rel="dns-prefetch" href="https://connect.facebook.net">
 
-    <link rel="preload" as="style" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T">
-    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preload" as="style" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0/css/bootstrap.min.css"
+        crossorigin="anonymous" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T">
+    <link rel="preload" as="style"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
     <link rel="preload" as="style" href="https://unicons.iconscout.com/release/v2.1.7/css/unicons.css">
 
-    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T">
-    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
-    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://unicons.iconscout.com/release/v2.1.7/css/unicons.css">
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T">
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');"
+        href="https://unicons.iconscout.com/release/v2.1.7/css/unicons.css">
 
     <noscript>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            crossorigin="anonymous" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.7/css/unicons.css">
     </noscript>
 
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/main.min.css?<?= md5(rand(100, 999)); ?>">
+    <link rel="stylesheet" type="text/css"
+        href="<?php echo get_template_directory_uri(); ?>/css/main.min.css?<?= md5(rand(100, 999)); ?>">
     <script src="https://use.fontawesome.com/6ae1c35383.js"></script>
     <!-- Owl Stylesheets -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/owlcarousel/owl.carousel.min.css?<?= md5(rand(100, 999)); ?>">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/owlcarousel/owl.theme.default.css?<?= md5(rand(100, 999)); ?>">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/modal-video.min.css?<?= md5(rand(100, 999)); ?>">
+    <link rel="stylesheet"
+        href="<?php echo get_template_directory_uri(); ?>/owlcarousel/owl.carousel.min.css?<?= md5(rand(100, 999)); ?>">
+    <link rel="stylesheet"
+        href="<?php echo get_template_directory_uri(); ?>/owlcarousel/owl.theme.default.css?<?= md5(rand(100, 999)); ?>">
+    <link rel="stylesheet"
+        href="<?php echo get_template_directory_uri(); ?>/css/modal-video.min.css?<?= md5(rand(100, 999)); ?>">
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slick.css?<?= md5(rand(100, 999)); ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/price-list.css">
@@ -122,21 +139,22 @@
     <script>
         theme_directory = "<?php echo get_template_directory_uri() ?>";
     </script>
-    
+
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
 
-    
+
 </head>
 
 <body style="overflow-x:hidden;">
     <div itemprop="image" itemscope="itemscope" itemtype="http://schema.org/ImageObject">
-	<meta content="<?php echo $post_thumbnail[0] ?>" itemprop="url"/>
+        <meta content="<?php echo $post_thumbnail[0] ?>" itemprop="url" />
     </div>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6HHP5J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6HHP5J" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="head-sevima">
         <div class="container">
@@ -162,8 +180,10 @@
                             <a href="https://www.facebook.com/SentraVidyaUtama/"><i class='uil uil-facebook-f'></i></a>
                             <a href="https://www.twitter.com/sevima_official/"><i class='uil uil-twitter'></i></a>
                             <a href="https://www.instagram.com/sevima_official/"><i class='uil uil-instagram'></i></a>
-                            <a href="https://www.youtube.com/channel/UCDcvqZbhsdaDCnmUURz54uw"><i class='uil uil-youtube'></i></a>
-                            <a href="https://www.linkedin.com/company/pt-sentra-vidya-utama"><i class='uil uil-linkedin'></i></a>
+                            <a href="https://www.youtube.com/channel/UCDcvqZbhsdaDCnmUURz54uw"><i
+                                    class='uil uil-youtube'></i></a>
+                            <a href="https://www.linkedin.com/company/pt-sentra-vidya-utama"><i
+                                    class='uil uil-linkedin'></i></a>
                         </div>
                     </div>
                 </div>
@@ -176,7 +196,9 @@
                 <a class="navbar-brand" href="<?php echo home_url(); ?>">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/logo-sevima.png" alt="">
                 </a>
-                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbar-sevima" aria-controls="navbar-sevima" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbar-sevima" aria-controls="navbar-sevima" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse-sevima" id="navbar-sevima">
@@ -184,7 +206,9 @@
                         <a class="navbar-brand" href="<?php echo home_url(); ?>">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/logo-sevima.png" alt="">
                         </a>
-                        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbar-sevima" aria-controls="navbar-sevima" aria-expanded="true" aria-label="Toggle navigation">
+                        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbar-sevima" aria-controls="navbar-sevima" aria-expanded="true"
+                            aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="navigation-res">
@@ -196,13 +220,17 @@
                                 </div>
                             </div>
                             <ul>
-                                <li><a href="<?php echo home_url(); ?>">Beranda <i class="uil uil-angle-right"></i></a></li>
+                                <li><a href="<?php echo home_url(); ?>">Beranda <i class="uil uil-angle-right"></i></a>
+                                </li>
                                 <li><a href="#" class="produk-click">Produk <i class="uil uil-angle-right"></i></a></li>
-                                <li><a href="#" class="produk-click-2">Klien Kami <i class="uil uil-angle-right"></i></a>
+                                <li><a href="#" class="produk-click-2">Klien Kami <i
+                                            class="uil uil-angle-right"></i></a>
                                 </li>
                                 <!-- <li><a href="<?php echo home_url(); ?>/berita-event/">Berita</a></li> -->
-                                <li><a href="#" class="produk-click-1">Berita <i class="uil uil-angle-right"></i></a></li>
-                                <li><a href="#" class="produk-click-3">Karir <i class="uil uil-angle-right"></i></a></li>
+                                <li><a href="#" class="produk-click-1">Berita <i class="uil uil-angle-right"></i></a>
+                                </li>
+                                <li><a href="#" class="produk-click-3">Karir <i class="uil uil-angle-right"></i></a>
+                                </li>
                                 <li><a href="<?php echo home_url(); ?>/event-sevima/">Event</a></li>
                                 <li><a href="<?php echo home_url(); ?>/tentang-sevima/">Tentang Kami</a></li>
                             </ul>
@@ -213,7 +241,8 @@
                                 </div>
                             </a>
 
-                            <a href="https://wa.me/6282261610404?text=[SVM3204]%20Halo,%20saya%20ingin%20tanya%20layanan%20dan%20produk%20SEVIMA">
+                            <a
+                                href="https://wa.me/6282261610404?text=[SVM3204]%20Halo,%20saya%20ingin%20tanya%20layanan%20dan%20produk%20SEVIMA">
                                 <div class="btn-kontak btn-wa d-flex align-items-center mt-2">
                                     <i class='uil uil-whatsapp'></i>
                                     <h4>Chat WA</h4>
@@ -222,17 +251,22 @@
                         </div>
                         <div class="navigation-res">
                             <ul>
-                                <li class="promo-mobile"><a href="<?php echo home_url(); ?>/promo/">Promo Terbaru <i class="uil uil-angle-right"></i></a></li>
+                                <li class="promo-mobile"><a href="<?php echo home_url(); ?>/promo/">Promo Terbaru <i
+                                            class="uil uil-angle-right"></i></a></li>
                                 <!--<li><a href="#">Komunitas</a></li>
                 <li><a href="#">One Stop Solution</a></li>-->
                                 <li><a href="mailto:marketing@sevima.co.id">marketing@sevima.co.id</a></li>
                             </ul>
                             <div class="link-sosmed">
-                                <a href="https://www.facebook.com/SentraVidyaUtama/"><i class='uil uil-facebook-f'></i></a>
+                                <a href="https://www.facebook.com/SentraVidyaUtama/"><i
+                                        class='uil uil-facebook-f'></i></a>
                                 <a href="https://www.twitter.com/sevima_official/"><i class='uil uil-twitter'></i></a>
-                                <a href="https://www.instagram.com/sevima_official/"><i class='uil uil-instagram'></i></a>
-                                <a href="https://www.youtube.com/channel/UCDcvqZbhsdaDCnmUURz54uw"><i class='uil uil-youtube'></i></a>
-                                <a href="https://www.linkedin.com/company/pt-sentra-vidya-utama"><i class='uil uil-linkedin'></i></a>
+                                <a href="https://www.instagram.com/sevima_official/"><i
+                                        class='uil uil-instagram'></i></a>
+                                <a href="https://www.youtube.com/channel/UCDcvqZbhsdaDCnmUURz54uw"><i
+                                        class='uil uil-youtube'></i></a>
+                                <a href="https://www.linkedin.com/company/pt-sentra-vidya-utama"><i
+                                        class='uil uil-linkedin'></i></a>
                             </div>
                         </div>
                     </div>
@@ -307,7 +341,8 @@
                                 <div class="col-md-12">
                                     <a href="https://siakadcloud.com/" target="_blank">
                                         <div class="card">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/siakadcloud.png" class="img-fluid">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/siakadcloud.png"
+                                                class="img-fluid">
                                             <p>Solusi sistem akademik kampus.</p>
                                         </div>
                                     </a>
@@ -315,7 +350,8 @@
                                 <div class="col-md-12">
                                     <a href="https://gofeedercloud.com/" target="_blank">
                                         <div class="card">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/gofeeder.png" class="img-fluid">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/gofeeder.png"
+                                                class="img-fluid">
                                             <p>Akademik beres, pelaporan Neo Feeder beres, akreditasi sukses.</p>
                                         </div>
                                     </a>
@@ -332,7 +368,8 @@
                                 <div class="col-md-12">
                                     <a href="https://siakadcloud.com/akreditasicloud/" target="_blank">
                                         <div class="card">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/akreditasicloud.png" class="img-fluid">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/akreditasicloud.png"
+                                                class="img-fluid">
                                             <p>Akreditasi Mudah , Beres dan Menyenangkan</p>
                                         </div>
                                     </a>
@@ -340,7 +377,8 @@
                                 <div class="col-md-12">
                                     <a href="https://profeeder.id/" target="_blank">
                                         <div class="card">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/profeeder.png" class="img-fluid">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/profeeder.png"
+                                                class="img-fluid">
                                             <p>Satu kali klik, pelaporan beres</p>
                                         </div>
                                     </a>
@@ -348,7 +386,8 @@
                                 <div class="col-md-12">
                                     <a href="https://sevimapay.com/" target="_blank">
                                         <div class="card">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/sevimapay.png" class="img-fluid">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/sevimapay.png"
+                                                class="img-fluid">
                                             <p>Integrasi Pembayaran Keuangan Mahasiswa secara online </p>
                                         </div>
                                     </a>
@@ -356,7 +395,8 @@
                                 <div class="col-md-12">
                                     <a href="https://karirlink.id/" target="_blank">
                                         <div class="card">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/karirlink-logo.png" class="img-fluid">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/karirlink-logo.png"
+                                                class="img-fluid">
                                             <p>Cara mudah dan cepat untuk dapatkan pekerjaan pertamamu</p>
                                         </div>
                                     </a>
@@ -364,8 +404,10 @@
                                 <div class="col-md-12">
                                     <a href="https://persuratan.integrasolusi.com//" target="_blank">
                                         <div class="card">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/Persuratan Logo-09.png" class="img-fluid">
-                                            <p>Sistem persuratan online yang membantu proses surat masuk, keluar, disposisi dan informasi agar lebih mudah dan cepat </p>
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/Persuratan Logo-09.png"
+                                                class="img-fluid">
+                                            <p>Sistem persuratan online yang membantu proses surat masuk, keluar,
+                                                disposisi dan informasi agar lebih mudah dan cepat </p>
                                         </div>
                                     </a>
                                 </div>
@@ -375,7 +417,8 @@
                                 <div class="col-md-12">
                                     <a href="https://edlink.id/" target="_blank">
                                         <div class="card">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/edlink.png" class="img-fluid">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/edlink.png"
+                                                class="img-fluid">
                                             <p>Metode baru menjalankan perkuliahan</p>
                                         </div>
                                     </a>
@@ -383,7 +426,8 @@
                                 <div class="col-md-12">
                                     <a href="https://maukuliah.id/" target="_blank">
                                         <div class="card">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/maukuliah.png" class="img-fluid">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/maukuliah.png"
+                                                class="img-fluid">
                                             <p>Cari dan bandingkan informasi kampus</p>
                                         </div>
                                     </a>
@@ -404,7 +448,8 @@
                                         <div class="col-md-4">
                                             <a href="https://siakadcloud.com/" target="_blank">
                                                 <div class="card">
-                                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/siakadcloud.png" class="img-fluid">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/siakadcloud.png"
+                                                        class="img-fluid">
                                                     <p>Solusi sistem akademik kampus.</p>
                                                 </div>
                                             </a>
@@ -412,8 +457,10 @@
                                         <div class="col-md-4">
                                             <a href="https://gofeedercloud.com/" target="_blank">
                                                 <div class="card">
-                                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/gofeeder.png" class="img-fluid">
-                                                    <p>Akademik beres, pelaporan Neo Feeder beres, akreditasi sukses.</p>
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/gofeeder.png"
+                                                        class="img-fluid">
+                                                    <p>Akademik beres, pelaporan Neo Feeder beres, akreditasi sukses.
+                                                    </p>
                                                 </div>
                                             </a>
                                         </div>
@@ -429,7 +476,8 @@
                                         <div class="col-md-4">
                                             <a href="https://siakadcloud.com/akreditasicloud/" target="_blank">
                                                 <div class="card">
-                                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/akreditasicloud.png" class="img-fluid">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/akreditasicloud.png"
+                                                        class="img-fluid">
                                                     <p>Akreditasi Mudah , Beres dan Menyenangkan</p>
                                                 </div>
                                             </a>
@@ -437,7 +485,8 @@
                                         <div class="col-md-4">
                                             <a href="https://profeeder.id/" target="_blank">
                                                 <div class="card">
-                                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/profeeder.png" class="img-fluid">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/profeeder.png"
+                                                        class="img-fluid">
                                                     <p>Satu kali klik, pelaporan beres</p>
                                                 </div>
                                             </a>
@@ -445,7 +494,8 @@
                                         <div class="col-md-4">
                                             <a href="https://sevimapay.com/" target="_blank">
                                                 <div class="card">
-                                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/sevimapay.png" class="img-fluid">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/sevimapay.png"
+                                                        class="img-fluid">
                                                     <p>Integrasi Pembayaran Keuangan Mahasiswa secara online </p>
                                                 </div>
                                             </a>
@@ -453,7 +503,8 @@
                                         <div class="col-md-4">
                                             <a href="https://karirlink.id/" target="_blank">
                                                 <div class="card">
-                                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/karirlink-logo.png" class="img-fluid">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/karirlink-logo.png"
+                                                        class="img-fluid">
                                                     <p>Cara mudah dan cepat untuk dapatkan pekerjaan pertamamu</p>
                                                 </div>
                                             </a>
@@ -461,8 +512,10 @@
                                         <div class="col-md-4">
                                             <a href="https://persuratan.integrasolusi.com//" target="_blank">
                                                 <div class="card">
-                                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/Persuratan Logo-09.png" class="img-fluid">
-                                                    <p>Sistem persuratan online yang membantu proses surat masuk, keluar, disposisi dan informasi agar lebih mudah dan cepat </p>
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/Persuratan Logo-09.png"
+                                                        class="img-fluid">
+                                                    <p>Sistem persuratan online yang membantu proses surat masuk,
+                                                        keluar, disposisi dan informasi agar lebih mudah dan cepat </p>
                                                 </div>
                                             </a>
                                         </div>
@@ -472,7 +525,8 @@
                                         <div class="col-md-4">
                                             <a href="https://edlink.id/" target="_blank">
                                                 <div class="card">
-                                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/edlink.png" class="img-fluid">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/edlink.png"
+                                                        class="img-fluid">
                                                     <p>Metode baru menjalankan perkuliahan</p>
                                                 </div>
                                             </a>
@@ -480,7 +534,8 @@
                                         <div class="col-md-4">
                                             <a href="https://maukuliah.id/" target="_blank">
                                                 <div class="card">
-                                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/maukuliah.png" class="img-fluid">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo-produk/maukuliah.png"
+                                                        class="img-fluid">
                                                     <p>Cari dan bandingkan informasi kampus</p>
                                                 </div>
                                             </a>
@@ -499,7 +554,8 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Berita</a>
                             <div class="dropdown-menu" style="top: 2.1rem;">
-                                <a class="dropdown-item" href="<?php echo home_url(); ?>/artikel-blog/">Artikel & Blog</a>
+                                <a class="dropdown-item" href="<?php echo home_url(); ?>/artikel-blog/">Artikel &
+                                    Blog</a>
                                 <a class="dropdown-item" href="<?php echo home_url(); ?>/ebook/">Ebook</a>
                                 <a class="dropdown-item" href="<?php echo home_url(); ?>/jurusan/">Jurusan Kuliah</a>
                             </div>
@@ -522,12 +578,16 @@
                 <div class="navbar-right ml-auto hide-xs">
                     <div class="icons">
                         <span class="email">Kontak Kami</span>
-                        <a href="<?php echo home_url(); ?>/kontak-kami/" target="_blank"> <img src="<?php echo get_template_directory_uri(); ?>/img/gmail.png" class="img-fluid gbr-icon" alt=""></a>
+                        <a href="<?php echo home_url(); ?>/kontak-kami/" target="_blank"> <img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gmail.png"
+                                class="img-fluid gbr-icon" alt=""></a>
                     </div>
 
                     <div class="icons">
                         <span class="wa">Chat WA</span>
-                        <a href="https://wa.me/6282261610404?text=[SVM3204]%20Halo,%20saya%20ingin%20tanya%20layanan%20dan%20produk%20SEVIMA" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/whatsapp.png" class="img-fluid gbr-icon" alt=""> </a>
+                        <a href="https://wa.me/6282261610404?text=[SVM3204]%20Halo,%20saya%20ingin%20tanya%20layanan%20dan%20produk%20SEVIMA"
+                            target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/whatsapp.png"
+                                class="img-fluid gbr-icon" alt=""> </a>
                     </div>
                 </div>
             </nav>

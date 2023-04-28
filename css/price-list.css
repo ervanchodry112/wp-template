@@ -1,7 +1,7 @@
 /** @format */
 
 #pricing-with-accordion {
-  padding-top: 7rem;
+  padding-top: 2rem;
   padding-bottom: 3rem;
 }
 
@@ -14,11 +14,11 @@
 
 #pricing-with-accordion article h6.item {
   font-weight: bold;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   line-height: 1;
   text-align: center;
   letter-spacing: 0.1em;
-  color: #3949ab;
+  color: #ffa000;
   text-transform: uppercase;
 }
 
@@ -28,8 +28,8 @@
 }
 
 #pricing-with-accordion article .harga {
-  font-weight: bold;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 1.15rem;
   text-align: center;
 }
 
@@ -84,13 +84,18 @@
   width: 100%;
 }
 
+#pricing-with-accordion article table tr.price-head > th {
+  background: #3949ab;
+  color: #fff;
+}
+
 #pricing-with-accordion article table th {
   position: relative;
   background: #fff;
   border: 1px solid #e2f4eb;
   display: none;
   empty-cells: show;
-  padding: 2rem 1rem;
+  padding: 1.4rem 1rem;
   text-align: center;
 }
 
@@ -113,11 +118,20 @@
   }
 }
 
+#pricing-with-accordion article table .sep ~ td i.uil-check-circle {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
 #pricing-with-accordion article table td i.uil-check-circle {
   color: #3949ab;
   font-size: 1.5rem;
 }
 
+#pricing-with-accordion article table .sep ~ td i.uil-times-circle {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 1.5rem;
+}
 #pricing-with-accordion article table td i.uil-times-circle {
   color: rgba(79, 79, 79, 0.2);
   font-size: 1.5rem;
@@ -160,6 +174,7 @@
 #pricing-with-accordion article table th + th {
   text-align: center;
   display: none;
+  border: 1px solid white;
 }
 
 #pricing-with-accordion article table .tick {
@@ -191,7 +206,7 @@
     padding-right: 0.75rem;
   }
   #pricing-with-accordion article td.fitur {
-    font-size: 1.125rem !important;
+    font-size: 0.9rem !important;
     padding-left: 1rem;
   }
   #pricing-with-accordion article td.fitur-child {
@@ -202,10 +217,13 @@
     width: auto;
   }
   #pricing-with-accordion article .sep {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
 
+#pricing-with-accordion article p.modul {
+  font-size: 1.2rem !important;
+}
 #pricing-with-accordion article p {
   padding: 0;
   margin: 0;
@@ -397,16 +415,25 @@
 }
 
 #pricing-with-accordion .sep {
-  background: rgba(170, 187, 231, 0.25);
+  background: #7283e7;
+  color: #fff;
   font-size: 1rem;
   font-weight: bold;
   text-align: left;
 }
 
 #pricing-with-accordion .fitur {
-  background: #3949ab;
-  color: #fff;
+  background: rgba(170, 187, 231, 0.25);
+  /* color: #fff; */
   font-size: 1rem;
+  font-weight: 600;
+  text-align: left !important;
+}
+#pricing-with-accordion .fitur ~ td {
+  background: rgba(170, 187, 231, 0.25);
+  /* color: #fff; */
+  font-size: 1rem;
+  font-weight: 600;
   text-align: left !important;
 }
 
@@ -640,4 +667,10 @@
     max-width: unset;
     margin-bottom: 1rem;
   }
+}
+
+#pricing-with-accordion article .sep ~ td {
+  background: #7283e7;
+  color: #fff;
+  border: 1px solid white;
 }
