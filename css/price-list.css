@@ -14,7 +14,11 @@
 
 #pricing-with-accordion article h6.item {
   font-weight: bold;
+<<<<<<< HEAD
+  font-size: 0.8rem;
+=======
   font-size: 0.6rem;
+>>>>>>> d2ed07b45f231cbd0adcd5c5db1e57145fa201e8
   line-height: 1;
   text-align: center;
   letter-spacing: 0.1em;
@@ -29,7 +33,11 @@
 
 #pricing-with-accordion article .harga {
   font-weight: bold;
+<<<<<<< HEAD
+  font-size: 0.9rem;
+=======
   font-size: 1.2rem;
+>>>>>>> d2ed07b45f231cbd0adcd5c5db1e57145fa201e8
   text-align: center;
 }
 
