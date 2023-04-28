@@ -79,6 +79,7 @@ $(document).ready(function () {
   $('.produk-click-1').click(function () {
     $('.navbar-collapse-sevima-1').toggleClass('toggle-responsive');
   });
+  
 });
 
 // ------ MODAL VIDEO ------ //
