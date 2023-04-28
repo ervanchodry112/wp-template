@@ -14,7 +14,7 @@
 
 #pricing-with-accordion article h6.item {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.6rem;
   line-height: 1;
   text-align: center;
   letter-spacing: 0.1em;
@@ -29,7 +29,7 @@
 
 #pricing-with-accordion article .harga {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -104,7 +104,7 @@
   vertical-align: middle;
   background: #fff;
   text-align: center;
-  font-size: 1.125rem;
+  font-size: 0.85rem;
 }
 
 @media (max-width: 991.98px) {
@@ -214,7 +214,7 @@
 #pricing-with-accordion article .accordion-row .accordion-header td {
   height: 70px;
   padding: 1rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 @media (max-width: 991.98px) {
