@@ -1,5 +1,9 @@
 /** @format */
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
 // --- BERITA ----//
 
 $('#owl-event-berita').owlCarousel({
