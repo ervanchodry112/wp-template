@@ -354,7 +354,7 @@ doSomething(mediaQuery);
                         </div>
                   </td>
                 </tr>
-                
+
               </thead>
               <tbody>
                 <tr>
@@ -530,8 +530,7 @@ doSomething(mediaQuery);
                             class="btn btn-sm btn-warning rounded-lg" id="collapseManajemenPMBBtn">
                       <i class='uil uil-angle-down'></i>
                     </a>
-</div>
-                    </td>
+                  </td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -997,9 +996,9 @@ doSomething(mediaQuery);
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Proposal dan Tugas Akhir</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1011,9 +1010,9 @@ doSomething(mediaQuery);
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Bimbingan Tugas Akhir dari Mahasiswa ke Dosen Pembimbing</td>
                   <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1025,9 +1024,9 @@ doSomething(mediaQuery);
                 <tr class="accordion-header">
                   <td class="fitur">Pengajuan cuti studi oleh mahasiswa</td>
                   <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1039,9 +1038,9 @@ doSomething(mediaQuery);
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen kalender akademik</td>
                   <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1053,9 +1052,9 @@ doSomething(mediaQuery);
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen transfer mahasiswa dan double degree</td>
                   <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1067,9 +1066,9 @@ doSomething(mediaQuery);
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen proses pemutihan nilai</td>
                   <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1080,12 +1079,12 @@ doSomething(mediaQuery);
               <tbody class="accordion-row">
                 <tr class="accordion-header">
                   <td class="fitur">Open API untuk integrasi dengan aplikasi lain</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1347,7 +1346,20 @@ doSomething(mediaQuery);
               </tbody>
 
               <!---- 6 ----->
-              
+              <tbody>
+                <tr>
+                  <td class="sep">Karirlink - Modul Career Center</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td>Personalized (*)</td>
+                  <td>Whitelabel (*)</td>
+                  <td>Whitelabel (*)</td>
+                </tr>
+              </tbody>
               <tbody class="accordion-row">
                 <tr class="accordion-header">
                   <td class="fitur">Portal Info Karir, Lowongan, Event (Web & Mobile)</td>
@@ -1366,19 +1378,7 @@ doSomething(mediaQuery);
                 <tr class="accordion-header">
                   <td class="fitur">Daftar Riwayat Hidup Lulusan (CV)</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle<tbody>
-                <tr>
-                  <td class="sep">Karirlink - Modul Career Center</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td>Personalized (*)</td>
-                  <td>Whitelabel (*)</td>
-                  <td>Whitelabel (*)</td>
-                </tr>
-              </tbody>'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
@@ -2045,6 +2045,7 @@ doSomething(mediaQuery);
                   </td>
                 </tr>
               </tbody>
+
               <tfoot>
                 <tr>
                   <th style="vertical-align: middle; font-size: 1.25rem;">
@@ -2074,6 +2075,7 @@ doSomething(mediaQuery);
                     <p class="harga">Rp6JT<br>
                   </p>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
+
                   </th>
                   <th>
                     <h6 class="item">Silver</h6>
@@ -2139,6 +2141,7 @@ doSomething(mediaQuery);
   </table>
   </div>
   </article>
+
 
   <div class="pricing-footer">
     <div class="note">
