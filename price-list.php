@@ -186,11 +186,11 @@ doSomething(mediaQuery);
           </ul> -->
 
           <ul class="overflow-auto">
-            <li class="bg-blue nav-item" role="presentation">
+            <!-- <li class="bg-blue nav-item" role="presentation">
               <button class="nav-link active" id="community-tab" data-toggle="tab" data-target=".community" type="button" aria-selected="true">
                 <h6 class="item">Community</h6>
               </button>
-            </li>
+            </li> -->
             <li class="bg-blue nav-item" role="presentation">
               <button class="nav-link" data-toggle="tab" data-target=".lite" type="button" aria-selected="false">
                 <h6 class="item">Lite</h6>
@@ -208,27 +208,27 @@ doSomething(mediaQuery);
             </li>
             <li class="bg-blue nav-item">
               <button class="nav-link" data-toggle="tab" data-target=".silver" type="button" aria-selected="false">
-                <h6 class="item">Silver</h6>
+                <h6 class="item">Growth</h6>
               </button>
             </li>
             <li class="bg-blue nav-item">
               <button class="nav-link" data-toggle="tab" data-target=".gold" type="button" aria-selected="false">
-                <h6 class="item">Gold</h6>
+                <h6 class="item">Bussines</h6>
               </button>
             </li>
             <li class="bg-blue nav-item">
               <button class="nav-link" data-toggle="tab" data-target=".titanium" type="button" aria-selected="false">
-                <h6 class="item">Titanium</h6>
+                <h6 class="item">Professional</h6>
               </button>
             </li>
             <li class="bg-blue nav-item">
               <button class="nav-link" data-toggle="tab" data-target=".platinum" type="button" aria-selected="false">
-                <h6 class="item">Platinum</h6>
+                <h6 class="item">Premium</h6>
               </button>
             </li>
             <li class="bg-blue nav-item">
               <button class="nav-link" data-toggle="tab" data-target=".palladium" type="button" aria-selected="false">
-                <h6 class="item">Palladium</h6>
+                <h6 class="item">Enterprise</h6>
               </button>
             </li>
           </ul>
@@ -239,12 +239,12 @@ doSomething(mediaQuery);
                   <th style="vertical-align: middle; font-size: 1.25rem;" rowspan="3">
                     <p>Modul-modul<br> Sevima Platform </p>
                   </th>
-                  <th>
+                  <!-- <th>
                     <h6 class="item">Community</h6>
                     <p class="harga">Rp0<br>
                   </p>
-                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
-                  </th>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> 
+                  </th> -->
                   <th>
                     <h6 class="item">Lite</h6>
                     <p class="harga">Rp2.5JT<br>
@@ -265,28 +265,28 @@ doSomething(mediaQuery);
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th>
                   <th>
-                    <h6 class="item">Silver</h6>
+                    <h6 class="item">Growth</h6>
                     <p class="harga">Rp9JT<br>
                   </p>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th>
                   <th>
-                    <h6 class="item">Gold</h6>
+                    <h6 class="item">Bussines</h6>
                     <p class="harga">Rp13JT<br>
                   </p>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th><th>
-                    <h6 class="item">Titanium</h6>
+                    <h6 class="item">Profesional</h6>
                     <p class="harga">Rp19JT<br>
                   </p>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th><th>
-                    <h6 class="item">Platinum</h6>
+                    <h6 class="item">Premium</h6>
                     <p class="harga">Rp31JT<br>
                   </p>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th><th>
-                    <h6 class="item">Palladium</h6>
+                    <h6 class="item">Enterprise</h6>
                     <p class="harga">Rp43.5JT<br>
                   </p>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
@@ -299,9 +299,9 @@ doSomething(mediaQuery);
     <td>
       <p><b>Biaya per-bulan</b></p>
     </td>
-    <td>
+    <!-- <td>
       <p>Rp0</p>
-    </td>
+    </td> -->
     <td>
       <p>Rp2.5JT</p>
     </td>
@@ -601,24 +601,24 @@ doSomething(mediaQuery);
                   <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td>Lebih Lengkap
-                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Dilengkapi fasilitas manajemen kuota, 
-                      grade minimal kelulusan, seleksi prestasi berdasarkan rapor, dan rekomendasi kelulusan otomatis"></i>
+                      <i class="uil uil-info-circle" aria-hidden="true"></i>
+                      <span>Lebih Lengkap</span>
+                  </td>
+                  <td>Lebih Lengkap
+                      <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Dilengkapi fasilitas manajemen kuota, 
+                  grade minimal kelulusan, seleksi prestasi berdasarkan rapor, dan rekomendasi kelulusan otomatis"></i>
                   </td>
                   <td>Lebih Lengkap
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Dilengkapi fasilitas manajemen kuota, 
-                      grade minimal kelulusan, seleksi prestasi berdasarkan rapor, dan rekomendasi kelulusan otomatis"></i>
+                  grade minimal kelulusan, seleksi prestasi berdasarkan rapor, dan rekomendasi kelulusan otomatis"></i>
+                  </td>
+                  <td>Lebih Lengkap
+                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Dilengkapi fasilitas manajemen kuota,grade minimal kelulusan, 
+                  Seleksi prestasi berdasarkan rapor, dan rekomendasi kelulusan otomatis"></i>
                   </td>
                   <td>Lebih Lengkap
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Dilengkapi fasilitas manajemen kuota, 
-                      grade minimal kelulusan, seleksi prestasi berdasarkan rapor, dan rekomendasi kelulusan otomatis"></i>
-                  </td>
-                  <td>Lebih Lengkap
-                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Dilengkapi fasilitas manajemen kuota, 
-                      grade minimal kelulusan, seleksi prestasi berdasarkan rapor, dan rekomendasi kelulusan otomatis"></i>
-                  </td>
-                  <td>Lebih Lengkap
-                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Dilengkapi fasilitas manajemen kuota, 
-                      grade minimal kelulusan, seleksi prestasi berdasarkan rapor, dan rekomendasi kelulusan otomatis"></i>
+                  grade minimal kelulusan, seleksi prestasi berdasarkan rapor, dan rekomendasi kelulusan otomatis"></i>
                   </td>
                 </tr>
                 <tr class="accordion-child">
@@ -628,7 +628,7 @@ doSomething(mediaQuery);
                   <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td>Lebih Lengkap
-                      <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Dilengkapi rekomendasi pengelompokan Uang Kuliah Tunggal (UKT),
+                      <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Dilengkapi rekomendasi pengelompokan Uang Kuliah Tunggal (UKT), 
                   Kartu Indonesia Pintar (KIP)/Bidikmisi otomatis"></i>
                   </td>
                   <td>Lebih Lengkap
@@ -853,7 +853,7 @@ doSomething(mediaQuery);
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td>Lebih Lengkap
-                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Integrasi dengan aplikasi mobile SEVIMA EdLink"></i>
+                    <i class="uil uil-info-circle"  title="Integrasi dengan aplikasi mobile SEVIMA EdLink"></i>
                   </td>
                   <td>Lebih Lengkap
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Integrasi dengan aplikasi mobile SEVIMA EdLink"></i>
