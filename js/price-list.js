@@ -27,7 +27,7 @@ $('ul').on('click', 'li', function () {
 });
 
 var accordionHeader = $(
-	'#pricing-with-accordion .accordion-row .accordion-header'
+	'# .accordion-row .accordion-header'
 );
 accordionHeader.each(function () {
 	var accordionChild = $(this).parent().find($('.accordion-child'));

@@ -14,7 +14,11 @@
 
 #pricing-with-accordion article h6.item {
   font-weight: bold;
+<<<<<<< HEAD
   font-size: 0.8rem;
+=======
+  font-size: 0.6rem;
+>>>>>>> d2ed07b45f231cbd0adcd5c5db1e57145fa201e8
   line-height: 1;
   text-align: center;
   letter-spacing: 0.1em;
@@ -29,7 +33,11 @@
 
 #pricing-with-accordion article .harga {
   font-weight: bold;
+<<<<<<< HEAD
   font-size: 0.9rem;
+=======
+  font-size: 1.2rem;
+>>>>>>> d2ed07b45f231cbd0adcd5c5db1e57145fa201e8
   text-align: center;
 }
 
@@ -53,7 +61,7 @@
 
 #pricing-with-accordion article ul li h6.item {
   font-size: 1rem;
-  text-transform: capitalize;
+  text-transform: lo;
   margin: 0;
 }
 
@@ -104,7 +112,7 @@
   vertical-align: middle;
   background: #fff;
   text-align: center;
-  font-size: 1.125rem;
+  font-size: 0.85rem;
 }
 
 @media (max-width: 991.98px) {
@@ -214,7 +222,7 @@
 #pricing-with-accordion article .accordion-row .accordion-header td {
   height: 70px;
   padding: 1rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 @media (max-width: 991.98px) {
