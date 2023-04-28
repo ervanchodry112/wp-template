@@ -291,69 +291,110 @@ doSomething(mediaQuery);
                   </p>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th>
+
                 </tr>
-                
-                
-                <tr class="d-lg-none">
-                  <td class="col-6">
-                    <p><b>Biaya per-bulan</b></p>
-                  </td>
-                  <td>
-                    <p>Rp7JT</p>
-                  </td>
-                  <td>
-                    <p>Rp10JT</p>
-                  </td>
-                  <td class="" style="font-weight: bold;">
-                    <p>Rp15JT</p>
-                  </td>
-                  <td>
-                    <p>Rp18JT</p>
-                  </td>
-                  <td>
-                    <p>Rp25JT</p>
-                  </td>
-                </tr>
-                <tr class="d-lg-none">
-                  <td>
-                    <p><b>Jumlah Mahasiswa</b></p>
-                  </td>
-                  <td>
-                    <p>
-                      < 2.000 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,- per Mahasiswa tiap Bulannya"></i>
-                        </div>
-                  </td>
-                  <td>
-                    <p>
-                      < 3.000 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,-  per Mahasiswa tiap Bulannya"></i>
-                        </div>
-                  </td>
-                  <td class="default" style="font-weight: bold;">
-                    <p>
-                      < 5.000 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp3.750,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp3.750,- per Mahasiswa tiap Bulannya"></i>
-                        </div>
-                  </td>
-                  <td>
-                    <p>
-                      < 10.000 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp2.400,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp2.400,- per Mahasiswa tiap Bulannya"></i>
-                        </div>
-                  </td>
-                  <td>
-                    <p>
-                      < 20.000 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-                        </div>
-                  </td>
-                </tr>
+
+                <!-- mobile -->
+  <tr class="d-lg-none">
+    <td>
+      <p><b>Biaya per-bulan</b></p>
+    </td>
+    <td>
+      <p>Rp0</p>
+    </td>
+    <td>
+      <p>Rp2.5JT</p>
+    </td>
+    <td class="default" style="font-weight: bold;">
+      <p>Rp4.4JT</p>
+    </td>
+    <td>
+      <p>Rp6JT</p>
+    </td>
+    <td>
+      <p>Rp9JT</p>
+    </td>
+    <td>
+      <p>Rp13JT</p>
+    </td>
+    <td>
+      <p>Rp19JT</p>
+    </td>
+    <td>
+      <p>Rp31JT</p>
+    </td>
+    <td>
+      <p>Rp43.5JT</p>
+    </td>
+  </tr>
+
+  <tr class="d-lg-none">
+    <td>
+      <p><b>Jumlah Mahasiswa</b></p>
+    </td>
+    <td>
+      <p>0</p>
+      <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+      </div>
+    </td>
+    <td>
+      <p>
+        < 300 mhs</p>
+      <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
+        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,- per Mahasiswa tiap Bulannya"></i>
+      </div>
+    </td>
+    <td>
+      <p>
+        < 500 mhs</p>
+      <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
+        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,-  per Mahasiswa tiap Bulannya"></i>
+      </div>
+    </td>
+    <td class="default" style="font-weight: bold;">
+      <p>
+        < 800 mhs</p>
+      <div class="alert-success">Investasi<br>±Rp3.750,- /mhs
+        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp3.750,- per Mahasiswa tiap Bulannya"></i>
+      b</div>
+    </td>
+    <td>
+      <p>
+        < 2,000 mhs</p>
+      <div class="alert-success">Investasi<br>±Rp2.400,- /mhs
+        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp2.400,- per Mahasiswa tiap Bulannya"></i>
+      </div>
+    </td>
+    <td>
+      <p>
+      < 4,000 mhs</p>
+      <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+      </div>
+    </td>
+    <td>
+      <p>
+        < 7,000 mhs</p>
+      <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+      </div>
+    </td>
+    <td>
+      <p>
+        < 20.000 mhs</p>
+      <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+      </div>
+    </td>
+    <td>
+      <p>
+        < 35,000 mhs</p>
+      <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+      </div>
+    </td>
+  </tr>
 
               </thead>
               <tbody>
