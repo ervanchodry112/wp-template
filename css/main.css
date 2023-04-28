@@ -2684,6 +2684,56 @@ body {
 	font-family: 'Sarabun', sans-serif;
 }
 
+/* hero baru  */
+#upper .desk {
+	padding-top: 3rem;
+	text-align: center;
+}
+#upper .image-upper img {
+	display: none;
+}
+#upper {
+	background: url('../img/bg-promo.png');
+	-o-object-fit: cover;
+	object-fit: cover;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	height: 100px;
+	padding: 0rem;
+}
+
+#upper .desk {
+	padding-top: 5rem;
+	padding-bottom: 2rem;
+}
+
+#upper .image-upper img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#upper .desk h3 {
+	margin-top: 5px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 100px;
+	color: #fff;
+}
+
+#upper .desk label {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	margin-bottom: 0;
+	font-size: 18px;
+	color: #3949ab;
+}
+
+#upper .desk p {
+	font-size: 18px;
+	color: #fff;
+	font-family: 'Sarabun', sans-serif;
+}
+/* hero baru end */
 #hero-mitra {
 	background: url('../img/bg-promo.png');
 	-o-object-fit: cover;

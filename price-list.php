@@ -121,6 +121,17 @@ doSomething(mediaQuery);
     </div>
   </section>
 
+  <section id="upper">
+    <div class="container">
+      <div class="row">
+        <div class="image-upper">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/Basic.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </section>
 <!-- PRICING NEW -->
 <section id="pricing-with-accordion">
   <div class="container-fluid">
