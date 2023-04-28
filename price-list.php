@@ -21,9 +21,18 @@ get_header();
 </script>
 
 <script>
+  var item;
   // Set Display attribute of all element with class .accordion-child to none
 $(document).ready(function () {
   $('.accordion-child').css('display', 'none');
+
+  item = $('.item').parent().parent();
+  
+  item.click((event) => {
+    item.removeClass('active');
+    $(this).parents('li').addClass('active');
+    console.log($(this).parents('button'))
+  })
 });
 
 const collapseControl = (id) => {
@@ -53,6 +62,30 @@ const collapseControl = (id) => {
     sib.css('display', 'none');
   }
 };
+
+// Initialize the media query
+var mediaQuery = window.matchMedia("(min-width: 990px)");
+
+// Add a listen event
+mediaQuery.addListener(doSomething);
+
+// Function to do something with the media query
+function doSomething(mediaQuery) {
+  if (mediaQuery.matches) {
+    $(".sep").attr("colspan", 6);
+  } else {
+    $(".sep").attr("colspan", 2);
+  }
+}
+
+// On load
+doSomething(mediaQuery);
+
+
+
+
+// Add active class if clicked
+
 </script>
 <!-- 
 <section id="hero-promo">
@@ -104,18 +137,18 @@ const collapseControl = (id) => {
     <div class="row justify-content-center">
       <div class="col-11">
         <article>
-          <ul>
-            <li class="bg-blue">
-              <button>
-                <h6 class="item">Community </h6>
+          <!-- <ul class="nav nav-tabs">
+            <li class="bg-blue nav-item active" role="presentation">
+              <button class="nav-link" id="community-tab" data-toggle="tab" data-target=".community" type="button" aria-selected="true">
+                <h6 class="item">Community</h6>
               </button>
             </li>
-            <li class="bg-blue">
+            <li class="bg-blue nav-item" role="presentation">
               <button>
                 <h6 class="item">Lite</h6>
               </button>
             </li>
-            <li class="bg-blue active">
+            <li class="bg-blue">
               <button>
                 <h6 class="item">Starter</h6>
               </button>
@@ -150,62 +183,119 @@ const collapseControl = (id) => {
                 <h6 class="item">Palladium</h6>
               </button>
             </li>
+          </ul> -->
+
+          <ul class="overflow-auto">
+            <li class="bg-blue nav-item" role="presentation">
+              <button class="nav-link active" id="community-tab" data-toggle="tab" data-target=".community" type="button" aria-selected="true">
+                <h6 class="item">Community</h6>
+              </button>
+            </li>
+            <li class="bg-blue nav-item" role="presentation">
+              <button class="nav-link" data-toggle="tab" data-target=".lite" type="button" aria-selected="false">
+                <h6 class="item">Lite</h6>
+              </button>
+            </li>
+            <li class="bg-blue nav-item">
+              <button class="nav-link" data-toggle="tab" data-target=".starter" type="button" aria-selected="false">
+                <h6 class="item">Starter</h6>
+              </button>
+            </li>
+            <li class="bg-blue nav-item">
+              <button class="nav-link" data-toggle="tab" data-target=".basic" type="button" aria-selected="false">
+                <h6 class="item">Basic</h6>
+              </button>
+            </li>
+            <li class="bg-blue nav-item">
+              <button class="nav-link" data-toggle="tab" data-target=".silver" type="button" aria-selected="false">
+                <h6 class="item">Silver</h6>
+              </button>
+            </li>
+            <li class="bg-blue nav-item">
+              <button class="nav-link" data-toggle="tab" data-target=".gold" type="button" aria-selected="false">
+                <h6 class="item">Gold</h6>
+              </button>
+            </li>
+            <li class="bg-blue nav-item">
+              <button class="nav-link" data-toggle="tab" data-target=".titanium" type="button" aria-selected="false">
+                <h6 class="item">Titanium</h6>
+              </button>
+            </li>
+            <li class="bg-blue nav-item">
+              <button class="nav-link" data-toggle="tab" data-target=".platinum" type="button" aria-selected="false">
+                <h6 class="item">Platinum</h6>
+              </button>
+            </li>
+            <li class="bg-blue nav-item">
+              <button class="nav-link" data-toggle="tab" data-target=".palladium" type="button" aria-selected="false">
+                <h6 class="item">Palladium</h6>
+              </button>
+            </li>
           </ul>
-          <div class="table">
-            <table>
+          <div class="table" >
+            <table >
               <thead>
                 <tr>
-                  <th style="vertical-align: middle; font-size: 1.25rem">
+                  <th style="vertical-align: middle; font-size: 1.25rem;" rowspan="3">
                     <p>Modul-modul<br> Sevima Platform </p>
                   </th>
                   <th>
                     <h6 class="item">Community</h6>
-                    <p class="harga">Rp0<br><small>-</small></p>
+                    <p class="harga">Rp0<br>
+                  </p>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th>
                   <th>
                     <h6 class="item">Lite</h6>
-                    <p class="harga">Rp2.5JT<br><small> < 300 mhs</small></p>
+                    <p class="harga">Rp2.5JT<br>
+                  </p>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th>
                   <th class="gold">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/sign.png" class="img-fluid sign" style="position: absolute; top: -20%; margin-left: -35px;" alt="">
                     <h6 class="item">Starter</h6>
-                    <p class="harga">Rp4.4JT<br><small> < 500 mhs</small></p>
+                    <p class="harga">Rp4.4JT<br>
+                  </p>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th>
                   <th>
                     <h6 class="item">Basic</h6>
-                    <p class="harga">Rp6JT<br><small>< 800 mhs</small></p>
+                    <p class="harga">Rp6JT<br>
+                  </p>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th>
                   <th>
                     <h6 class="item">Silver</h6>
-                    <p class="harga">Rp9JT<br><small>< 2,000 mhs</small></p>
+                    <p class="harga">Rp9JT<br>
+                  </p>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th>
                   <th>
                     <h6 class="item">Gold</h6>
-                    <p class="harga">Rp13JT<br><small>< 4,000 mhs</small></p>
+                    <p class="harga">Rp13JT<br>
+                  </p>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th><th>
                     <h6 class="item">Titanium</h6>
-                    <p class="harga">Rp19JT<br><small>< 7,000 mhs</small></p>
+                    <p class="harga">Rp19JT<br>
+                  </p>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th><th>
                     <h6 class="item">Platinum</h6>
-                    <p class="harga">Rp31JT<br><small>< 20,000 mhs</small></p>
+                    <p class="harga">Rp31JT<br>
+                  </p>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th><th>
                     <h6 class="item">Palladium</h6>
-                    <p class="harga">Rp43.5JT<br><small>< 35,000 mhs</small></p>
+                    <p class="harga">Rp43.5JT<br>
+                  </p>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th>
-                  
                 </tr>
                 
+                
                 <tr class="d-lg-none">
-                  <td>
+                  <td class="col-6">
                     <p><b>Biaya per-bulan</b></p>
                   </td>
                   <td>
@@ -214,7 +304,7 @@ const collapseControl = (id) => {
                   <td>
                     <p>Rp10JT</p>
                   </td>
-                  <td class="default" style="font-weight: bold;">
+                  <td class="" style="font-weight: bold;">
                     <p>Rp15JT</p>
                   </td>
                   <td>
@@ -265,30 +355,10 @@ const collapseControl = (id) => {
                   </td>
                 </tr>
 
-                <tr class="d-lg-none">
-                  <td>
-                    <p><b>Hubungi Kami</b></p>
-                  </td>
-                  <td>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
-                  </td>
-                  <td>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
-                  </td>
-                  <td class="default">
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
-                  </td>
-                  <td>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
-                  </td>
-                  <td>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
-                  </td>
-                </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td colspan="10" class="sep">Sevima Platform</td>
+                  <td colspan="10" class="sep d-sm-none d-md-block">Sevima Platform</td>
                 </tr>
               </tbody>
 
@@ -1976,94 +2046,102 @@ const collapseControl = (id) => {
                 </tr>
               </tbody>
 
-              <!-- Footer -->
               <tfoot>
                 <tr>
-                  <th style="vertical-align: middle; font-size: 1.25rem">
-                    <p>Harga</p>
+                  <th style="vertical-align: middle; font-size: 1.25rem;">
+                    <p>Harga </p>
                   </th>
                   <th>
                     <h6 class="item">Community</h6>
-                    <p class="harga">Rp0<br><small>per-Bulan</small></p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
+                    <p class="harga">Rp0<br>
+                  </p>
+                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th>
                   <th>
                     <h6 class="item">Lite</h6>
-                    <p class="harga">Rp2.5JT<br><small>per-Bulan</small></p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
+                    <p class="harga">Rp2.5JT<br>
+                  </p>
+                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th>
-                  <th>
+                  <th class="gold">
+                    
                     <h6 class="item">Starter</h6>
-                    <p class="harga">Rp4.4JT<br><small>per-Bulan</small></p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
-                  </th>
-                  <th class="gold">
-                    <h6 class="item">Basic</h6>
-                    <p class="harga">Rp6JT<br><small>per-Bulan</small></p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
-                  </th>
-                  <th class="gold">
-                    <h6 class="item">Silver</h6>
-                    <p class="harga">Rp9JT<br><small>per-Bulan</small></p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
-                  </th>
-                  <th class="gold">
-                    <h6 class="item">Gold</h6>
-                    <p class="harga">Rp13JT<br><small>per-Bulan</small></p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
-                  </th>
-                  <th class="gold">
-                    <h6 class="item">Titanium</h6>
-                    <p class="harga">Rp19JT<br><small>per-Bulan</small></p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
-                  </th>
-                  <th class="gold">
-                    <h6 class="item">Platinum</h6>
-                    <p class="harga">Rp31JT<br><small>per-Bulan</small></p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
+                    <p class="harga">Rp4.4JT<br>
+                  </p>
+                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th>
                   <th>
+                    <h6 class="item">Basic</h6>
+                    <p class="harga">Rp6JT<br>
+                  </p>
+                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
+
+                  </th>
+                  <th>
+                    <h6 class="item">Silver</h6>
+                    <p class="harga">Rp9JT<br>
+                  </p>
+                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
+                  </th>
+                  <th>
+                    <h6 class="item">Gold</h6>
+                    <p class="harga">Rp13JT<br>
+                  </p>
+                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
+                  </th><th>
+                    <h6 class="item">Titanium</h6>
+                    <p class="harga">Rp19JT<br>
+                  </p>
+                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
+                  </th><th>
+                    <h6 class="item">Platinum</h6>
+                    <p class="harga">Rp31JT<br>
+                  </p>
+                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
+                  </th><th>
                     <h6 class="item">Palladium</h6>
-                    <p class="harga">Rp43.5JT<br><small>per-Bulan</small></p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
+                    <p class="harga">Rp43.5JT<br>
+                  </p>
+                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <p>Jumlah Mahasiswa  </p>
+                  </th>
+                  <th>
+                    <small>-</small>
+                  </th>
+                  <th>
+                    <small> < 300 mhs</small>
+                  </th>
+                  <th>
+                    <small> < 500 mhs</small>
+                  </th>
+                  <th>
+                    <small>< 800 mhs</small>
+                  </th>
+                  <th>
+                    <small>< 2,000 mhs</small>
+                  </th>
+                  <th>
+                    <small>< 4,000 mhs</small>
+                  </th>
+                  <th>
+                    <small>< 7,000 mhs</small>
+                  </th>
+                  <th>
+                    <small>< 20,000 mhs</small>
+                  </th>
+                  <th>
+                    <small>< 35,000 mhs</small>
                   </th> 
                 </tr>
+              </tfoot>
+  </table>
+  </div>
+  </article>
 
-                <tr class="d-none d-lg-table-row">
-                  <td style="background: #fff; font-size: 1.125rem; text-align: center;">
-                    <p>Jumlah Mahasiswa</p>
-                  </td>
-                  <td>
-                    < 2.000 mhs <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
-                      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,- per Mahasiswa tiap Bulannya"></i>
-                    </div>
-                  </td>
-                  <td>
-                    < 3.000 mhs <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
-                      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,- per Mahasiswa tiap Bulannya"></i>
-                    </div>
-                  </td>
-                  <td class="default" style="font-weight: bold;">
-                    < 5.000 mhs <div class="alert-success">Investasi<br>±Rp3.750,- /mhs
-                      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp3.750,- per Mahasiswa tiap Bulannya"></i>
-                    </div>
-                  </td>
-                  <td>
-                    < 10.000 mhs <div class="alert-success">Investasi<br>±Rp2.400,- /mhs
-                      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp2.400,- per Mahasiswa tiap Bulannya"></i>
-                    </div>
-                  </td>
-                  <td>
-                    < 20.000 mhs <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-                      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-                      </div>
-                  </td>
-                </tr>
-           </tfoot>
-           
-          </table>
-        </div>
-    </article>
 
   <div class="pricing-footer">
     <div class="note">
