@@ -2689,18 +2689,19 @@ body {
   padding-top: 3rem;
   text-align: center;
 }
-#upper .image-upper img {
-  display: none;
-}
-#upper {
-  background: url('../img/bg-promo.png');
-  -o-object-fit: cover;
-  object-fit: cover;
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  height: 100px;
-  padding: 0rem;
-}
+
+/* #upper .image-upper img {
+	display: none;
+} */
+/* #upper {
+	background: url('../img/bg-promo.png');
+	-o-object-fit: cover;
+	object-fit: cover;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	height: 100px;
+	padding: 0rem;
+} */
 
 #upper .desk {
   padding-top: 5rem;
@@ -2708,8 +2709,8 @@ body {
 }
 
 #upper .image-upper img {
-  max-width: 100%;
-  max-height: 100%;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 #upper .desk h3 {

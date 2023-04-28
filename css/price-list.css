@@ -104,6 +104,49 @@
   width: 20%;
 }
 
+#hero-price {
+  background: url("../img/bg-promo.png");
+  object-fit: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  height: 250px;
+  padding: 1.5rem;
+
+  .desc {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+
+  .image-hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  .desc {
+    h3 {
+      margin-top: 5px;
+      font-family: $font-title;
+      font-weight: 500;
+      font-size: 36px;
+      color: #fff;
+    }
+
+    label {
+      font-family: $font-title;
+      font-weight: 500;
+      margin-bottom: 0;
+      font-size: 18px;
+      color: $color-biru;
+    }
+
+    p {
+      font-size: 18px;
+      color: #fff;
+      font-family: $font-konten;
+    }
+  }
+}
+
 #pricing-with-accordion article table td {
   border: 1px solid #fff;
   empty-cells: show;
