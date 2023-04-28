@@ -351,8 +351,6 @@ doSomething(mediaQuery);
                 <tr class="head-fitur">
                   <td class="sep">Integrasi 100% dengan PDDIKTI Neo Feeder</td>
                   <td><i class='uil uil-check-circle'></i></td>
-
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -366,9 +364,6 @@ doSomething(mediaQuery);
                 <tr  class="accordion-header">
                   <td class="fitur">Integrasi data akademik, biaya masuk & SPP semester dengan PDDIKTI Neo Feeder</td>
                   <td><i class='uil uil-check-circle'></i></td>
-
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
-
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -395,9 +390,7 @@ doSomething(mediaQuery);
                 <tr class="accordion-header">
                   <td class="fitur">Monitoring prosentase pelaporan PDDIKTI Neo Feeder</td>
                   <td><i class='uil uil-times-circle'></i></td>
-
-                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
-
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -410,8 +403,7 @@ doSomething(mediaQuery);
                 <tr class="accordion-header">
                   <td class="fitur">Komparasi data antara data SIAKAD dengan data PDDIKTI Neo Feeder</td>
                   <td><i class='uil uil-times-circle'></i></td>
-
-                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -424,9 +416,7 @@ doSomething(mediaQuery);
                 <tr class="accordion-header">
                   <td class="fitur">Evaluasi & Sinkronisasi Data dari SIAKAD ke PDDIKTI Neo Feeder</td>
                   <td><i class='uil uil-times-circle'></i></td>
-
-                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
-
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -441,8 +431,7 @@ doSomething(mediaQuery);
                 <tr>
                   <td class="sep">PMB - Modul Penerimaan Mahasiswa Baru Online</td>
                   <td>Terbatas</td>
-
-                  <td class="default" style="font-weight: bold">Terbatas</td>
+                  <td>Terbatas</td>
                   <td>Terbatas</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -463,7 +452,7 @@ doSomething(mediaQuery);
                     </div>
                   </td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td>Lebih Lengkap</td>
                   <td>Lebih Lengkap</td>
@@ -474,7 +463,6 @@ doSomething(mediaQuery);
                 <tr class="accordion-child" id="collapsePMB">
                   <td class="fitur-child">- Portal pendaftaran sesuai jalur dan gelombang pendaftaran</td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -486,7 +474,7 @@ doSomething(mediaQuery);
                 <tr class="accordion-child">
                   <td class="fitur-child">- Manajemen Detail Informasi Program Studi</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -497,7 +485,7 @@ doSomething(mediaQuery);
                 <tr class="accordion-child">
                   <td class="fitur-child">- Manajemen informasi biaya perkuliahan dan brosur</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -517,7 +505,6 @@ doSomething(mediaQuery);
                     </a>
                   </td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -529,7 +516,6 @@ doSomething(mediaQuery);
                 <tr class="accordion-child" id="collapseManajemenPMB">
                   <td class="fitur-child">- Manajemen jalur, gelombang pendaftaran, dan sistem kuliah</td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -541,8 +527,7 @@ doSomething(mediaQuery);
                 <tr class="accordion-child">
                   <td class="fitur-child">- Manajemen Ujian Seleksi & Pengumuman</td>
                   <td><i class='uil uil-times-circle'></i></td>
-
-                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td>Lebih Lengkap
                       <i class="uil uil-info-circle" aria-hidden="true"></i>
@@ -552,7 +537,7 @@ doSomething(mediaQuery);
                       <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Dilengkapi fasilitas manajemen kuota, 
                   grade minimal kelulusan, seleksi prestasi berdasarkan rapor, dan rekomendasi kelulusan otomatis"></i>
                   </td>
-                  <td>Lebih Lengkap
+                  <td class="default" style="font-weight: bold">Lebih Lengkap
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Dilengkapi fasilitas manajemen kuota, 
                   grade minimal kelulusan, seleksi prestasi berdasarkan rapor, dan rekomendasi kelulusan otomatis"></i>
                   </td>
@@ -568,7 +553,7 @@ doSomething(mediaQuery);
                 <tr class="accordion-child">
                   <td class="fitur-child">- Manajemen Formulir & Tagihan Pendaftaran</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td>Lebih Lengkap
                       <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Dilengkapi rekomendasi pengelompokan Uang Kuliah Tunggal (UKT), 
@@ -578,7 +563,7 @@ doSomething(mediaQuery);
                       <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Dilengkapi rekomendasi pengelompokan Uang Kuliah Tunggal (UKT),
                   Kartu Indonesia Pintar (KIP)/Bidikmisi otomatis"></i>
                   </td>
-                  <td>Lebih Lengkap
+                  <td class="default" style="font-weight: bold">Lebih Lengkap
                       <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Dilengkapi rekomendasi pengelompokan Uang Kuliah Tunggal (UKT),
                   Kartu Indonesia Pintar (KIP)/Bidikmisi otomatis"></i>
                   </td>
@@ -594,7 +579,7 @@ doSomething(mediaQuery);
                 <tr class="accordion-child">
                   <td class="fitur-child">- Setting No Induk Mahasiswa (NIM) & Ekspor menjadi Mahasiswa</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -605,7 +590,7 @@ doSomething(mediaQuery);
                 <tr class="accordion-child">
                   <td class="fitur-child">- Laporan Rekapitulasi Pendaftar, Pembayaran & Sumber Informasi</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -617,6 +602,7 @@ doSomething(mediaQuery);
               <tbody class="accordion-row">
                 <tr class="accordion-header">
                   <td class="fitur">Pembayaran Tagihan Pendaftaran secara online</td>
+                
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -631,7 +617,6 @@ doSomething(mediaQuery);
                 <tr class="accordion-header">
                   <td class="fitur">Form pendaftaran online & upload berkas persyaratan administrasi</td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -645,7 +630,7 @@ doSomething(mediaQuery);
                 <tr class="accordion-header">
                   <td class="fitur">Form khusus untuk jalur pindahan, pascasarjana, Rekognisi Pembelajaran Lampau (RPL)</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -658,7 +643,7 @@ doSomething(mediaQuery);
                 <tr class="accordion-header">
                   <td class="fitur">Pembagian ruangan, penguji, dan peserta berdasarkan jadwal ujian</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -671,7 +656,7 @@ doSomething(mediaQuery);
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Pendaftaran dan Pengelolaan Kartu Indonesia Pintar (KIP) Kuliah </td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -684,7 +669,7 @@ doSomething(mediaQuery);
                 <tr class="accordion-header">
                   <td class="fitur">One Day Service (ODS)</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -697,7 +682,6 @@ doSomething(mediaQuery);
                 <tr class="accordion-header">
                   <td class="fitur">Try out berbasis CBT</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
@@ -719,7 +703,7 @@ doSomething(mediaQuery);
                     </div>
                   </td>
                   <td>Terbatas</td>
-                  <td class="default" style="font-weight: bold">Terbatas</td>
+                  <td>Terbatas</td>
                   <td>Terbatas</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -730,7 +714,6 @@ doSomething(mediaQuery);
                 <tr class="accordion-child" id="collapsePenyebaranInformasi">
                   <td class="fitur-child">- Quick chat ke panitia PMB</td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -753,7 +736,7 @@ doSomething(mediaQuery);
                 <tr class="accordion-child">
                   <td class="fitur-child">- Kirim info dengan email, whatsapp, dan SMS</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -768,7 +751,7 @@ doSomething(mediaQuery);
                 <tr>
                   <td class="sep">SIAKAD - Modul Administrasi Akademik  & Operasional Kampus</td>
                   <td>Terbatas</td>
-                  <td class="default" style="font-weight: bold">Terbatas</td>
+                  <td>Terbatas</td>
                   <td>Terbatas</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -781,7 +764,7 @@ doSomething(mediaQuery);
                 <tr class="accordion-header">
                   <td class="fitur">Pengisian KRS online oleh mahasiswa</td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td>Lebih Lengkap
                     <i class="uil uil-info-circle"  title="Integrasi dengan aplikasi mobile SEVIMA EdLink"></i>
@@ -804,7 +787,6 @@ doSomething(mediaQuery);
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen data mahasiswa & aktivitas mahasiswa</td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -817,7 +799,6 @@ doSomething(mediaQuery);
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen data dosen & riwayat dosen</td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -839,7 +820,7 @@ doSomething(mediaQuery);
                     </div>
                   </td>
                   <td>Terbatas</td>
-                  <td class="default" style="font-weight: bold">Terbatas</td>
+                  <td>Terbatas</td>
                   <td>Terbatas</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -850,7 +831,6 @@ doSomething(mediaQuery);
                 <tr class="accordion-child" id="collapseSiklusPerkuliahan">
                   <td class="fitur-child">- Manajamen Kelas Perkuliahan, Jadwal Perkuliahan & Dosen Pengajar</td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -862,7 +842,6 @@ doSomething(mediaQuery);
                 <tr class="accordion-child">
                   <td class="fitur-child">- Manajemen Jurnal Mengajar, RPS & Utilitas Ruang Kuliah</td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -874,10 +853,8 @@ doSomething(mediaQuery);
                 <tr class="accordion-child">
                   <td class="fitur-child">- Manajamen MataKuliah, Kurikulum, Prasyarat & Ekuivalensi MataKuliah</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -886,10 +863,9 @@ doSomething(mediaQuery);
                 </tr>
                 <tr class="accordion-child">
                   <td class="fitur-child">- Fasilitas Paket MataKuliah</td>
-                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -898,9 +874,7 @@ doSomething(mediaQuery);
                 </tr>
                 <tr class="accordion-child">
                   <td class="fitur-child">- Manajemen unsur bobot nilai</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-
+                  <td><i class='uil uil-check-circle'></i></td
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -914,7 +888,6 @@ doSomething(mediaQuery);
                 <tr class="accordion-header">
                   <td class="fitur">Presensi Mahasiswa by Scan Barcode</td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'</i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -927,7 +900,6 @@ doSomething(mediaQuery);
               <tbody class="accordion-row">
                 <tr class="accordion-header">
                   <td class="fitur">Pengisian Nilai Online oleh Dosen</td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -959,7 +931,6 @@ doSomething(mediaQuery);
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -981,7 +952,6 @@ doSomething(mediaQuery);
               <tbody class="accordion-row">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Bimbingan Tugas Akhir dari Mahasiswa ke Dosen Pembimbing</td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
@@ -1052,7 +1022,6 @@ doSomething(mediaQuery);
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1061,7 +1030,6 @@ doSomething(mediaQuery);
               <tbody class="accordion-row">
                 <tr class="accordion-header">
                   <td class="fitur">Fasilitas penyebaran informasi ke mahasiswa melalu email & whatsapp</td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1137,14 +1105,12 @@ doSomething(mediaQuery);
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child">
                   <td class="fitur-child">- Monitoring Piutang & Status Pembayaran Mahasiswa</td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1228,7 +1194,6 @@ doSomething(mediaQuery);
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1265,7 +1230,6 @@ doSomething(mediaQuery);
               <tbody class="accordion-row">
                 <tr class="accordion-header">
                   <td class="fitur">TRACER - Manajemen Tracer Study</td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1312,7 +1276,6 @@ doSomething(mediaQuery);
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold">Personalized (*)</td>
                   <td>Whitelabel (*)</td>
                   <td>Whitelabel (*)</td>
@@ -1321,7 +1284,6 @@ doSomething(mediaQuery);
               <tbody class="accordion-row">
                 <tr class="accordion-header">
                   <td class="fitur">Portal Info Karir, Lowongan, Event (Web & Mobile)</td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
@@ -1340,7 +1302,6 @@ doSomething(mediaQuery);
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1354,7 +1315,6 @@ doSomething(mediaQuery);
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1363,7 +1323,6 @@ doSomething(mediaQuery);
               <tbody class="accordion-row">
                 <tr class="accordion-header">
                   <td class="fitur">Post & Monitoring Lowongan Kerja (Untuk Perusahaan Rekanan PT)</td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
@@ -1416,7 +1375,6 @@ doSomething(mediaQuery);
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1436,7 +1394,6 @@ doSomething(mediaQuery);
                 </tr>
                 <tr class="accordion-child">
                   <td class="fitur-child">- Manajemen pengajuan dan validasi ijin, cuti, & kehadiran pegawai</td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
@@ -1494,7 +1451,6 @@ doSomething(mediaQuery);
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1503,7 +1459,6 @@ doSomething(mediaQuery);
               <tbody class="accordion-row">
                 <tr class="accordion-header">
                   <td class="fitur">PAK - Modul Perhitungan Angka Kredit</td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
@@ -1524,7 +1479,6 @@ doSomething(mediaQuery);
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
                   <td>Termasuk Simulasi Akreditasi</td>
                   <td>Termasuk Simulasi Akreditasi</td>
@@ -1533,7 +1487,6 @@ doSomething(mediaQuery);
               <tbody class="accordion-row">
                 <tr class="accordion-header">
                   <td class="fitur">Berdasarkan BAN-PT</td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
@@ -1551,7 +1504,6 @@ doSomething(mediaQuery);
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold">4 LAM</td>
                   <td>4 LAM</td>
                   <td>6 LAM</td>
@@ -1562,7 +1514,6 @@ doSomething(mediaQuery);
               <tbody>
                 <tr>
                   <td class="sep">MBKM - Modul Merdeka Belajar Kampus Merdeka</td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
@@ -1728,7 +1679,6 @@ doSomething(mediaQuery);
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1737,7 +1687,6 @@ doSomething(mediaQuery);
               <tbody class="accordion-row">
                 <tr class="accordion-header">
                   <td class="fitur">Transkrip Lulusan</td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1756,7 +1705,6 @@ doSomething(mediaQuery);
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1765,7 +1713,6 @@ doSomething(mediaQuery);
               <tbody class="accordion-row">
                 <tr class="accordion-header">
                   <td class="fitur">Surat Keterangan Pendamping Ijazah (SKPI)</td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1784,7 +1731,6 @@ doSomething(mediaQuery);
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1793,7 +1739,6 @@ doSomething(mediaQuery);
               <tbody class="accordion-row">
                 <tr class="accordion-header">
                   <td class="fitur">Daftar Hadir & Kartu Ujian</td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1814,7 +1759,6 @@ doSomething(mediaQuery);
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1828,7 +1772,6 @@ doSomething(mediaQuery);
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1837,21 +1780,6 @@ doSomething(mediaQuery);
               <tbody>
                 <tr>
                   <td class="sep">Rekognisi Pembelajaran lampau (RPL)</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                </tr>
-              </tbody>
-              <tbody>
-                <tr>
-                  <td class="sep">Rekognisi Pembelajaran lampau (RPL)</td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
@@ -1867,7 +1795,6 @@ doSomething(mediaQuery);
                   <td class="fitur">Pembayaran Tagihan Kuliah secara online
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Sedang dalam pengembangan"></i>
                   </td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
