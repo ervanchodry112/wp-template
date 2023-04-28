@@ -155,7 +155,7 @@ const collapseControl = (id) => {
             <table>
               <thead>
                 <tr>
-                  <th style="vertical-align: middle; font-size: 1.25rem">
+                  <th style="vertical-align: middle; font-size: 8rem">
                     <p>Modul-modul<br> Sevima Platform </p>
                   </th>
                   <th>
