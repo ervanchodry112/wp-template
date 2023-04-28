@@ -139,7 +139,8 @@ doSomething(mediaQuery);
         <article>
           <!-- <ul class="nav nav-tabs">
             <li class="bg-blue nav-item active" role="presentation">
-              <button class="nav-link" id="community-tab" data-toggle="tab" data-target=".community" type="button" aria-selected="true">
+              <button class="nav-link" id="community-tab" data-toggle="tab
+              " data-target=".community" type="button" aria-selected="true">
                 <h6 class="item">Community</h6>
               </button>
             </li>
