@@ -26,14 +26,14 @@ get_header();
   $(document).ready(function() {
     $('.accordion-child').css('display', 'none');
 
-    item = $('.item').parent().parent();
-
-    item.click((event) => {
-      item.removeClass('active');
-      $(this).parents('li').addClass('active');
-      console.log($(this).parents('button'))
-    })
-  });
+  item = $('.item').parent().parent();
+  
+  item.click((event) => {
+    item.removeClass('active');
+    $(this).parents('li').addClass('active');
+    console.log($(this).parents('button'))
+  })
+});
 
   const collapseControl = (id) => {
     var col = $(id);
@@ -63,28 +63,29 @@ get_header();
     }
   };
 
-  // Initialize the media query
-  var mediaQuery = window.matchMedia("(min-width: 990px)");
+// Initialize the media query
+var mediaQuery = window.matchMedia("(min-width: 990px)");
 
-  // Add a listen event
-  mediaQuery.addListener(doSomething);
+// Add a listen event
+mediaQuery.addListener(doSomething);
 
-  // Function to do something with the media query
-  function doSomething(mediaQuery) {
-    if (mediaQuery.matches) {
-      $(".sep").attr("colspan", 6);
-    } else {
-      $(".sep").attr("colspan", 2);
-    }
+// Function to do something with the media query
+function doSomething(mediaQuery) {
+  if (mediaQuery.matches) {
+    $(".sep").attr("colspan", 6);
+  } else {
+    $(".sep").attr("colspan", 2);
   }
+}
 
-  // On load
-  doSomething(mediaQuery);
+// On load
+doSomething(mediaQuery);
 
 
 
 
-  // Add active class if clicked
+// Add active class if clicked
+
 </script>
 <!-- 
 <section id="hero-promo">
@@ -287,74 +288,73 @@ get_header();
                   </td>
                 </tr>
 
-                <tr class="d-lg-none">
-                  <td>
-                    <p><b>Jumlah Mahasiswa</b></p>
-                  </td>
-                  <td>
-                    <p>0</p>
-                    <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-                      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      < 300 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,- per Mahasiswa tiap Bulannya"></i>
-                        </div>
-                  </td>
-                  <td>
-                    <p>
-                      < 500 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,-  per Mahasiswa tiap Bulannya"></i>
-                        </div>
-                  </td>
-                  <td class="default" style="font-weight: bold;">
-                    <p>
-                      < 800 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp3.750,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp3.750,- per Mahasiswa tiap Bulannya"></i>
-                          b
-                        </div>
-                  </td>
-                  <td>
-                    <p>
-                      < 2,000 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp2.400,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp2.400,- per Mahasiswa tiap Bulannya"></i>
-                        </div>
-                  </td>
-                  <td>
-                    <p>
-                      < 4,000 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-                        </div>
-                  </td>
-                  <td>
-                    <p>
-                      < 7,000 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-                        </div>
-                  </td>
-                  <td>
-                    <p>
-                      < 20.000 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-                        </div>
-                  </td>
-                  <td>
-                    <p>
-                      < 35,000 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-                        </div>
-                  </td>
-                </tr>
+  <tr class="d-lg-none">
+    <td>
+      <p><b>Jumlah Mahasiswa</b></p>
+    </td>
+    <td>
+      <p>0</p>
+      <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+      </div>
+    </td>
+    <td>
+      <p>
+        < 300 mhs</p>
+      <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
+        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,- per Mahasiswa tiap Bulannya"></i>
+      </div>
+    </td>
+    <td>
+      <p>
+        < 500 mhs</p>
+      <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
+        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,-  per Mahasiswa tiap Bulannya"></i>
+      </div>
+    </td>
+    <td class="default" style="font-weight: bold;">
+      <p>
+        < 800 mhs</p>
+      <div class="alert-success">Investasi<br>±Rp3.750,- /mhs
+        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp3.750,- per Mahasiswa tiap Bulannya"></i>
+      b</div>
+    </td>
+    <td>
+      <p>
+        < 2,000 mhs</p>
+      <div class="alert-success">Investasi<br>±Rp2.400,- /mhs
+        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp2.400,- per Mahasiswa tiap Bulannya"></i>
+      </div>
+    </td>
+    <td>
+      <p>
+      < 4,000 mhs</p>
+      <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+      </div>
+    </td>
+    <td>
+      <p>
+        < 7,000 mhs</p>
+      <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+      </div>
+    </td>
+    <td>
+      <p>
+        < 20.000 mhs</p>
+      <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+      </div>
+    </td>
+    <td>
+      <p>
+        < 35,000 mhs</p>
+      <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+      </div>
+    </td>
+  </tr>
 
               </thead>
               <!-- <tbody>
@@ -1819,7 +1819,7 @@ get_header();
               <!-- add-on -->
               <tbody class="accordion-row bonus">
                 <tr>
-                  <td colspan="9" class="sep">Add-On</td>
+                  <td class="sep" id="add-on">Add-On</td>
                 </tr>
                 <tr class="accordion-header">
                   <td class="fitur">Pelaporan PPSDM (Pusat Pengembangan Sumber Daya Manusia Minyak dan Gas)</td>
@@ -1884,7 +1884,13 @@ get_header();
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td colspan="3">Dengan kontrak terpisah (*)
+                  <td colspan="3" class="kontrak">Dengan kontrak terpisah (*)
+                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
+                  </td>
+                  <td colspan="3" class="kontrak d-md-none">Dengan kontrak terpisah (*)
+                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
+                  </td>
+                  <td colspan="3" class="kontrak d-md-none">Dengan kontrak terpisah (*)
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
                   </td>
                 </tr>
@@ -1897,7 +1903,13 @@ get_header();
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td colspan="3">Dengan kontrak terpisah (*)
+                  <td colspan="3" class="kontrak">Dengan kontrak terpisah (*)
+                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
+                  </td>
+                  <td colspan="3" class="kontrak d-md-none">Dengan kontrak terpisah (*)
+                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
+                  </td>
+                  <td colspan="3" class="kontrak d-md-none">Dengan kontrak terpisah (*)
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
                   </td>
                 </tr>
@@ -1911,7 +1923,10 @@ get_header();
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td colspan="2">Dengan kontrak terpisah (*)
+                  <td colspan="2" class="kontrak">Dengan kontrak terpisah (*)
+                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 15.000 / sign"></i>
+                  </td>
+                  <td colspan="2" class="kontrak d-md-none">Dengan kontrak terpisah (*)
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 15.000 / sign"></i>
                   </td>
                 </tr>
