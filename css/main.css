@@ -2692,6 +2692,9 @@ body {
 #upper .image-upper img {
 	display: none;
 }
+
+
+
 #upper {
 	background: url('../img/bg-promo.png');
 	-o-object-fit: cover;
