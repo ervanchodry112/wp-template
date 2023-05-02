@@ -104,7 +104,7 @@
 }
 
 #hero-price {
-  background: url("../img/bg-promo.png");
+  background: url('../img/bg-promo.png');
   object-fit: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -248,6 +248,15 @@
     width: 25%;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+  }
+  #pricing-with-accordion article td.kontrak-sm {
+    width: 25%;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+
+    @media (min-width: 768px) {
+      display: none !important;
+    }
   }
   #pricing-with-accordion article td.fitur {
     font-size: 0.9rem !important;

@@ -58,6 +58,8 @@ mediaQuery.addListener(doSomething);
 function doSomething(mediaQuery) {
   if (mediaQuery.matches) {
     $('#add-on').attr('colspan', 9);
+    $('.kontrak-lg').attr('colspan', 3);
+    $('.kontrak-sign').attr('colspan', 2);
   } else {
     $('#add-on').attr('colspan', 2);
     $('.kontrak').attr('colspan', 1);
@@ -1886,6 +1888,7 @@ function doSomething(mediaQuery) {
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
+              </tbody>
               <tbody>
                 <tr>
                   <td class="sep">Fakultas Kedokteran</td>
@@ -1894,13 +1897,13 @@ function doSomething(mediaQuery) {
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td colspan="3" class="kontrak">Dengan kontrak terpisah (*)
+                  <td colspan="3" class="kontrak kontrak-lg">Dengan kontrak terpisah (*)
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
                   </td>
-                  <td colspan="3" class="kontrak d-md-none">Dengan kontrak terpisah (*)
+                  <td class="kontrak-sm ">Dengan kontrak terpisah (*)
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
                   </td>
-                  <td colspan="3" class="kontrak d-md-none">Dengan kontrak terpisah (*)
+                  <td class="kontrak-sm">Dengan kontrak terpisah (*)
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
                   </td>
                 </tr>
@@ -1913,13 +1916,13 @@ function doSomething(mediaQuery) {
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td colspan="3" class="kontrak">Dengan kontrak terpisah (*)
+                  <td colspan="3" class="kontrak kontrak-lg">Dengan kontrak terpisah (*)
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
                   </td>
-                  <td colspan="3" class="kontrak d-md-none">Dengan kontrak terpisah (*)
+                  <td class="kontrak-sm">Dengan kontrak terpisah (*)
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
                   </td>
-                  <td colspan="3" class="kontrak d-md-none">Dengan kontrak terpisah (*)
+                  <td class="kontrak-sm">Dengan kontrak terpisah (*)
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
                   </td>
                 </tr>
@@ -1933,10 +1936,10 @@ function doSomething(mediaQuery) {
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td colspan="2" class="kontrak">Dengan kontrak terpisah (*)
+                  <td colspan="2" class="kontrak kontrak-sign">Dengan kontrak terpisah (*)
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 15.000 / sign"></i>
                   </td>
-                  <td colspan="2" class="kontrak d-md-none">Dengan kontrak terpisah (*)
+                  <td class="kontrak-sm">Dengan kontrak terpisah (*)
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 15.000 / sign"></i>
                   </td>
                 </tr>
