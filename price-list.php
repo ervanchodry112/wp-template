@@ -136,8 +136,8 @@ function doSomething(mediaQuery) {
   <div class="container">
     <div class="row header">
       <div class="col-12">
-        <h1 style="color: #fff;">Paket Harga Sevima Platform</h1>
-        <p style="color: #fff; font-size: 20px;"><b>Saatnya Upgrade Menuju Perguruan Tinggi Unggul</b></p>
+        <h1 style="color: #fff; font-size: 35px">Solusi Platform Pendidikan Terintegrasi untuk Perguruan Tinggi Anda</h1>
+        <!-- <p style="color: #fff; font-size: 20px;"><b>Saatnya Upgrade Menuju Perguruan Tinggi Unggul</b></p> -->
       </div>
     </div>
   </div>
@@ -229,66 +229,65 @@ function doSomething(mediaQuery) {
                     <h6 class="item">Lite</h6>
                     <p class="harga">Rp2.5JT<br>
                     </p>
-                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
                   </th>
                   <th class="gold">
                     <h6 class="item">Starter</h6>
                     <p class="harga">Rp4.4JT<br>
                     </p>
-                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
                   </th>
                   <th>
                     <h6 class="item">Basic</h6>
                     <p class="harga">Rp6JT<br>
                     </p>
-                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
                   </th>
                   <th>
                     <h6 class="item">Growth</h6>
                     <p class="harga">Rp9JT<br>
                     </p>
-                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
                   </th>
                   <th>
                     <h6 class="item">Bussines</h6>
                     <p class="harga">Rp13JT<br>
                     </p>
-                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
                   </th>
                   <th>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/sign.png" class="img-fluid sign" style="position: absolute; top: -35%; margin-left: -35px;" alt="">
                     <h6 class="item">Profesional</h6>
                     <p class="harga">Rp19JT<br>
                     </p>
-                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
                   </th>
                   <th>
                     <h6 class="item">Premium</h6>
                     <p class="harga">Rp31JT<br>
                     </p>
-                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
                   </th>
                   <th>
                     <h6 class="item">Enterprise</h6>
-                    <p class="harga">Rp43.5JT<br>
-                    </p>
-                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
+                    <!-- <p class="harga">Rp43.5JT<br> </p>-->
+                    <a class="btn btn-kontak" href="" role="button">Hubungi Sales</a>
                   </th>
 
                 </tr>
 
-                <!-- mobile -->
+                <!------ mobile ------->
                 <tr class="d-lg-none">
                   <td>
                     <p><b>Biaya per-bulan</b></p>
                   </td>
                   <!-- <td>
-      <p>Rp0</p>
-    </td> -->
+                    <p>Rp0</p>
+                  </td> -->
                   <td>
                     <p>Rp2.5JT</p>
                   </td>
-                  <td class="default" style="font-weight: bold;">
+                  <td>
                     <p>Rp4.4JT</p>
                   </td>
                   <td>
@@ -300,84 +299,113 @@ function doSomething(mediaQuery) {
                   <td>
                     <p>Rp13JT</p>
                   </td>
-                  <td>
+                  <td class="default" style="font-weight: bold;">
                     <p>Rp19JT</p>
                   </td>
                   <td>
                     <p>Rp31JT</p>
                   </td>
                   <td>
-                    <p>Rp43.5JT</p>
+                    <p> </p>
                   </td>
                 </tr>
 
-  <tr class="d-lg-none">
-    <td>
-      <p><b>Jumlah Mahasiswa</b></p>
-    </td>
-    <td>
-      <p>0</p>
-      <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-      </div>
-    </td>
-    <td>
-      <p>
-        < 300 mhs</p>
-      <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
-        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,- per Mahasiswa tiap Bulannya"></i>
-      </div>
-    </td>
-    <td>
-      <p>
-        < 500 mhs</p>
-      <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
-        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,-  per Mahasiswa tiap Bulannya"></i>
-      </div>
-    </td>
-    <td class="default" style="font-weight: bold;">
-      <p>
-        < 800 mhs</p>
-      <div class="alert-success">Investasi<br>±Rp3.750,- /mhs
-        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp3.750,- per Mahasiswa tiap Bulannya"></i>
-      b</div>
-    </td>
-    <td>
-      <p>
-        < 2,000 mhs</p>
-      <div class="alert-success">Investasi<br>±Rp2.400,- /mhs
-        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp2.400,- per Mahasiswa tiap Bulannya"></i>
-      </div>
-    </td>
-    <td>
-      <p>
-      < 4,000 mhs</p>
-      <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-      </div>
-    </td>
-    <td>
-      <p>
-        < 7,000 mhs</p>
-      <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-      </div>
-    </td>
-    <td>
-      <p>
-        < 20.000 mhs</p>
-      <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-      </div>
-    </td>
-    <td>
-      <p>
-        < 35,000 mhs</p>
-      <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-        <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-      </div>
-    </td>
-  </tr>
+              <tr class="d-lg-none">
+                <td>
+                  <p><b>Jumlah Mahasiswa</b></p>
+                </td>
+                <td>
+                  <p>0</p>
+                  <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+                  <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+                  </div>
+                </td>
+                <td>
+                  <p>
+                    < 300 mhs</p>
+                  <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
+                    <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,- per Mahasiswa tiap Bulannya"></i>
+                  </div>
+                </td>
+                <td>
+                  <p>
+                    < 500 mhs</p>
+                  <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
+                    <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,-  per Mahasiswa tiap Bulannya"></i>
+                  </div>
+                </td>
+                <td class="default" style="font-weight: bold;">
+                  <p>
+                    < 800 mhs</p>
+                  <div class="alert-success">Investasi<br>±Rp3.750,- /mhs
+                    <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp3.750,- per Mahasiswa tiap Bulannya"></i>
+                  b</div>
+                </td>
+                <td>
+                  <p>
+                    < 2,000 mhs</p>
+                  <div class="alert-success">Investasi<br>±Rp2.400,- /mhs
+                    <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp2.400,- per Mahasiswa tiap Bulannya"></i>
+                  </div>
+                </td>
+                <td>
+                  <p>
+                  < 4,000 mhs</p>
+                  <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+                    <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+                  </div>
+                </td>
+                <td>
+                  <p>
+                    < 7,000 mhs</p>
+                  <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+                    <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+                  </div>
+                </td>
+                <td>
+                  <p>
+                    < 20.000 mhs</p>
+                  <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+                    <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+                  </div>
+                </td>
+                <td>
+                  <p>
+                    < 35,000 mhs</p>
+                  <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+                    <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+                  </div>
+                </td>
+              </tr>
+              <tr class="d-lg-none">
+                  <td>
+                    <p><b>Hubungi Kami</b></p>
+                  </td>
+                  <td>
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                  </td>
+                  <td>
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                  </td>
+                  <td>
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                  </td>
+                  <td>
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                  </td>
+                  <td>
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                  </td>
+                  <td  class="default">
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                  </td>
+                  <td>
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                  </td>
+                  <td>
+                    <a class="btn btn-kontak" href="" role="button">Hubungi Sales</a>
+                  </td>
+                </tr>
 
               </thead>
               <!-- <tbody>
@@ -1963,58 +1991,50 @@ function doSomething(mediaQuery) {
                   </th>
                   <!-- <th>
                     <h6 class="item">Community</h6>
-                    <p class="harga">Rp0<br>
-                  </p>
+                    <p class="harga">Rp0</p><br>
                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
                   </th> -->
-                  <th>
+                  <th class="baru">
                     <h6 class="item">Lite</h6>
-                    <p class="harga">Rp2.5JT<br>
-                    </p>
+                    <p class="harga">Rp2.5JT</p><br>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
                   </th>
-                  <th class="gold">
-
+                  <th class="baru">
+                  <!-- <th class="gold"> -->
                     <h6 class="item">Starter</h6>
-                    <p class="harga">Rp4.4JT<br>
-                    </p>
-                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
+                    <p class="harga">Rp4.4JT</p><br>
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
                   </th>
-                  <th>
+                  <th class="baru">
                     <h6 class="item">Basic</h6>
-                    <p class="harga">Rp6JT<br>
-                    </p>
-                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
-
+                    <p class="harga">Rp6JT</p><br>
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
                   </th>
-                  <th>
+                  <th class="baru">
                     <h6 class="item">Growth</h6>
-                    <p class="harga">Rp9JT<br>
-                    </p>
-                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
+                    <p class="harga">Rp9JT</p><br>
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
                   </th>
-                  <th>
+                  <th class="baru">
                     <h6 class="item">Business</h6>
-                    <p class="harga">Rp13JT<br>
-                    </p>
-                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
+                    <p class="harga">Rp13JT</p><br>
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
                   </th>
-                  <th>
+                  <th class="baru">
                     <h6 class="item">Profesional</h6>
-                    <p class="harga">Rp19JT<br>
-                    </p>
-                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
+                    <p class="harga">Rp19JT</p><br>
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
                   </th>
-                  <th>
+                  <th class="baru">
                     <h6 class="item">Premium</h6>
-                    <p class="harga">Rp31JT<br>
-                    </p>
-                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
+                    <p class="harga">Rp31JT</p><br>
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
                   </th>
-                  <th>
+                  <th class="baru">
                     <h6 class="item">Enterprise</h6>
-                    <p class="harga">Rp43.5JT<br>
-                    </p>
+                    <p class="harga">-</p>
+                    <a class="btn btn-kontak" href="" role="button" style="margin-top: 8px;">Hubungi Sales</a>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th>
                 </tr>
@@ -2025,35 +2045,35 @@ function doSomething(mediaQuery) {
                   <!-- <th>
                     <small>-</small>
                   </th> -->
-                  <th>
+                  <th class="baru">
                     <small>
                       < 300 mhs</small>
                   </th>
-                  <th>
+                  <th class="baru">
                     <small>
                       < 500 mhs</small>
                   </th>
-                  <th>
+                  <th class="baru">
                     <small>
                       < 800 mhs</small>
                   </th>
-                  <th>
+                  <th class="baru">
                     <small>
                       < 2,000 mhs</small>
                   </th>
-                  <th>
+                  <th class="baru">
                     <small>
                       < 4,000 mhs</small>
                   </th>
-                  <th>
+                  <th class="baru">
                     <small>
                       < 7,000 mhs</small>
                   </th>
-                  <th>
+                  <th class="baru">
                     <small>
                       < 20,000 mhs</small>
                   </th>
-                  <th>
+                  <th class="baru">
                     <small>
                       < 35,000 mhs</small>
                   </th>
