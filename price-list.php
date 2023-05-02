@@ -216,285 +216,283 @@ function doSomething(mediaQuery) {
             
             <table>
               <thead>
-                <tr class="price-head">
-                  <th style="vertical-align: middle; font-size: 1.25rem;" rowspan="3">
-                    <p class="modul">Modul-modul<br> Sevima Platform </p>
-                  </th>
-                  <!-- <th>
-                    <h6 class="item">Community</h6>
-                    <p class="harga">Rp0<br>
-                  </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> 
-                  </th> -->
-                  <th>
-                    <h6 class="item">Lite</h6>
-                    <p class="harga">Rp2.5JT<br>
+                  <tr class="price-head">
+                    <th style="vertical-align: middle; font-size: 1.25rem;" rowspan="3">
+                      <p class="modul">Modul-modul<br> Sevima Platform </p>
+                    </th>
+                    <!-- <th>
+                      <h6 class="item">Community</h6>
+                      <p class="harga">Rp0<br>
                     </p>
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
-                  </th>
-                  <th class="gold">
-                    <h6 class="item">Starter</h6>
-                    <p class="harga">Rp4.4JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
-                  </th>
-                  <th>
-                    <h6 class="item">Basic</h6>
-                    <p class="harga">Rp6JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
-                  </th>
-                  <th>
-                    <h6 class="item">Growth</h6>
-                    <p class="harga">Rp9JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
-                  </th>
-                  <th>
-                    <h6 class="item">Bussines</h6>
-                    <p class="harga">Rp13JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
-                  </th>
-                  <th>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/sign.png" class="img-fluid sign" style="position: absolute; top: -35%; margin-left: -35px;" alt="">
-                    <h6 class="item">Profesional</h6>
-                    <p class="harga">Rp19JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
-                  </th>
-                  <th>
-                    <h6 class="item">Premium</h6>
-                    <p class="harga">Rp31JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
-                  </th>
-                  <th>
-                    <h6 class="item">Enterprise</h6>
-                    <!-- <p class="harga">Rp43.5JT<br> </p>-->
-                    <a class="btn btn-kontak" href="" role="button">Hubungi Sales</a>
-                  </th>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> 
+                    </th> -->
+                    <th>
+                      <h6 class="item">Lite</h6>
+                      <p class="harga">Rp2.5JT<br>
+                      </p>
+                      <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                    </th>
+                    <th class="gold">
+                      <h6 class="item">Starter</h6>
+                      <p class="harga">Rp4.4JT<br>
+                      </p>
+                      <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                    </th>
+                    <th>
+                      <h6 class="item">Basic</h6>
+                      <p class="harga">Rp6JT<br>
+                      </p>
+                      <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                    </th>
+                    <th>
+                      <h6 class="item">Growth</h6>
+                      <p class="harga">Rp9JT<br>
+                      </p>
+                      <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                    </th>
+                    <th>
+                      <h6 class="item">Bussines</h6>
+                      <p class="harga">Rp13JT<br>
+                      </p>
+                      <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                    </th>
+                    <th>
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/sign.png" class="img-fluid sign" style="position: absolute; top: -35%; margin-left: -35px;" alt="">
+                      <h6 class="item">Profesional</h6>
+                      <p class="harga">Rp19JT<br>
+                      </p>
+                      <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                    </th>
+                    <th>
+                      <h6 class="item">Premium</h6>
+                      <p class="harga">Rp31JT<br>
+                      </p>
+                      <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                    </th>
+                    <th>
+                      <h6 class="item">Enterprise</h6>
+                      <!-- <p class="harga">Rp43.5JT<br> </p>-->
+                      <a class="btn btn-kontak" href="" role="button">Hubungi Sales</a>
+                    </th>
 
-                </tr>
+                  </tr>
 
-                <!------ mobile ------->
+                  <!------ mobile ------->
+                  <tr class="d-lg-none">
+                    <td>
+                      <p><b>Biaya per-bulan</b></p>
+                    </td>
+                    <!-- <td>
+                      <p>Rp0</p>
+                    </td> -->
+                    <td>
+                      <p>Rp2.5JT</p>
+                    </td>
+                    <td>
+                      <p>Rp4.4JT</p>
+                    </td>
+                    <td>
+                      <p>Rp6JT</p>
+                    </td>
+                    <td>
+                      <p>Rp9JT</p>
+                    </td>
+                    <td>
+                      <p>Rp13JT</p>
+                    </td>
+                    <td class="default" style="font-weight: bold;">
+                      <p>Rp19JT</p>
+                    </td>
+                    <td>
+                      <p>Rp31JT</p>
+                    </td>
+                    <td>
+                      <p> </p>
+                    </td>
+                  </tr>
+
                 <tr class="d-lg-none">
                   <td>
-                    <p><b>Biaya per-bulan</b></p>
-                  </td>
-                  <!-- <td>
-                    <p>Rp0</p>
-                  </td> -->
-                  <td>
-                    <p>Rp2.5JT</p>
+                    <p><b>Jumlah Mahasiswa</b></p>
                   </td>
                   <td>
-                    <p>Rp4.4JT</p>
+                    <p>0</p>
+                    <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+                    <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+                    </div>
                   </td>
                   <td>
-                    <p>Rp6JT</p>
+                    <p>
+                      < 300 mhs</p>
+                    <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
+                      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,- per Mahasiswa tiap Bulannya"></i>
+                    </div>
                   </td>
                   <td>
-                    <p>Rp9JT</p>
-                  </td>
-                  <td>
-                    <p>Rp13JT</p>
+                    <p>
+                      < 500 mhs</p>
+                    <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
+                      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,-  per Mahasiswa tiap Bulannya"></i>
+                    </div>
                   </td>
                   <td class="default" style="font-weight: bold;">
-                    <p>Rp19JT</p>
+                    <p>
+                      < 800 mhs</p>
+                    <div class="alert-success">Investasi<br>±Rp3.750,- /mhs
+                      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp3.750,- per Mahasiswa tiap Bulannya"></i>
+                    b</div>
                   </td>
                   <td>
-                    <p>Rp31JT</p>
+                    <p>
+                      < 2,000 mhs</p>
+                    <div class="alert-success">Investasi<br>±Rp2.400,- /mhs
+                      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp2.400,- per Mahasiswa tiap Bulannya"></i>
+                    </div>
                   </td>
                   <td>
-                    <p> </p>
+                    <p>
+                    < 4,000 mhs</p>
+                    <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+                      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+                    </div>
+                  </td>
+                  <td>
+                    <p>
+                      < 7,000 mhs</p>
+                    <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+                      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+                    </div>
+                  </td>
+                  <td>
+                    <p>
+                      < 20.000 mhs</p>
+                    <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+                      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+                    </div>
+                  </td>
+                  <td>
+                    <p>
+                      < 35,000 mhs</p>
+                    <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+                      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+                    </div>
                   </td>
                 </tr>
-
-              <tr class="d-lg-none">
-                <td>
-                  <p><b>Jumlah Mahasiswa</b></p>
-                </td>
-                <td>
-                  <p>0</p>
-                  <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-                  <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-                  </div>
-                </td>
-                <td>
-                  <p>
-                    < 300 mhs</p>
-                  <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
-                    <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,- per Mahasiswa tiap Bulannya"></i>
-                  </div>
-                </td>
-                <td>
-                  <p>
-                    < 500 mhs</p>
-                  <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
-                    <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,-  per Mahasiswa tiap Bulannya"></i>
-                  </div>
-                </td>
-                <td class="default" style="font-weight: bold;">
-                  <p>
-                    < 800 mhs</p>
-                  <div class="alert-success">Investasi<br>±Rp3.750,- /mhs
-                    <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp3.750,- per Mahasiswa tiap Bulannya"></i>
-                  b</div>
-                </td>
-                <td>
-                  <p>
-                    < 2,000 mhs</p>
-                  <div class="alert-success">Investasi<br>±Rp2.400,- /mhs
-                    <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp2.400,- per Mahasiswa tiap Bulannya"></i>
-                  </div>
-                </td>
-                <td>
-                  <p>
-                  < 4,000 mhs</p>
-                  <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-                    <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-                  </div>
-                </td>
-                <td>
-                  <p>
-                    < 7,000 mhs</p>
-                  <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-                    <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-                  </div>
-                </td>
-                <td>
-                  <p>
-                    < 20.000 mhs</p>
-                  <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-                    <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-                  </div>
-                </td>
-                <td>
-                  <p>
-                    < 35,000 mhs</p>
-                  <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-                    <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-                  </div>
-                </td>
-              </tr>
-              <tr class="d-lg-none">
-                  <td>
-                    <p><b>Hubungi Kami</b></p>
-                  </td>
-                  <td>
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
-                  </td>
-                  <td>
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
-                  </td>
-                  <td>
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
-                  </td>
-                  <td>
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
-                  </td>
-                  <td>
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
-                  </td>
-                  <td  class="default">
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
-                  </td>
-                  <td>
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
-                  </td>
-                  <td>
-                    <a class="btn btn-kontak" href="" role="button">Hubungi Sales</a>
-                  </td>
-                </tr>
-
+                <tr class="d-lg-none">
+                    <td>
+                      <p><b>Hubungi Kami</b></p>
+                    </td>
+                    <td>
+                      <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                    </td>
+                    <td>
+                      <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                    </td>
+                    <td>
+                      <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                    </td>
+                    <td>
+                      <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                    </td>
+                    <td>
+                      <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                    </td>
+                    <td  class="default">
+                      <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                    </td>
+                    <td>
+                      <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                    </td>
+                    <td>
+                      <a class="btn btn-kontak" href="" role="button">Hubungi Sales</a>
+                    </td>
+                  </tr>
               </thead>
               <!-- <tbody>
                 <tr>
                   <td colspan="10" class="sep d-sm-none d-md-block">Sevima Platform</td>
                 </tr>
               </tbody> -->
-
               <!------ 1 ------->
               <tbody>
-                <tr class="head-fitur">
-                  <td class="sep">Integrasi 100% dengan PDDIKTI Neo Feeder</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                </tr>
+                  <tr class="head-fitur">
+                      <td class="sep">Integrasi 100% dengan PDDIKTI Neo Feeder</td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                  </tr>
               </tbody>
               <tbody class="accordion-row">
-                <tr class="accordion-header">
-                  <td class="fitur">Integrasi data akademik, biaya masuk & SPP semester dengan PDDIKTI Neo Feeder</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                </tr>
+                  <tr class="accordion-header">
+                      <td class="fitur">Integrasi data akademik, biaya masuk & SPP semester dengan PDDIKTI Neo Feeder</td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                  </tr>
+                    </tbody>
+              <tbody class="accordion-row">
+                  <tr class="accordion-header">
+                      <td class="fitur">Layanan PDDIKTI Neo Feeder Online & update otomatis</td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                  </tr>
               </tbody>
               <tbody class="accordion-row">
-                <tr class="accordion-header">
-                  <td class="fitur">Layanan PDDIKTI Neo Feeder Online & update otomatis</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                </tr>
+                  <tr class="accordion-header">
+                      <td class="fitur">Monitoring prosentase pelaporan PDDIKTI Neo Feeder</td>
+                      <td><i class='uil uil-times-circle'></i></td>
+                      <td><i class='uil uil-times-circle'></i></td>
+                      <td><i class='uil uil-times-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                  </tr>
               </tbody>
               <tbody class="accordion-row">
-                <tr class="accordion-header">
-                  <td class="fitur">Monitoring prosentase pelaporan PDDIKTI Neo Feeder</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                </tr>
+                  <tr class="accordion-header">
+                      <td class="fitur">Komparasi data antara data SIAKAD dengan data PDDIKTI Neo Feeder</td>
+                      <td><i class='uil uil-times-circle'></i></td>
+                      <td><i class='uil uil-times-circle'></i></td>
+                      <td><i class='uil uil-times-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                  </tr>
               </tbody>
               <tbody class="accordion-row">
-                <tr class="accordion-header">
-                  <td class="fitur">Komparasi data antara data SIAKAD dengan data PDDIKTI Neo Feeder</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                </tr>
+                  <tr class="accordion-header">
+                      <td class="fitur">Evaluasi & Sinkronisasi Data dari SIAKAD ke PDDIKTI Neo Feeder</td>
+                      <td><i class='uil uil-times-circle'></i></td>
+                      <td><i class='uil uil-times-circle'></i></td>
+                      <td><i class='uil uil-times-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                      <td><i class='uil uil-check-circle'></i></td>
+                  </tr>
               </tbody>
-              <tbody class="accordion-row">
-                <tr class="accordion-header">
-                  <td class="fitur">Evaluasi & Sinkronisasi Data dari SIAKAD ke PDDIKTI Neo Feeder</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                </tr>
-              </tbody>
-
+              
               <!------ 2 -------->
               <tbody>
                 <tr>
@@ -811,7 +809,7 @@ function doSomething(mediaQuery) {
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
               </tbody>
-
+              
               <!------ 3 -------->
               <tbody>
                 <tr>
@@ -849,6 +847,7 @@ function doSomething(mediaQuery) {
                   </td>
                 </tr>
               </tbody>
+
               <tbody class="accordion-row">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen data mahasiswa & aktivitas mahasiswa</td>
@@ -939,7 +938,8 @@ function doSomething(mediaQuery) {
                 </tr>
                 <tr class="accordion-child">
                   <td class="fitur-child">- Manajemen unsur bobot nilai</td>
-                  <td><i class='uil uil-check-circle'></i></td <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td> 
+                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1262,7 +1262,7 @@ function doSomething(mediaQuery) {
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
               </tbody>
-
+              
               <!---- 5 ----->
               <tbody>
                 <tr>
@@ -1868,6 +1868,7 @@ function doSomething(mediaQuery) {
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
               </tbody>
+
               <!-- add-on -->
               <tbody class="accordion-row bonus">
                 <tr>
