@@ -2,20 +2,20 @@
 
 /* hero */
 #hero-mitra {
-  background-image: url("../img/bg-bg-bg.jpg");
+  background-image: url("../img/bg-bg-bg.jpg") !important;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #0327A6;
   text-align: center;
-  height: 50rem;
 }
 #hero-mitra h1 {
   font-size: 2rem;
 }
 
 #hero-mitra .header {
-	padding: 10rem 0;
-	color: #a12525;
+	padding: 7rem 0;
+	color: #fff; 
+  background: transparent !important;
+
 }
 
 #hero-mitra .header a {

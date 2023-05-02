@@ -131,12 +131,13 @@ function doSomething(mediaQuery) {
 </section> -->
 
 <section id="hero-mitra">
-  <div class="container border border-primary">
-      <div class="col-12 border border-secondary">
-        <h1 style="color: #a12525; margin: 1rem 0;">Paket Harga siAkadCloud</h1>
-        <p style="color: #a12525; font-size: 20px; margin-bottom: 0"><b>Saatnya Upgrade Menuju Perguruan Tinggi Unggul</b></p>
-        <!-- <a href="<?php echo home_url(); ?>/home/" style="color: #fff;">Home</a> > Harga siAkadCloud -->
+  <div class="container">
+    <div class="row header">
+      <div class="col-12">
+        <h1 style="color: #fff; margin: 1rem 0;">Paket Harga Sevima Platform</h1>
+        <p style="color: #fff; font-size: 20px; margin-bottom: 0"><b>Saatnya Upgrade Menuju Perguruan Tinggi Unggul</b></p>
       </div>
+    </div>
   </div>
 </section>
 
