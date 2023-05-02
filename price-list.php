@@ -202,6 +202,7 @@ function doSomething(mediaQuery) {
             </li>
           </ul>
           <div class="table">
+            
             <table>
               <thead>
                 <tr class="price-head">
