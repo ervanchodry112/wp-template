@@ -136,8 +136,8 @@ function doSomething(mediaQuery) {
   <div class="container">
     <div class="row header">
       <div class="col-12">
-        <h1 style="color: #fff; margin: 1rem 0;">Paket Harga Sevima Platform</h1>
-        <p style="color: #fff; font-size: 20px; margin-bottom: 0"><b>Saatnya Upgrade Menuju Perguruan Tinggi Unggul</b></p>
+        <h1 style="color: #fff;">Paket Harga Sevima Platform</h1>
+        <p style="color: #fff; font-size: 20px;"><b>Saatnya Upgrade Menuju Perguruan Tinggi Unggul</b></p>
       </div>
     </div>
   </div>
