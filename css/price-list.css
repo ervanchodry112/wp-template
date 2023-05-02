@@ -246,6 +246,11 @@
   display: none;
   border: 1px solid white;
 }
+#pricing-with-accordion article table .baru{
+  text-align: center;
+  display: none;
+  border: 1px solid #e2f4eb;
+}
 
 #pricing-with-accordion article table .tick {
   font-size: 18px;
@@ -459,7 +464,7 @@
   border-radius: 5px;
   width: 100%;
   font-weight: bold;
-  font-size: 0.875rem;
+  font-size: 0.7500rem;
   text-align: center;
   color: #fff;
   -webkit-transition: 0.3s;
