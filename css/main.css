@@ -2692,8 +2692,8 @@ body {
 
 /* #upper .image-upper img {
 	display: none;
-} */
-/* #upper {
+}
+#upper {
 	background: url('../img/bg-promo.png');
 	-o-object-fit: cover;
 	object-fit: cover;
@@ -2701,7 +2701,7 @@ body {
 	background-repeat: no-repeat;
 	height: 100px;
 	padding: 0rem;
-} */
+}
 
 #upper .desk {
   padding-top: 5rem;
