@@ -25,15 +25,48 @@ get_header();
   // Set Display attribute of all element with class .accordion-child to none
   $(document).ready(function() {
     $('.accordion-child').css('display', 'none');
+  $(document).ready(function() {
+    $('.accordion-child').css('display', 'none');
 
-    item = $('.item').parent().parent();
 
-    item.click((event) => {
-      item.removeClass('active');
-      $(this).parents('li').addClass('active');
-      console.log($(this).parents('button'))
-    })
-  });
+  item = $('.item').parent().parent();
+  
+  item.click((event) => {
+    item.removeClass('active');
+    $(this).parents('li').addClass('active');
+    console.log($(this).parents('button'))
+  })
+
+  // pricing accordion
+$("ul").on("click", "li", function () {
+  var pos = $(this).index() + 2;
+  $("tr").find("td:not(:eq(0))").hide();
+  $("td:nth-child(" + pos + ")").css("display", "table-cell");
+  $("tr").find("th:not(:eq(0))").hide();
+  $("li").removeClass("active");
+  $(this).addClass("active");
+});
+
+
+  // On load
+  doSomething(mediaQuery);
+});
+
+// Initialize the media query
+var mediaQuery = window.matchMedia('(min-width: 990px)');
+
+// Add a listen event
+mediaQuery.addListener(doSomething);
+
+// Function to do something with the media query
+function doSomething(mediaQuery) {
+  if (mediaQuery.matches) {
+    $('#add-on').attr('colspan', 9);
+  } else {
+    $('#add-on').attr('colspan', 2);
+    $('.kontrak').attr('colspan', 1);
+  }
+}
 
   const collapseControl = (id) => {
     var col = $(id);
@@ -63,25 +96,6 @@ get_header();
     }
   };
 
-  // Initialize the media query
-  var mediaQuery = window.matchMedia("(min-width: 990px)");
-
-  // Add a listen event
-  mediaQuery.addListener(doSomething);
-
-  // Function to do something with the media query
-  function doSomething(mediaQuery) {
-    if (mediaQuery.matches) {
-      $(".sep").attr("colspan", 6);
-    } else {
-      $(".sep").attr("colspan", 2);
-    }
-  }
-
-  // On load
-  doSomething(mediaQuery);
-
-
 
 
   // Add active class if clicked
@@ -100,34 +114,33 @@ get_header();
   </div>
 </section> -->
 
-<section id="hero-promo">
+<section id="hero-price">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-sm-12">
-        <div class="desc">
-          <!-- <label>Our Offering for You</label> -->
+      <div class="col-md-12 col-sm-12">
+        <!-- <div class="desc w-100 d-flex justify-content-center align-items-center">
+           <label>Our Offering for You</label> 
           <h3>Paket Harga Sevima Platform</h3>
-        </div>
+        </div> -->
       </div>
-      <div class="col-md-1"></div>
+      <!-- <div class="col-md-1"></div>
       <div class="col-md-5">
         <div class="image-hero">
           <img src="<?php echo get_template_directory_uri(); ?>/img/illu-promo.png" alt="">
         </div>
       </div>
+    </div> -->
+    </div>
+</section>
+
+<section id="upper">
+  <div class="col-md-12">
+    <div class="image-upper w-100 d-flex justify-content-center align-items-center">
+      <img style="width: 70%; margin-top: -2rem;" src="<?php echo get_template_directory_uri(); ?>/img/Basic.png" alt="">
     </div>
   </div>
 </section>
 
-<section id="upper">
-  <div class="container">
-    <div class="row">
-      <div class="image-upper ">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/Basic.png" alt="">
-      </div>
-    </div>
-  </div>
-</section>
 
 </section>
 <!-- PRICING NEW -->
@@ -137,7 +150,11 @@ get_header();
     <div class="row justify-content-center">
       <div class="col-11">
         <article>
-
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+              <h3 style="font-size: 2rem; padding-bottom :2rem;">Paket Harga Sevima Platform</h3>
+            </div>
+          </div>
           <ul class="overflow-auto">
             <!-- <li class="bg-blue nav-item" role="presentation">
               <button class="nav-link active" id="community-tab" data-toggle="tab" data-target=".community" type="button" aria-selected="true">
@@ -1816,7 +1833,7 @@ get_header();
               <!-- add-on -->
               <tbody class="accordion-row bonus">
                 <tr>
-                  <td colspan="9" class="sep">Add-On</td>
+                  <td class="sep" id="add-on">Add-On</td>
                 </tr>
                 <tr class="accordion-header">
                   <td class="fitur">Pelaporan PPSDM (Pusat Pengembangan Sumber Daya Manusia Minyak dan Gas)</td>
@@ -1881,7 +1898,13 @@ get_header();
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td colspan="3">Dengan kontrak terpisah (*)
+                  <td colspan="3" class="kontrak">Dengan kontrak terpisah (*)
+                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
+                  </td>
+                  <td colspan="3" class="kontrak d-md-none">Dengan kontrak terpisah (*)
+                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
+                  </td>
+                  <td colspan="3" class="kontrak d-md-none">Dengan kontrak terpisah (*)
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
                   </td>
                 </tr>
@@ -1894,7 +1917,13 @@ get_header();
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td colspan="3">Dengan kontrak terpisah (*)
+                  <td colspan="3" class="kontrak">Dengan kontrak terpisah (*)
+                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
+                  </td>
+                  <td colspan="3" class="kontrak d-md-none">Dengan kontrak terpisah (*)
+                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
+                  </td>
+                  <td colspan="3" class="kontrak d-md-none">Dengan kontrak terpisah (*)
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
                   </td>
                 </tr>
@@ -1908,7 +1937,10 @@ get_header();
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td colspan="2">Dengan kontrak terpisah (*)
+                  <td colspan="2" class="kontrak">Dengan kontrak terpisah (*)
+                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 15.000 / sign"></i>
+                  </td>
+                  <td colspan="2" class="kontrak d-md-none">Dengan kontrak terpisah (*)
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 15.000 / sign"></i>
                   </td>
                 </tr>
