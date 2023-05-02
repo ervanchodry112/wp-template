@@ -2689,7 +2689,8 @@ body {
   padding-top: 3rem;
   text-align: center;
 }
-#upper .image-upper img {
+
+/* #upper .image-upper img {
 	display: none;
 }
 #upper {
