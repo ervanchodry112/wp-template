@@ -8,7 +8,7 @@ Template Name: Pilih Paket
 <section id="form-section">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-6">
+            <!-- <div class="col-12 col-lg-6">
                 <div class="title">
                     <h3> Siap Menjadi Kampus Berbasis Digital?</h3>
                     <p style="font-size: 1.25rem; line-height: 1.5; color: #000a12; opacity: 0.8;">
@@ -54,8 +54,8 @@ Template Name: Pilih Paket
                     ?>
                 </div>
                 <hr class="dash" align="left">
-            </div>
-            <div class="col-12 col-lg-6">
+            </div> -->
+            <div class="col-12 col-lg-8">
                 <div class="pf-contactForm">
                     <?php echo do_shortcode('[contact-form-7 id="1841" title="Pilih Paket"]'); ?>
                 </div>
