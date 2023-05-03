@@ -136,7 +136,8 @@ function doSomething(mediaQuery) {
   <div class="container">
     <div class="row header">
       <div class="col-12">
-        <h1>Solusi Platform Pendidikan Terintegrasi untuk Perguruan Tinggi Anda</h1>
+        <h1>Solusi Platform Pendidikan Terintegrasi </h1><br>
+        <h1>untuk Perguruan Tinggi Anda</h1>
         <!-- <p style="color: #fff; font-size: 20px;"><b>Saatnya Upgrade Menuju Perguruan Tinggi Unggul</b></p> -->
       </div>
     </div>
@@ -271,7 +272,7 @@ function doSomething(mediaQuery) {
                     </th>
                     <th>
                       <h6 class="item">Enterprise</h6>
-                      <!-- <p class="harga">Rp43.5JT<br> </p>-->
+                      <p class="harga">CALL<br> </p>
                       <a class="btn btn-kontak" href="" role="button">Hubungi Sales</a>
                     </th>
 
@@ -2035,8 +2036,8 @@ function doSomething(mediaQuery) {
                   </th>
                   <th class="baru">
                     <h6 class="item">Enterprise</h6>
-                    <p class="harga">-</p>
-                    <a class="btn btn-kontak" href="" role="button" style="margin-top: 8px;">Hubungi Sales</a>
+                    <p class="harga">CALL</p>
+                    <a class="btn btn-kontak" href="" role="button" style="margin-top: 20px;">Hubungi Sales</a>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th>
                 </tr>
