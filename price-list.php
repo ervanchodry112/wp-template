@@ -136,7 +136,7 @@ function doSomething(mediaQuery) {
   <div class="container">
     <div class="row header">
       <div class="col-12">
-        <h1 style="color: #fff; font-size: 35px">Solusi Platform Pendidikan Terintegrasi untuk Perguruan Tinggi Anda</h1>
+        <h1>Solusi Platform Pendidikan Terintegrasi untuk Perguruan Tinggi Anda</h1>
         <!-- <p style="color: #fff; font-size: 20px;"><b>Saatnya Upgrade Menuju Perguruan Tinggi Unggul</b></p> -->
       </div>
     </div>
