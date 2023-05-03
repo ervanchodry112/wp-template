@@ -60,7 +60,6 @@ Template Name: Pilih Paket
                                             class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
                                             id="nama-lengkap" autocomplete="off" aria-required="true"
                                             aria-invalid="false" value="" type="text" name="nama-lengkap"></span>
-                                </p>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
