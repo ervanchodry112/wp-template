@@ -123,6 +123,19 @@
   padding: 1.4rem 1rem;
   text-align: center;
 }
+#pricing-with-accordion article table th.default {
+  position: relative;
+  background: #fff;
+  border-left: 2px solid #ffa000;
+  border-right: 2px solid #ffa000;
+  border-top: 2px solid #ffa000;
+  box-sizing: border-box;
+  border-radius: 2px;
+  display: none;
+  empty-cells: show;
+  padding: 1.4rem 1rem;
+  text-align: center;
+}
 
 #pricing-with-accordion article table th:first-child {
   width: 20%;
@@ -226,6 +239,10 @@
 
 #pricing-with-accordion article table td.default {
   display: table-cell;
+  border-left: 2px solid #ffa000;
+  border-right: 2px solid #ffa000;
+  box-sizing: border-box;
+  border-radius: 2px;
 }
 
 #pricing-with-accordion article table td.default i.uil-check-circle {
@@ -271,7 +288,7 @@
     padding-left: 0.75rem;
   }
   #pricing-with-accordion article th.header {
-    padding: 2.5rem 1rem;
+    padding: 0;
   }
   #pricing-with-accordion article td {
     display: table-cell !important;

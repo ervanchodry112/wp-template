@@ -135,7 +135,7 @@
 
 
     <!-- javascript -->
-    <!-- <script src="<?php echo get_template_directory_uri(); ?>/vendors/jquery.min.js"></script> -->
+    <script src="<?php echo get_template_directory_uri(); ?>/vendors/jquery.min.js"></script>
     <script>
         theme_directory = "<?php echo get_template_directory_uri() ?>";
     </script>
