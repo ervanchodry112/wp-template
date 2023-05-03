@@ -811,15 +811,15 @@
   font-style: normal;
   font-size: 1.2rem;
   line-height: 1.5;
-  font-family: 'Rubik', sans-serif;
-  color: #000a12;
+  font-family: 'poppins', sans-serif;
+  color: #3949ab;
   width: 100%;
   text-align: left;
 }
 
 #form-section form .lead {
   font-size: 1.15rem;
-  color: rgba(0, 10, 18, 0.75);
+  color: #7283e7;
 }
 
 #form-section form .biru {
@@ -1076,6 +1076,7 @@
   width: 100%;
   height: 3rem;
   border-radius: 0.25rem !important;
+  margin-right: 4rem;
 }
 
 .select2-container {

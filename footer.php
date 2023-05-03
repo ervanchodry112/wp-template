@@ -82,9 +82,11 @@
             <br />
             <a href="https://pse.kominfo.go.id/tdpse-detail/2584" target="_blank"><img
                 src="<?php echo get_template_directory_uri(); ?>/img/pse-terdaftar.png" style="max-width:60px"></a>
-            <a href="" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/aws_partner.png"
+            <a href="https://partners.amazonaws.com/partners/0018a00001mTmktAAC/PT.%20Sentra%20Vidya%20Utama" 
+            target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/aws_partner.png"
                 style="max-width:60px"></a>
-            <a href="" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/qualified_software.png"
+            <a href="https://partners.amazonaws.com/partners/0018a00001mTmktAAC/PT.%20Sentra%20Vidya%20Utama" 
+            target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/qualified_software.png"
                 style="max-width:60px"></a>
 
           </div>
