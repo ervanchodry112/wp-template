@@ -4172,7 +4172,7 @@ span.wpcf7-form-control-wrap {
 	display: inline-block;
 	margin-bottom: 3px;
 }
-span.wpcf7-form-control-wrap .wpcf7-quiz, span.wpcf7-form-control-wrap .wpcf7-select, span.wpcf7-form-control-wrap .wpcf7-text, span.wpcf7-form-control-wrap .wpcf7-textarea {
+span.wpcf7-form-control-wrap .wpcf7-quiz, span.wpcf7-form-control-wrap ., span.wpcf7-form-control-wrap .wpcf7-text, span.wpcf7-form-control-wrap .wpcf7-textarea {
 	width: 100%;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
