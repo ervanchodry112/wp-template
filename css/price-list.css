@@ -864,7 +864,7 @@
 }
 
 #form-section form .lead {
-  font-size: 1.15rem;
+  font-size: 1rem;
   color: #7283e7;
   margin-bottom: 2.5rem;
 }
@@ -1121,7 +1121,7 @@
   width: 100%;
   height: 3rem;
   border-radius: 0.25rem !important;
-  margin-right: 4rem;
+  /* margin-right: 4rem; */
 }
 
 .select2-container {
@@ -1154,7 +1154,7 @@
   line-height: 1.5rem;
   font-weight: 400;
   border-radius: 0;
-  border: 1px solid #ced4da;
+  border: 1px solid #616161 !important;
 }
 
 .select2-container--default
