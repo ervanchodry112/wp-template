@@ -904,7 +904,7 @@ oppins
 }
 
 #form-section form .lead {
-  font-size: 1.15rem;
+  font-size: 1rem;
   color: #7283e7;
   margin-bottom: 2.5rem;
 }
@@ -1161,7 +1161,8 @@ oppins
   border-radius: 0.25rem !important;
   /* margin-right: 4rem; */
   padding: 12px;
-}
+ }
+
 
 .select2-container {
   width: 100% !important;
@@ -1193,7 +1194,8 @@ oppins
   line-height: 1.5rem;
   font-weight: 400;
   border-radius: 0;
-  border: 1px solid #495057 !important;
+  border: 1px solid #616161 !important;
+
 }
 
 .select2-container--default

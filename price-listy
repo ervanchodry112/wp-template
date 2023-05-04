@@ -1,0 +1,66 @@
+<script>
+  document.addEventListener(
+    "wpcf7mailsent",
+    function (event) {
+      location = "http://example.com/";
+    },
+    false
+  );
+</script>
+<h6 class="subheading">Bantu Kami Menghubungi Anda</h6>
+<p class="lead">
+  Isi form di bawah untuk mendapatkan penawaran produk SEVIMA yang sesuai dengan
+  kebutuhan perguruan tinggi Anda.
+</p>
+<br />
+<br />
+<div class="form-group">
+  <label for="id:nama-lengkap">Nama Lengkap*</label>
+  [text* nama-lengkap id:nama-lengkap class:form-control autocomplete:off]
+</div>
+<div class="form-row">
+  <div class="form-group col-md-6">
+    <label for="id:email">Email*</label>
+    [email* email id:email class:form-control autocomplete:off]
+  </div>
+  <div class="form-group col-md-6">
+    <label for="telp">No Telepon*</label>
+    [tel* telp id:telp class:form-control autocomplete:off]
+  </div>
+</div>
+
+<div class="form-group">
+  <label for="select2-pt">Nama Perguruan Tinggi*</label>[hidden kode-pt
+  id:kode-pt][hidden nama-pt id:nama-pt][select* select2-pt id:select2-pt
+  class:wp-select2 autocomplete:off]
+</div>
+<div class="form-group">
+  <label for="inputState">Jabatan di Perguruan Tinggi*</label>
+  [select* jabatan id:select2-jabatan class:wp-select2 autocomplete:off ""
+  "Rektor/Direktur/Ketua" "Wakil Rektor/Direktur/Ketua Bidang 1 (Akademik)"
+  "Wakil Rektor/Direktur/Ketua Bidang 2 (Keuangan)" "Wakil Rektor/Direktur/Ketua
+  Bidang 3 (Kemahasiswaan)" "Wakil Rektor/Direktur/Ketua Bidang 4
+  (Kerjasama/Inovasi/Lainnya)" "Pimpinan Yayasan" "Kepala Biro/Bagian/Subbagian
+  Akademik" "Kepala Bagian IT/Komputer/Data Informasi/PDDIKTI Feeder" "Senat
+  Perguruan Tinggi" "Ketua Penjaminan Mutu" "Dekan/Kajur/Kaprodi" "Dosen"
+  "Tenaga Kependidikan/Staf/Admin Akademik" "Humas Perguruan Tinggi" "Operator &
+  Tim IT Perguruan Tinggi" "Mahasiswa/Penulis" "Lainnya"]
+</div>
+<div class="form-row">
+  <div class="form-group col-md-6">
+    <label for="select2-jmlmhs">Berapa jumlah mahasiswa di kampus Anda?*</label>
+    [select* jumlah-mahasiswa id:select2-jmlmhs class:wp-select2
+    autocomplete:off "" "< 800" "800 - 1500" "1500 - 4000" "4000 - 10000"]
+  </div>
+  <div class="form-group col-md-6">
+    <label for="select2-sumberInfo">Sumber info SEVIMA*</label>
+    [select* sumberInfo id:select2-sumberInfo class:wp-select2 autocomplete:off
+    "" "Rekomendasi Teman / Rekan" "Website SEVIMA" "Penelurusan Google"
+    "Facebook" "Instagram" "Lainnya"]
+  </div>
+</div>
+
+<div class="form-group">[recaptcha]</div>
+
+[submit class:btn class:btn-kirim class:btn-lg class:btn-block "Kirim
+Permintaan"] [multistep mintademo-step2 last_step send_email]
