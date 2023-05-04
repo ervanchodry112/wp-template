@@ -142,7 +142,7 @@ function doSomething(mediaQuery) {
   <div class="container">
     <div class="row header">
       <div class="col-12">
-        <h1>Solusi Platform Pendidikan Terintegrasi </h1><br>
+        <h1 style="margin-bottom: -1.5rem;">Solusi Platform Pendidikan Terintegrasi </h1><br>
         <h1>untuk Perguruan Tinggi Anda</h1>
         <!-- <p style="color: #fff; font-size: 20px;"><b>Saatnya Upgrade Menuju Perguruan Tinggi Unggul</b></p> -->
       </div>
@@ -150,10 +150,10 @@ function doSomething(mediaQuery) {
   </div>
 </section>
 
-<section id="upper">
+<section id="upper" style="margin-bottom: -3rem;">
   <div class="col-md-12">
     <div class="image-upper w-100 d-flex justify-content-center align-items-center">
-      <img style="width: 70%;" src="<?php echo get_template_directory_uri(); ?>/img/Basic.png" alt="">
+      <img style="width: 70%; padding-bottom: -2rem;" src="<?php echo get_template_directory_uri(); ?>/img/Basic.png" alt="">
     </div>
   </div>
 </section>
@@ -167,10 +167,16 @@ function doSomething(mediaQuery) {
     <div class="row justify-content-center">
       <div class="col-11">
         <article>
-          <div class="row">
+          <div class="row" >
             <div class="col-12 d-flex justify-content-center align-items-center">
               <h3 style="font-size: 2rem;">Paket Harga </h3>
-              <img src="<?php echo get_template_directory_uri(); ?>/img/logo-sevima-platform.png" alt="" height="100px">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/logo-sevima-platform.png" alt="" height="100px"
+                style="border: 0px solid black;" />
+            </div>
+          </div>
+          <div class="row" style="margin-top: -1rem; margin-bottom: 3.5rem;">
+            <div class="col-12 d-flex justify-content-center">
+              <h2 style="font-size: 1.5rem;">Saatnya Upgrade Menuju Perguruan Tinggi Unggul</h2>
             </div>
           </div>
           <ul class="overflow-auto">
@@ -239,49 +245,49 @@ function doSomething(mediaQuery) {
                       <h6 class="item">Lite</h6>
                       <p class="harga">Rp2.5JT<br>
                       </p>
-                      <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
                     </th>
                     <th class="gold">
                       <h6 class="item">Starter</h6>
                       <p class="harga">Rp4.4JT<br>
                       </p>
-                      <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
                     </th>
                     <th>
                       <h6 class="item">Basic</h6>
                       <p class="harga">Rp6JT<br>
                       </p>
-                      <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
                     </th>
                     <th>
                       <h6 class="item">Growth</h6>
                       <p class="harga">Rp9JT<br>
                       </p>
-                      <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
                     </th>
                     <th>
                       <h6 class="item">Bussines</h6>
                       <p class="harga">Rp13JT<br>
                       </p>
-                      <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
                     </th>
                     <th class="default">
                       <img src="<?php echo get_template_directory_uri(); ?>/img/sign.png" class="img-fluid sign" style="position: absolute; top: -35%; margin-left: -35px;" alt="">
                       <h6 class="item">Profesional</h6>
                       <p class="harga">Rp19JT<br>
                       </p>
-                      <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
                     </th>
                     <th>
                       <h6 class="item">Premium</h6>
                       <p class="harga">Rp31JT<br>
                       </p>
-                      <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
                     </th>
                     <th>
                       <h6 class="item">Enterprise</h6>
                       <p class="harga">CALL<br> </p>
-                      <a class="btn btn-kontak" href="" role="button">Hubungi Sales</a>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Hubungi Sales</a>
                     </th>
 
                   </tr>
@@ -309,7 +315,7 @@ function doSomething(mediaQuery) {
                     <td>
                       <p>Rp13JT</p>
                     </td>
-                    <td class="default" style="font-weight: bold;">
+                    <td class="default" style="font-weight: bold; border-top: 2px solid #ffa000;">
                       <p>Rp19JT</p>
                     </td>
                     <td>
@@ -344,7 +350,7 @@ function doSomething(mediaQuery) {
                       <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,-  per Mahasiswa tiap Bulannya"></i>
                     </div>
                   </td>
-                  <td class="default" style="font-weight: bold;">
+                  <td>
                     <p>
                       < 800 mhs</p>
                     <div class="alert-success">Investasi<br>±Rp3.750,- /mhs
@@ -358,7 +364,7 @@ function doSomething(mediaQuery) {
                       <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp2.400,- per Mahasiswa tiap Bulannya"></i>
                     </div>
                   </td>
-                  <td>
+                  <td class="default" style="font-weight: bold;">
                     <p>
                     < 4,000 mhs</p>
                     <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
@@ -2103,52 +2109,46 @@ function doSomething(mediaQuery) {
                   <th style="vertical-align: middle; font-size: 1.25rem;">
                     <p>Harga </p>
                   </th>
-                  <!-- <th>
-                    <h6 class="item">Community</h6>
-                    <p class="harga">Rp0</p><br>
-                     <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
-                  </th> -->
                   <th class="baru">
                     <h6 class="item">Lite</h6>
                     <p class="harga">Rp2.5JT</p><br>
-                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                   <!-- <th class="gold"> -->
                     <h6 class="item">Starter</h6>
                     <p class="harga">Rp4.4JT</p><br>
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                     <h6 class="item">Basic</h6>
                     <p class="harga">Rp6JT</p><br>
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                     <h6 class="item">Growth</h6>
                     <p class="harga">Rp9JT</p><br>
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                     <h6 class="item">Business</h6>
                     <p class="harga">Rp13JT</p><br>
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                     <h6 class="item">Profesional</h6>
                     <p class="harga">Rp19JT</p><br>
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                     <h6 class="item">Premium</h6>
                     <p class="harga">Rp31JT</p><br>
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                     <h6 class="item">Enterprise</h6>
                     <p class="harga">CALL</p>
-                    <a class="btn btn-kontak" href="" role="button" style="margin-top: 20px;">Hubungi Sales</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button" style="margin-top: 20px;">Hubungi Sales</a>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th>
                 </tr>
@@ -2205,7 +2205,7 @@ function doSomething(mediaQuery) {
             <p><i>(3) Catatan: Pelatihan maksimal 3 jam per sesi</i></p>
             <p><b><i>Semua harga belum termasuk PPN 11% sesuai ketentuan Perpajakan</i></b></p>
           </div>
-          <a class="btn btn-download" href="https://sevima.com/pricing-siakadcloud-2/" target="_blank" role="button">
+          <a class="btn btn-download" href="https://sevima.com/harga-sevima-platform-2/" target="_blank" role="button">
             <i class="uil uil-file-download"></i>
             <p>Download Sebagai PDF</p>
           </a>
