@@ -1,9 +1,10 @@
-/** @format */oppins
+/** @format */
+oppins
 /* form */
 #form-section form .form-group {
   margin-bottom: 1.75rem;
 }
-#form-section form .form-group p{
+#form-section form .form-group p {
   font-size: 12px !important;
   font-family: 'poppins', sans-serif;
   color: #7283e7;
@@ -13,7 +14,10 @@
   font-family: 'poppins', sans-serif;
   color: #7283e7;
 } */
-.select2-container--default .select2-selection--single .select2-selection__arrow b {
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow
+  b {
   border-color: #8b8b8b transparent transparent transparent !important;
   border-style: solid;
   border-width: 5px 4px 0 4px;
@@ -273,12 +277,32 @@
 }
 
 #pricing-with-accordion article table td.default i.uil-check-circle {
-  color: #ffa000;
+  color: #fff;
+  font-weight: bold;
+}
+
+#pricing-with-accordion
+  article
+  table
+  .accordion-child
+  td.default
+  i.uil-check-circle {
+  color: #3949ab;
+  font-weight: bold;
+}
+
+#pricing-with-accordion
+  article
+  table
+  .accordion-header
+  td.default
+  i.uil-check-circle {
+  color: #3949ab;
   font-weight: bold;
 }
 
 #pricing-with-accordion article table td.default i.uil-times-circle {
-  color: rgba(255, 160, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   font-weight: bold;
   opacity: 100%;
 }
@@ -320,8 +344,7 @@
   #pricing-with-accordion article td {
     display: table-cell !important;
     width: 25%;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    padding: 0.3rem 0.75rem;
   }
   #pricing-with-accordion article td.kontrak-sm {
     width: 25%;
@@ -358,7 +381,7 @@
 
 #pricing-with-accordion article .accordion-row .accordion-header td {
   height: 70px;
-  padding: 1rem;
+  padding: 0.1rem 1rem;
   font-size: 1rem;
 }
 
@@ -434,6 +457,13 @@
 #pricing-with-accordion article .accordion-row .accordion-child td {
   padding: 0.5rem 1rem;
   background: #fafafa;
+  border-top: none;
+  border-bottom: none;
+  font-size: 1rem;
+}
+#pricing-with-accordion article .accordion-row .accordion-child td.default {
+  padding: 0.5rem 1rem;
+  background: rgba(255, 162, 0, 0.25);
   border-top: none;
   border-bottom: none;
   font-size: 1rem;
@@ -560,6 +590,13 @@
 #pricing-with-accordion .fitur ~ td {
   background: rgba(170, 187, 231, 0.25);
   /* color: #fff; */
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+#pricing-with-accordion .fitur ~ td.default {
+  background: rgba(255, 162, 0, 0.5);
+  color: #000;
   font-size: 1rem;
   font-weight: 600;
   text-align: center;
@@ -804,13 +841,15 @@
   border: 1px solid white;
 }
 
+#pricing-with-accordion article .sep ~ td.default {
+  background: #ffa000;
+  color: #fff;
+  /* border: 1px solid white; */
+}
+
 #form-section {
   padding: 2rem 0;
   margin: 0 auto;
-  background-image: url(../img/bg-footer.png);
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: 60%;
 }
 
 #form-section h3 {
@@ -851,6 +890,7 @@
   background-color: #e7eeff;
   border-radius: 6px;
   padding: 3rem 2rem;
+  margin-bottom: 5rem;
 }
 
 #form-section form .subheading {
@@ -891,8 +931,6 @@
 #form-section form span.wpcf7-list-item-label {
   margin-left: 1rem;
 }
-
-
 
 #form-section form .form-group input[type='text'],
 #form-section form .form-group input[type='tel'],
@@ -1144,7 +1182,6 @@
     border-radius: 3px;
     font-size: 13px;
 }
-
 
 .select2-container--disabled .select2-selection__rendered {
   background: #f5f5f5;
