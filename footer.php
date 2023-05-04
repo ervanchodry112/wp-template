@@ -82,11 +82,11 @@
             <br />
             <a href="https://pse.kominfo.go.id/tdpse-detail/2584" target="_blank"><img
                 src="<?php echo get_template_directory_uri(); ?>/img/pse-terdaftar.png" style="max-width:60px"></a>
-            <a href="https://partners.amazonaws.com/partners/0018a00001mTmktAAC/PT.%20Sentra%20Vidya%20Utama" 
-            target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/aws_partner.png"
+            <a href="https://partners.amazonaws.com/partners/0018a00001mTmktAAC/PT.%20Sentra%20Vidya%20Utama"
+              target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/aws_partner.png"
                 style="max-width:60px"></a>
-            <a href="https://partners.amazonaws.com/partners/0018a00001mTmktAAC/PT.%20Sentra%20Vidya%20Utama" 
-            target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/qualified_software.png"
+            <a href="https://partners.amazonaws.com/partners/0018a00001mTmktAAC/PT.%20Sentra%20Vidya%20Utama"
+              target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/qualified_software.png"
                 style="max-width:60px"></a>
 
           </div>
@@ -154,7 +154,7 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/TweenMax.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/eventHandler.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-modal-video.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/select2-init.js?20220311"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/select2-init.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/price-list.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/main.js?20220322"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
