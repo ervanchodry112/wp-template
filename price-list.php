@@ -2205,7 +2205,7 @@ function doSomething(mediaQuery) {
             <p><i>(3) Catatan: Pelatihan maksimal 3 jam per sesi</i></p>
             <p><b><i>Semua harga belum termasuk PPN 11% sesuai ketentuan Perpajakan</i></b></p>
           </div>
-          <a class="btn btn-download" href="https://sevima.com/pricing-siakadcloud-2/" target="_blank" role="button">
+          <a class="btn btn-download" href="https://sevima.com/harga-sevima-platform-2/" target="_blank" role="button">
             <i class="uil uil-file-download"></i>
             <p>Download Sebagai PDF</p>
           </a>
