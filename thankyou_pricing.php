@@ -33,7 +33,7 @@ Template Name: Thankyou
                             <img src="<?php echo get_template_directory_uri(); ?>/img/thankyou.png" class="img-value img-fluid" alt="">
                             <div class="text-body">
                                 <h4 class="heading" style="font-weight:bold; font-size: 32px;">Terima Kasih Telah Mengisi Form!</h4>
-                                <p class="desc" style="font-size: 24px; line-height:150%;">
+                                <p class="desc" style="font-size: 18px; line-height:150%;">
                                     Selangkah lagi sistem informasi akademik akan memudahkan pengelolaan akademik Anda.<br><br>
                                     Butuh konsultasi cepat dan dapatkan promo siAkadCloud? Silahkan berkonsultasi dengan
                                     Konsultan Executive SEVIMA melalui Whatsapp di bawah ini.
