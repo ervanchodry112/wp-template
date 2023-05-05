@@ -32,6 +32,7 @@ $(document).ready(function ($) {
 
 var term_names_array = [];
 $(document).ready(function () {
+  console.log('masuk');
   $.ajax({
     url: theme_directory + '/js/daftar-kampus-2.json',
     dataType: 'json',
@@ -43,7 +44,7 @@ $(document).ready(function () {
   });
 });
 
-$(document).ajaxComplete(function () {
+$(document).on('ajaxComplete', function () {
   var select2Kampus = $('.wp-select2#select2-pt');
   $(select2Kampus).select2({
     minimumInputLength: 3,
