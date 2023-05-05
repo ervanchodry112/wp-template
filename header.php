@@ -30,7 +30,7 @@
     <!-- <link rel="shortcut icon" href="/favicon.ico" /> -->
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico" type="image/x-icon">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
     <!-- Google Tag Manager edit by Febri 270220-->
     <script>
         (function (w, d, s, l, i) {
@@ -135,7 +135,7 @@
 
 
     <!-- javascript -->
-    <script src="<?php echo get_template_directory_uri(); ?>/vendors/jquery.min.js"></script>
+    <!-- <script src="<?php echo get_template_directory_uri(); ?>/vendors/jquery.min.js"></script> -->
     <script>
         const theme_directory = "<?php echo get_template_directory_uri() ?>";
     </script>

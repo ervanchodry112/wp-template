@@ -174,11 +174,6 @@ function doSomething(mediaQuery) {
                 style="border: 0px solid black;" />
             </div>
           </div>
-          <div class="row" style="margin-top: -1rem; margin-bottom: 3.5rem;">
-            <div class="col-12 d-flex justify-content-center">
-              <h2 style="font-size: 1.5rem;">Saatnya Upgrade Menuju Perguruan Tinggi Unggul</h2>
-            </div>
-          </div>
           <ul class="overflow-auto">
             <!-- <li class="bg-blue nav-item" role="presentation">
               <button class="nav-link active" id="community-tab" data-toggle="tab" data-target=".community" type="button" aria-selected="true">
@@ -245,49 +240,49 @@ function doSomething(mediaQuery) {
                       <h6 class="item">Lite</h6>
                       <p class="harga">Rp2.5JT<br>
                       </p>
-                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                     </th>
                     <th class="gold">
                       <h6 class="item">Starter</h6>
                       <p class="harga">Rp4.4JT<br>
                       </p>
-                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                     </th>
                     <th>
                       <h6 class="item">Basic</h6>
                       <p class="harga">Rp6JT<br>
                       </p>
-                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                     </th>
                     <th>
                       <h6 class="item">Growth</h6>
                       <p class="harga">Rp9JT<br>
                       </p>
-                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                     </th>
                     <th>
                       <h6 class="item">Bussines</h6>
                       <p class="harga">Rp13JT<br>
                       </p>
-                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                     </th>
                     <th class="default">
                       <img src="<?php echo get_template_directory_uri(); ?>/img/sign.png" class="img-fluid sign" style="position: absolute; top: -35%; margin-left: -35px;" alt="">
                       <h6 class="item">Profesional</h6>
                       <p class="harga">Rp19JT<br>
                       </p>
-                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                     </th>
                     <th>
                       <h6 class="item">Premium</h6>
                       <p class="harga">Rp31JT<br>
                       </p>
-                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                     </th>
                     <th>
                       <h6 class="item">Enterprise</h6>
                       <p class="harga">CALL<br> </p>
-                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Hubungi Sales</a>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Hubungi Sales</a>
                     </th>
 
                   </tr>
@@ -995,7 +990,7 @@ function doSomething(mediaQuery) {
                 <tr class="accordion-header">
                   <td class="fitur">Presensi Mahasiswa by Scan Barcode</td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle' </i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2505,43 +2500,43 @@ function doSomething(mediaQuery) {
                   <th class="baru">
                     <h6 class="item">Lite</h6>
                     <p class="harga">Rp2.5JT</p><br>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                   <!-- <th class="gold"> -->
                     <h6 class="item">Starter</h6>
                     <p class="harga">Rp4.4JT</p><br>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                     <h6 class="item">Basic</h6>
                     <p class="harga">Rp6JT</p><br>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                     <h6 class="item">Growth</h6>
                     <p class="harga">Rp9JT</p><br>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                     <h6 class="item">Business</h6>
                     <p class="harga">Rp13JT</p><br>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                     <h6 class="item">Profesional</h6>
                     <p class="harga">Rp19JT</p><br>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                     <h6 class="item">Premium</h6>
                     <p class="harga">Rp31JT</p><br>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                     <h6 class="item">Enterprise</h6>
                     <p class="harga">CALL</p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button" style="margin-top: 20px;">Hubungi Sales</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button" style="margin-top: 20px;">Hubungi Sales</a>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th>
                 </tr>

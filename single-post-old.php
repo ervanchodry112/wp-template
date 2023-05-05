@@ -5,7 +5,7 @@ $curl = curl_init();
 curl_setopt_array($curl, array(
 	CURLOPT_URL => "https://campuspedia.id/kabar/wp-json/wp/v2/posts?caregories[]=berita&per_page=4",
 	CURLOPT_RETURNTRANSFER => true,
-	CURLOPT_TIMEOUT => 30,
+	CURLOPT_TIMEOUT => 10,
 	CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 	CURLOPT_CUSTOMREQUEST => "GET",
 	CURLOPT_SSL_VERIFYPEER => 0,
