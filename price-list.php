@@ -624,12 +624,12 @@ function doSomething(mediaQuery) {
                 </tr>
                 <tr class="accordion-child collapseManajemenPMB">
                   <td class="fitur-child">- Manajemen Ujian Seleksi & Pengumuman</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
                   <td>Lebih Lengkap
-                    <i class="uil uil-info-circle" aria-hidden="true"></i>
-                    <span>Lebih Lengkap</span>
+                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Dilengkapi fasilitas manajemen kuota, 
+                  grade minimal kelulusan, seleksi prestasi berdasarkan rapor, dan rekomendasi kelulusan otomatis"></i>
                   </td>
                   <td>Lebih Lengkap
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Dilengkapi fasilitas manajemen kuota, 
@@ -650,9 +650,9 @@ function doSomething(mediaQuery) {
                 </tr>
                 <tr class="accordion-child collapseManajemenPMB">
                   <td class="fitur-child">- Manajemen Formulir & Tagihan Pendaftaran</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
                   <td>Lebih Lengkap
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Dilengkapi rekomendasi pengelompokan Uang Kuliah Tunggal (UKT), 
                   Kartu Indonesia Pintar (KIP)/Bidikmisi otomatis"></i>
@@ -676,9 +676,9 @@ function doSomething(mediaQuery) {
                 </tr>
                 <tr class="accordion-child collapseManajemenPMB">
                   <td class="fitur-child">- Setting No Induk Mahasiswa (NIM) & Ekspor menjadi Mahasiswa</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -687,9 +687,9 @@ function doSomething(mediaQuery) {
                 </tr>
                 <tr class="accordion-child collapseManajemenPMB">
                   <td class="fitur-child">- Laporan Rekapitulasi Pendaftar, Pembayaran & Sumber Informasi</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -961,7 +961,7 @@ function doSomething(mediaQuery) {
                   <td class="fitur-child">- Manajamen MataKuliah, Kurikulum, Prasyarat & Ekuivalensi MataKuliah</td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -972,7 +972,7 @@ function doSomething(mediaQuery) {
                   <td class="fitur-child">- Fasilitas Paket MataKuliah</td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1137,9 +1137,9 @@ function doSomething(mediaQuery) {
               <tbody class="accordion-row accordion-child collapseSiakad">
                 <tr class="accordion-header">
                   <td class="fitur">Fasilitas penyebaran informasi ke mahasiswa melalu email & whatsapp</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1163,8 +1163,6 @@ function doSomething(mediaQuery) {
                   </td>
                   <td>Terbatas</td>
                   <td>Terbatas</td>
-
-
                   <td>Terbatas</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1314,7 +1312,378 @@ function doSomething(mediaQuery) {
                 </tr>
               </tbody>
               
-              <!---- 5 ----->
+              <!-- 5 -->
+              <tbody>
+                <tr>
+                  <td class="sep">CBT - Modul Test Online</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+
+              <!---- 6 ----->
+              <tbody>
+                <tr>
+                  <td class="sep">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div>EDOM - Modul Pengelolaan Evaluasi Dosen oleh Mahasiswa </div>
+                      <div class="d-flex align-items-center">
+                        <a onclick="collapseControl('collapseEDOM')" class="btn btn-sm btn-warning rounded-lg" id="collapseEDOMBtn">
+                            <i class='uil uil-angle-down'></i>
+                          </a>
+                        </div>
+                        </div>
+                  </td>
+                  <td>Terbatas</td>
+                  <td>Terbatas</td>
+                  <td>Terbatas</td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+              <tbody class="accordion-row accordion-child" id="collapseEDOM">
+                <tr class="accordion-header">
+                  <td class="fitur">Manajemen Pembuatan Form EDOM Kustom</td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+              <tbody class="accordion-row accordion-child collapseEDOM">
+                <tr class="accordion-header">
+                  <td class="fitur">Pengisian Form EDOM by Mahasiswa</td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+              <tbody class="accordion-row accordion-child collapseEDOM">
+                <tr class="accordion-header">
+                  <td class="fitur">Rekap Hasil Kuisioner Dosen dan Per Kelas</td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+
+              <!-- 7 -->
+              <tbody>
+                <tr>
+                  <td class="sep">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div>Modul Pengelolaan Yudisium & Wisuda</div>
+                      <div class="d-flex align-items-center">
+                        <a onclick="collapseControl('collapseYudisium')" class="btn btn-sm btn-warning rounded-lg" id="collapseYudisiumBtn">
+                            <i class='uil uil-angle-down'></i>
+                          </a>
+                        </div>
+                        </div>
+                  </td>
+                  <td>Terbatas</td>
+                  <td>Terbatas</td>
+                  <td>Terbatas</td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+              <tbody class="accordion-row accordion-child" id="collapseYudisium">
+                <tr class="accordion-header">
+                  <td class="fitur">Manajemen Periode & Syarat Yudisium</td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+              <tbody class="accordion-row accordion-child collapseYudisium">
+                <tr class="accordion-header">
+                  <td class="fitur">Daftar Peserta Yudisium dan status kelulusan</td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+              <tbody class="accordion-row accordion-child collapseYudisium">
+                <tr class="accordion-header">
+                  <td class="fitur">Penomoran Dokumen Yudisium (SK/Ijasah/Transkrip)</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+              <tbody class="accordion-row accordion-child collapseYudisium">
+                <tr class="accordion-header">
+                  <td class="fitur">Manajemen Eligible Yudisium</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+              <tbody class="accordion-row accordion-child collapseYudisium">
+                <tr class="accordion-header">
+                  <td class="fitur">Manajemen Periode, Peserta, dan Buku Wisuda</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+
+              <!--  -->
+              <tbody>
+                <tr>
+                  <td class="sep">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div>Modul Perhitungan Poin Kemahasiswaan</div>
+                      <div class="d-flex align-items-center">
+                        <a onclick="collapseControl('collapsePoin')" class="btn btn-sm btn-warning rounded-lg" id="collapsePoinBtn">
+                            <i class='uil uil-angle-down'></i>
+                          </a>
+                        </div>
+                        </div>
+                  </td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+              <tbody class="accordion-row accordion-child" id="collapsePoin">
+                <tr class="accordion-header">
+                  <td class="fitur">Manajemen Periode & Syarat Yudisium</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+              <tbody class="accordion-row accordion-child collapsePoin">
+                <tr class="accordion-header">
+                  <td class="fitur">Daftar Peserta Yudisium dan status kelulusan</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+              <tbody class="accordion-row accordion-child collapsePoin">
+                <tr class="accordion-header">
+                  <td class="fitur">Penomoran Dokumen Yudisium (SK/Ijasah/Transkrip)</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+              <tbody class="accordion-row accordion-child collapsePoin">
+                <tr class="accordion-header">
+                  <td class="fitur">Manajemen Eligible Yudisium</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+
+              <!--  -->
+              <tbody>
+                <tr>
+                  <td class="sep">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div>Modul Pembelajaran (SEVIMA Edlink)</div>
+                      <div class="d-flex align-items-center">
+                        <a onclick="collapseControl('collapsePlj')" class="btn btn-sm btn-warning rounded-lg" id="collapsePljBtn">
+                            <i class='uil uil-angle-down'></i>
+                          </a>
+                        </div>
+                        </div>
+                  </td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td>Community</td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td>Whitelabel*</td>
+                  <td>Whitelabel*</td>
+                </tr>
+              </tbody>
+              <tbody class="accordion-row accordion-child" id="collapsePlj">
+                <tr class="accordion-header">
+                  <td class="fitur">Premium Storage untuk Perguruan Tinggi</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td>15 GB / PT</td>
+                  <td>30 GB / PT</td>
+                  <td>75 GB / PT</td>
+                  <td class="default" style="font-weight: bold">150GB / PT</td>
+                  <td>300GB / PT</td>
+                  <td>600GB / PT</td>
+                </tr>
+              </tbody>
+              <tbody class="accordion-row accordion-child collapsePlj">
+                <tr class="accordion-header">
+                  <td class="fitur">Manajemen Perkuliahan Hybrid (Web & Android)</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+              <tbody class="accordion-row accordion-child collapsePlj">
+                <tr class="accordion-header">
+                  <td class="fitur">Pengawasan Ujian Online (Proctoring)</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+              <tbody class="accordion-row accordion-child collapsePlj">
+                <tr class="accordion-header">
+                  <td class="fitur">Penilaian dokumen PDF oleh dosen</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+              <tbody class="accordion-row accordion-child collapsePlj">
+                <tr class="accordion-header">
+                  <td class="fitur">Pembelajaran Interaktif</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+              <tbody class="accordion-row accordion-child collapsePlj">
+                <tr class="accordion-header">
+                  <td class="fitur">Integrasi SPADA</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+              <tbody class="accordion-row accordion-child collapsePlj">
+                <tr class="accordion-header">
+                  <td class="fitur">Aplikasi Mobile iOS</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+              <tbody class="accordion-row accordion-child collapsePlj">
+                <tr class="accordion-header">
+                  <td class="fitur">MOOC untuk Dosen (Kelas Merdeka) (*)</td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+
+              <!--  -->
               <tbody>
                 <tr>
                   <td class="sep">SKPI - Modul Surat Keterangan Pendamping Ijazah</td>
@@ -1328,6 +1697,8 @@ function doSomething(mediaQuery) {
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
               </tbody>
+
+              <!--  -->
               <tbody>
                 <tr>
                   <td class="sep">
@@ -1352,10 +1723,7 @@ function doSomething(mediaQuery) {
               </tbody>
               <tbody class="accordion-row accordion-child" id="collapseTracer">
                 <tr class="accordion-header">
-                  <td class="fitur">
-                    TRACER - Manajemen Tracer Study
-                    
-                  </td>
+                  <td class="fitur">Perancangan Kuisioner Tracer Study Sesuai Standar PDDIKTI</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1392,8 +1760,7 @@ function doSomething(mediaQuery) {
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
               </tbody>
-
-              <!---- 6 ----->
+              <!--  -->
               <tbody>
                 <tr>
                   <td class="sep">
@@ -1541,7 +1908,7 @@ function doSomething(mediaQuery) {
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1631,7 +1998,7 @@ function doSomething(mediaQuery) {
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td>Termasuk Simulasi Akreditasi</td>
                   <td>Termasuk Simulasi Akreditasi</td>
                 </tr>
@@ -1842,14 +2209,40 @@ function doSomething(mediaQuery) {
                         </div>
                     </div>
                   </td>
-                  <td>Lebih Lengkap</td>
-                  <td>Lebih Lengkap</td>
-                  <td>Lebih Lengkap</td>
+                  <td>Terbatas</td>
+                  <td>Terbatas</td>
+                  <td>Terbatas</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+              <tbody class="accordion-row accordion-child" id="collapseTU">
+                <tr class="accordion-header">
+                  <td class="fitur">Manajemen Layanan Kuesioner</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td class="default" style="font-weight: bold"></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+              <tbody class="accordion-row accordion-child collapseTU">
+                <tr class="accordion-header">
+                  <td class="fitur">Manajemen Permintaan Laporan</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td class="default" style="font-weight: bold"></td>
+                  <td></td>
+                  <td></td>
                 </tr>
               </tbody>
               <tbody class="accordion-row accordion-child" id="collapseTU">
