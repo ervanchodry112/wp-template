@@ -1,15 +1,22 @@
+/** @format */
+
 $(document).ready(function ($) {
-  $("#select2-pt").select2({
-    placeholder: "Pilih PT Anda",
+  $('#select2-pt').select2({
+    placeholder: 'Memuat..',
     allowClear: false,
   });
-  $("#select2-jabatan").select2({
-    placeholder: "Pilih Jabatan Anda",
+  $('#select2-jabatan').select2({
+    placeholder: 'Pilih Jabatan Anda',
     allowClear: false,
   });
-  $("#select2-source-info").select2({
+  $('#select2-jmlmhs').select2({
     minimumResultsForSearch: -1,
-    placeholder: "Pilih Sumber Informasi",
+    placeholder: 'Pilih Jumlah Mahasiswa',
+    allowClear: false,
+  });
+  $('#select2-sumberInfo').select2({
+    minimumResultsForSearch: -1,
+    placeholder: 'Pilih Sumber Informasi',
     allowClear: false,
   });
 });
@@ -26,22 +33,23 @@ $(document).ready(function ($) {
 var term_names_array = [];
 $(document).ready(function () {
   $.ajax({
-    url: theme_directory + "/js/daftar-kampus-2.json",
-    dataType: "json",
+    url: theme_directory + '/js/daftar-kampus-2.json',
+    dataType: 'json',
   }).done(function (data) {
     for (index = 0; index < data.length; ++index) {
       term_names_array.push({ id: index, text: data[index] });
+      console.log(data[index]);
     }
   });
 });
 
 $(document).ajaxComplete(function () {
-  var select2Kampus = $(".wp-select2#select2-pt");
+  var select2Kampus = $('.wp-select2#select2-pt');
   $(select2Kampus).select2({
     minimumInputLength: 3,
-    dataType: "json",
+    dataType: 'json',
     data: term_names_array,
-    placeholder: "Pilih PT Anda",
+    placeholder: 'Pilih PT Anda',
     // language: {
     //   inputTooShort: function () {
     //     return input_length();
@@ -49,24 +57,24 @@ $(document).ajaxComplete(function () {
     // },
   });
 
-  var autocomplete_field = document.getElementById("nama-pt");
-  var kodept_field = document.getElementById("kode-pt");
+  var autocomplete_field = document.getElementById('nama-pt');
+  var kodept_field = document.getElementById('kode-pt');
 
   var kodept;
   var newNama = new Array();
-  select2Kampus.on("select2:select", function (e) {
+  select2Kampus.on('select2:select', function (e) {
     var data = e.params.data.text;
     newNama.length = 0;
-    kodept = data.split(" ");
+    kodept = data.split(' ');
     kodept_field.value = kodept[0];
 
     for (var i = 2; i < kodept.length; i++) {
-      if (kodept[i] === "-") {
+      if (kodept[i] === '-') {
         break;
       }
       newNama.push(kodept[i]);
     }
 
-    autocomplete_field.value = newNama.join(" ");
+    autocomplete_field.value = newNama.join(' ');
   });
 });
