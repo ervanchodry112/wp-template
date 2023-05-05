@@ -156,7 +156,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-modal-video.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/select2-init.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/price-list.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/main.js?20220322"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 
