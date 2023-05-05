@@ -2,7 +2,7 @@
 
 $(document).ready(function ($) {
   $('#select2-pt').select2({
-    placeholder: 'Memuat..',
+    placeholder: 'Pilih PT Anda',
     allowClear: false,
   });
   $('#select2-jabatan').select2({
@@ -32,14 +32,13 @@ $(document).ready(function ($) {
 
 var term_names_array = [];
 $(document).ready(function () {
-  console.log('masuk');
+  console.log('ready');
   $.ajax({
     url: theme_directory + '/js/daftar-kampus-2.json',
     dataType: 'json',
   }).done(function (data) {
     for (index = 0; index < data.length; ++index) {
       term_names_array.push({ id: index, text: data[index] });
-      console.log(data[index]);
     }
   });
 });
