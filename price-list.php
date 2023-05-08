@@ -202,7 +202,7 @@ function doSomething(mediaQuery) {
             </li>
             <li class="bg-blue nav-item">
               <button class="nav-link" data-toggle="tab" data-target=".gold" type="button" aria-selected="false">
-                <h6 class="item">Bussines</h6>
+                <h6 class="item">Business</h6>
               </button>
             </li>
             <li class="bg-blue nav-item">
@@ -261,7 +261,7 @@ function doSomething(mediaQuery) {
                       <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                     </th>
                     <th>
-                      <h6 class="item">Bussines</h6>
+                      <h6 class="item">Business</h6>
                       <p class="harga">Rp13JT<br>
                       </p>
                       <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
