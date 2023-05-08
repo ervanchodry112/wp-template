@@ -1546,7 +1546,7 @@ function doSomething(mediaQuery) {
                   <td><i class='uil uil-times-circle'></i></td>
                 </tr>
               </tbody>
-              <tbody class="accordion-row accordion-child" id="collapseTU">
+              <tbody class="accordion-row accordion-child collapseTU">
                 <tr class="accordion-header">
                   <td class="fitur">
                     <div class=" d-flex justify-content-between align-items-center">
@@ -1561,61 +1561,49 @@ function doSomething(mediaQuery) {
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
-                <tbody class="accordion-row accordion-child" id="collapseManage">
-                  <tr class="accordion-header">
-                    <td class="fitur">KTM, KRS, KHS</td>
+                <tr class="accordion-child" id="collapseManage">
+                    <td class="fitur-child">KTM, KRS, KHS</td>
                     <td><i class='uil uil-check-circle'></i></td>
                     <td><i class='uil uil-check-circle'></i></td>
                     <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                     <td><i class='uil uil-check-circle'></i></td>
                   </tr>
-              </tbody>
-              <tbody class="accordion-row accordion-child collapseManange">
-                <tr class="accordion-header">
-                  <td class="fitur">Transkrip Lulusan</td>
+                <tr class="accordion-child collapseManage">
+                  <td class="fitur-child">Transkrip Lulusan</td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+                <tr class="accordion-child collapseManage">
+                  <td class="fitur-child">Transkrip Sementara</td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+                <tr class="accordion-child collapseManage">
+                  <td class="fitur-child">Surat Keterangan Pendamping Ijazah (SKPI)</td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+                <tr class="accordion-child collapseManage">
+                  <td class="fitur-child">Ijazah</td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+                <tr class="accordion-child collapseManage">
+                  <td class="fitur-child">Daftar Hadir & Kartu Ujian</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
               </tbody>
-              <tbody class="accordion-row accordion-child collapseManange">
-                <tr class="accordion-header">
-                  <td class="fitur">Transkrip Sementara</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                </tr>
-              </tbody>
-              <tbody class="accordion-row accordion-child collapseManange">
-                <tr class="accordion-header">
-                  <td class="fitur">Surat Keterangan Pendamping Ijazah (SKPI)</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                </tr>
-              </tbody>
-              <tbody class="accordion-row accordion-child collapseManange">
-                <tr class="accordion-header">
-                  <td class="fitur">Ijazah</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                </tr>
-              </tbody>
-              <tbody class="accordion-row accordion-child collapseManange">
-                <tr class="accordion-header">
-                  <td class="fitur">Daftar Hadir & Kartu Ujian</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                </tr>
-              </tbody>
-
               <!----- 12 ----->
               <tbody>
                 <tr>
