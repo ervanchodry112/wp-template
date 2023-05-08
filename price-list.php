@@ -2312,7 +2312,7 @@ function doSomething(mediaQuery) {
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
-
+              </tbody>
               <!--  -->
               
 
@@ -2379,6 +2379,17 @@ function doSomething(mediaQuery) {
                 </tr>
                 <tr class="accordion-header">
                   <td class="fitur">Pelaporan PPSDM (Pusat Pengembangan Sumber Daya Manusia Minyak dan Gas)</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+                <tr class="accordion-header">
+                  <td class="fitur">Pelaporan PPSDM PU (Untuk kampus dibawah Kementerian Perhubungan)</td>
                   <td></td>
                   <td></td>
                   <td></td>
