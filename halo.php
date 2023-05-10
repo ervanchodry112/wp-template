@@ -171,7 +171,8 @@ function doSomething(mediaQuery) {
                       </p>
                       <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
                     </th>
-                    <th>
+                    <th class="default">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/sign.png" class="img-fluid sign" style="position: absolute; top: -35%; margin-left: -35px;" alt="">
                       <h6 class="item">Basic</h6>
                       <p class="harga">Rp6JT<br>
                       </p>
