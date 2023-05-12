@@ -30,7 +30,7 @@
     <!-- <link rel="shortcut icon" href="/favicon.ico" /> -->
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico" type="image/x-icon">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
     <!-- Google Tag Manager edit by Febri 270220-->
     <script>
         (function (w, d, s, l, i) {
@@ -131,16 +131,26 @@
     <!-- material icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet" />
-
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 
 
     <!-- javascript -->
-    <script src="<?php echo get_template_directory_uri(); ?>/vendors/jquery.min.js"></script>
+    <!-- <script src="<?php echo get_template_directory_uri(); ?>/vendors/jquery.min.js"></script> -->
     <script>
-        theme_directory = "<?php echo get_template_directory_uri() ?>";
+        const theme_directory = "<?php echo get_template_directory_uri() ?>";
     </script>
 
 
+    <script>
+        $(document).ready(function () {
+            $('.navbar-toggler').click(function () {
+                const target = $(this).data('target')
+                console.log(target)
+                $(target).toggleClass('show')
+            })
+        })
+    </script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
