@@ -112,6 +112,7 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.7/css/unicons.css">
     </noscript>
 
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
     <link rel="stylesheet" type="text/css"
         href="<?php echo get_template_directory_uri(); ?>/css/main.min.css?<?= md5(rand(100, 999)); ?>">
     <script src="https://use.fontawesome.com/6ae1c35383.js"></script>
