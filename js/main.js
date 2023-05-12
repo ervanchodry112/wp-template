@@ -437,4 +437,18 @@ $('form').submit(function () {
 });
 // });
 
-// Price List
+// Portofolio
+function switchTab(id) {
+  $('.tab-head').removeClass('active');
+  $('#tab-' + id).addClass('active');
+  $('.tab-pane').removeClass('active');
+  $('#' + id).addClass('active');
+  console.log('#' + id);
+}
+
+$(document).ready(function () {
+  $('.wpcf7-submit').on('click', function () {
+    console.log('submited');
+    window.location = 'https://sevima.com/thankyou-page';
+  });
+});

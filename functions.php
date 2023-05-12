@@ -18,7 +18,8 @@ function sevima_pagination($pages = '', $range = 2)
 {
 	$showitems = ($range * 2) + 1;
 	global $paged;
-	if (empty($paged)) $paged = 1;
+	if (empty($paged))
+		$paged = 1;
 	if ($pages == '') {
 		global $wp_query;
 		$pages = $wp_query->max_num_pages;
@@ -28,15 +29,19 @@ function sevima_pagination($pages = '', $range = 2)
 	}
 	if (1 != $pages) {
 		echo '<ul class="pagination">';
-		if ($paged > 2 && $paged > $range + 1 && $showitems < $pages) echo "<li class='page-item'><a class='page-link' href='" . get_pagenum_link(1) . "'>&laquo;</a></li>";
-		if ($paged > 1 && $showitems < $pages) echo "<li class='page-item'><a class='page-link' href='" . get_pagenum_link($paged - 1) . "'>&lsaquo;</a></li>";
+		if ($paged > 2 && $paged > $range + 1 && $showitems < $pages)
+			echo "<li class='page-item'><a class='page-link' href='" . get_pagenum_link(1) . "'>&laquo;</a></li>";
+		if ($paged > 1 && $showitems < $pages)
+			echo "<li class='page-item'><a class='page-link' href='" . get_pagenum_link($paged - 1) . "'>&lsaquo;</a></li>";
 		for ($i = 1; $i <= $pages; $i++) {
 			if (1 != $pages && (!($i >= $paged + $range + 1 || $i <= $paged - $range - 1) || $pages <= $showitems)) {
 				echo ($paged == $i) ? "<li class='page-item active'><a class='page-link'>" . $i . "</a></li>" : "<li><a class='page-link' href='" . get_pagenum_link($i) . "' class='inactive' >" . $i . "</a></li>";
 			}
 		}
-		if ($paged < $pages && $showitems < $pages) echo "<li class='page-item'><a class='page-link' href='" . get_pagenum_link($paged + 1) . "'>&rsaquo;</a></li>";
-		if ($paged < $pages - 1 &&  $paged + $range - 1 < $pages && $showitems < $pages) echo "<li class='page-item'><a class='page-link' href='" . get_pagenum_link($pages) . "'>&raquo;</a></li>";
+		if ($paged < $pages && $showitems < $pages)
+			echo "<li class='page-item'><a class='page-link' href='" . get_pagenum_link($paged + 1) . "'>&rsaquo;</a></li>";
+		if ($paged < $pages - 1 && $paged + $range - 1 < $pages && $showitems < $pages)
+			echo "<li class='page-item'><a class='page-link' href='" . get_pagenum_link($pages) . "'>&raquo;</a></li>";
 		echo "</ul>\n";
 	}
 }
@@ -45,11 +50,14 @@ function sevima_pagination($pages = '', $range = 2)
 require_once('wp_bootstrap_navwalker.php');
 function wpb_theme_setup()
 {
-	register_nav_menus(array(
-		'primary' => __('Primary Menu'),
-		'faq_career' => __('FAQ Career'), // custom
-		'faq_internship' => __('FAQ Internship') // custom
-	));
+	register_nav_menus(
+		array(
+			'primary' => __('Primary Menu'),
+			'faq_career' => __('FAQ Career'),
+			// custom
+			'faq_internship' => __('FAQ Internship') // custom
+		)
+	);
 }
 add_action('after_setup_theme', 'wpb_theme_setup');
 
@@ -70,14 +78,17 @@ function testimoni_event()
 		'not_found_in_trash' => __("Tidak Ditemukan"),
 		'parent_item_colon' => ''
 	);
-	register_post_type('testimoni_event', array(
-		'labels' => $labels,
-		'public' => true,
-		'has_archive' => false,
-		'menu_icon' => 'dashicons-thumbs-up',
-		'rewrite' => false,
-		'supports' => array('title', 'editor', 'thumbnail'),
-	));
+	register_post_type(
+		'testimoni_event',
+		array(
+			'labels' => $labels,
+			'public' => true,
+			'has_archive' => false,
+			'menu_icon' => 'dashicons-thumbs-up',
+			'rewrite' => false,
+			'supports' => array('title', 'editor', 'thumbnail'),
+		)
+	);
 }
 add_action('init', 'testimoni_event', 0);
 
@@ -98,14 +109,17 @@ function videowebinar_post()
 		'not_found_in_trash' => __("Tidak Ditemukan"),
 		'parent_item_colon' => ''
 	);
-	register_post_type('video_webinar', array(
-		'labels' => $labels,
-		'public' => true,
-		'has_archive' => false,
-		'menu_icon' => 'dashicons-thumbs-up',
-		'rewrite' => false,
-		'supports' => array('title', 'editor', 'thumbnail'),
-	));
+	register_post_type(
+		'video_webinar',
+		array(
+			'labels' => $labels,
+			'public' => true,
+			'has_archive' => false,
+			'menu_icon' => 'dashicons-thumbs-up',
+			'rewrite' => false,
+			'supports' => array('title', 'editor', 'thumbnail'),
+		)
+	);
 }
 add_action('init', 'videowebinar_post', 0);
 
@@ -129,14 +143,17 @@ function testimoninew_post()
 		'not_found_in_trash' => __("Tidak Ditemukan"),
 		'parent_item_colon' => ''
 	);
-	register_post_type('testimoni_new', array(
-		'labels' => $labels,
-		'public' => true,
-		'has_archive' => false,
-		'menu_icon' => 'dashicons-thumbs-up',
-		'rewrite' => false,
-		'supports' => array('title', 'editor', 'thumbnail'),
-	));
+	register_post_type(
+		'testimoni_new',
+		array(
+			'labels' => $labels,
+			'public' => true,
+			'has_archive' => false,
+			'menu_icon' => 'dashicons-thumbs-up',
+			'rewrite' => false,
+			'supports' => array('title', 'editor', 'thumbnail'),
+		)
+	);
 }
 add_action('init', 'testimoninew_post', 0);
 
@@ -175,14 +192,17 @@ function testimonigambar_post()
 		'not_found_in_trash' => __("Tidak Ditemukan"),
 		'parent_item_colon' => ''
 	);
-	register_post_type('testimoni_gambar', array(
-		'labels' => $labels,
-		'public' => true,
-		'has_archive' => false,
-		'menu_icon' => 'dashicons-thumbs-up',
-		'rewrite' => false,
-		'supports' => array('title', 'editor', 'thumbnail'),
-	));
+	register_post_type(
+		'testimoni_gambar',
+		array(
+			'labels' => $labels,
+			'public' => true,
+			'has_archive' => false,
+			'menu_icon' => 'dashicons-thumbs-up',
+			'rewrite' => false,
+			'supports' => array('title', 'editor', 'thumbnail'),
+		)
+	);
 }
 add_action('init', 'testimonigambar_post', 0);
 
@@ -202,14 +222,17 @@ function videoPlaylist()
 		'not_found_in_trash' => __("Tidak Ditemukan"),
 		'parent_item_colon' => ''
 	);
-	register_post_type('video_playlist', array(
-		'labels' => $labels,
-		'public' => true,
-		'has_archive' => false,
-		'menu_icon' => 'dashicons-video-alt',
-		'rewrite' => false,
-		'supports' => array('title', 'editor', 'thumbnail'),
-	));
+	register_post_type(
+		'video_playlist',
+		array(
+			'labels' => $labels,
+			'public' => true,
+			'has_archive' => false,
+			'menu_icon' => 'dashicons-video-alt',
+			'rewrite' => false,
+			'supports' => array('title', 'editor', 'thumbnail'),
+		)
+	);
 }
 add_action('init', 'videoPlaylist', 0);
 // END TESTIMONI NEW//
@@ -233,14 +256,17 @@ function testimonimagang_post()
 		'not_found_in_trash' => __("Tidak Ditemukan"),
 		'parent_item_colon' => ''
 	);
-	register_post_type('testimoni_magang', array(
-		'labels' => $labels,
-		'public' => true,
-		'has_archive' => false,
-		'menu_icon' => 'dashicons-thumbs-up',
-		'rewrite' => false,
-		'supports' => array('title', 'editor', 'thumbnail'),
-	));
+	register_post_type(
+		'testimoni_magang',
+		array(
+			'labels' => $labels,
+			'public' => true,
+			'has_archive' => false,
+			'menu_icon' => 'dashicons-thumbs-up',
+			'rewrite' => false,
+			'supports' => array('title', 'editor', 'thumbnail'),
+		)
+	);
 }
 add_action('init', 'testimonimagang_post', 0);
 
@@ -279,14 +305,17 @@ function testimonigbr_post()
 		'not_found_in_trash' => __("Tidak Ditemukan"),
 		'parent_item_colon' => ''
 	);
-	register_post_type('testimoni_gbr', array(
-		'labels' => $labels,
-		'public' => true,
-		'has_archive' => false,
-		'menu_icon' => 'dashicons-thumbs-up',
-		'rewrite' => false,
-		'supports' => array('title', 'editor', 'thumbnail'),
-	));
+	register_post_type(
+		'testimoni_gbr',
+		array(
+			'labels' => $labels,
+			'public' => true,
+			'has_archive' => false,
+			'menu_icon' => 'dashicons-thumbs-up',
+			'rewrite' => false,
+			'supports' => array('title', 'editor', 'thumbnail'),
+		)
+	);
 }
 add_action('init', 'testimonigbr_post', 0);
 
@@ -306,14 +335,17 @@ function videoMagang()
 		'not_found_in_trash' => __("Tidak Ditemukan"),
 		'parent_item_colon' => ''
 	);
-	register_post_type('video_magang', array(
-		'labels' => $labels,
-		'public' => true,
-		'has_archive' => false,
-		'menu_icon' => 'dashicons-video-alt',
-		'rewrite' => false,
-		'supports' => array('title', 'editor', 'thumbnail'),
-	));
+	register_post_type(
+		'video_magang',
+		array(
+			'labels' => $labels,
+			'public' => true,
+			'has_archive' => false,
+			'menu_icon' => 'dashicons-video-alt',
+			'rewrite' => false,
+			'supports' => array('title', 'editor', 'thumbnail'),
+		)
+	);
 }
 add_action('init', 'videoMagang', 0);
 // END TESTIMONI magang
@@ -336,14 +368,17 @@ function partnership_post()
 		'not_found_in_trash' => __("Tidak Ditemukan"),
 		'parent_item_colon' => ''
 	);
-	register_post_type('partnership_new', array(
-		'labels' => $labels,
-		'public' => true,
-		'has_archive' => false,
-		'menu_icon' => 'dashicons-thumbs-up',
-		'rewrite' => false,
-		'supports' => array('title', 'editor', 'thumbnail'),
-	));
+	register_post_type(
+		'partnership_new',
+		array(
+			'labels' => $labels,
+			'public' => true,
+			'has_archive' => false,
+			'menu_icon' => 'dashicons-thumbs-up',
+			'rewrite' => false,
+			'supports' => array('title', 'editor', 'thumbnail'),
+		)
+	);
 }
 add_action('init', 'partnership_post', 0);
 
@@ -365,14 +400,17 @@ function iklan_post()
 		'not_found_in_trash' => __("Tidak Ditemukan"),
 		'parent_item_colon' => ''
 	);
-	register_post_type('Iklan', array(
-		'labels' => $labels,
-		'public' => true,
-		'has_archive' => false,
-		'menu_icon' => 'dashicons-feedback',
-		'rewrite' => false,
-		'supports' => array('title', 'editor', 'thumbnail'),
-	));
+	register_post_type(
+		'Iklan',
+		array(
+			'labels' => $labels,
+			'public' => true,
+			'has_archive' => false,
+			'menu_icon' => 'dashicons-feedback',
+			'rewrite' => false,
+			'supports' => array('title', 'editor', 'thumbnail'),
+		)
+	);
 }
 add_action('init', 'iklan_post', 0);
 
@@ -412,14 +450,17 @@ function lowongan_post()
 		'not_found_in_trash' => __("Tidak Ditemukan"),
 		'parent_item_colon' => ''
 	);
-	register_post_type('lowongan', array(
-		'labels' => $labels,
-		'public' => true,
-		'has_archive' => false,
-		'menu_icon' => 'dashicons-businessman',
-		'rewrite' => false,
-		'supports' => array('title', 'editor', 'thumbnail'),
-	));
+	register_post_type(
+		'lowongan',
+		array(
+			'labels' => $labels,
+			'public' => true,
+			'has_archive' => false,
+			'menu_icon' => 'dashicons-businessman',
+			'rewrite' => false,
+			'supports' => array('title', 'editor', 'thumbnail'),
+		)
+	);
 }
 add_action('init', 'lowongan_post', 0);
 
@@ -459,15 +500,18 @@ function sales_partner()
 		'not_found_in_trash' => __("Tidak Ditemukan"),
 		'parent_item_colon' => ''
 	);
-	register_post_type('sales_partner', array(
-		'labels' => $labels,
-		'public' => true,
-		'has_archive' => false,
-		'menu_icon' => 'dashicons-id',
-		'rewrite' => false,
-		'supports' => array('title', 'editor', 'thumbnail'),
-		'rewrite' => array('slug' => 'sales_partner')
-	));
+	register_post_type(
+		'sales_partner',
+		array(
+			'labels' => $labels,
+			'public' => true,
+			'has_archive' => false,
+			'menu_icon' => 'dashicons-id',
+			'rewrite' => false,
+			'supports' => array('title', 'editor', 'thumbnail'),
+			'rewrite' => array('slug' => 'sales_partner')
+		)
+	);
 }
 add_action('init', 'sales_partner', 0);
 
@@ -507,14 +551,17 @@ function team_post()
 		'not_found_in_trash' => __("Tidak Ditemukan"),
 		'parent_item_colon' => ''
 	);
-	register_post_type('team', array(
-		'labels' => $labels,
-		'public' => true,
-		'has_archive' => false,
-		'menu_icon' => 'dashicons-groups',
-		'rewrite' => false,
-		'supports' => array('title', 'editor', 'thumbnail'),
-	));
+	register_post_type(
+		'team',
+		array(
+			'labels' => $labels,
+			'public' => true,
+			'has_archive' => false,
+			'menu_icon' => 'dashicons-groups',
+			'rewrite' => false,
+			'supports' => array('title', 'editor', 'thumbnail'),
+		)
+	);
 }
 add_action('init', 'team_post', 0);
 
@@ -581,15 +628,19 @@ function portofolio_post()
 		'not_found_in_trash' => __("Tidak Ditemukan"),
 		'parent_item_colon' => ''
 	);
-	register_post_type('portofolio', array(
-		'labels' => $labels,
-		'public' => true,
-		'has_archive' => false,
-		'menu_icon' => 'dashicons-star-filled',
-		'rewrite' => array(
-			"with_front" => true
-		), 'supports' => array('title', 'editor', 'thumbnail'),
-	));
+	register_post_type(
+		'portofolio',
+		array(
+			'labels' => $labels,
+			'public' => true,
+			'has_archive' => false,
+			'menu_icon' => 'dashicons-star-filled',
+			'rewrite' => array(
+				"with_front" => true
+			),
+			'supports' => array('title', 'editor', 'thumbnail'),
+		)
+	);
 }
 add_action('init', 'portofolio_post', 0);
 
@@ -629,14 +680,17 @@ function promo_post()
 		'not_found_in_trash' => __("Tidak Ditemukan"),
 		'parent_item_colon' => ''
 	);
-	register_post_type('promo', array(
-		'labels' => $labels,
-		'public' => true,
-		'has_archive' => false,
-		'menu_icon' => 'dashicons-tickets-alt',
-		'rewrite' => false,
-		'supports' => array('title', 'editor', 'thumbnail'),
-	));
+	register_post_type(
+		'promo',
+		array(
+			'labels' => $labels,
+			'public' => true,
+			'has_archive' => false,
+			'menu_icon' => 'dashicons-tickets-alt',
+			'rewrite' => false,
+			'supports' => array('title', 'editor', 'thumbnail'),
+		)
+	);
 }
 add_action('init', 'promo_post', 0);
 
@@ -676,16 +730,19 @@ function jurusan_post()
 		'not_found_in_trash' => __("Jurusan Tidak Ditemukan"),
 		'parent_item_colon' => ''
 	);
-	register_post_type('jurusan', array(
-		'labels' => $labels,
-		'public' => true,
-		'has_archive' => false,
-		'menu_icon' => 'dashicons-welcome-learn-more',
-		'rewrite' => array(
-			"with_front" => true
-		),
-		'supports' => array('title', 'editor', 'thumbnail'),
-	));
+	register_post_type(
+		'jurusan',
+		array(
+			'labels' => $labels,
+			'public' => true,
+			'has_archive' => false,
+			'menu_icon' => 'dashicons-welcome-learn-more',
+			'rewrite' => array(
+				"with_front" => true
+			),
+			'supports' => array('title', 'editor', 'thumbnail'),
+		)
+	);
 }
 add_action('init', 'jurusan_post', 0);
 
@@ -726,16 +783,19 @@ function ebook_post()
 		'not_found_in_trash' => __("eBook Tidak Ditemukan"),
 		'parent_item_colon' => ''
 	);
-	register_post_type('ebook', array(
-		'labels' => $labels,
-		'public' => true,
-		'has_archive' => false,
-		'menu_icon' => 'dashicons-book',
-		'rewrite' => array(
-			"with_front" => true
-		),
-		'supports' => array('title', 'editor', 'thumbnail'),
-	));
+	register_post_type(
+		'ebook',
+		array(
+			'labels' => $labels,
+			'public' => true,
+			'has_archive' => false,
+			'menu_icon' => 'dashicons-book',
+			'rewrite' => array(
+				"with_front" => true
+			),
+			'supports' => array('title', 'editor', 'thumbnail'),
+		)
+	);
 }
 add_action('init', 'ebook_post', 0);
 
@@ -807,9 +867,9 @@ function cfdb7_filter_before_save($form_data)
 <?php
 function estimated_reading_time($content = '')
 {
-	$wpm = 250;          // Word Per Minute (250 Average)
-	$text_content = strip_shortcodes($content);     // Remove Shortcodes
-	$str_content = strip_tags($text_content);       // Remove Tags
+	$wpm = 250; // Word Per Minute (250 Average)
+	$text_content = strip_shortcodes($content); // Remove Shortcodes
+	$str_content = strip_tags($text_content); // Remove Tags
 	$word_count = str_word_count($str_content);
 	$readtime = ceil($word_count / $wpm);
 	$postfix = " Menit";
@@ -820,5 +880,81 @@ function estimated_reading_time($content = '')
 	// }
 	$readingtime = $readtime . $postfix;
 	return $readingtime;
+}
+?>
+
+<?php
+function submit_form_berlangganan($data)
+{
+
+	// Get the result of the captcha
+	$res = $data['rand1'] + $data['rand2'];
+
+	// Check if the captcha is valid
+	if ($data['custom-captcha'] != $res) {
+		?>
+		<script>
+			$('.wpcf7-response-output').addClass('wpcf7-validation-errors');
+			$('.wpcf7-response-output').html('Captcha salah');
+		</script>
+		<?php
+		return $data;
+	}
+
+	// Get the keys of the data
+	$keys = array_keys($data);
+
+	// Create the query
+
+	// Get the prefix from wp_config
+	$query = "INSERT INTO `wp_cf7dbplugin_submits` (`submit_time`, `form_name`, `field_name`, `field_value`, `field_order`) VALUES ";
+
+	// Loop through the data
+	$i = 0;
+	foreach ($keys as $key) {
+
+		// Check if the field is the captcha
+		if ($key == 'rand1' || $key == 'rand2' || $key == 'custom-captcha') {
+			// Unset the field
+			unset($data[$key]);
+			continue;
+		}
+
+		// Clean the value from injection etc.
+		$data[$key] = filter_var($data[$key], FILTER_SANITIZE_STRING);
+
+		if ($key == "email") {
+			$data[$key] = filter_var($data[$key], FILTER_SANITIZE_EMAIL);
+		}
+
+		// Add the data to the query
+		$date = time();
+		$query .= "('" . $date . "', 'Formulir Berlangganan', '" . $key . "', '" . $data[$key] . "', '" . $i++ . "'),";
+
+	}
+
+	// Remove the last comma
+	$query = rtrim($query, ",");
+
+	// Add the semicolon
+	$query .= ";";
+
+	// Connect to db get from wp-config.php
+	$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+
+	// Check connection
+	if ($mysqli->connect_error) {
+		die("Connection failed: " . $mysqli->connect_error);
+	}
+
+	// Execute the query
+	if ($mysqli->query($query) === FALSE) {
+		echo "<script>alert('Mohon maaf data yang anda masukkan gagal disimpan!')</script>";
+		$mysqli->close();
+		return $data;
+	}
+
+	$mysqli->close();
+	return false;
 }
 ?>
