@@ -266,6 +266,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  height: auto !important;
 }
 #hero-mitra h1 {
   font-size: 2rem;
