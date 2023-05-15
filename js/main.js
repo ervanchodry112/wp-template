@@ -65,7 +65,6 @@ $('#inner .owl-carousel').owlCarousel({
 // ---- NAVBAR ----//
 $(document).ready(function () {
   $('.navbar-toggler').click(function () {
-    console.log('Dipencet');
     $('.navbar-collapse').toggleClass('right');
   });
   $('.produk-click').click(function () {
@@ -80,6 +79,7 @@ $(document).ready(function () {
   $('.produk-click-1').click(function () {
     $('.navbar-collapse-sevima-1').toggleClass('toggle-responsive');
   });
+  
 });
 
 // ------ MODAL VIDEO ------ //

@@ -142,7 +142,7 @@ get_header();
             </li>
             <li class="bg-blue nav-item">
               <button class="nav-link" data-toggle="tab" data-target=".gold" type="button" aria-selected="false">
-                <h6 class="item">Business</h6>
+                <h6 class="item">Bussines</h6>
               </button>
             </li>
             <li class="bg-blue nav-item">
@@ -176,55 +176,54 @@ get_header();
                     </p>
                       <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> 
                     </th> -->
-
-                  <th>
-                    <h6 class="item">Lite</h6>
-                    <p class="harga">Rp2.5JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
-                  </th>
-                  <th class="gold">
-                    <h6 class="item">Starter</h6>
-                    <p class="harga">Rp4.4JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
-                  </th>
-                  <th>
-                    <h6 class="item">Basic</h6>
-                    <p class="harga">Rp6JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
-                  </th>
-                  <th>
-                    <h6 class="item">Growth</h6>
-                    <p class="harga">Rp9JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
-                  </th>
-                  <th>
-                    <h6 class="item">Bussines</h6>
-                    <p class="harga">Rp13JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
-                  </th>
-                  <th class="default">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/sign.png" class="img-fluid sign" style="position: absolute; top: -35%; margin-left: -35px;" alt="">
-                    <h6 class="item">Profesional</h6>
-                    <p class="harga">Rp19JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
-                  </th>
-                  <th>
-                    <h6 class="item">Premium</h6>
-                    <p class="harga">Rp31JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
-                  </th>
-                  <th>
-                    <h6 class="item">Enterprise</h6>
-                    <p class="harga">CALL<br> </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Hubungi Sales</a>
-                  </th>
+                    <th>
+                      <h6 class="item">Lite</h6>
+                      <p class="harga">Rp2.5JT<br>
+                      </p>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                    </th>
+                    <th class="gold">
+                      <h6 class="item">Starter</h6>
+                      <p class="harga">Rp4.4JT<br>
+                      </p>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                    </th>
+                    <th>
+                      <h6 class="item">Basic</h6>
+                      <p class="harga">Rp6JT<br>
+                      </p>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                    </th>
+                    <th>
+                      <h6 class="item">Growth</h6>
+                      <p class="harga">Rp9JT<br>
+                      </p>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                    </th>
+                    <th>
+                      <h6 class="item">Bussines</h6>
+                      <p class="harga">Rp13JT<br>
+                      </p>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                    </th>
+                    <th class="default">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/sign.png" class="img-fluid sign" style="position: absolute; top: -35%; margin-left: -35px;" alt="">
+                      <h6 class="item">Profesional</h6>
+                      <p class="harga">Rp19JT<br>
+                      </p>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                    </th>
+                    <th>
+                      <h6 class="item">Premium</h6>
+                      <p class="harga">Rp31JT<br>
+                      </p>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                    </th>
+                    <th>
+                      <h6 class="item">Enterprise</h6>
+                      <p class="harga">CALL<br> </p>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Hubungi Sales</a>
+                    </th>
 
 
                 </tr>
