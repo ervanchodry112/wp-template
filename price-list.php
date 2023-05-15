@@ -162,7 +162,7 @@ get_header();
             </li>
             <li class="bg-blue nav-item">
               <button class="nav-link" data-toggle="tab" data-target=".gold" type="button" aria-selected="false">
-                <h6 class="item">Bussines</h6>
+                <h6 class="item">Business</h6>
               </button>
             </li>
             <li class="bg-blue nav-item">
