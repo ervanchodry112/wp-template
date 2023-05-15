@@ -98,7 +98,27 @@ get_header();
 </script>
 
 
+<section id="hero-mitra">
+  <div class="container">
+    <div class="row header">
+      <div class="col-12">
+        <h1 style="margin-bottom: -1.5rem;">Solusi Platform Pendidikan Terintegrasi </h1><br>
+        <h1>untuk Perguruan Tinggi Anda</h1>
+        <!-- <p style="color: #fff; font-size: 20px;"><b>Saatnya Upgrade Menuju Perguruan Tinggi Unggul</b></p> -->
+      </div>
+    </div>
+  </div>
 </section>
+
+<section id="upper" style="margin-bottom: -3rem;">
+  <div class="col-md-12">
+    <div class="image-upper w-100 d-flex justify-content-center align-items-center">
+      <img style="width: 70%; padding-bottom: -2rem;" src="<?php echo get_template_directory_uri(); ?>/img/Basic.png"
+        alt="">
+    </div>
+  </div>
+</section>
+
 <!-- PRICING NEW -->
 <section id="pricing-with-accordion">
   <div class="container-fluid">
@@ -201,7 +221,7 @@ get_header();
                       <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                     </th>
                     <th>
-                      <h6 class="item">Bussines</h6>
+                      <h6 class="item">Business</h6>
                       <p class="harga">Rp13JT<br>
                       </p>
                       <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
