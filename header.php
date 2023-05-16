@@ -30,7 +30,7 @@
     <!-- <link rel="shortcut icon" href="/favicon.ico" /> -->
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico" type="image/x-icon">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
     <!-- Google Tag Manager edit by Febri 270220-->
     <script>
         (function (w, d, s, l, i) {
@@ -112,6 +112,7 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.7/css/unicons.css">
     </noscript>
 
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
     <link rel="stylesheet" type="text/css"
         href="<?php echo get_template_directory_uri(); ?>/css/main.min.css?<?= md5(rand(100, 999)); ?>">
     <script src="https://use.fontawesome.com/6ae1c35383.js"></script>
@@ -135,9 +136,9 @@
 
 
     <!-- javascript -->
-    <script src="<?php echo get_template_directory_uri(); ?>/vendors/jquery.min.js"></script>
+    <!-- <script src="<?php echo get_template_directory_uri(); ?>/vendors/jquery.min.js"></script> -->
     <script>
-        theme_directory = "<?php echo get_template_directory_uri() ?>";
+        const theme_directory = "<?php echo get_template_directory_uri() ?>";
     </script>
 
 

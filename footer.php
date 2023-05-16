@@ -131,10 +131,8 @@
   </div>
 </section>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
-
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
   integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
   </script>
@@ -156,7 +154,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-modal-video.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/select2-init.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/price-list.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/main.js?20220322"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 

@@ -142,8 +142,8 @@ Template Name: Testimoni New
                     <ul id="myTab2" role="tablist"
                         class="nav nav-tabs nav-pills with-arrow lined flex-column flex-sm-row text-center">
                         <li class="nav-item flex-sm-fill">
-                            <a id="home2-tab" data-toggle="tab" href="#home2" role="tab" aria-controls="home2"
-                                aria-selected="true" class="nav-link mr-sm-3 rounded-0 active"><?php echo $term->name; ?>Semua produk</a>
+                            <a id="home2-tab" data-toggle="tab" onclick="switchTab('home2')" role="tab" aria-controls="home2"
+                                aria-selected="true" class="nav-link tab-head mr-sm-3 rounded-0 active" id="tab-home2" style="cursor: pointer;"><?php echo $term->name; ?>Semua produk</a>
                         </li>
                         <?php
                             $taxonomy = 'ctg_testimoninew';
@@ -152,7 +152,7 @@ Template Name: Testimoni New
                             if ( $terms && !is_wp_error( $terms ) ) :
                             ?>
 			                    <?php foreach ( $terms as $term ) { ?>
-			                        <li class="nav-item flex-sm-fill"><a class="nav-link  mr-sm-3 rounded-0" href="#<?php echo $term->slug; ?>" data-toggle="tab"><?php echo $term->name; ?></a></li>
+			                        <li class="nav-item flex-sm-fill"><a class="nav-link tab-head mr-sm-3 rounded-0" style="cursor: pointer;" onclick="switchTab('<?php echo $term->slug; ?>')" id="tab-<?php echo $term->slug ?>" data-toggle="tab"><?php echo $term->name; ?></a></li>
 			                    <?php } ?>
 			            <?php endif;?>
                     </ul>

@@ -2259,6 +2259,10 @@ body {
   opacity: 0.7;
 }
 
+#klien-kami .tab-head {
+  cursor: pointer;
+}
+
 /* Unduhan */
 .nav-menu {
   color: #a4a4a4 !important;
@@ -19954,3 +19958,4 @@ h8 {
   right: -25px;
   top: 50px;
 }
+

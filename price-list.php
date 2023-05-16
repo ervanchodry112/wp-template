@@ -131,7 +131,6 @@ get_header();
 
 
 <!-- TODO: Set Padding to 0, Set default border to highlight -->
-
 <section id="hero-mitra">
   <div class="container">
     <div class="row header">
@@ -162,7 +161,9 @@ get_header();
           <div class="row">
             <div class="col-12 d-flex justify-content-center align-items-center">
               <h3 style="font-size: 2rem;">Paket Harga </h3>
+
               <img src="<?php echo get_template_directory_uri(); ?>/img/logo-sevima-platform.png" alt="" height="100px" style="border: 0px solid black;" />
+
             </div>
           </div>
           <ul class="overflow-auto">
@@ -193,7 +194,7 @@ get_header();
             </li>
             <li class="bg-blue nav-item">
               <button class="nav-link" data-toggle="tab" data-target=".gold" type="button" aria-selected="false">
-                <h6 class="item">Bussines</h6>
+                <h6 class="item">Business</h6>
               </button>
             </li>
             <li class="bg-blue nav-item">
@@ -227,54 +228,55 @@ get_header();
                     </p>
                       <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> 
                     </th> -->
-                  <th>
-                    <h6 class="item">Lite</h6>
-                    <p class="harga">Rp2.5JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
-                  </th>
-                  <th class="gold">
-                    <h6 class="item">Starter</h6>
-                    <p class="harga">Rp4.4JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
-                  </th>
-                  <th>
-                    <h6 class="item">Basic</h6>
-                    <p class="harga">Rp6JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
-                  </th>
-                  <th>
-                    <h6 class="item">Growth</h6>
-                    <p class="harga">Rp9JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
-                  </th>
-                  <th>
-                    <h6 class="item">Bussines</h6>
-                    <p class="harga">Rp13JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
-                  </th>
-                  <th class="default">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/sign.png" class="img-fluid sign" style="position: absolute; top: -35%; margin-left: -35px;" alt="">
-                    <h6 class="item">Profesional</h6>
-                    <p class="harga">Rp19JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
-                  </th>
-                  <th>
-                    <h6 class="item">Premium</h6>
-                    <p class="harga">Rp31JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
-                  </th>
-                  <th>
-                    <h6 class="item">Enterprise</h6>
-                    <p class="harga">CALL<br> </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Hubungi Sales</a>
-                  </th>
+                    <th>
+                      <h6 class="item">Lite</h6>
+                      <p class="harga">Rp2.5JT<br>
+                      </p>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                    </th>
+                    <th class="gold">
+                      <h6 class="item">Starter</h6>
+                      <p class="harga">Rp4.4JT<br>
+                      </p>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                    </th>
+                    <th>
+                      <h6 class="item">Basic</h6>
+                      <p class="harga">Rp6JT<br>
+                      </p>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                    </th>
+                    <th>
+                      <h6 class="item">Growth</h6>
+                      <p class="harga">Rp9JT<br>
+                      </p>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                    </th>
+                    <th>
+                      <h6 class="item">Business</h6>
+                      <p class="harga">Rp13JT<br>
+                      </p>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                    </th>
+                    <th class="default">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/sign.png" class="img-fluid sign" style="position: absolute; top: -35%; margin-left: -35px;" alt="">
+                      <h6 class="item">Profesional</h6>
+                      <p class="harga">Rp19JT<br>
+                      </p>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                    </th>
+                    <th>
+                      <h6 class="item">Premium</h6>
+                      <p class="harga">Rp31JT<br>
+                      </p>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                    </th>
+                    <th>
+                      <h6 class="item">Enterprise</h6>
+                      <p class="harga">CALL<br> </p>
+                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Hubungi Sales</a>
+                    </th>
+
 
                 </tr>
 
@@ -2629,43 +2631,43 @@ get_header();
                   <th class="baru">
                     <h6 class="item">Lite</h6>
                     <p class="harga">Rp2.5JT</p><br>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                     <!-- <th class="gold"> -->
                     <h6 class="item">Starter</h6>
                     <p class="harga">Rp4.4JT</p><br>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                     <h6 class="item">Basic</h6>
                     <p class="harga">Rp6JT</p><br>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                     <h6 class="item">Growth</h6>
                     <p class="harga">Rp9JT</p><br>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                     <h6 class="item">Business</h6>
                     <p class="harga">Rp13JT</p><br>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                     <h6 class="item">Profesional</h6>
                     <p class="harga">Rp19JT</p><br>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                     <h6 class="item">Premium</h6>
                     <p class="harga">Rp31JT</p><br>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                     <h6 class="item">Enterprise</h6>
                     <p class="harga">CALL</p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-pilih-paket" role="button" style="margin-top: 20px;">Hubungi Sales</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button" style="margin-top: 20px;">Hubungi Sales</a>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th>
                 </tr>
