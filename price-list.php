@@ -162,7 +162,7 @@ get_header();
             <div class="col-12 d-flex justify-content-center align-items-center">
               <h3 style="font-size: 2rem;">Paket Harga </h3>
 
-              <img src="<?php echo get_template_directory_uri(); ?>/img/logo-sevima-platform.png" alt="" height="100px" style="border: 0px solid black;" />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/logo-sevima-platform.png" alt="" height="150px" style="border: 0px solid black;" />
 
             </div>
           </div>
