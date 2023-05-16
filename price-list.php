@@ -1058,11 +1058,11 @@ get_header();
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child collapseCekal">
                   <td class="fitur-child">- Cekal Akademik Untuk KRS</td>
@@ -1768,9 +1768,9 @@ get_header();
               <tbody>
                 <tr>
                   <td class="sep">SKPI - Modul Surat Keterangan Pendamping Ijazah</td>
-                  <td>Manual</td>
-                  <td>Manual</td>
-                  <td>Manual</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1821,7 +1821,7 @@ get_header();
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2306,7 +2306,7 @@ get_header();
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2522,10 +2522,10 @@ get_header();
                 </tr>
                 <tr class="accordion-header">
                   <td class="fitur">Pelaporan EMIS KEMENAG (Master mahasiswa, Dosen, lulusan, riwayat dosen)</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td><i class='uil uil-check-circle'></i></td>
+                  <td>Terbatas</td>
+                  <td>Terbatas</td>
+                  <td>Terbatas</td>
+                  <td>Terbatas</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
