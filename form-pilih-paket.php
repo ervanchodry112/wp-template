@@ -109,6 +109,9 @@ $hasil = $rand1 + $rand2;
                                             name="select2-pt" tabindex="-1" aria-hidden="true"
                                             data-select2-id="select2-data-select2-pt">
                                         </select>
+                                        <input type="hidden" name="nama-pt" id="nama-pt">
+                                        <input type="hidden" name="kode-pt" id="kode-pt">
+                                    </span>
                                 </p>
                             </div>
                             <div class="form-group">
@@ -163,10 +166,10 @@ $hasil = $rand1 + $rand2;
                                                 data-select2-id="select2-data-select2-jmlmhs" tabindex="-1"
                                                 aria-hidden="true">
                                                 <option value="" data-select2-id="select2-data-6-nvzb"></option>
-                                                <option value="< 800" <?= $data['jumlah-mahasiswa'] == '< 800' ? selected : '' ?>>800</option>
-                                                <option value="800 - 1500" <?= $data['jumlah-mahasiswa'] == '800 - 1500' ? selected : '' ?>>800 - 1500</option>
-                                                <option value="1500 - 4000" <?= $data['jumlah-mahasiswa'] == '1500 - 4000' ? selected : '' ?>>1500 - 4000</option>
-                                                <option value="4000 - 10000" <?= $data['jumlah-mahasiswa'] == '4000 - 10000' ? selected : '' ?>>4000 - 10000</option>
+                                                <option value="< 800">800</option>
+                                                <option value="800 - 1500">800 - 1500</option>
+                                                <option value="1500 - 4000">1500 - 4000</option>
+                                                <option value="4000 - 10000">4000 - 10000</option>
                                             </select>
                                         </span>
                                     </p>
