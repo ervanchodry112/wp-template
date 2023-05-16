@@ -157,8 +157,6 @@ get_header();
   </div>
 </section>
 
-
-</section>
 <!-- PRICING NEW -->
 <section id="pricing-with-accordion">
   <div class="container-fluid">

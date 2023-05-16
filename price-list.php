@@ -97,7 +97,40 @@ get_header();
   // Add active class if clicked
 </script>
 
+<!-- <section id="hero-promo">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 style="color: #fff; margin: 1rem 0;"></h1>
+        <p style="color: #fff; font-size: 20px; margin-bottom: 0"><b></b></p>
+        <div id="breadcrumb" ><a href="<?php echo home_url(); ?>/home/" style="color: #fff;">Home</a> > Harga siAkadCloud</div>
+        
+      </div>
+    </div>
+  </div>
+</section> -->
 
+<!-- <section id="hero-price">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+         <div class="desc w-100 d-flex justify-content-center align-items-center">
+           <label>Our Offering for You</label> 
+          <h3>Paket Harga Sevima Platform</h3>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-5">
+        <div class="image-hero">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/illu-promo.png" alt="">
+        </div>
+      </div>
+    </div> 
+    </div>
+</section> -->
+
+
+<!-- TODO: Set Padding to 0, Set default border to highlight -->
 <section id="hero-mitra">
   <div class="container">
     <div class="row header">
@@ -113,8 +146,7 @@ get_header();
 <section id="upper" style="margin-bottom: -3rem;">
   <div class="col-md-12">
     <div class="image-upper w-100 d-flex justify-content-center align-items-center">
-      <img style="width: 70%; padding-bottom: -2rem;" src="<?php echo get_template_directory_uri(); ?>/img/Basic.png"
-        alt="">
+      <img style="width: 70%; padding-bottom: -2rem;" src="<?php echo get_template_directory_uri(); ?>/img/Basic.png" alt="">
     </div>
   </div>
 </section>
@@ -955,14 +987,14 @@ get_header();
               <tbody class="accordion-row accordion-child collapseSiakad">
                 <tr class="accordion-header">
                   <td class="fitur">Presensi Mahasiswa by Scan Barcode</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
+                  <td>Manual</td>
+                  <td>Manual</td>
+                  <td>Manual</td>
+                  <td>Dilengkapi QR Code</td>
+                  <td>Dilengkapi QR Code</td>
+                  <td class="default" style="font-weight: bold">Dilengkapi QR Code</td>
+                  <td>Dilengkapi QR Code</td>
+                  <td>Dilengkapi QR Code</td>
                 </tr>
               </tbody>
               <tbody class="accordion-row accordion-child collapseSiakad">
@@ -991,7 +1023,7 @@ get_header();
                   <td>Termasuk Konsultasi Bimbingan</td>
                 </tr>
               </tbody>
-              <tbody class="accordion-row accordion-child collapseSiakad">
+              <!-- <tbody class="accordion-row accordion-child collapseSiakad">
                 <tr class="accordion-header">
                   <td class="fitur">Pencekalan KRS dan ujian mahasiswa serta dispensasi</td>
                   <td>Terbatas</td>
@@ -1003,7 +1035,83 @@ get_header();
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
+              </tbody> -->
+              <tbody class="accordion-row accordion-child collapseSiakad">
+                <tr class="accordion-header">
+                  <td class="fitur">
+                    <div class=" d-flex justify-content-between align-items-center">
+                      <div>Pencekalan KRS dan ujian mahasiswa serta dispensasi</div>
+                      <a onclick="collapseControl('collapseCekal')" class="btn btn-sm btn-warning rounded-lg" id="collapseCekalBtn">
+                        <i class='uil uil-angle-down'></i>
+                      </a>
+                    </div>
+                  </td>
+                  <td>Terbatas</td>
+                  <td>Terbatas</td>
+                  <td>Terbatas</td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+                <tr class="accordion-child" id="collapseCekal">
+                  <td class="fitur-child">- Cekal Keuangan untuk KRS dan Ujian</td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                </tr>
+                <tr class="accordion-child collapseCekal">
+                  <td class="fitur-child">- Cekal Akademik Untuk KRS</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+                <tr class="accordion-child collapseCekal">
+                  <td class="fitur-child">- Cekal Kemahasiswaan untuk Yudisium</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+                <tr class="accordion-child collapseCekal">
+                  <td class="fitur-child">- Cekal Perpustakaan untuk Yudisium</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+                <tr class="accordion-child collapseCekal">
+                  <td class="fitur-child">- Cekal Minimal Kehadiran untuk Ujian</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
               </tbody>
+
               <tbody class="accordion-row accordion-child collapseSiakad">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Proposal dan Tugas Akhir</td>
@@ -2118,8 +2226,8 @@ get_header();
                   <td>Report</td>
                   <td>Report</td>
                   <td class="default" style="font-weight: bold">Report & Dashboard (*)</td>
-                  <td>Report, Dashboard, Forecast (*)</td>
-                  <td>Report, Dashboard, Forecast (*)</td>
+                  <td>Report & Dashboard (*)</td>
+                  <td>Report & Dashboard (*)</td>
                 </tr>
               </tbody>
               <tbody>
@@ -2240,7 +2348,7 @@ get_header();
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child" id="collapseManage">
-                  <td class="fitur-child">KTM</td>
+                  <td class="fitur-child">1. KTM</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2251,7 +2359,7 @@ get_header();
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child collapseManage">
-                  <td class="fitur-child">KRS</td>
+                  <td class="fitur-child">2. KRS</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2262,7 +2370,7 @@ get_header();
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child collapseManage">
-                  <td class="fitur-child">KHS</td>
+                  <td class="fitur-child">3. KHS</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2273,7 +2381,7 @@ get_header();
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child collapseManage">
-                  <td class="fitur-child">Transkrip Lulusan</td>
+                  <td class="fitur-child">4. Transkrip Lulusan</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2284,7 +2392,7 @@ get_header();
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child collapseManage">
-                  <td class="fitur-child">Transkrip Sementara</td>
+                  <td class="fitur-child">5. Transkrip Sementara</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2295,7 +2403,7 @@ get_header();
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child collapseManage">
-                  <td class="fitur-child">Surat Keterangan Pendamping Ijazah (SKPI)</td>
+                  <td class="fitur-child">6. Surat Keterangan Pendamping Ijazah (SKPI)</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2306,7 +2414,7 @@ get_header();
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child collapseManage">
-                  <td class="fitur-child">Ijazah</td>
+                  <td class="fitur-child">7. Ijazah</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2317,7 +2425,7 @@ get_header();
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child collapseManage">
-                  <td class="fitur-child">Daftar Hadir & Kartu Ujian</td>
+                  <td class="fitur-child">8. Daftar Hadir & Kartu Ujian</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2452,7 +2560,7 @@ get_header();
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
+                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold; border-bottom: 2px solid #ffa000"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
