@@ -106,7 +106,7 @@
         </div>
         <div class="row bottom-footer">
           <div class="col-12 col-lg-6">
-            <p>© 2022 PT. SENTRA VIDYA UTAMA. All Right Reserved</p>
+            <p>© 2023 PT. SENTRA VIDYA UTAMA. All Right Reserved</p>
           </div>
           <div class="col-12 col-lg-6 icon-medsos">
             <a href="https://www.facebook.com/SentraVidyaUtama" target="_blank">

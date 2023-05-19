@@ -6,7 +6,7 @@ Template Name: Pilih Paket
 if (isset($_POST['submit'])) {
 
     $_POST['ip'] = $_SERVER["REMOTE_ADDR"];
-    $data = submit_form_berlangganan($_POST);
+    $data = submit_form_berlangganan($_POST, "Formulir Berlangganan");
     if (!$data) {
         ?>
         <script>
