@@ -3,9 +3,8 @@
 /**
  * Template Name: Price List
  */
-
-get_header();
 ?>
+<?php get_header(); ?>
 
 
 <script>
@@ -58,11 +57,17 @@ get_header();
   function doSomething(mediaQuery) {
     if (mediaQuery.matches) {
       $('#add-on').attr('colspan', 9);
+      $('#add-on2').attr('colspan', 9);
+      $('.add-on').attr('colspan',9);
       $('.kontrak-lg').attr('colspan', 3);
+      $('.kontrak-lg2').attr('colspan', 5);
       $('.kontrak-sign').attr('colspan', 2);
     } else {
       $('#add-on').attr('colspan', 2);
+      $('#add-on2').attr('colspan', 2);
+      $('.add-on').attr('colspan',2);
       $('.kontrak').attr('colspan', 1);
+      $('.kontrak2').attr('colspan', 1);
     }
   }
 
@@ -228,54 +233,54 @@ get_header();
                     </p>
                       <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> 
                     </th> -->
-                    <th>
-                      <h6 class="item">Lite</h6>
-                      <p class="harga">Rp2.5JT<br>
-                      </p>
-                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
-                    </th>
-                    <th class="gold">
-                      <h6 class="item">Starter</h6>
-                      <p class="harga">Rp4.4JT<br>
-                      </p>
-                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
-                    </th>
-                    <th>
-                      <h6 class="item">Basic</h6>
-                      <p class="harga">Rp6JT<br>
-                      </p>
-                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
-                    </th>
-                    <th>
-                      <h6 class="item">Growth</h6>
-                      <p class="harga">Rp9JT<br>
-                      </p>
-                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
-                    </th>
-                    <th>
-                      <h6 class="item">Business</h6>
-                      <p class="harga">Rp13JT<br>
-                      </p>
-                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
-                    </th>
-                    <th class="default">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/sign.png" class="img-fluid sign" style="position: absolute; top: -35%; margin-left: -35px;" alt="">
-                      <h6 class="item">Profesional</h6>
-                      <p class="harga">Rp19JT<br>
-                      </p>
-                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
-                    </th>
-                    <th>
-                      <h6 class="item">Premium</h6>
-                      <p class="harga">Rp31JT<br>
-                      </p>
-                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
-                    </th>
-                    <th>
-                      <h6 class="item">Enterprise</h6>
-                      <p class="harga">CALL<br> </p>
-                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Hubungi Sales</a>
-                    </th>
+                  <th>
+                    <h6 class="item">Lite</h6>
+                    <p class="harga">Rp2.5JT<br>
+                    </p>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                  </th>
+                  <th class="gold">
+                    <h6 class="item">Starter</h6>
+                    <p class="harga">Rp4.4JT<br>
+                    </p>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                  </th>
+                  <th>
+                    <h6 class="item">Basic</h6>
+                    <p class="harga">Rp6JT<br>
+                    </p>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                  </th>
+                  <th>
+                    <h6 class="item">Growth</h6>
+                    <p class="harga">Rp9JT<br>
+                    </p>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                  </th>
+                  <th>
+                    <h6 class="item">Business</h6>
+                    <p class="harga">Rp13JT<br>
+                    </p>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                  </th>
+                  <th class="default">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/sign.png" class="img-fluid sign" style="position: absolute; top: -35%; margin-left: -35px;" alt="">
+                    <h6 class="item">Profesional</h6>
+                    <p class="harga">Rp19JT<br>
+                    </p>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                  </th>
+                  <th>
+                    <h6 class="item">Premium</h6>
+                    <p class="harga">Rp31JT<br>
+                    </p>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                  </th>
+                  <th>
+                    <h6 class="item">Enterprise</h6>
+                    <p class="harga">CALL<br> </p>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Hubungi Sales</a>
+                  </th>
 
 
                 </tr>
@@ -2495,16 +2500,16 @@ get_header();
                 </tr>
               </tbody>
 
-              <!-- add-on -->
+              <!-- implementasi -->
               <tbody class="accordion-row bonus">
                 <tr>
-                  <td class="sep" id="add-on">Add-On</td>
+                  <td class="sep" id="add-on">Implementasi & Training </td>
                 </tr>
                 <tr class="accordion-header">
-                  <td class="fitur">Pelaporan PPSDM (Pusat Pengembangan Sumber Daya Manusia Minyak dan Gas)</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td class="fitur">Implementasi </td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2512,32 +2517,10 @@ get_header();
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-header">
-                  <td class="fitur">Pelaporan PPSDM PU (Untuk kampus dibawah Kementerian Perhubungan)</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td class="fitur">Migrasi Data awal </td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                </tr>
-                <tr class="accordion-header">
-                  <td class="fitur">Pelaporan EMIS KEMENAG (Master mahasiswa, Dosen, lulusan, riwayat dosen)</td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                </tr>
-                <tr class="accordion-header">
-                  <td class="fitur">Manejemen Uji Kompetensi (UKOM) & kepaniteraan klinik</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2545,83 +2528,32 @@ get_header();
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-header">
-                  <td class="fitur">Integrasi SIMPONI KEMENKEU</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="fitur">Training Penggunaan Aplikasi</td>
+                  <td>3 Sesi</td>
+                  <td>3 Sesi</td>
+                  <td>7 Sesi</td>
+                  <td>14 Sesi</td>
+                  <td>18 Sesi</td>
+                  <td class="default" style="font-weight: bold">24 Sesi</td>
+                  <td>30 Sesi, 2 AM dedicated</td>
+                  <td>7 Sesi</td>
                 </tr>
                 <tr class="accordion-header">
-                  <td class="fitur">Laporan Evaluasi Pembelajaran Khusus Politeknik</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td class="default" style="font-weight: bold; border-bottom: 2px solid #ffa000"><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="fitur" id="add-on">Refreshment</td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td colspan="5" class="kontrak2 kontrak-lg2">Fasilitas Bimtek Bulanan Online</td>
+                  <td class="kontrak-sm">Fasilitas Bimtek Bulanan Online</td>
+                  <td class="kontrak-sm default" style="font-weight: bold">Fasilitas Bimtek Bulanan Online</td>
+                  <td class="kontrak-sm">Fasilitas Bimtek Bulanan Online</td>
+                  <td class="kontrak-sm">Fasilitas Bimtek Bulanan Online</td>
                 </tr>
-              </tbody>
-              <tbody>
                 <tr>
-                  <td class="sep">Fakultas Kedokteran</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td colspan="3" class="kontrak kontrak-lg">Dengan kontrak terpisah (*)
-                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
-                  </td>
-                  <td class="kontrak-sm ">Dengan kontrak terpisah (*)
-                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
-                  </td>
-                  <td class="kontrak-sm">Dengan kontrak terpisah (*)
-                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
-                  </td>
+                  <td class="sep add-on" style="color:transparent">-</td>
                 </tr>
               </tbody>
-              <tbody>
-                <tr>
-                  <td class="sep">Manajemen Persuratan dan Disposisi (e-Office)</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td colspan="3" class="kontrak kontrak-lg">Dengan kontrak terpisah (*)
-                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
-                  </td>
-                  <td class="kontrak-sm">Dengan kontrak terpisah (*)
-                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
-                  </td>
-                  <td class="kontrak-sm">Dengan kontrak terpisah (*)
-                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
-                  </td>
-                </tr>
-              </tbody>
-              <tbody>
-                <tr>
-                  <td class="sep">Tanda Tangan Ijazah Elektronik (e-Sign)</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td colspan="2" class="kontrak kontrak-sign">Dengan kontrak terpisah (*)
-                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 15.000 / sign"></i>
-                  </td>
-                  <td class="kontrak-sm">Dengan kontrak terpisah (*)
-                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 15.000 / sign"></i>
-                  </td>
-                </tr>
-              </tbody>
+
 
               <tfoot>
                 <tr>
@@ -2655,7 +2587,7 @@ get_header();
                     <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
-                    <h6 class="item">Profesional</h6>
+                    <h6 class="item">Profesional </h6>
                     <p class="harga">Rp19JT</p><br>
                     <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                   </th>
@@ -2734,6 +2666,377 @@ get_header();
   </div>
 </section>
 <!-- END PRICING NEW -->
+<!-- add-on -->
+<section id="pricing-with-accordion">
+  <div class="container-fluid">
+
+    <div class="row justify-content-center">
+      <div class="col-11">
+        <article>
+          <ul class="overflow-auto">
+            <li class="bg-blue nav-item" role="presentation">
+              <button class="nav-link" data-toggle="tab" data-target=".lite" type="button" aria-selected="false">
+                <h6 class="item">Lite</h6>
+              </button>
+            </li>
+            <li class="bg-blue nav-item">
+              <button class="nav-link" data-toggle="tab" data-target=".starter" type="button" aria-selected="false">
+                <h6 class="item">Starter</h6>
+              </button>
+            </li>
+            <li class="bg-blue nav-item">
+              <button class="nav-link" data-toggle="tab" data-target=".basic" type="button" aria-selected="false">
+                <h6 class="item">Basic</h6>
+              </button>
+            </li>
+            <li class="bg-blue nav-item">
+              <button class="nav-link" data-toggle="tab" data-target=".silver" type="button" aria-selected="false">
+                <h6 class="item">Growth</h6>
+              </button>
+            </li>
+            <li class="bg-blue nav-item">
+              <button class="nav-link" data-toggle="tab" data-target=".gold" type="button" aria-selected="false">
+                <h6 class="item">Business</h6>
+              </button>
+            </li>
+            <li class="bg-blue nav-item">
+              <button class="nav-link" data-toggle="tab" data-target=".titanium" type="button" aria-selected="false">
+                <h6 class="item">Professional</h6>
+              </button>
+            </li>
+            <li class="bg-blue nav-item">
+              <button class="nav-link" data-toggle="tab" data-target=".platinum" type="button" aria-selected="false">
+                <h6 class="item">Premium</h6>
+              </button>
+            </li>
+            <li class="bg-blue nav-item">
+              <button class="nav-link" data-toggle="tab" data-target=".palladium" type="button" aria-selected="false">
+                <h6 class="item">Enterprise</h6>
+              </button>
+            </li>
+          </ul>
+          <div class="table">
+            <table>
+              <thead>
+                <tr class="price-head">
+                  <th style="vertical-align: middle; font-size: 1.25rem;" rowspan="3">
+                    <p class="modul">Modul-modul<br> Add-On </p>
+                  </th>
+                  <th>
+                    <h6 class="item">Lite</h6>
+                    <p class="harga">Rp2.5JT<br>
+                    </p>
+                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a> -->
+                  </th>
+                  <th class="gold">
+                    <h6 class="item">Starter</h6>
+                    <p class="harga">Rp4.4JT<br>
+                    </p>
+                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a> -->
+                  </th>
+                  <th>
+                    <h6 class="item">Basic</h6>
+                    <p class="harga">Rp6JT<br>
+                    </p>
+                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a> -->
+                  </th>
+                  <th>
+                    <h6 class="item">Growth</h6>
+                    <p class="harga">Rp9JT<br>
+                    </p>
+                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a> -->
+                  </th>
+                  <th>
+                    <h6 class="item">Business</h6>
+                    <p class="harga">Rp13JT<br>
+                    </p>
+                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a> -->
+                  </th>
+                  <th>
+                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/sign.png" class="img-fluid sign" style="position: absolute; top: -35%; margin-left: -35px;" alt=""> -->
+                    <h6 class="item">Profesional</h6>
+                    <p class="harga">Rp19JT<br>
+                    </p>
+                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a> -->
+                  </th>
+                  <th>
+                    <h6 class="item">Premium</h6>
+                    <p class="harga">Rp31JT<br>
+                    </p>
+                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a> -->
+                  </th>
+                  <th>
+                    <h6 class="item">Enterprise</h6>
+                    <p class="harga">CALL<br> </p>
+                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Hubungi Sales</a> -->
+                  </th>
+                </tr>
+
+                <!------ mobile ------->
+                <tr class="d-lg-none">
+                  <td>
+                    <p><b>Biaya per-bulan</b></p>
+                  </td>
+                  <td>
+                    <p>Rp2.5JT</p>
+                  </td>
+                  <td>
+                    <p>Rp4.4JT</p>
+                  </td>
+                  <td>
+                    <p>Rp6JT</p>
+                  </td>
+                  <td>
+                    <p>Rp9JT</p>
+                  </td>
+                  <td>
+                    <p>Rp13JT</p>
+                  </td>
+                  <td>
+                    <p>Rp19JT</p>
+                  </td>
+                  <td>
+                    <p>Rp31JT</p>
+                  </td>
+                  <td>
+                    <p> </p>
+                  </td>
+                </tr>
+
+                <tr class="d-lg-none">
+                  <td>
+                    <p><b>Jumlah Mahasiswa</b></p>
+                  </td>
+                  <!-- <td>
+                    <p>0</p>
+                    <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+                      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+                    </div>
+                  </td> -->
+                  <td>
+                    <p>
+                      < 300 mhs</p>
+                        <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
+                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,- per Mahasiswa tiap Bulannya"></i>
+                        </div>
+                  </td>
+                  <td>
+                    <p>
+                      < 500 mhs</p>
+                        <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
+                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,-  per Mahasiswa tiap Bulannya"></i>
+                        </div>
+                  </td>
+                  <td>
+                    <p>
+                      < 800 mhs</p>
+                        <div class="alert-success">Investasi<br>±Rp3.750,- /mhs
+                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp3.750,- per Mahasiswa tiap Bulannya"></i>
+                          b
+                        </div>
+                  </td>
+                  <td>
+                    <p>
+                      < 2,000 mhs</p>
+                        <div class="alert-success">Investasi<br>±Rp2.400,- /mhs
+                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp2.400,- per Mahasiswa tiap Bulannya"></i>
+                        </div>
+                  </td>
+                  <td>
+                    <p>
+                      < 4,000 mhs</p>
+                        <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+                        </div>
+                  </td>
+                  <td>
+                    <p>
+                      < 7,000 mhs</p>
+                        <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+                        </div>
+                  </td>
+                  <td>
+                    <p>
+                      < 20.000 mhs</p>
+                        <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+                        </div>
+                  </td>
+                  <td>
+                    <p>
+                      < 35,000 mhs</p>
+                        <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
+                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
+                        </div>
+                  </td>
+                </tr>
+                <!-- <tr class="d-lg-none">
+                  <td>
+                    <p><b>Hubungi Kami</b></p>
+                  </td>
+                  <td>
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                  </td>
+                  <td>
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                  </td>
+                  <td>
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                  </td>
+                  <td>
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                  </td>
+                  <td>
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                  </td>
+                  <td class="default">
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                  </td>
+                  <td>
+                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
+                  </td>
+                  <td>
+                    <a class="btn btn-kontak" href="" role="button">Hubungi Sales</a>
+                  </td>
+                </tr> -->
+              </thead>
+
+              <!-- add-on -->
+              <tbody class="accordion-row bonus2">
+                <tr>
+                  <td class="sep" id="add-on2">Add-On</td>
+                </tr>
+                <tr class="accordion-header">
+                  <td class="fitur-add">Pelaporan PPSDM (Pusat Pengembangan Sumber Daya Manusia Minyak dan Gas)</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+                <tr class="accordion-header">
+                  <td class="fitur-add">Pelaporan PPSDM PU (Untuk kampus dibawah Kementerian Perhubungan)</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+                <tr class="accordion-header">
+                  <td class="fitur-add">Pelaporan EMIS KEMENAG (Master mahasiswa, Dosen, lulusan, riwayat dosen)</td>
+                  <td>Terbatas</td>
+                  <td>Terbatas</td>
+                  <td>Terbatas</td>
+                  <td>Terbatas</td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+                <tr class="accordion-header">
+                  <td class="fitur-add">Manejemen Uji Kompetensi (UKOM) & kepaniteraan klinik</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+                <tr class="accordion-header">
+                  <td class="fitur-add">Integrasi SIMPONI KEMENKEU</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+                <tr class="accordion-header">
+                  <td class="fitur-add">Laporan Evaluasi Pembelajaran Khusus Politeknik</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td class="sep">Fakultas Kedokteran</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td colspan="3" class="kontrak kontrak-lg">Dengan kontrak terpisah (*)
+                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
+                  </td>
+                  <td class="kontrak-sm ">Dengan kontrak terpisah (*)
+                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
+                  </td>
+                  <td class="kontrak-sm">Dengan kontrak terpisah (*)
+                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
+                  </td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td class="sep">Manajemen Persuratan dan Disposisi (e-Office)</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td colspan="3" class="kontrak kontrak-lg">Dengan kontrak terpisah (*)
+                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
+                  </td>
+                  <td class="kontrak-sm">Dengan kontrak terpisah (*)
+                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
+                  </td>
+                  <td class="kontrak-sm">Dengan kontrak terpisah (*)
+                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
+                  </td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td class="sep">Tanda Tangan Ijazah Elektronik (e-Sign)</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td colspan="2" class="kontrak kontrak-sign">Dengan kontrak terpisah (*)
+                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 15.000 / sign"></i>
+                  </td>
+                  <td class="kontrak-sm">Dengan kontrak terpisah (*)
+                    <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 15.000 / sign"></i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end add on -->
 
 <?php
 // get_footer();

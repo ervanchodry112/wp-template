@@ -446,12 +446,15 @@
 }
 
 #pricing-with-accordion article table td {
-  border: 1px solid #fff;
+  border: 1px solid white;
   empty-cells: show;
   vertical-align: middle;
   background: #fff;
   text-align: center;
   font-size: 0.85rem;
+}
+#pricing-with-accordion article table .bonus2 td {
+  border: 1px solid #e2f4eb;
 }
 
 @media (max-width: 991.98px) {
@@ -542,6 +545,12 @@
   text-align: center;
   display: none;
   border: 1px solid white;
+}
+
+#pricing-with-accordion article table .bonus2 td + td {
+  text-align: center;
+  display: none;
+  border: 1px solid #e2f4eb;
 }
 #pricing-with-accordion article table .baru {
   text-align: center;
@@ -819,6 +828,13 @@
 }
 #pricing-with-accordion .fitur ~ td {
   background: rgba(170, 187, 231, 0.25);
+  /* color: #fff; */
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+#pricing-with-accordion .fitur-add ~ td {
+  background: white;
   /* color: #fff; */
   font-size: 1rem;
   font-weight: 600;
