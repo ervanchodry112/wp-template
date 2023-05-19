@@ -884,7 +884,7 @@ function estimated_reading_time($content = '')
 ?>
 
 <?php
-function submit_form_berlangganan($data)
+function submit_form_berlangganan($data, $form_name)
 {
 
 	// Get the result of the captcha
@@ -894,8 +894,7 @@ function submit_form_berlangganan($data)
 	if ($data['custom-captcha'] != $res) {
 		?>
 		<script>
-			$('.wpcf7-response-output').addClass('wpcf7-validation-errors');
-			$('.wpcf7-response-output').html('Captcha salah');
+			aler('captcha salah')
 		</script>
 		<?php
 		return $data;
@@ -914,7 +913,7 @@ function submit_form_berlangganan($data)
 	foreach ($keys as $key) {
 
 		// Check if the field is the captcha
-		if ($key == 'rand1' || $key == 'rand2' || $key == 'custom-captcha') {
+		if ($key == 'rand1' || $key == 'rand2' || $key == 'custom-captcha' || $key == 'select2-pt' || $key == 'submit') {
 			// Unset the field
 			unset($data[$key]);
 			continue;
@@ -929,7 +928,7 @@ function submit_form_berlangganan($data)
 
 		// Add the data to the query
 		$date = time();
-		$query .= "('" . $date . "', 'Formulir Berlangganan', '" . $key . "', '" . $data[$key] . "', '" . $i++ . "'),";
+		$query .= "('" . $date . "', '" . $form_name . "', '" . $key . "', '" . $data[$key] . "', '" . $i++ . "'),";
 
 	}
 

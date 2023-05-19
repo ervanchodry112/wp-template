@@ -255,7 +255,7 @@
   margin-left: -17px !important;
   margin-top: 9px !important;
   position: absolute;
-  top: 50%;
+  top: 25% !important;
   width: 0;
 }
 /* form */
