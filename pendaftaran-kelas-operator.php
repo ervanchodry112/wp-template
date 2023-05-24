@@ -6,13 +6,13 @@ Template Name: Pendaftaran Kelas Operator
 
 if (isset($_POST['submit'])) {
     $_POST['Submitted From'] = $_SERVER["REMOTE_ADDR"];
-    $data = daftar_event($_POST, 20364);
+    $data = daftar_event($_POST, 21882);
     if (!$data) {
         ?>
-                <script>
-                    window.location = "/terima-kasih-telah-mendaftar-bimtek-sevima";
-                </script>
-                <?php
+        <script>
+            window.location = "/terimakasih-expertclassoperator";
+        </script>
+        <?php
     }
     $error = true;
 }
@@ -38,37 +38,37 @@ $hasil = $rand1 + $rand2;
                             $news_src = $src[0];
                         }
                         ?>
-                                <div class="title-header">
-                                    <?php
-                                    $postcategories = get_the_category();
-                                    if ($postcategories) {
-                                        $output = array();
-                                        foreach ($postcategories as $category) {
-                                            $output[] = '<span><a class="category" href="' . get_category_link($category->term_id) . '">' . $category->name . ' </a></span>';
-                                            unset($category);
-                                        }
-                                        echo implode(" | ", $output);
-                                    }
-                                    ?>
-                                    <h2 class="title">
-                                        <?php the_title() ?>
-                                    </h2>
-                                    <ul class="post-meta d-none">
-                                        <li class="meta-date"><i class="uil uil-schedule"></i>
-                                            <?php the_time(' d F Y', '', ''); ?> &nbsp; . &nbsp;oleh
-                                            <?php the_author(); ?></small>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <?php
-                                if (has_post_thumbnail()) { ?>
-                                        <img class="img-fluid" src="<?php
-                                        $image_alt = get_post_meta(get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', TRUE);
-                                        $image_title = get_the_title(get_post_thumbnail_id($post->ID));
-                                        $image_caption = get_post(get_post_thumbnail_id($post->ID))->post_excerpt;
-                                        echo $news_src;
-                                        ?>"><?php } ?>
-                        <?php endwhile; endif; ?>
+                        <div class="title-header">
+                            <?php
+                            $postcategories = get_the_category();
+                            if ($postcategories) {
+                                $output = array();
+                                foreach ($postcategories as $category) {
+                                    $output[] = '<span><a class="category" href="' . get_category_link($category->term_id) . '">' . $category->name . ' </a></span>';
+                                    unset($category);
+                                }
+                                echo implode(" | ", $output);
+                            }
+                            ?>
+                            <h2 class="title">
+                                <?php the_title() ?>
+                            </h2>
+                            <ul class="post-meta d-none">
+                                <li class="meta-date"><i class="uil uil-schedule"></i>
+                                    <?php the_time(' d F Y', '', ''); ?> &nbsp; . &nbsp;oleh
+                                    <?php the_author(); ?></small>
+                                </li>
+                            </ul>
+                        </div>
+                        <?php
+                        if (has_post_thumbnail()) { ?>
+                            <img class="img-fluid" src="<?php
+                            $image_alt = get_post_meta(get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', TRUE);
+                            $image_title = get_the_title(get_post_thumbnail_id($post->ID));
+                            $image_caption = get_post(get_post_thumbnail_id($post->ID))->post_excerpt;
+                            echo $news_src;
+                            ?>"><?php } ?>
+                    <?php endwhile; endif; ?>
             </div>
         </div>
     </div>
@@ -86,7 +86,7 @@ $hasil = $rand1 + $rand2;
                             <p role="status" aria-live="polite" aria-atomic="true"></p>
                             <ul></ul>
                         </div>
-                        <form action="/pendaftaran-bimtek" method="post" class="init" aria-label="Contact form"
+                        <form action="/kelas-operator" method="post" class="init" aria-label="Contact form"
                             novalidate="novalidate" data-status="init">
 
                             <div class="row">

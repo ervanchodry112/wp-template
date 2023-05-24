@@ -5,7 +5,7 @@ Template Name: Pendaftaran Expert Class
 
 if (isset($_POST['submit'])) {
     $_POST['Submitted From'] = $_SERVER["REMOTE_ADDR"];
-    $data = daftar_expertclass($_POST, 21882);
+    $data = daftar_expertclass($_POST, 21595);
     if (!$data) {
         ?>
         <script>
