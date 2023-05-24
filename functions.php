@@ -884,7 +884,7 @@ function estimated_reading_time($content = '')
 ?>
 
 <?php
-function submit_form_berlangganan($data)
+function submit_form_berlangganan($data, $form_name)
 {
 
 	// Get the result of the captcha
@@ -894,8 +894,7 @@ function submit_form_berlangganan($data)
 	if ($data['custom-captcha'] != $res) {
 		?>
 		<script>
-			$('.wpcf7-response-output').addClass('wpcf7-validation-errors');
-			$('.wpcf7-response-output').html('Captcha salah');
+			aler('captcha salah')
 		</script>
 		<?php
 		return $data;
@@ -914,7 +913,7 @@ function submit_form_berlangganan($data)
 	foreach ($keys as $key) {
 
 		// Check if the field is the captcha
-		if ($key == 'rand1' || $key == 'rand2' || $key == 'custom-captcha') {
+		if ($key == 'rand1' || $key == 'rand2' || $key == 'custom-captcha' || $key == 'select2-pt' || $key == 'submit') {
 			// Unset the field
 			unset($data[$key]);
 			continue;
@@ -929,7 +928,7 @@ function submit_form_berlangganan($data)
 
 		// Add the data to the query
 		$date = time();
-		$query .= "('" . $date . "', 'Formulir Berlangganan', '" . $key . "', '" . $data[$key] . "', '" . $i++ . "'),";
+		$query .= "('" . $date . "', '" . $form_name . "', '" . $key . "', '" . $data[$key] . "', '" . $i++ . "'),";
 
 	}
 
@@ -956,5 +955,89 @@ function submit_form_berlangganan($data)
 
 	$mysqli->close();
 	return false;
+}
+
+function daftar_event($data, $form_post_id)
+{
+
+	$res = $data['rand1'] + $data['rand2'];
+
+	//  Check if the captcha is valid
+	if ($data['custom-captcha'] != $res) {
+		?>
+
+		<script>
+			alert('captcha salah');
+			$('.wpcf7-response-output').addClass('wpcf7-validation-errors');
+			$('.wpcf7-response-output').html('Captcha salah');
+		</script>
+
+		<?php
+		return $data;
+	}
+
+
+	$table_name = 'wp_db7_forms';
+	$time_now = time();
+
+	$contact_form = $data;
+	$tags_names = array();
+
+	if ($data) {
+		$form_data = array();
+
+		$form_data['cfdb7_status'] = 'unread';
+		foreach ($data as $key => $d) {
+
+
+			if ($key == 'rand1' || $key == 'rand2' || $key == 'custom-captcha' || $key == 'submit' || $key == 'select2-pt') {
+				// Unset the field
+				unset($data[$key]);
+				continue;
+			}
+
+			// Clean the value from injection etc.
+			$data[$key] = filter_var($data[$key], FILTER_SANITIZE_STRING);
+
+			if ($key == "email") {
+				$data[$key] = filter_var($data[$key], FILTER_SANITIZE_EMAIL);
+			}
+
+			$tmpD = $d;
+
+			if (!is_array($d)) {
+				$bl = array('\"', "\'", '/', '\\', '"', "'");
+				$wl = array('&quot;', '&#039;', '&#047;', '&#092;', '&quot;', '&#039;');
+				$tmpD = str_replace($bl, $wl, $tmpD);
+			}
+
+			$form_data[$key] = $tmpD;
+
+		}
+
+		/* cfdb7 before save data. */
+		$form_value = serialize($form_data);
+		$form_date = current_time('Y-m-d H:i:s');
+
+		$query = "INSERT INTO $table_name (form_post_id, form_value, form_date) VALUES ('$form_post_id', '$form_value', '$form_date')";
+
+		$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+
+		// Check connection
+		if ($mysqli->connect_error) {
+			die("Connection failed: " . $mysqli->connect_error);
+		}
+
+		// Execute the query
+		if ($mysqli->query($query) === FALSE) {
+			echo "<script>alert('Mohon maaf data yang anda masukkan gagal disimpan!')</script>";
+			$mysqli->close();
+			return $data;
+		}
+
+		$mysqli->close();
+		return false;
+	}
+
 }
 ?>

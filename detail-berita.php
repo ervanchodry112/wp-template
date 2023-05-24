@@ -8,22 +8,26 @@ Template Name: Detail Berita
 <div class="zoom-me">
     <div class="img-header">
         <div class="background"></div>
-        <img src="https://unsplash.it/1200/800?image=838" class="gbr-header"> 
+        <img src="https://unsplash.it/1200/800?image=838" class="gbr-header">
     </div>
     <div class="title-header">
-    <?php
-                                        $postcategories = get_the_category();
-                                        if ($postcategories) {
-                                            $output = array();
-                                            foreach($postcategories as $category) {
-                                                $output[] = '<span><a href="' . get_category_link($category->term_id) . '">' .$category->name.' </a></span>';
-                                                unset($category);
-                                            }
-                                            echo implode(" | ", $output);
-                                        }
-                                    ?>
-        <h1 class="title"><?php the_title() ?></h1>
-        <span><i class="uil uil-schedule"></i> <?php the_time(' d F Y', '', ''); ?></span>
+        <?php
+        $postcategories = get_the_category();
+        if ($postcategories) {
+            $output = array();
+            foreach ($postcategories as $category) {
+                $output[] = '<span><a href="' . get_category_link($category->term_id) . '">' . $category->name . ' </a></span>';
+                unset($category);
+            }
+            echo implode(" | ", $output);
+        }
+        ?>
+        <h1 class="title">
+            <?php the_title() ?>
+        </h1>
+        <span><i class="uil uil-schedule"></i>
+            <?php the_time(' d F Y', '', ''); ?>
+        </span>
     </div>
 
 </div>
@@ -50,37 +54,41 @@ Template Name: Detail Berita
                 <hr>
 
                 <?php
-						$pagelist = get_posts('sort_column=menu_order&sort_order=desc&posts_per_page=-1');
-						$pages = array();
-						foreach ($pagelist as $page) {
-						$pages[] += $page->ID;
+                $pagelist = get_posts('sort_column=menu_order&sort_order=desc&posts_per_page=-1');
+                $pages = array();
+                foreach ($pagelist as $page) {
+                    $pages[] += $page->ID;
 
-						}
+                }
 
-						$current = array_search(get_the_ID(), $pages);
-						$prevID = $pages[$current-1];
-						$nextID = $pages[$current+1];
-						?>
+                $current = array_search(get_the_ID(), $pages);
+                $prevID = $pages[$current - 1];
+                $nextID = $pages[$current + 1];
+                ?>
                 <div class="nav-berita d-flex justify-content-between">
                     <?php if (!empty($prevID)) { ?>
-                    <div class="nav-prev pr-5">                       
-                        <a href="<?php echo get_permalink($prevID); ?>">
-                            <span><i class="uil uil-angle-left"></i> Artikel Sebelumnya</span>
-                        </a>
-                        <div class="title-berita">
-                            <h6><?php echo get_the_title($prevID); ?></h6>
+                        <div class="nav-prev pr-5">
+                            <a href="<?php echo get_permalink($prevID); ?>">
+                                <span><i class="uil uil-angle-left"></i> Artikel Sebelumnya</span>
+                            </a>
+                            <div class="title-berita">
+                                <h6>
+                                    <?php echo get_the_title($prevID); ?>
+                                </h6>
+                            </div>
                         </div>
-                    </div>
                     <?php }
                     if (!empty($nextID)) { ?>
-                    <div class="nav-next text-right pl-5">
-                        <a href="<?php echo get_permalink($nextID); ?>">
-                            <span>Artikel Selanjutnya <i class="uil uil-angle-right"></i></span>
-                        </a>
-                        <div class="title-berita">
-                            <h6><?php echo get_the_title($nextID); ?></h6>
+                        <div class="nav-next text-right pl-5">
+                            <a href="<?php echo get_permalink($nextID); ?>">
+                                <span>Artikel Selanjutnya <i class="uil uil-angle-right"></i></span>
+                            </a>
+                            <div class="title-berita">
+                                <h6>
+                                    <?php echo get_the_title($nextID); ?>
+                                </h6>
+                            </div>
                         </div>
-                    </div>
                     <?php } ?>
                 </div>
 
@@ -103,49 +111,55 @@ Template Name: Detail Berita
             <div class="row">
                 <div class="col-12">
                     <div class="owl-carousel owl-theme" id="owl-artikel-menarik">
-                    <?php 
-							query_posts( array(
-							'post_type' => 'post',
-							'orderby' => 'date',							
-							'posts_per_page' => 10
-							));
-							if (have_posts()) : while (have_posts()) : the_post(); 
-							if ( has_post_thumbnail() ) {
-							$src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thumb-news');
-							$news_src = $src[0];
-							}
-						?>
-                        <div class="item">
-                            <div class="card">
-                                <img class="card-img-top" src="<?php
-                                  if ( has_post_thumbnail() ) {
-                                  echo $news_src;
-                                  }  else {
-                                  echo " ", get_template_directory_uri(), "/img/default.png ";
-                                                                                           }?>" alt="">                                
-                                <div class="card-body">
-                                    <?php
-                                                    $postcategories = get_the_category();
-                                                    if ($postcategories) {
-                                                        $output = array();
-                                                        foreach($postcategories as $category) {
-                                                            $output[] = '<span><a href="' . get_category_link($category->term_id) . '">' .$category->name.' </a></span>';
-                                                            unset($category);
-                                                        }
-                                                        echo implode(" | ", $output);
-                                                    }
-                                                ?>
-                                    <h5 class="title-berita"><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h5>
-                                    <ul class="post-meta">
-                                        <li class="meta-date"><i class="uil uil-schedule"></i><?php the_time(' d F Y', '', ''); ?></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>     
                         <?php
-							endwhile;
-							endif;
-						?>               
+                        query_posts(
+                            array(
+                                'post_type' => 'post',
+                                'orderby' => 'date',
+                                'posts_per_page' => 10
+                            )
+                        );
+                        if (have_posts()):
+                            while (have_posts()):
+                                the_post();
+                                if (has_post_thumbnail()) {
+                                    $src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'thumb-news');
+                                    $news_src = $src[0];
+                                }
+                                ?>
+                                <div class="item">
+                                    <div class="card">
+                                        <img class="card-img-top" src="<?php
+                                        if (has_post_thumbnail()) {
+                                            echo $news_src;
+                                        } else {
+                                            echo " ", get_template_directory_uri(), "/img/default.png ";
+                                        } ?>" alt="">
+                                        <div class="card-body">
+                                            <?php
+                                            $postcategories = get_the_category();
+                                            if ($postcategories) {
+                                                $output = array();
+                                                foreach ($postcategories as $category) {
+                                                    $output[] = '<span><a href="' . get_category_link($category->term_id) . '">' . $category->name . ' </a></span>';
+                                                    unset($category);
+                                                }
+                                                echo implode(" | ", $output);
+                                            }
+                                            ?>
+                                            <h5 class="title-berita"><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h5>
+                                            <ul class="post-meta">
+                                                <li class="meta-date"><i class="uil uil-schedule"></i>
+                                                    <?php the_time(' d F Y', '', ''); ?>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <?php
+                            endwhile;
+                        endif;
+                        ?>
                     </div>
                 </div>
             </div>
