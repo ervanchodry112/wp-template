@@ -450,7 +450,7 @@
   empty-cells: show;
   vertical-align: middle;
   background: #fff;
-  text-align: center;
+  /* text-align: center; */
   font-size: 0.85rem;
 }
 #pricing-with-accordion article table .bonus2 td {
