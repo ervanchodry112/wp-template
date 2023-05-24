@@ -2719,6 +2719,7 @@
   </div>
 </section>
 <!-- END PRICING NEW -->
+
 <!-- add-on -->
 <section id="pricing-with-accordion" style="margin-bottom: 3rem;">
   <div class="container-fluid">

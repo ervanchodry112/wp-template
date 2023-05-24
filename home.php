@@ -1,14 +1,20 @@
-<?php get_header('homepage'); ?>
+<?php
+get_header('homepage'); ?>
 
 <main id="beranda">
     <!-- HERO -->
-    <section id="section-hero" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/homepage/mobile/bg-hero-mobile.png')">
+    <section id="section-hero"
+        style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/homepage/mobile/bg-hero-mobile.png')">
         <div class="container">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/homepage/mobile/banner-sevima.png" alt="" class="bg-image-mobile">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/homepage/banner-sevima.png" alt="" class="bg-image">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/homepage/kampus-merdeka.png" alt="" id="logo-kampus-merdeka">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/homepage/mobile/banner-sevima.png" alt=""
+                class="bg-image-mobile">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/homepage/banner-sevima.png" alt=""
+                class="bg-image">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/homepage/kampus-merdeka.png" alt=""
+                id="logo-kampus-merdeka">
             <h1 class="page-title">Data Rapi,<br>Akreditasi Sukses.</h1>
-            <h4 class="page-subtitle">Solusi Teknologi Perguruan Tinggi Termutakhir Sesuai dengan Regulasi KEMDIKBUDRISTEK</h4>
+            <h4 class="page-subtitle">Solusi Teknologi Perguruan Tinggi Termutakhir Sesuai dengan Regulasi
+                KEMDIKBUDRISTEK</h4>
             <a class="btn-sevima btn-sevima-primary" href="#section-produk">
                 <p>Mulai Bertransformasi<span class="material-icons-round"> south </span></p>
             </a>
@@ -30,16 +36,21 @@
     <section id="section-produk">
         <div class="container">
             <h2 class="section-title">Mulai Transformasi Digital Kampus Anda Bersama SEVIMA</h2>
-            <p class="section-desc">Kini, pekerjaan para <i>stakeholder</i> perguruan tinggi menjadi lebih cepat, efektif, dan efisien dengan bantuan platform manajemen operasional akademik yang telah teruji dan dapat diandalkan.</p>
+            <p class="section-desc">Kini, pekerjaan para <i>stakeholder</i> perguruan tinggi menjadi lebih cepat,
+                efektif, dan efisien dengan bantuan platform manajemen operasional akademik yang telah teruji dan dapat
+                diandalkan.</p>
             <h4 class="owl-title">Beragam Solusi Sesuai Kebutuhan Perguruan Tinggi Anda</h4>
             <div class="item-produk-grid" id="owl-produk-mobile">
                 <div class="item">
                     <div class="card-slide" id="card-siakadcloud">
                         <div class="front">
-                            <img class="product-logo" src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/siakadcloud.png" alt=""></img>
+                            <img class="product-logo"
+                                src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/siakadcloud.png"
+                                alt=""></img>
                             <div class="product-text">
                                 <h2 class="product-name">siAkadCloud</h2>
-                                <p class="product-desc">Sistem Informasi Akademik terlengkap dengan fleksibiltas role dan kedalaman fitur yang canggih.</p>
+                                <p class="product-desc">Sistem Informasi Akademik terlengkap dengan fleksibiltas role
+                                    dan kedalaman fitur yang canggih.</p>
                             </div>
                             <span class="more-feat">
                                 <p>
@@ -49,7 +60,9 @@
                             </span>
                         </div>
                         <div class="back">
-                            <img class="product-logo" src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/siakadcloud-bw.png" alt=""></img>
+                            <img class="product-logo"
+                                src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/siakadcloud-bw.png"
+                                alt=""></img>
                             <div class="list">
                                 <p><span class="material-icons-round">check_circle_outline</span>
                                     Penerimaan Mahasiswa Baru
@@ -75,10 +88,13 @@
                 <div class="item">
                     <div class="card-slide" id="card-gofeedercloud">
                         <div class="front">
-                            <img class="product-logo" src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/gofeedercloud.png" alt=""></img>
+                            <img class="product-logo"
+                                src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/gofeedercloud.png"
+                                alt=""></img>
                             <div class="product-text">
                                 <h2 class="product-name">GoFeederCloud</h2>
-                                <p class="product-desc">SIAKAD yang mengakomodasi universitas menengah kebawah untuk memudahkan manajemen kampus.</p>
+                                <p class="product-desc">SIAKAD yang mengakomodasi universitas menengah kebawah untuk
+                                    memudahkan manajemen kampus.</p>
                             </div>
                             <span class="more-feat">
                                 <p>
@@ -88,7 +104,9 @@
                             </span>
                         </div>
                         <div class="back">
-                            <img class="product-logo" src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/gofeedercloud-bw.png" alt=""></img>
+                            <img class="product-logo"
+                                src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/gofeedercloud-bw.png"
+                                alt=""></img>
                             <div class="list">
                                 <p><span class="material-icons-round">check_circle_outline</span>
                                     Integrasi SevimaPay
@@ -114,10 +132,13 @@
                 <div class="item">
                     <div class="card-slide" id="card-edlink">
                         <div class="front">
-                            <img class="product-logo" src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/edlink.png" alt=""></img>
+                            <img class="product-logo"
+                                src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/edlink.png"
+                                alt=""></img>
                             <div class="product-text">
                                 <h2 class="product-name">EdLink</h2>
-                                <p class="product-desc">Solusi platform pembelajaran jarak jauh dengan fitur lengkap dan terintegrasi dengan SIAKAD.</p>
+                                <p class="product-desc">Solusi platform pembelajaran jarak jauh dengan fitur lengkap dan
+                                    terintegrasi dengan SIAKAD.</p>
                             </div>
                             <span class="more-feat">
                                 <p>
@@ -127,7 +148,9 @@
                             </span>
                         </div>
                         <div class="back">
-                            <img class="product-logo" src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/edlink-bw.png" alt=""></img>
+                            <img class="product-logo"
+                                src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/edlink-bw.png"
+                                alt=""></img>
                             <div class="list">
                                 <p><span class="material-icons-round">check_circle_outline</span>
                                     Video Conference
@@ -150,10 +173,13 @@
                 <div class="item">
                     <div class="card-slide" id="card-sevimapay">
                         <div class="front">
-                            <img class="product-logo" src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/sevimapay.png" alt=""></img>
+                            <img class="product-logo"
+                                src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/sevimapay.png"
+                                alt=""></img>
                             <div class="product-text">
                                 <h2 class="product-name">SevimaPay</h2>
-                                <p class="product-desc">Solusi integrasi pembayaran keuangan mahasiswa secara online tanpa ribet, aman, dan praktis.</p>
+                                <p class="product-desc">Solusi integrasi pembayaran keuangan mahasiswa secara online
+                                    tanpa ribet, aman, dan praktis.</p>
                             </div>
                             <span class="more-feat">
                                 <p>
@@ -163,7 +189,9 @@
                             </span>
                         </div>
                         <div class="back">
-                            <img class="product-logo" src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/sevimapay-bw.png" alt=""></img>
+                            <img class="product-logo"
+                                src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/sevimapay-bw.png"
+                                alt=""></img>
                             <div class="list">
                                 <p><span class="material-icons-round">check_circle_outline</span>
                                     Monitoring Pembayaran Mahasiswa
@@ -189,10 +217,13 @@
                 <div class="item">
                     <div class="card-slide" id="card-maukuliah">
                         <div class="front">
-                            <img class="product-logo" src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/maukuliah.png" alt=""></img>
+                            <img class="product-logo"
+                                src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/maukuliah.png"
+                                alt=""></img>
                             <div class="product-text">
                                 <h2 class="product-name">MauKuliah</h2>
-                                <p class="product-desc">Membantu siswa mencari dan membandingkan informasi perguruan tinggi di seluruh Indonesia.</p>
+                                <p class="product-desc">Membantu siswa mencari dan membandingkan informasi perguruan
+                                    tinggi di seluruh Indonesia.</p>
                             </div>
                             <span class="more-feat">
                                 <p>
@@ -202,7 +233,9 @@
                             </span>
                         </div>
                         <div class="back">
-                            <img class="product-logo" src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/maukuliah-bw.png" alt=""></img>
+                            <img class="product-logo"
+                                src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/maukuliah-bw.png"
+                                alt=""></img>
                             <div class="list">
                                 <p><span class="material-icons-round">check_circle_outline</span>
                                     Pencarian Kampus
@@ -225,10 +258,13 @@
                 <div class="item">
                     <div class="card-slide" id="card-akreditasicloud">
                         <div class="front">
-                            <img class="product-logo" src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/akreditasicloud.png" alt=""></img>
+                            <img class="product-logo"
+                                src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/akreditasicloud.png"
+                                alt=""></img>
                             <div class="product-text">
                                 <h2 class="product-name">AkreditasiCloud</h2>
-                                <p class="product-desc">Permudah persiapan akreditasi perguruan tinggi dan prodi hanya dengan tarik data.</p>
+                                <p class="product-desc">Permudah persiapan akreditasi perguruan tinggi dan prodi hanya
+                                    dengan tarik data.</p>
                             </div>
                             <span class="more-feat">
                                 <p>
@@ -238,7 +274,9 @@
                             </span>
                         </div>
                         <div class="back">
-                            <img class="product-logo" src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/akreditasicloud-bw.png" alt=""></img>
+                            <img class="product-logo"
+                                src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/akreditasicloud-bw.png"
+                                alt=""></img>
                             <div class="list">
                                 <p><span class="material-icons-round">check_circle_outline</span>
                                     Export excel SAPTO
@@ -261,10 +299,13 @@
                 <div class="item">
                     <div class="card-slide" id="card-karirlink">
                         <div class="front">
-                            <img class="product-logo" src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/karirlink.png" alt=""></img>
+                            <img class="product-logo"
+                                src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/karirlink.png"
+                                alt=""></img>
                             <div class="product-text">
                                 <h2 class="product-name">Karirlink</h2>
-                                <p class="product-desc">Solusi bagi mahasiwa dalam mencari pekerjaan, dan perusahaan dalam menemukan kandidat terbaik.</p>
+                                <p class="product-desc">Solusi bagi mahasiwa dalam mencari pekerjaan, dan perusahaan
+                                    dalam menemukan kandidat terbaik.</p>
                             </div>
                             <span class="more-feat">
                                 <p>
@@ -274,7 +315,9 @@
                             </span>
                         </div>
                         <div class="back">
-                            <img class="product-logo" src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/karirlink-bw.png" alt=""></img>
+                            <img class="product-logo"
+                                src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/karirlink-bw.png"
+                                alt=""></img>
                             <div class="list">
                                 <p><span class="material-icons-round">check_circle_outline</span>
                                     Posting Lowongan Pekerjaan
@@ -297,10 +340,13 @@
                 <div class="item">
                     <div class="card-slide" id="card-profeeder">
                         <div class="front">
-                            <img class="product-logo" src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/profeeder.png" alt=""></img>
+                            <img class="product-logo"
+                                src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/profeeder.png"
+                                alt=""></img>
                             <div class="product-text">
                                 <h2 class="product-name">ProFeeder</h2>
-                                <p class="product-desc">Solusi mempermudah import data dan pelaporan data perguruan tinggi ke PD-DIKTI sesuai standar RISTEKDIKTI</p>
+                                <p class="product-desc">Solusi mempermudah import data dan pelaporan data perguruan
+                                    tinggi ke PD-DIKTI sesuai standar RISTEKDIKTI</p>
                             </div>
                             <span class="more-feat">
                                 <p>
@@ -310,7 +356,9 @@
                             </span>
                         </div>
                         <div class="back">
-                            <img class="product-logo" src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/profeeder-bw.png" alt=""></img>
+                            <img class="product-logo"
+                                src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/profeeder-bw.png"
+                                alt=""></img>
                             <div class="list">
                                 <p><span class="material-icons-round">check_circle_outline</span>
                                     Compare Data & One-Click Process
@@ -333,10 +381,13 @@
                 <div class="item">
                     <div class="card-slide" id="card-integraoffice">
                         <div class="front">
-                            <img class="product-logo" src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/integraoffice.png" alt=""></img>
+                            <img class="product-logo"
+                                src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/integraoffice.png"
+                                alt=""></img>
                             <div class="product-text">
                                 <h2 class="product-name">integraOffice Persuratan</h2>
-                                <p class="product-desc">Naikkan kualitas birokasi persuratan (naskah dinas) lebih efektif, cepat dan termonitor dengan baik.</p>
+                                <p class="product-desc">Naikkan kualitas birokasi persuratan (naskah dinas) lebih
+                                    efektif, cepat dan termonitor dengan baik.</p>
                             </div>
                             <span class="more-feat">
                                 <p>
@@ -346,7 +397,9 @@
                             </span>
                         </div>
                         <div class="back">
-                            <img class="product-logo" src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/integraoffice-bw.png" alt=""></img>
+                            <img class="product-logo"
+                                src="<?php echo get_template_directory_uri(); ?>/img/homepage/logo-produk/integraoffice-bw.png"
+                                alt=""></img>
                             <div class="list">
                                 <p><span class="material-icons-round">check_circle_outline</span>
                                     Draft Surat
@@ -374,7 +427,8 @@
             <div class="footer">
                 <h3 class="section-subtitle">Bingung Memilih Layanan yang Cocok?</h3>
                 <p class="section-desc">Mari Konsultasikan dengan Executive Consultant Kami Sekarang</p>
-                <a class="btn-sevima btn-sevima-primary" href="https://wa.me/6282261610404?text=[SVM3204]%20Halo,%20saya%20ingin%20tanya%20layanan%20dan%20produk%20SEVIMA">
+                <a class="btn-sevima btn-sevima-primary"
+                    href="https://wa.me/6282261610404?text=[SVM3204]%20Halo,%20saya%20ingin%20tanya%20layanan%20dan%20produk%20SEVIMA">
                     <p>Chat Untuk Konsultasi <span class="material-icons-round"> chat</span></p>
                 </a>
             </div>
@@ -396,7 +450,8 @@
                             <h3>Konsultan Teknologi Informasi Perguruan Tinggi</h3>
                             <p>PT Sentra Vidya Utama (SEVIMA) merupakan
                                 perusahaan konsultan dan pengembang teknologi informasi yang didirikan pada tahun 2004.
-                                SEVIMA telah berpengalam lebih dari 18 tahun dalam mengimplementasikan sistem informasi di perguruan
+                                SEVIMA telah berpengalam lebih dari 18 tahun dalam mengimplementasikan sistem informasi
+                                di perguruan
                                 tinggi dan telah membantu 700+ perguruan tinggi.</p>
                         </div>
                         <a class="btn-sevima btn-sevima-primary" href="https://sevima.com/tentang-sevima/">
@@ -407,38 +462,47 @@
                         <div id="inner">
                             <div class="owl-carousel owl-theme">
                                 <?php
-                                query_posts(array(
-                                    'post_type' => 'testimoni_new',
-                                    'orderby' => 'date',
-                                    'posts_per_page' => 3
-                                ));
-                                if (have_posts()) :
-                                ?>
-                                    <?php while (have_posts()) : the_post();
+                                query_posts(
+                                    array(
+                                        'post_type' => 'testimoni_new',
+                                        'orderby' => 'date',
+                                        'posts_per_page' => 3
+                                    )
+                                );
+                                if (have_posts()):
+                                    ?>
+                                    <?php while (have_posts()):
+                                        the_post();
                                         if (has_post_thumbnail()) {
-	//var_dump(wp_get_attachment_image_src(get_post_thumbnail_id($post->ID)));
+                                            //var_dump(wp_get_attachment_image_src(get_post_thumbnail_id($post->ID)));
                                             $src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
                                             $news_src = $src[0];
                                         }
-                                    ?>
+                                        ?>
                                         <div class="cederholm" id="quote-wrapper">
                                             <div class="profpic">
                                                 <img src="<?php
-                                                            if (has_post_thumbnail()) {
-                                                                echo $news_src;
-                                                            } else {
-                                                                echo " ", get_template_directory_uri(), "/img/default-promo.png ";
-                                                            } ?>" class="img-profil" alt="...">
+                                                if (has_post_thumbnail()) {
+                                                    echo $news_src;
+                                                } else {
+                                                    echo " ", get_template_directory_uri(), "/img/default-promo.png ";
+                                                } ?>" class="img-profil" alt="...">
                                             </div>
                                             <div class="quote">
-                                                <blockquote id="quote-quote"><?php the_content(); ?></blockquote>
+                                                <blockquote id="quote-quote">
+                                                    <?php the_content(); ?>
+                                                </blockquote>
                                                 <div class="quote-desc">
-                                                    <p id="quote-attrib"><?php echo get_field('nama_testimoni'); ?></p>
-                                                    <span id="quote-univ"><?php the_title() ?></span>
+                                                    <p id="quote-attrib">
+                                                        <?php echo get_field('nama_testimoni'); ?>
+                                                    </p>
+                                                    <span id="quote-univ">
+                                                        <?php the_title() ?>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </div>
-                                <?php
+                                        <?php
                                     endwhile;
                                 endif;
                                 ?>
@@ -457,37 +521,47 @@
     </section>
 
     <section id="section-testimoni-mobile">
-        <div class="mask" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/homepage/mobile/mask-section-testi-mobile.png')">
+        <div class="mask"
+            style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/homepage/mobile/mask-section-testi-mobile.png')">
             <div class="owl-carousel owl-theme" id="owl-testi-mobile">
                 <?php
-                query_posts(array(
-                    'post_type' => 'testimoni_new',
-                    'orderby' => 'date',
-                    'posts_per_page' => 3
-                ));
-                if (have_posts()) :
-                ?>
-                    <?php while (have_posts()) : the_post();
+                query_posts(
+                    array(
+                        'post_type' => 'testimoni_new',
+                        'orderby' => 'date',
+                        'posts_per_page' => 3
+                    )
+                );
+                if (have_posts()):
+                    ?>
+                    <?php while (have_posts()):
+                        the_post();
                         if (has_post_thumbnail()) {
                             $src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
                             $news_src = $src[0];
                         }
-                    ?>
+                        ?>
                         <div class="quote-wrapper">
                             <div class="profpic">
                                 <h4 id="quotation">''</h4>
                                 <img src="<?php
-                                            if (has_post_thumbnail()) {
-                                                echo $news_src;
-                                            } else {
-                                                echo " ", get_template_directory_uri(), "/img/default-promo.png ";
-                                            } ?>" class="img-profil" alt="...">
+                                if (has_post_thumbnail()) {
+                                    echo $news_src;
+                                } else {
+                                    echo " ", get_template_directory_uri(), "/img/default-promo.png ";
+                                } ?>" class="img-profil" alt="...">
                             </div>
-                            <h3 class="nama-testimoni"><?php echo get_field('nama_testimoni'); ?></h3>
-                            <h5 class="jabatan"><?php the_title() ?></h5>
-                            <div class="quote-testimoni"><?php the_content(); ?></div>
+                            <h3 class="nama-testimoni">
+                                <?php echo get_field('nama_testimoni'); ?>
+                            </h3>
+                            <h5 class="jabatan">
+                                <?php the_title() ?>
+                            </h5>
+                            <div class="quote-testimoni">
+                                <?php the_content(); ?>
+                            </div>
                         </div>
-                <?php
+                        <?php
                     endwhile;
                 endif;
                 ?>
@@ -519,7 +593,8 @@
                 </div>
 
                 <div id="image-map" class="d-none d-lg-block">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/fix-peta.png" class="img-peta img-fluid" alt="Our Locations">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/fix-peta.png" class="img-peta img-fluid"
+                        alt="Our Locations">
                 </div>
 
                 <div class="grid-konten-peta-mobile">
@@ -578,7 +653,8 @@
                 <div class="row">
                     <div class="col-md-7 col-12">
                         <div class="hero-video" id="youtubeplayer">
-                            <iframe title="Youtube Player" width="100%" height="360" src="" frameborder="0" allowfullscreen></iframe>
+                            <iframe title="Youtube Player" width="100%" height="360" src="" frameborder="0"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="col-md-5 col-12">
@@ -590,24 +666,28 @@
                         <div class="list-video" style="display:flex;">
                             <ul id="youtubevideotabs">
                                 <?php
-                                query_posts(array(
-                                    'post_type' => 'video_playlist',
-                                    'posts_per_page' => -1,
-                                    'orderby' => 'date',
-                                    'order' => 'ASC',
-                                ));
-                                if (have_posts()) : while (have_posts()) : the_post();
+                                query_posts(
+                                    array(
+                                        'post_type' => 'video_playlist',
+                                        'posts_per_page' => -1,
+                                        'orderby' => 'date',
+                                        'order' => 'ASC',
+                                    )
+                                );
+                                if (have_posts()):
+                                    while (have_posts()):
+                                        the_post();
                                         if (has_post_thumbnail()) {
                                             $src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
                                             $news_src = $src[0];
                                         }
-                                ?>
+                                        ?>
                                         <?php
                                         $iframe = get_field('embed_video');
                                         $match = explode("embed/", $iframe);
                                         ?>
                                         <li youtubeid="<?php the_field('embed_video'); ?>"><?php the_title(); ?></li>
-                                <?php
+                                        <?php
                                     endwhile;
                                 endif;
                                 ?>
@@ -627,13 +707,20 @@
             <div class="grid-logo">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/partnership/bni.png" class="img-fluid" alt="">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/partnership/bri.png" class="img-fluid" alt="">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/partnership/telkomsel.png" class="img-fluid" alt="">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/partnership/indosat.png" class="img-fluid" alt="">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/partnership/shopee.png" class="img-fluid" alt="">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/partnership/tokped.png" class="img-fluid" alt="">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/partnership/linkaja.png" class="img-fluid" alt="">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/partnership/campuspedia.png" class="img-fluid" alt="">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/partnership/harukaedu.png" class="img-fluid" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/partnership/telkomsel.png" class="img-fluid"
+                    alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/partnership/indosat.png" class="img-fluid"
+                    alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/partnership/shopee.png" class="img-fluid"
+                    alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/partnership/tokped.png" class="img-fluid"
+                    alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/partnership/linkaja.png" class="img-fluid"
+                    alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/partnership/campuspedia.png" class="img-fluid"
+                    alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/partnership/harukaedu.png" class="img-fluid"
+                    alt="">
             </div>
             <a class="btn-sevima btn-sevima-primary" href="https://sevima.com/partnership/">
                 <p>Lihat Partnership SEVIMA<span class="material-icons-round">chevron_right</span></p>
@@ -646,7 +733,8 @@
         </div>
         <div class="grid-logo">
             <img src="<?php echo get_template_directory_uri(); ?>/img/partnership/kompas.png" class="img-fluid" alt="">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/partnership/kumparan.png" class="img-fluid" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/partnership/kumparan.png" class="img-fluid"
+                alt="">
             <img src="<?php echo get_template_directory_uri(); ?>/img/partnership/idx.png" class="img-fluid" alt="">
         </div>
     </section>
@@ -662,20 +750,24 @@
                 <div class="list-berita-trending">
                     <?php
                     the_post();
-                    query_posts(array(
-                        'post_type' => 'post',
-                        'posts_per_page' => 6,
-                    ));
+                    query_posts(
+                        array(
+                            'post_type' => 'post',
+                            'posts_per_page' => 6,
+                        )
+                    );
 
                     ?>
-                    <?php if (have_posts()) : while (have_posts()) : the_post();
+                    <?php if (have_posts()):
+                        while (have_posts()):
+                            the_post();
                             if (has_post_thumbnail()) {
                                 $image_alt = get_post_meta(get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', TRUE);
                                 $image_title = get_the_title(get_post_thumbnail_id($post->ID));
                                 $src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'thumb-slider');
                                 $news_src = $src[0];
                             }
-                    ?>
+                            ?>
                             <article>
                                 <div class="cs-post">
                                     <div class="cs-post-thumbnail">
@@ -683,25 +775,31 @@
                                             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                         </h5>
                                         <ul class="post-meta">
-                                            <li class="meta-author">by <span>&nbsp <?php the_author(); ?></span>
+                                            <li class="meta-author">by <span>&nbsp
+                                                    <?php the_author(); ?>
+                                                </span>
                                             </li>
-                                            <li class="meta-date"><?php the_time(' d M Y', '', ''); ?></li>
-                                            <li class="meta-read-time"><i class="uil uil-stopwatch"></i><?php echo estimated_reading_time(get_the_content()); ?></li>
+                                            <li class="meta-date">
+                                                <?php the_time(' d M Y', '', ''); ?>
+                                            </li>
+                                            <li class="meta-read-time"><i class="uil uil-stopwatch"></i>
+                                                <?php echo estimated_reading_time(get_the_content()); ?>
+                                            </li>
                                         </ul>
                                     </div>
                                     <div class="cs-post-pict">
                                         <a href="<?php the_permalink(); ?>">
                                             <img src="<?php
-                                                        if (has_post_thumbnail()) {
-                                                            echo $news_src;
-                                                        } else {
-                                                            echo " ", get_template_directory_uri(), "/img/default-promo.png ";
-                                                        } ?>" alt="">
+                                            if (has_post_thumbnail()) {
+                                                echo $news_src;
+                                            } else {
+                                                echo " ", get_template_directory_uri(), "/img/default-promo.png ";
+                                            } ?>" alt="">
                                         </a>
                                     </div>
                                 </div>
                             </article>
-                    <?php
+                            <?php
                         endwhile;
                     endif;
                     ?>
@@ -719,12 +817,16 @@
                 <h2>Di Balik Layar <span class="underline--magical">Para SEVIMA Heroes</span></h2>
             </div>
             <p class="teks">
-                Bekerja di SEVIMA sangat seru! Berjuang bersama mewujudkan mimpi besar membangun <i>good governance</i> di dunia pendidikan Indonesia
+                Bekerja di SEVIMA sangat seru! Berjuang bersama mewujudkan mimpi besar membangun <i>good governance</i>
+                di dunia pendidikan Indonesia
             </p>
             <div class="grid-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/homepage/mobile/baliklayar-1.jpeg" class="img-fluid" alt="">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/homepage/mobile/baliklayar-2.jpeg" class="img-fluid" alt="">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/homepage/mobile/baliklayar-3.jpeg" class="img-fluid" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/homepage/mobile/baliklayar-1.jpeg"
+                    class="img-fluid" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/homepage/mobile/baliklayar-2.jpeg"
+                    class="img-fluid" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/homepage/mobile/baliklayar-3.jpeg"
+                    class="img-fluid" alt="">
             </div>
             <a class="btn-sevima btn-sevima-primary" href="https://sevima.com/karir/">
                 <p>Bergabung jadi Heroes<span class="material-icons-round">chevron_right</span></p>
@@ -736,7 +838,8 @@
     <section id="section-komunitas">
         <div class="container">
             <div class="title">
-                <h2><span style=" color: #EF2427; ">3900+</span> Civitas Perguruan Tinggi telah Bergabung dengan Komunitas SEVIMA</h2>
+                <h2><span style=" color: #EF2427; ">3900+</span> Civitas Perguruan Tinggi telah Bergabung dengan
+                    Komunitas SEVIMA</h2>
             </div>
             <div class="row konten">
                 <div class="img col-12 col-md-6">
@@ -748,7 +851,8 @@
                         <p>Yuk bergabung di komunitas SEVIMA</p>
                     </div>
                     <div class="mobile d-md-none">
-                        <p>Wadah untuk saling sharing berbagai permasalahan & pengalaman seputar PDDIKTI serta manajemen operasional perguruan tinggi</p>
+                        <p>Wadah untuk saling sharing berbagai permasalahan & pengalaman seputar PDDIKTI serta manajemen
+                            operasional perguruan tinggi</p>
                     </div>
                     <a class="btn-sevima btn-sevima-primary" href="https://www.facebook.com/groups/sevimagofeeder/">
                         <p>Gabung grup SEVIMA Community<span class="material-icons-round"> facebook </span></p>
@@ -763,13 +867,25 @@
             <div class="outline-section">
                 <h2 class="">Sistem Informasi Akademik Terlengkap dan Aman</h2>
                 <p>
-                    SEVIMA siAkad Cloud merupakan sistem informasi akademik online dan terintegrasi yang lengkap dan aman. Siakad online ini dapat memudahkan kegiatan atau manajemen akademik terintegrasi di perguruan tinggi, seperti pengisian KRS, KHS, Nilai, Transkrip, tugas akhir, yudisium sampai kelulusan.dan sebagainya.
+                    SEVIMA siAkad Cloud merupakan sistem informasi akademik online dan terintegrasi yang lengkap dan
+                    aman. Siakad online ini dapat memudahkan kegiatan atau manajemen akademik terintegrasi di perguruan
+                    tinggi, seperti pengisian KRS, KHS, Nilai, Transkrip, tugas akhir, yudisium sampai kelulusan.dan
+                    sebagainya.
                 </p>
                 <p>
-                    siAkad Cloud juga menjadi sistem informasi akademik berbasis komputasi awan pertama di Indonesia dengan model layanan Software as a Service (SaaS). Model layanan ini memungkinkan perguruan tinggi memanfaatkan sistem tanpa harus melakukan pengembangan dan perawatan sistem serta berinvestasi data center sendiri. Sehingga Siakad ini bisa langsung digunakan oleh kampus tanpa harus menunggu lama. Untuk harga siakad berbasis cloud tentu saja lebih terjangkau serta lebih hemat.
+                    siAkad Cloud juga menjadi sistem informasi akademik berbasis komputasi awan pertama di Indonesia
+                    dengan model layanan Software as a Service (SaaS). Model layanan ini memungkinkan perguruan tinggi
+                    memanfaatkan sistem tanpa harus melakukan pengembangan dan perawatan sistem serta berinvestasi data
+                    center sendiri. Sehingga Siakad ini bisa langsung digunakan oleh kampus tanpa harus menunggu lama.
+                    Untuk harga siakad berbasis cloud tentu saja lebih terjangkau serta lebih hemat.
                 </p>
                 <p>
-                    Sistem Informasi Akademik (SIAKAD) siAkad Cloud ini sudah terintegrasi dengan modul/sistem lain seperti Sistem Informasi Kepegawaian Perguruan Tinggi untuk pelaporan SISTER, Sistem Informasi Penerimaan Mahasiswa Baru (SIM PMB), sistem keuangan mahasiswa, sistem computer based test, Pelaporan Feeder Pangkalan Data Pendidikan Tinggi (PDDIKTI), Pelaporan Education Management Information System (EMIS) dan sistem informasi lainnya yang digunakan dalam ruang lingkup perguruan tinggi.
+                    Sistem Informasi Akademik (SIAKAD) siAkad Cloud ini sudah terintegrasi dengan modul/sistem lain
+                    seperti Sistem Informasi Kepegawaian Perguruan Tinggi untuk pelaporan SISTER, Sistem Informasi
+                    Penerimaan Mahasiswa Baru (SIM PMB), sistem keuangan mahasiswa, sistem computer based test,
+                    Pelaporan Feeder Pangkalan Data Pendidikan Tinggi (PDDIKTI), Pelaporan Education Management
+                    Information System (EMIS) dan sistem informasi lainnya yang digunakan dalam ruang lingkup perguruan
+                    tinggi.
                 </p>
             </div>
             <div id="hidden">
@@ -777,25 +893,51 @@
                     <div class="outline-section">
                         <h2 class="">Sistem Informasi Akademik Terlengkap dan Aman</h2>
                         <p>
-                            SEVIMA siAkad Cloud merupakan sistem informasi akademik online dan terintegrasi yang lengkap dan aman. Siakad online ini dapat memudahkan kegiatan atau manajemen akademik terintegrasi di perguruan tinggi, seperti pengisian KRS, KHS, Nilai, Transkrip, tugas akhir, yudisium sampai kelulusan.dan sebagainya.
+                            SEVIMA siAkad Cloud merupakan sistem informasi akademik online dan terintegrasi yang lengkap
+                            dan aman. Siakad online ini dapat memudahkan kegiatan atau manajemen akademik terintegrasi
+                            di perguruan tinggi, seperti pengisian KRS, KHS, Nilai, Transkrip, tugas akhir, yudisium
+                            sampai kelulusan.dan sebagainya.
                         </p>
                         <p>
-                            siAkad Cloud juga menjadi sistem informasi akademik berbasis komputasi awan pertama di Indonesia dengan model layanan Software as a Service (SaaS). Model layanan ini memungkinkan perguruan tinggi memanfaatkan sistem tanpa harus melakukan pengembangan dan perawatan sistem serta berinvestasi data center sendiri. Sehingga Siakad ini bisa langsung digunakan oleh kampus tanpa harus menunggu lama. Untuk harga siakad berbasis cloud tentu saja lebih terjangkau serta lebih hemat.
+                            siAkad Cloud juga menjadi sistem informasi akademik berbasis komputasi awan pertama di
+                            Indonesia dengan model layanan Software as a Service (SaaS). Model layanan ini memungkinkan
+                            perguruan tinggi memanfaatkan sistem tanpa harus melakukan pengembangan dan perawatan sistem
+                            serta berinvestasi data center sendiri. Sehingga Siakad ini bisa langsung digunakan oleh
+                            kampus tanpa harus menunggu lama. Untuk harga siakad berbasis cloud tentu saja lebih
+                            terjangkau serta lebih hemat.
                         </p>
                         <p>
-                            Sistem Informasi Akademik (SIAKAD) siAkad Cloud ini sudah terintegrasi dengan modul/sistem lain seperti Sistem Informasi Kepegawaian Perguruan Tinggi untuk pelaporan SISTER, Sistem Informasi Penerimaan Mahasiswa Baru (SIM PMB), sistem keuangan mahasiswa, sistem computer based test, Pelaporan Feeder Pangkalan Data Pendidikan Tinggi (PDDIKTI), Pelaporan Education Management Information System (EMIS) dan sistem informasi lainnya yang digunakan dalam ruang lingkup perguruan tinggi.
+                            Sistem Informasi Akademik (SIAKAD) siAkad Cloud ini sudah terintegrasi dengan modul/sistem
+                            lain seperti Sistem Informasi Kepegawaian Perguruan Tinggi untuk pelaporan SISTER, Sistem
+                            Informasi Penerimaan Mahasiswa Baru (SIM PMB), sistem keuangan mahasiswa, sistem computer
+                            based test, Pelaporan Feeder Pangkalan Data Pendidikan Tinggi (PDDIKTI), Pelaporan Education
+                            Management Information System (EMIS) dan sistem informasi lainnya yang digunakan dalam ruang
+                            lingkup perguruan tinggi.
                         </p>
                     </div>
                     <div class="outline-section">
                         <h2 class="">Sistem Informasi Akademik Terlengkap dan Aman</h2>
                         <p>
-                            SEVIMA siAkad Cloud merupakan sistem informasi akademik online dan terintegrasi yang lengkap dan aman. Siakad online ini dapat memudahkan kegiatan atau manajemen akademik terintegrasi di perguruan tinggi, seperti pengisian KRS, KHS, Nilai, Transkrip, tugas akhir, yudisium sampai kelulusan.dan sebagainya.
+                            SEVIMA siAkad Cloud merupakan sistem informasi akademik online dan terintegrasi yang lengkap
+                            dan aman. Siakad online ini dapat memudahkan kegiatan atau manajemen akademik terintegrasi
+                            di perguruan tinggi, seperti pengisian KRS, KHS, Nilai, Transkrip, tugas akhir, yudisium
+                            sampai kelulusan.dan sebagainya.
                         </p>
                         <p>
-                            siAkad Cloud juga menjadi sistem informasi akademik berbasis komputasi awan pertama di Indonesia dengan model layanan Software as a Service (SaaS). Model layanan ini memungkinkan perguruan tinggi memanfaatkan sistem tanpa harus melakukan pengembangan dan perawatan sistem serta berinvestasi data center sendiri. Sehingga Siakad ini bisa langsung digunakan oleh kampus tanpa harus menunggu lama. Untuk harga siakad berbasis cloud tentu saja lebih terjangkau serta lebih hemat.
+                            siAkad Cloud juga menjadi sistem informasi akademik berbasis komputasi awan pertama di
+                            Indonesia dengan model layanan Software as a Service (SaaS). Model layanan ini memungkinkan
+                            perguruan tinggi memanfaatkan sistem tanpa harus melakukan pengembangan dan perawatan sistem
+                            serta berinvestasi data center sendiri. Sehingga Siakad ini bisa langsung digunakan oleh
+                            kampus tanpa harus menunggu lama. Untuk harga siakad berbasis cloud tentu saja lebih
+                            terjangkau serta lebih hemat.
                         </p>
                         <p>
-                            Sistem Informasi Akademik (SIAKAD) siAkad Cloud ini sudah terintegrasi dengan modul/sistem lain seperti Sistem Informasi Kepegawaian Perguruan Tinggi untuk pelaporan SISTER, Sistem Informasi Penerimaan Mahasiswa Baru (SIM PMB), sistem keuangan mahasiswa, sistem computer based test, Pelaporan Feeder Pangkalan Data Pendidikan Tinggi (PDDIKTI), Pelaporan Education Management Information System (EMIS) dan sistem informasi lainnya yang digunakan dalam ruang lingkup perguruan tinggi.
+                            Sistem Informasi Akademik (SIAKAD) siAkad Cloud ini sudah terintegrasi dengan modul/sistem
+                            lain seperti Sistem Informasi Kepegawaian Perguruan Tinggi untuk pelaporan SISTER, Sistem
+                            Informasi Penerimaan Mahasiswa Baru (SIM PMB), sistem keuangan mahasiswa, sistem computer
+                            based test, Pelaporan Feeder Pangkalan Data Pendidikan Tinggi (PDDIKTI), Pelaporan Education
+                            Management Information System (EMIS) dan sistem informasi lainnya yang digunakan dalam ruang
+                            lingkup perguruan tinggi.
                         </p>
                     </div>
                 </div>
@@ -813,14 +955,16 @@
         </div>
     </section>
 
-    <section id="section-contact-mobile" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/homepage/mobile/bg-hero-mobile.png')">
+    <section id="section-contact-mobile"
+        style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/homepage/mobile/bg-hero-mobile.png')">
         <img src="<?php echo get_template_directory_uri(); ?>/img/homepage/mobile/bg-kontak-mobile.png" alt="">
         <div class="text">
 
             <h2 class="section-title">
                 Cari Tahu Solusi Yang Tepat Untuk Perguruan Tinggi Anda
             </h2>
-            <a class="btn-sevima btn-sevima-primary" href="https://wa.me/6282261610404?text=[SVM3204]%20Halo,%20saya%20ingin%20tanya%20layanan%20dan%20produk%20SEVIMA">
+            <a class="btn-sevima btn-sevima-primary"
+                href="https://wa.me/6282261610404?text=[SVM3204]%20Halo,%20saya%20ingin%20tanya%20layanan%20dan%20produk%20SEVIMA">
                 <p>Konsultasi Sekarang<span class="material-icons-round"> chat </span></p>
             </a>
         </div>
