@@ -79,7 +79,7 @@ $hasil = $rand1 + $rand2;
 							<p role="status" aria-live="polite" aria-atomic="true"></p>
 							<ul></ul>
 						</div>
-						<form action="/kontak-kami" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+						<form action="/kontak-kami" method="post" class="init" aria-label="Contact form" novalidate="novalidate" data-status="init">
 							<div style="display: none;"></div>
 							<div class="row">
 								<div class="col-md-6">
@@ -190,26 +190,6 @@ $hasil = $rand1 + $rand2;
 								</div>
 							</div>
 							<div class="wpcf7-response-output" aria-hidden="true"></div>
-							<input type="hidden" name="USOURCE" value="">
-							<input type="hidden" name="UMEDIUM" value="">
-							<input type="hidden" name="UCAMPAIGN" value="">
-							<input type="hidden" name="UCONTENT" value="">
-							<input type="hidden" name="UTERM" value="">
-							<input type="hidden" name="IUSOURCE" value="">
-							<input type="hidden" name="IUMEDIUM" value="">
-							<input type="hidden" name="IUCAMPAIGN" value="">
-							<input type="hidden" name="IUCONTENT" value="">
-							<input type="hidden" name="IUTERM" value="">
-							<input type="hidden" name="IGCLID" value="">
-							<input type="hidden" name="IMSCLKID" value="">
-							<input type="hidden" name="IFBCLID" value="">
-							<input type="hidden" name="IPLACE" value="">
-							<input type="hidden" name="INET" value="">
-							<input type="hidden" name="IMATCH" value="">
-							<input type="hidden" name="IREFERRER" value="direct">
-							<input type="hidden" name="LREFERRER" value="direct">
-							<input type="hidden" name="ILANDPAGE" value="https%3A//sevima.com/kontak-kami/">
-							<input type="hidden" name="VISITS" value="1">
 						</form>
 					</div>
 				</div>
