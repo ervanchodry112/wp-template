@@ -791,9 +791,9 @@
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
@@ -956,7 +956,7 @@
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child collapseSiklusPerkuliahan">
-                  <td class="fitur-child">- Manajemen Jurnal Mengajar, RPS & Utilitas Ruang Kuliah</td>
+                  <td class="fitur-child">- Manajemen Jurnal Mengajar, RPS & s Ruang Kuliah</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1688,8 +1688,8 @@
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
-                  <td>Whitelabel*</td>
-                  <td>Whitelabel*</td>
+                  <td>Whitelabel Web & APK</td>
+                  <td>Whitelabel Web & APK</td>
                 </tr>
               </tbody>
               <tbody class="accordion-row accordion-child" id="collapsePlj">
