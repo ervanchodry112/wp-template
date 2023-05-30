@@ -265,7 +265,7 @@
                   </th>
                   <th class="default">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/sign.png" class="img-fluid sign" style="position: absolute; top: -35%; margin-left: -35px;" alt="">
-                    <h6 class="item">Profesional</h6>
+                    <h6 class="item">professional</h6>
                     <p class="harga">Rp19JT<br>
                     </p>
                     <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
@@ -2640,7 +2640,7 @@
                     <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
-                    <h6 class="item">Profesional </h6>
+                    <h6 class="item">professional </h6>
                     <p class="harga">Rp19JT</p><br>
                     <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
                   </th>
@@ -2808,7 +2808,7 @@
                   </th>
                   <th>
                     <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/sign.png" class="img-fluid sign" style="position: absolute; top: -35%; margin-left: -35px;" alt=""> -->
-                    <h6 class="item">Profesional</h6>
+                    <h6 class="item">professional</h6>
                     <p class="harga">Rp19JT<br>
                     </p>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a> -->
@@ -3089,5 +3089,5 @@
 <!-- end add on -->
 
 <?php
- get_footer();
+get_footer();
 ?>
