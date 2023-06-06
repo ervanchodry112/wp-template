@@ -58,14 +58,14 @@
     if (mediaQuery.matches) {
       $('#add-on').attr('colspan', 9);
       $('#add-on2').attr('colspan', 9);
-      $('.add-on').attr('colspan',9);
+      $('.add-on').attr('colspan', 9);
       $('.kontrak-lg').attr('colspan', 3);
       $('.kontrak-lg2').attr('colspan', 5);
       $('.kontrak-sign').attr('colspan', 2);
     } else {
       $('#add-on').attr('colspan', 2);
       $('#add-on2').attr('colspan', 2);
-      $('.add-on').attr('colspan',2);
+      $('.add-on').attr('colspan', 2);
       $('.kontrak').attr('colspan', 1);
       $('.kontrak2').attr('colspan', 1);
     }
@@ -914,7 +914,7 @@
               </tbody>
               <tbody class="accordion-row accordion-child collapseSiakad">
                 <tr class="accordion-header">
-                  <td class="fitur">Manajemen data dosen & riwayat dosen</td>
+                  <td class="fitur">Manajemen data dosen</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1015,7 +1015,7 @@
               </tbody>
               <tbody class="accordion-row accordion-child collapseSiakad">
                 <tr class="accordion-header">
-                  <td class="fitur">Presensi Mahasiswa by Scan Barcode</td>
+                  <td class="fitur">Presensi Mahasiswa</td>
                   <td>Manual</td>
                   <td>Manual</td>
                   <td>Manual</td>
@@ -1798,7 +1798,7 @@
               </tbody>
               <tbody class="accordion-row accordion-child collapsePlj">
                 <tr class="accordion-header">
-                  <td class="fitur">Student Engagement ScoreS</td>
+                  <td class="fitur">Student Engagement Score</td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
@@ -1823,7 +1823,7 @@
                 </tr>
               </tbody>
 
-              
+
 
               <!--  -->
               <tbody>
@@ -2589,7 +2589,7 @@
                   <td class="default" style="font-weight: bold">18 Sesi</td>
                   <td>24 Sesi</td>
                   <td>30 Sesi, 2 AM dedicated</td>
-                 
+
                 </tr>
                 <tr class="accordion-header">
                   <td class="fitur" id="add-on">Refreshment</td>
@@ -2963,9 +2963,9 @@
                 </tr>
                 <tr class="accordion-header">
                   <td class="fitur-add">Pelaporan PPSDM (Pusat Pengembangan Sumber Daya Manusia Minyak dan Gas)</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2974,9 +2974,9 @@
                 </tr>
                 <tr class="accordion-header">
                   <td class="fitur-add">Pelaporan PPSDM PU (Untuk kampus dibawah Kementerian Perhubungan)</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
+                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -3089,5 +3089,5 @@
 <!-- end add on -->
 
 <?php
- get_footer();
+get_footer();
 ?>
