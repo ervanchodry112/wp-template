@@ -1,157 +1,77 @@
 <?php
-
-/**
- * Template Name: Price List
- */
+/*
+Template Name: Harga siAkadCloud
+*/
 ?>
+
 <?php get_header(); ?>
+<header id="navbar-form">
+  <nav class="navbar navbar-expand-lg navbar-light" id="second-nav">
+    <div class="container">
+      <a class="navbar-brand" href="http://siakadcloud.com/"><img src="<?php echo get_template_directory_uri(); ?>/img/siakadcloud2018.png" class="img-fluid img-logo" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo home_url(); ?>/#benefit-siakad">Benefit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo home_url(); ?>/fitur">Fitur</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo home_url(); ?>/harga">Harga</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo home_url(); ?>/mitra-siakadcloud/">Mitra</a>
+          </li>
+        </ul>
 
+        <ul class="navbar-nav ml-auto navbar-hide">
+          <hr>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Produk</a>
+            <div class="dropdown-menu" style="border: none;">
+              <a class="dropdown-item" href="https://siakadcloud.com/" target="_blank">siAkadCloud</a>
+              <a class="dropdown-item" href="https://gofeedercloud.com/" target="_blank">GoFeederCloud</a>
+              <!-- <a class="dropdown-item" href="https://financecloud.id/">Finance Cloud</a> -->
+              <a class="dropdown-item" href="https://siakadcloud.com/akreditasicloud/">AkreditasiCloud</a>
+              <a class="dropdown-item" href="https://profeeder.id/" target="_blank">ProFeeder</a>
+              <a class="dropdown-item" href="https://sevimapay.com/" target="_blank">SevimaPay</a>
+              <a class="dropdown-item" href="https://karirlink.id/" target="_blank">Karirlink</a>
+              <a class="dropdown-item" href="https://persuratan.integrasolusi.com/" target="_blank">IntegraOffice Persuratan</a>
+              <a class="dropdown-item" href="https://edlink.id/" target="_blank">EdLink</a>
+              <a class="dropdown-item" href="https://maukuliah.id/" target="_blank">Maukuliah</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Tentang Sevima</a>
+            <div class="dropdown-menu" style="border: none;">
+              <a class="dropdown-item" href="https://sevima.com/tentang-sevima/">Tentang</a>
+              <a class="dropdown-item" href="https://sevima.com/karir/">Karir</a>
+              <a class="dropdown-item" href="https://sevima.com/berita-event/">Berita</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://sevima.com/promo/">Promo <i class='uil uil-megaphone'></i></a>
+          </li>
+        </ul>
 
-<script>
-  const accordionHeader = document.querySelectorAll('.fitur');
-  accordionHeader.forEach((accordion) => {
-    accordion.addEventListener('click', (e) => {
-      console.log('clicked')
-      //get child
-      const accordionBody = accordion.nextElementSibling;
-      console.log(accordionBody)
-    });
-  });
-</script>
-
-<script>
-  var item;
-  // Set Display attribute of all element with class .accordion-child to none
-  $(document).ready(function() {
-    $('.accordion-child').css('display', 'none');
-    item = $('.item').parent().parent();
-
-    item.click((event) => {
-      item.removeClass('active');
-      $(this).parents('li').addClass('active');
-      console.log($(this).parents('button'))
-    })
-
-    // pricing accordion
-    $("ul").on("click", "li", function() {
-      var pos = $(this).index() + 2;
-      $("tr").find("td:not(:eq(0))").hide();
-      $("td:nth-child(" + pos + ")").css("display", "table-cell");
-      $("tr").find("th:not(:eq(0))").hide();
-      $("li").removeClass("active");
-      $(this).addClass("active");
-    });
-
-
-    // On load
-    doSomething(mediaQuery);
-  });
-
-  // Initialize the media query
-  var mediaQuery = window.matchMedia('(min-width: 990px)');
-
-  // Add a listen event
-  mediaQuery.addListener(doSomething);
-
-  // Function to do something with the media query
-  function doSomething(mediaQuery) {
-    if (mediaQuery.matches) {
-      $('#add-on').attr('colspan', 9);
-      $('#add-on2').attr('colspan', 9);
-      $('.add-on').attr('colspan', 9);
-      $('.kontrak-lg').attr('colspan', 3);
-      $('.kontrak-lg2').attr('colspan', 5);
-      $('.kontrak-sign').attr('colspan', 2);
-    } else {
-      $('#add-on').attr('colspan', 2);
-      $('#add-on2').attr('colspan', 2);
-      $('.add-on').attr('colspan', 2);
-      $('.kontrak').attr('colspan', 1);
-      $('.kontrak2').attr('colspan', 1);
-    }
-  }
-
-  const collapseControl = (id) => {
-    var col = $('#' + id);
-    console.log(id);
-
-    // Get the button from id
-    var btn = $('#' + id + 'Btn').children();
-
-    // get the same element at the same level with class .accordion-child
-    var sib = col.siblings('.' + id);
-
-    // Get the value of display attribute
-    var display = col.css('display');
-
-    console.log(sib);
-    if (display == 'none') {
-      btn.removeClass('uil-angle-down');
-      btn.addClass('uil-angle-up');
-      col.css('display', '');
-      sib.css('display', '');
-    } else {
-      // Change the arrow icon
-      btn.removeClass('uil-angle-up');
-      btn.addClass('uil-angle-down');
-      // change the display attribute to none
-      col.css('display', 'none');
-      sib.css('display', 'none');
-    }
-  };
-  // Add active class if clicked
-</script>
-
-<!-- <section id="hero-promo">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h1 style="color: #fff; margin: 1rem 0;"></h1>
-        <p style="color: #fff; font-size: 20px; margin-bottom: 0"><b></b></p>
-        <div id="breadcrumb" ><a href="<?php echo home_url(); ?>/home/" style="color: #fff;">Home</a> > Harga siAkadCloud</div>
-        
+        <a class="btn btn-sevima ml-auto" href="https://klikwa.net/sevima-siakad-cloud" role="button"><i class="uil uil-whatsapp"></i>Hubungi SEVIMA</a>
       </div>
     </div>
-  </div>
-</section> -->
+  </nav>
+</header>
 
-<!-- <section id="hero-price">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 col-sm-12">
-         <div class="desc w-100 d-flex justify-content-center align-items-center">
-           <label>Our Offering for You</label> 
-          <h3>Paket Harga Sevima Platform</h3>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-      <div class="col-md-5">
-        <div class="image-hero">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/illu-promo.png" alt="">
-        </div>
-      </div>
-    </div> 
-    </div>
-</section> -->
-
-
-<!-- TODO: Set Padding to 0, Set default border to highlight -->
 <section id="hero-mitra">
   <div class="container">
     <div class="row header">
       <div class="col-12">
-        <h1 style="margin-bottom: -1.5rem;">Solusi Platform Pendidikan Terintegrasi </h1><br>
-        <h1>untuk Perguruan Tinggi Anda</h1>
-        <!-- <p style="color: #fff; font-size: 20px;"><b>Saatnya Upgrade Menuju Perguruan Tinggi Unggul</b></p> -->
+        <h1 style="color: #fff; margin: 1rem 0;">Paket Harga siAkadCloud</h1>
+        <p style="color: #fff; font-size: 20px; margin-bottom: 0"><b>Saatnya Upgrade Menuju Perguruan Tinggi Unggul</b></p>
+        <a href="<?php echo home_url(); ?>/home/" style="color: #fff;">Home</a> > Harga siAkadCloud
       </div>
-    </div>
-  </div>
-</section>
-
-<section id="upper" style="margin-bottom: -3rem;">
-  <div class="col-md-12">
-    <div class="image-upper w-100 d-flex justify-content-center align-items-center">
-      <img style="width: 70%; padding-bottom: -2rem;" src="<?php echo get_template_directory_uri(); ?>/img/Basic.png" alt="">
     </div>
   </div>
 </section>
@@ -159,148 +79,87 @@
 <!-- PRICING NEW -->
 <section id="pricing-with-accordion">
   <div class="container-fluid">
-
+    <!-- <div class="row justify-content-md-center mb-5">
+      <div class="col-md-12 col-lg-7">
+        <div class="tittle text-center">
+          <h6>PAKET LAYANAN EDLINK PRO</h6>
+          <h3>Apa Yang Perguruan Tinggi Anda Butuhkan?</h3>
+          <p>Sekarang, Perguruan Tinggi Anda dapat langsung menyesuaikan kebutuhan layanan<br>EdLink PRO dengan
+            Pagu Anggaran melalui paket EdLink PRO di bawah ini</p>
+        </div>
+      </div>
+    </div> -->
     <div class="row justify-content-center">
       <div class="col-11">
         <article>
-          <div class="row">
-            <div class="col-12 d-flex justify-content-center align-items-center">
-              <h3 style="font-size: 2rem;">Paket Harga </h3>
-
-              <img src="<?php echo get_template_directory_uri(); ?>/img/logo-sevima-platform.png" alt="" height="150px" style="border: 0px solid black;" />
-
-            </div>
-          </div>
-          <ul class="overflow-auto">
-            <!-- <li class="bg-blue nav-item" role="presentation">
-              <button class="nav-link active" id="community-tab" data-toggle="tab" data-target=".community" type="button" aria-selected="true">
-                <h6 class="item">Community</h6>
-              </button>
-            </li> -->
-            <li class="bg-blue nav-item" role="presentation">
-              <button class="nav-link" data-toggle="tab" data-target=".lite" type="button" aria-selected="false">
-                <h6 class="item">Lite</h6>
-              </button>
-            </li>
-            <li class="bg-blue nav-item">
-              <button class="nav-link" data-toggle="tab" data-target=".starter" type="button" aria-selected="false">
-                <h6 class="item">Starter</h6>
-              </button>
-            </li>
-            <li class="bg-blue nav-item">
-              <button class="nav-link" data-toggle="tab" data-target=".basic" type="button" aria-selected="false">
-                <h6 class="item">Basic</h6>
-              </button>
-            </li>
-            <li class="bg-blue nav-item">
-              <button class="nav-link" data-toggle="tab" data-target=".silver" type="button" aria-selected="false">
+          <ul>
+            <li class="bg-blue">
+              <button>
                 <h6 class="item">Growth</h6>
               </button>
             </li>
-            <li class="bg-blue nav-item">
-              <button class="nav-link" data-toggle="tab" data-target=".gold" type="button" aria-selected="false">
-                <h6 class="item">Business</h6>
+            <li class="bg-blue">
+              <button>
+                <h6 class="item">business</h6>
               </button>
             </li>
-            <li class="bg-blue nav-item">
-              <button class="nav-link" data-toggle="tab" data-target=".titanium" type="button" aria-selected="false">
-                <h6 class="item">Professional</h6>
+            <li class="bg-blue active">
+              <button>
+                <h6 class="item">professional</h6>
               </button>
             </li>
-            <li class="bg-blue nav-item">
-              <button class="nav-link" data-toggle="tab" data-target=".platinum" type="button" aria-selected="false">
+            <li class="bg-blue">
+              <button>
                 <h6 class="item">Premium</h6>
               </button>
             </li>
-            <li class="bg-blue nav-item">
-              <button class="nav-link" data-toggle="tab" data-target=".palladium" type="button" aria-selected="false">
+            <li class="bg-blue">
+              <button>
                 <h6 class="item">Enterprise</h6>
               </button>
             </li>
           </ul>
           <div class="table">
-
-
             <table>
               <thead>
-                <tr class="price-head">
-                  <th style="vertical-align: middle; font-size: 1.25rem;" rowspan="3">
-                    <p class="modul">Modul-modul<br> Sevima Platform </p>
-                  </th>
-                  <!-- <th>
-                      <h6 class="item">Community</h6>
-                      <p class="harga">Rp0<br>
-                    </p>
-                      <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> 
-                    </th> -->
-                  <th>
-                    <h6 class="item">Lite</h6>
-                    <p class="harga">Rp2.5JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
-                  </th>
-                  <th class="gold">
-                    <h6 class="item">Starter</h6>
-                    <p class="harga">Rp4.4JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
-                  </th>
-                  <th>
-                    <h6 class="item">Basic</h6>
-                    <p class="harga">Rp6JT<br>
-                    </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                <tr>
+                  <th style="vertical-align: middle; font-size: 1.25rem">
+                    <p>Modul-modul<br> Sevima Platform </p>
                   </th>
                   <th>
                     <h6 class="item">Growth</h6>
                     <p class="harga">Rp9JT<br>
                     </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Pilih Paket</a>
                   </th>
                   <th>
-                    <h6 class="item">Business</h6>
+                    <h6 class="item">business</h6>
                     <p class="harga">Rp13JT<br>
                     </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Pilih Paket</a>
                   </th>
                   <th class="default">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/sign.png" class="img-fluid sign" style="position: absolute; top: -35%; margin-left: -35px;" alt="">
                     <h6 class="item">professional</h6>
                     <p class="harga">Rp19JT<br>
                     </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Pilih Paket</a>
                   </th>
                   <th>
                     <h6 class="item">Premium</h6>
                     <p class="harga">Rp31JT<br>
                     </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Pilih Paket</a>
                   </th>
                   <th>
                     <h6 class="item">Enterprise</h6>
                     <p class="harga">CALL<br> </p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Hubungi Sales</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a>
                   </th>
-
-
                 </tr>
-
-                <!------ mobile ------->
                 <tr class="d-lg-none">
                   <td>
                     <p><b>Biaya per-bulan</b></p>
-                  </td>
-                  <!-- <td>
-                      <p>Rp0</p>
-                    </td> -->
-                  <td>
-                    <p>Rp2.5JT</p>
-                  </td>
-                  <td>
-                    <p>Rp4.4JT</p>
-                  </td>
-                  <td>
-                    <p>Rp6JT</p>
                   </td>
                   <td>
                     <p>Rp9JT</p>
@@ -315,90 +174,37 @@
                     <p>Rp31JT</p>
                   </td>
                   <td>
-                    <p> </p>
+                    <p>CALL</p>
                   </td>
                 </tr>
-
                 <tr class="d-lg-none">
                   <td>
                     <p><b>Jumlah Mahasiswa</b></p>
                   </td>
                   <td>
-                    <p>0</p>
-                    <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-                      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      < 300 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,- per Mahasiswa tiap Bulannya"></i>
-                        </div>
-                  </td>
-                  <td>
-                    <p>
-                      < 500 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,-  per Mahasiswa tiap Bulannya"></i>
-                        </div>
-                  </td>
-                  <td>
-                    <p>
-                      < 800 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp3.750,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp3.750,- per Mahasiswa tiap Bulannya"></i>
-                          b
-                        </div>
-                  </td>
-                  <td>
                     <p>
                       < 2,000 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp2.400,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp2.400,- per Mahasiswa tiap Bulannya"></i>
-                        </div>
+                  </td>
+                  <td>
+                    <p>
+                      < 4,000 mhs</p>
                   </td>
                   <td class="default" style="font-weight: bold;">
                     <p>
-                      < 4,000 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-                        </div>
-                  </td>
-                  <td>
-                    <p>
                       < 7,000 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-                        </div>
                   </td>
                   <td>
                     <p>
-                      < 20.000 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-                        </div>
+                      < 20,000 mhs</p>
                   </td>
                   <td>
                     <p>
-                      < 35,000 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-                        </div>
+                      < 35.000 mhs</p>
                   </td>
                 </tr>
                 <tr class="d-lg-none">
                   <td>
                     <p><b>Hubungi Kami</b></p>
-                  </td>
-                  <td>
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
-                  </td>
-                  <td>
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
-                  </td>
-                  <td>
-                    <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
                   </td>
                   <td>
                     <a class="btn btn-kontak" href="" role="button">Pilih Paket</a>
@@ -418,11 +224,12 @@
                 </tr>
               </thead>
               <!-- <tbody>
-                <tr>
-                  <td colspan="10" class="sep d-sm-none d-md-block">Sevima Platform</td>
-                </tr>
-              </tbody> -->
-              <!------ 1 ------->
+    <tr>
+      <td colspan="6" class="sep">siAkadCloud</td>
+    </tr> -->
+              <!-- </tbody> -->
+              <!-- 1 -->
+              <tbody class="accordion-row">
               <tbody>
                 <tr class="head-fitur">
                   <td class="sep">
@@ -437,9 +244,6 @@
                   </td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -448,9 +252,6 @@
               <tbody class="accordion-row accordion-child" id="collapseNeo">
                 <tr class="accordion-header">
                   <td class="fitur">Integrasi data akademik, biaya masuk & SPP semester dengan PDDIKTI Neo Feeder</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -463,9 +264,6 @@
                   <td class="fitur">Layanan PDDIKTI Neo Feeder Online & update otomatis</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -474,9 +272,6 @@
               <tbody class="accordion-row accordion-child collapseNeo">
                 <tr class="accordion-header">
                   <td class="fitur">Monitoring prosentase pelaporan PDDIKTI Neo Feeder</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -487,9 +282,6 @@
               <tbody class="accordion-row accordion-child collapseNeo">
                 <tr class="accordion-header">
                   <td class="fitur">Komparasi data antara data SIAKAD dengan data PDDIKTI Neo Feeder</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -500,9 +292,6 @@
               <tbody class="accordion-row accordion-child collapseNeo">
                 <tr class="accordion-header">
                   <td class="fitur">Evaluasi & Sinkronisasi Data dari SIAKAD ke PDDIKTI Neo Feeder</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -524,9 +313,6 @@
                       </div>
                     </div>
                   </td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -544,9 +330,6 @@
                       </a>
                     </div>
                   </td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td>Lebih Lengkap</td>
                   <td>Lebih Lengkap</td>
                   <td class="default" style="font-weight: bold">Lebih Lengkap</td>
@@ -557,18 +340,12 @@
                   <td class="fitur-child">- Portal pendaftaran sesuai jalur dan gelombang pendaftaran</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child collapsePMB">
                   <td class="fitur-child">- Manajemen Detail Informasi Program Studi</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -577,9 +354,6 @@
                 </tr>
                 <tr class="accordion-child collapsePMB">
                   <td class="fitur-child">- Manajemen informasi biaya perkuliahan dan brosur</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -598,9 +372,6 @@
                   </td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -609,18 +380,12 @@
                   <td class="fitur-child">- Manajemen jalur, gelombang pendaftaran, dan sistem kuliah</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child collapseManajemenPMB">
                   <td class="fitur-child">- Manajemen Ujian Seleksi & Pengumuman</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td>Lebih Lengkap
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Dilengkapi fasilitas manajemen kuota, 
                   grade minimal kelulusan, seleksi prestasi berdasarkan rapor, dan rekomendasi kelulusan otomatis"></i>
@@ -644,9 +409,6 @@
                 </tr>
                 <tr class="accordion-child collapseManajemenPMB">
                   <td class="fitur-child">- Manajemen Formulir & Tagihan Pendaftaran</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td>Lebih Lengkap
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Dilengkapi rekomendasi pengelompokan Uang Kuliah Tunggal (UKT), 
                   Kartu Indonesia Pintar (KIP)/Bidikmisi otomatis"></i>
@@ -672,18 +434,12 @@
                   <td class="fitur-child">- Setting No Induk Mahasiswa (NIM) & Ekspor menjadi Mahasiswa</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child collapseManajemenPMB">
                   <td class="fitur-child">- Laporan Rekapitulasi Pendaftar, Pembayaran & Sumber Informasi</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -694,10 +450,6 @@
               <tbody class="accordion-row accordion-child collapseModulPMB">
                 <tr class="accordion-header">
                   <td class="fitur">Pembayaran Tagihan Pendaftaran secara online</td>
-
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -710,9 +462,6 @@
                   <td class="fitur">Form pendaftaran online & upload berkas persyaratan administrasi</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -723,9 +472,6 @@
                   <td class="fitur">Form khusus untuk jalur pindahan, pascasarjana, Rekognisi Pembelajaran Lampau (RPL)
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="RPL ready Agustus"></i>
                   </td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -736,9 +482,6 @@
               <tbody class="accordion-row accordion-child collapseModulPMB">
                 <tr class="accordion-header">
                   <td class="fitur">Pembagian ruangan, penguji, dan peserta berdasarkan jadwal ujian</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -749,9 +492,6 @@
               <tbody class="accordion-row accordion-child collapseModulPMB">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Pendaftaran dan Pengelolaan Kartu Indonesia Pintar (KIP) Kuliah </td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -763,9 +503,6 @@
                 <tr class="accordion-header">
                   <td class="fitur">One Day Service (ODS)</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -776,9 +513,6 @@
                 <tr class="accordion-header">
                   <td class="fitur">Try out berbasis CBT</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -788,12 +522,9 @@
               <tbody class="accordion-row accordion-child collapseModulPMB">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Seleksi Jalur Rekognisi Pembelajaran lampau (RPL)</td>
+                  <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
+                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
@@ -808,9 +539,6 @@
                       </a>
                     </div>
                   </td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -821,9 +549,6 @@
                   <td class="fitur-child">- Quick chat ke panitia PMB</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -832,18 +557,12 @@
                   <td class="fitur-child">- Notifikasi Email untuk Pengumuman Pendaftaran</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child collapsePenyebaranInformasi">
                   <td class="fitur-child">- Kirim info dengan email, whatsapp, dan SMS</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -865,9 +584,6 @@
                       </div>
                     </div>
                   </td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -878,9 +594,6 @@
               <tbody class="accordion-row accordion-child" id="collapseSiakad">
                 <tr class="accordion-header">
                   <td class="fitur">Pengisian KRS online oleh mahasiswa</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td>Lebih Lengkap
                     <i class="uil uil-info-circle" title="Integrasi dengan aplikasi mobile SEVIMA EdLink"></i>
                   </td>
@@ -904,9 +617,6 @@
                   <td class="fitur">Manajemen data mahasiswa & aktivitas mahasiswa</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -915,9 +625,6 @@
               <tbody class="accordion-row accordion-child collapseSiakad">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen data dosen</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -935,9 +642,6 @@
                       </a>
                     </div>
                   </td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -948,18 +652,12 @@
                   <td class="fitur-child">- Manajamen Kelas Perkuliahan, Jadwal Perkuliahan & Dosen Pengajar</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child collapseSiklusPerkuliahan">
-                  <td class="fitur-child">- Manajemen Jurnal Mengajar, RPS & s Ruang Kuliah</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="fitur-child">- Manajemen Jurnal Mengajar, RPS & Utilitas Ruang Kuliah</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -968,9 +666,6 @@
                 </tr>
                 <tr class="accordion-child collapseSiklusPerkuliahan">
                   <td class="fitur-child">- Manajemen Utilitas Ruang Kuliah</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -979,9 +674,6 @@
                 </tr>
                 <tr class="accordion-child collapseSiklusPerkuliahan">
                   <td class="fitur-child">- Manajamen MataKuliah, Kurikulum, Prasyarat & Ekuivalensi MataKuliah</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -990,9 +682,6 @@
                 </tr>
                 <tr class="accordion-child collapseSiklusPerkuliahan">
                   <td class="fitur-child">- Fasilitas Paket MataKuliah</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1001,11 +690,6 @@
                 </tr>
                 <tr class="accordion-child collapseSiklusPerkuliahan">
                   <td class="fitur-child">- Manajemen unsur bobot nilai (skala & komposisi)</td>
-                  <td>Terbatas
-                    <i class="uil uil-info-circle" title="bisa program studi saja"></i>
-                  </td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1016,9 +700,6 @@
               <tbody class="accordion-row accordion-child collapseSiakad">
                 <tr class="accordion-header">
                   <td class="fitur">Presensi Mahasiswa</td>
-                  <td>Manual</td>
-                  <td>Manual</td>
-                  <td>Manual</td>
                   <td>Dilengkapi QR Code</td>
                   <td>Dilengkapi QR Code</td>
                   <td class="default" style="font-weight: bold">Dilengkapi QR Code</td>
@@ -1029,9 +710,6 @@
               <tbody class="accordion-row accordion-child collapseSiakad">
                 <tr class="accordion-header">
                   <td class="fitur">Pengisian Nilai Online oleh Dosen</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td>Termasuk manajemen skala nilai</td>
                   <td>Termasuk manajemen skala nilai</td>
                   <td class="default" style="font-weight: bold">Termasuk manajemen skala nilai</td>
@@ -1042,9 +720,6 @@
               <tbody class="accordion-row accordion-child collapseSiakad">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Perwalian/Dosen Penasehat</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td>Termasuk Konsultasi Bimbingan </td>
                   <td>Termasuk Konsultasi Bimbingan </td>
                   <td class="default" style="font-weight: bold">Termasuk Konsultasi Bimbingan </td>
@@ -1075,9 +750,6 @@
                       </a>
                     </div>
                   </td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1088,18 +760,12 @@
                   <td class="fitur-child">- Cekal Keuangan untuk KRS dan Ujian</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child collapseCekal">
                   <td class="fitur-child">- Cekal Akademik Untuk KRS</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1108,9 +774,6 @@
                 </tr>
                 <tr class="accordion-child collapseCekal">
                   <td class="fitur-child">- Cekal Kemahasiswaan untuk Yudisium</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1119,9 +782,6 @@
                 </tr>
                 <tr class="accordion-child collapseCekal">
                   <td class="fitur-child">- Cekal Perpustakaan untuk Yudisium</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1130,9 +790,6 @@
                 </tr>
                 <tr class="accordion-child collapseCekal">
                   <td class="fitur-child">- Cekal Minimal Kehadiran untuk Ujian</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1144,9 +801,6 @@
               <tbody class="accordion-row accordion-child collapseSiakad">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Proposal dan Tugas Akhir</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1157,9 +811,6 @@
               <tbody class="accordion-row accordion-child collapseSiakad">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Bimbingan Tugas Akhir dari Mahasiswa ke Dosen Pembimbing</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1170,9 +821,6 @@
               <tbody class="accordion-row accordion-child collapseSiakad">
                 <tr class="accordion-header">
                   <td class="fitur">Pengajuan cuti studi oleh mahasiswa</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1183,9 +831,6 @@
               <tbody class="accordion-row accordion-child collapseSiakad">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen kalender akademik</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1196,9 +841,6 @@
               <tbody class="accordion-row accordion-child collapseSiakad">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen transfer mahasiswa dan double degree</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1209,9 +851,6 @@
               <tbody class="accordion-row accordion-child collapseSiakad">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen proses pemutihan nilai</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1224,9 +863,6 @@
                   <td class="fitur">Open API untuk integrasi dengan aplikasi lain</td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1235,9 +871,6 @@
               <tbody class="accordion-row accordion-child collapseSiakad">
                 <tr class="accordion-header">
                   <td class="fitur">Fasilitas penyebaran informasi ke mahasiswa melalu email & whatsapp</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1259,9 +892,6 @@
                       </div>
                     </div>
                   </td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1279,9 +909,6 @@
                       </a>
                     </div>
                   </td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1290,9 +917,6 @@
                 </tr>
                 <tr class="accordion-child collapseManajemenKeuangan" id="collapseManajemenKeuangan">
                   <td class="fitur-child">- Manajemen Tarif Uang Kuliah</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td>Lebih Lengkap
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Berdasarkan Angkatan, Prodi, UKT, dan Sistem Kuliah"></i>
                     </t class="default" style="font-weight: bold">
@@ -1314,9 +938,6 @@
                   <td class="fitur-child">- Pembayaran Tunai & Upload Bukti Bayar</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1325,18 +946,12 @@
                   <td class="fitur-child">- Monitoring Piutang & Status Pembayaran Mahasiswa</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child collapseManajemenKeuangan">
                   <td class="fitur-child">- Manajemen Tagihan wajib dan Tagihan per SKS</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1345,9 +960,6 @@
                 </tr>
                 <tr class="accordion-child collapseManajemenKeuangan">
                   <td class="fitur-child">- Manajemen Beasiswa/Potongan, Denda, Deposit & Voucher Pembayaran</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1359,9 +971,6 @@
                   <td class="fitur">Pembayaran Tagihan Kuliah secara online
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Dengan virtual account (VA) melalui channel pembayaran bank dan e-commerce ternama"></i>
                   </td>
-                  <td>2 channel</td>
-                  <td>2 channel</td>
-                  <td>2 channel</td>
                   <td>3 channel</td>
                   <td>3 channel</td>
                   <td class="default" style="font-weight: bold">4 channel</td>
@@ -1372,9 +981,6 @@
               <tbody class="accordion-row accordion-child collapseKeuangan">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Perwalian/Dosen Penasehat serta Konsultasi Bimbingan</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1387,9 +993,6 @@
                   <td class="fitur">Cicilan Tagihan Kuliah
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Split payment dari sisi mahasiswa sedang dalam development"></i>
                   </td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1402,9 +1005,6 @@
                   <td class="fitur">Laporan Analisis Keuangan</td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1415,9 +1015,6 @@
               <tbody>
                 <tr>
                   <td class="sep">CBT - Modul Test Online</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1439,9 +1036,6 @@
                       </div>
                     </div>
                   </td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1454,9 +1048,6 @@
                   <td class="fitur">Manajemen Pembuatan Form EDOM Kustom</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1467,9 +1058,6 @@
                   <td class="fitur">Pengisian Form EDOM by Mahasiswa</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1478,9 +1066,6 @@
               <tbody class="accordion-row accordion-child collapseEDOM">
                 <tr class="accordion-header">
                   <td class="fitur">Rekap Hasil Kuisioner Dosen dan Per Kelas</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1502,9 +1087,6 @@
                       </div>
                     </div>
                   </td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1517,9 +1099,6 @@
                   <td class="fitur">Manajemen Periode & Syarat Yudisium</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1530,9 +1109,6 @@
                   <td class="fitur">Daftar Peserta Yudisium dan status kelulusan</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1541,9 +1117,6 @@
               <tbody class="accordion-row accordion-child collapseYudisium">
                 <tr class="accordion-header">
                   <td class="fitur">Penomoran Dokumen Yudisium (SK/Ijasah/Transkrip)</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1554,9 +1127,6 @@
               <tbody class="accordion-row accordion-child collapseYudisium">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Eligible Yudisium</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1567,9 +1137,6 @@
               <tbody class="accordion-row accordion-child collapseYudisium">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Periode, Peserta, dan Buku Wisuda</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1592,9 +1159,6 @@
                     </div>
                   </td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1604,9 +1168,6 @@
               <tbody class="accordion-row accordion-child" id="collapsePoin">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Aktivitas dan Prestasi Mahasiswa</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1618,9 +1179,6 @@
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Pelanggaran Mahasiswa</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1631,9 +1189,6 @@
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Beasiswa Mahasiswa</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1643,9 +1198,6 @@
               <tbody class="accordion-row accordion-child collapsePoin">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Surat Keterangan Keaktifan Mahasiswa</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1658,9 +1210,6 @@
               <tbody>
                 <tr>
                   <td class="sep">SKPI - Modul Surat Keterangan Pendamping Ijazah</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1682,9 +1231,6 @@
                       </div>
                     </div>
                   </td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1695,9 +1241,6 @@
               <tbody class="accordion-row accordion-child" id="collapsePlj">
                 <tr class="accordion-header">
                   <td class="fitur">Premium Storage untuk Perguruan Tinggi</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td>5 GB / PT</td>
-                  <td>15 GB / PT</td>
                   <td>30 GB / PT</td>
                   <td>75 GB / PT</td>
                   <td class="default" style="font-weight: bold">150GB / PT</td>
@@ -1708,9 +1251,6 @@
               <tbody class="accordion-row accordion-child collapsePlj">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Perkuliahan Hybrid (Web & Android)</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1721,9 +1261,6 @@
               <tbody class="accordion-row accordion-child collapsePlj">
                 <tr class="accordion-header">
                   <td class="fitur">Pembatasan Kelas</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td>100</td>
-                  <td>150</td>
                   <td>Unlimited</td>
                   <td>Unlimited</td>
                   <td class="default" style="font-weight: bold">Unlimited</td>
@@ -1736,9 +1273,6 @@
                   <td class="fitur">Pengawasan Ujian Online (Proctoring)</td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1747,9 +1281,6 @@
               <tbody class="accordion-row accordion-child collapsePlj">
                 <tr class="accordion-header">
                   <td class="fitur">Penilaian dokumen PDF oleh dosen</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1762,9 +1293,6 @@
                   <td class="fitur">Pembelajaran Interaktif</td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1773,9 +1301,6 @@
               <tbody class="accordion-row accordion-child collapsePlj">
                 <tr class="accordion-header">
                   <td class="fitur">Integrasi SPADA</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1788,9 +1313,6 @@
                   <td class="fitur">Aplikasi Mobile iOS</td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1799,9 +1321,6 @@
               <tbody class="accordion-row accordion-child collapsePlj">
                 <tr class="accordion-header">
                   <td class="fitur">Student Engagement Score</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1812,9 +1331,6 @@
               <tbody class="accordion-row accordion-child collapsePlj">
                 <tr class="accordion-header">
                   <td class="fitur">MOOC untuk Dosen (Kelas Merdeka) (*)</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1839,9 +1355,6 @@
                     </div>
                   </td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1851,9 +1364,6 @@
               <tbody class="accordion-row accordion-child" id="collapseTracer">
                 <tr class="accordion-header">
                   <td class="fitur">Perancangan Kuisioner Tracer Study Sesuai Standar PDDIKTI</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1865,9 +1375,6 @@
                 <tr class="accordion-header">
                   <td class="fitur">Penyebaran email untuk Alumni</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1877,9 +1384,6 @@
               <tbody class="accordion-row accordion-child collapseTracer">
                 <tr class="accordion-header">
                   <td class="fitur">Dashboard Outcome Perguruan Tinggi Sesuai APT dan APS</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1902,9 +1406,6 @@
                   </td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold">Whitelabel Web</td>
                   <td>Whitelabel Web & APK</td>
                   <td>Whitelabel Web & APK</td>
@@ -1913,9 +1414,6 @@
               <tbody class="accordion-row accordion-child" id="collapseKarir">
                 <tr class="accordion-header">
                   <td class="fitur">Portal Info Karir, Lowongan, Event (Web & Mobile)</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1928,9 +1426,6 @@
                   <td class="fitur">Daftar Riwayat Hidup Lulusan (CV)</td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1941,9 +1436,6 @@
                   <td class="fitur">Melamar pekerjaan melalui aplikasi</td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1952,9 +1444,6 @@
               <tbody class="accordion-row accordion-child collapseKarir">
                 <tr class="accordion-header">
                   <td class="fitur">Post & Monitoring Lowongan Kerja (Untuk Perusahaan Rekanan PT)</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -1977,9 +1466,6 @@
                     </div>
                   </td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -1997,10 +1483,6 @@
                     </div>
                   </td>
                   <td><i class='uil uil-times-circle'></i></td>
-
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2008,9 +1490,6 @@
                 </tr>
                 <tr class="accordion-child" id="collapseDataKepegawaian">
                   <td class="fitur-child">- Presensi online / integrasi fingerprint oleh Pegawai dan Dosen</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2020,10 +1499,6 @@
                 <tr class="accordion-child collapseDataKepegawaian">
                   <td class="fitur-child">- Monitoring dan Laporan Kehadiran serta Kegiatan Pegawai</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2031,9 +1506,6 @@
                 </tr>
                 <tr class="accordion-child collapseDataKepegawaian">
                   <td class="fitur-child">- Manajemen pengajuan dan validasi ijin, cuti, & kehadiran pegawai</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2044,9 +1516,6 @@
               <tbody class="accordion-row accordion-child collapsePegawai">
                 <tr class="accordion-header">
                   <td class="fitur">Layanan SISTER online</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2058,9 +1527,6 @@
                 <tr class="accordion-header">
                   <td class="fitur">Integrasi dengan SISTER</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2070,9 +1536,6 @@
               <tbody class="accordion-row accordion-child collapsePegawai">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Data Penelitian dan Pengabdian Masyarakat</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2084,9 +1547,6 @@
                 <tr class="accordion-header">
                   <td class="fitur">BKD - Modul Beban Kinerja Dosenn</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2096,9 +1556,6 @@
               <tbody class="accordion-row accordion-child collapsePegawai">
                 <tr class="accordion-header">
                   <td class="fitur">PAK - Modul Perhitungan Angka Kredit</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2122,9 +1579,6 @@
                   </td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td>Termasuk Simulasi Akreditasi</td>
                   <td>Termasuk Simulasi Akreditasi</td>
@@ -2135,9 +1589,6 @@
                   <td class="fitur">Berdasarkan BAN-PT</td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2146,9 +1597,6 @@
               <tbody class="accordion-row accordion-child collapseAkreditasi">
                 <tr class="accordion-header">
                   <td class="fitur">Berdasarkan Lembaga Akreditasi Mandiri (LAM)</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold">4 LAM</td>
@@ -2169,11 +1617,7 @@
                         </a>
                       </div>
                     </div>
-
                   </td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2184,9 +1628,6 @@
               <tbody class="accordion-row accordion-child collapseMbkm" id="collapseMbkm">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen pertukaran pelajar antar prodi mahasiswa internal dan mahasiswa eksternal</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2197,9 +1638,6 @@
               <tbody class="accordion-row accordion-child collapseMbkm">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen 8 aktivitas kampus merdeka sesuai dengan IKU</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2210,9 +1648,6 @@
               <tbody class="accordion-row accordion-child collapseMbkm">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen konversi mata kuliah</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2223,9 +1658,6 @@
               <tbody class="accordion-row accordion-child collapseMbkm">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen logbook dan evaluasi aktivitas mahasiswa</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2236,9 +1668,6 @@
               <tbody class="accordion-row accordion-child collapseMbkm">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Penawaran aktivitas MBKM</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2249,9 +1678,6 @@
               <tbody class="accordion-row accordion-child collapseMbkm">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Mitra Perguruan Tinggi</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2264,9 +1690,6 @@
               <tbody>
                 <tr>
                   <td class="sep">Smart Dashboard bagi Pimpinan Universitas</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td>Report</td>
                   <td>Report</td>
                   <td class="default" style="font-weight: bold">Report & Dashboard (*)</td>
@@ -2288,9 +1711,6 @@
                   </td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold">CRM CAMABA (*)</td>
                   <td>CRM CAMABA (*)</td>
                   <td>CRM CAMABA (*)</td>
@@ -2301,9 +1721,6 @@
                   <td class="fitur">Tes Minat Bakat </td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2312,9 +1729,6 @@
               <tbody class="accordion-row accordion-child collapseMauKuliah">
                 <tr class="accordion-header">
                   <td class="fitur">Try out seleksi persiapan masuk perguruan tinggi negeri</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2336,9 +1750,6 @@
                       </div>
                     </div>
                   </td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2349,9 +1760,6 @@
               <tbody class="accordion-row accordion-child" id="collapseTU">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Tiket Pertanyaan Dan Keluhan</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2362,9 +1770,6 @@
               <tbody class="accordion-row accordion-child collapseTU">
                 <tr class="accordion-header">
                   <td class="fitur">Manajemen Pengajuan Surat (development)</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2382,9 +1787,6 @@
                       </a>
                     </div>
                   </td>
-                  <td>Max 5</td>
-                  <td>Max 5</td>
-                  <td>Max 5</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2395,18 +1797,12 @@
                   <td class="fitur-child">1. KTM</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child collapseManage">
                   <td class="fitur-child">2. KRS</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2417,18 +1813,12 @@
                   <td class="fitur-child">3. KHS</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child collapseManage">
                   <td class="fitur-child">4. Transkrip Lulusan</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2439,18 +1829,12 @@
                   <td class="fitur-child">5. Transkrip Sementara</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child collapseManage">
                   <td class="fitur-child">6. Surat Keterangan Pendamping Ijazah (SKPI)</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2461,18 +1845,12 @@
                   <td class="fitur-child">7. Ijazah</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-child collapseManage">
                   <td class="fitur-child">8. Daftar Hadir & Kartu Ujian</td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2487,9 +1865,6 @@
               <tbody>
                 <tr>
                   <td class="sep">Module Wizard</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2502,9 +1877,6 @@
                   <td class="sep">Perpustakaan Online (sLims)</td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2513,9 +1885,6 @@
               <tbody>
                 <tr>
                   <td class="sep">Manajemen Layanan Kuesioner</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2543,9 +1912,6 @@
                   </td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2558,10 +1924,7 @@
                   <td class="sep" id="add-on">Implementasi & Training </td>
                 </tr>
                 <tr class="accordion-header">
-                  <td class="fitur">Implementasi </td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
+                  <td class="fitur">Implementasi</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
@@ -2572,18 +1935,12 @@
                   <td class="fitur">Migrasi Data awal </td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
-                  <td><i class='uil uil-check-circle'></i></td>
                   <td class="default" style="font-weight: bold"><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                 </tr>
                 <tr class="accordion-header">
                   <td class="fitur">Training Penggunaan Aplikasi</td>
-                  <td>3 Sesi</td>
-                  <td>7 Sesi</td>
-                  <td>7 Sesi</td>
                   <td>10 Sesi</td>
                   <td>14 Sesi</td>
                   <td class="default" style="font-weight: bold">18 Sesi</td>
@@ -2593,9 +1950,6 @@
                 </tr>
                 <tr class="accordion-header">
                   <td class="fitur" id="add-on">Refreshment</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td colspan="5" class="kontrak2 kontrak-lg2">Fasilitas Bimtek Bulanan Online</td>
                   <td class="kontrak-sm">Fasilitas Bimtek Bulanan Online</td>
                   <td class="kontrak-sm default" style="font-weight: bold">Fasilitas Bimtek Bulanan Online</td>
@@ -2606,75 +1960,42 @@
                   <td class="sep add-on" style="color:transparent">-</td>
                 </tr>
               </tbody>
-
-
               <tfoot>
                 <tr>
-                  <th style="vertical-align: middle; font-size: 1.25rem;">
-                    <p>Harga </p>
-                  </th>
-                  <th class="baru">
-                    <h6 class="item">Lite</h6>
-                    <p class="harga">Rp2.5JT</p><br>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
-                  </th>
-                  <th class="baru">
-                    <!-- <th class="gold"> -->
-                    <h6 class="item">Starter</h6>
-                    <p class="harga">Rp4.4JT</p><br>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
-                  </th>
-                  <th class="baru">
-                    <h6 class="item">Basic</h6>
-                    <p class="harga">Rp6JT</p><br>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                  <th style="vertical-align: middle; font-size: 1.25rem">
+                    <p>Harga</p>
                   </th>
                   <th class="baru">
                     <h6 class="item">Growth</h6>
                     <p class="harga">Rp9JT</p><br>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                     <h6 class="item">Business</h6>
                     <p class="harga">Rp13JT</p><br>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
-                    <h6 class="item">professional </h6>
+                    <h6 class="item">professional</h6>
                     <p class="harga">Rp19JT</p><br>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                     <h6 class="item">Premium</h6>
                     <p class="harga">Rp31JT</p><br>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Pilih Paket</a>
                   </th>
                   <th class="baru">
                     <h6 class="item">Enterprise</h6>
                     <p class="harga">CALL</p>
-                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button" style="margin-top: 20px;">Hubungi Sales</a>
+                    <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button" style="margin-top: 20px;">Hubungi Sales</a>
                     <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-siakadcloud" role="button">Hubungi Sales</a> -->
                   </th>
                 </tr>
-                <tr>
-                  <th>
-                    <p>Jumlah Mahasiswa </p>
-                  </th>
-                  <!-- <th>
-                    <small>-</small>
-                  </th> -->
-                  <th class="baru">
-                    <small>
-                      < 300 mhs</small>
-                  </th>
-                  <th class="baru">
-                    <small>
-                      < 500 mhs</small>
-                  </th>
-                  <th class="baru">
-                    <small>
-                      < 800 mhs</small>
-                  </th>
+                <tr class="d-none d-lg-table-row">
+                  <td style="background: #fff; font-size: 1.125rem; text-align: center;">
+                    <p>Jumlah Mahasiswa</p>
+                  </td>
                   <th class="baru">
                     <small>
                       < 2,000 mhs</small>
@@ -2701,7 +2022,6 @@
           </div>
         </article>
 
-
         <div class="pricing-footer">
           <div class="note">
             <p><i>(1) Channel Pembayaran : Bank / e-Commerce</i></p>
@@ -2709,7 +2029,7 @@
             <p><i>(3) Catatan: Pelatihan maksimal 3 jam per sesi</i></p>
             <p><b><i>Semua harga belum termasuk PPN 11% sesuai ketentuan Perpajakan</i></b></p>
           </div>
-          <a class="btn btn-download" href="https://sevima.com/harga-sevima-platform-baru/" target="_blank" role="button">
+          <a class="btn btn-download" href="https://sevima.com/harga-sevima-platform-2/" target="_blank" role="button">
             <i class="uil uil-file-download"></i>
             <p>Download Sebagai PDF</p>
           </a>
@@ -2720,7 +2040,6 @@
 </section>
 <!-- END PRICING NEW -->
 
-<!-- add-on -->
 <section id="pricing-with-accordion" style="margin-bottom: 3rem;">
   <div class="container-fluid">
 
@@ -2728,21 +2047,6 @@
       <div class="col-11">
         <article>
           <ul class="overflow-auto">
-            <li class="bg-blue nav-item" role="presentation">
-              <button class="nav-link" data-toggle="tab" data-target=".lite" type="button" aria-selected="false">
-                <h6 class="item">Lite</h6>
-              </button>
-            </li>
-            <li class="bg-blue nav-item">
-              <button class="nav-link" data-toggle="tab" data-target=".starter" type="button" aria-selected="false">
-                <h6 class="item">Starter</h6>
-              </button>
-            </li>
-            <li class="bg-blue nav-item">
-              <button class="nav-link" data-toggle="tab" data-target=".basic" type="button" aria-selected="false">
-                <h6 class="item">Basic</h6>
-              </button>
-            </li>
             <li class="bg-blue nav-item">
               <button class="nav-link" data-toggle="tab" data-target=".silver" type="button" aria-selected="false">
                 <h6 class="item">Growth</h6>
@@ -2775,24 +2079,6 @@
                 <tr class="price-head">
                   <th style="vertical-align: middle; font-size: 1.25rem;" rowspan="3">
                     <p class="modul">Modul-modul<br> Add-On </p>
-                  </th>
-                  <th>
-                    <h6 class="item">Lite</h6>
-                    <p class="harga">Rp2.5JT<br>
-                    </p>
-                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a> -->
-                  </th>
-                  <th class="gold">
-                    <h6 class="item">Starter</h6>
-                    <p class="harga">Rp4.4JT<br>
-                    </p>
-                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a> -->
-                  </th>
-                  <th>
-                    <h6 class="item">Basic</h6>
-                    <p class="harga">Rp6JT<br>
-                    </p>
-                    <!-- <a class="btn btn-kontak" href="<?php echo home_url(); ?>/form-berlangganan" role="button">Pilih Paket</a> -->
                   </th>
                   <th>
                     <h6 class="item">Growth</h6>
@@ -2832,15 +2118,6 @@
                     <p><b>Biaya per-bulan</b></p>
                   </td>
                   <td>
-                    <p>Rp2.5JT</p>
-                  </td>
-                  <td>
-                    <p>Rp4.4JT</p>
-                  </td>
-                  <td>
-                    <p>Rp6JT</p>
-                  </td>
-                  <td>
                     <p>Rp9JT</p>
                   </td>
                   <td>
@@ -2861,68 +2138,25 @@
                   <td>
                     <p><b>Jumlah Mahasiswa</b></p>
                   </td>
-                  <!-- <td>
-                    <p>0</p>
-                    <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-                      <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-                    </div>
-                  </td> -->
-                  <td>
-                    <p>
-                      < 300 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,- per Mahasiswa tiap Bulannya"></i>
-                        </div>
-                  </td>
-                  <td>
-                    <p>
-                      < 500 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp4.000,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp4.000,-  per Mahasiswa tiap Bulannya"></i>
-                        </div>
-                  </td>
-                  <td>
-                    <p>
-                      < 800 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp3.750,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp3.750,- per Mahasiswa tiap Bulannya"></i>
-                          b
-                        </div>
-                  </td>
                   <td>
                     <p>
                       < 2,000 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp2.400,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp2.400,- per Mahasiswa tiap Bulannya"></i>
-                        </div>
                   </td>
                   <td>
                     <p>
                       < 4,000 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-                        </div>
                   </td>
                   <td>
                     <p>
                       < 7,000 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-                        </div>
                   </td>
                   <td>
                     <p>
                       < 20.000 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-                        </div>
                   </td>
                   <td>
                     <p>
                       < 35,000 mhs</p>
-                        <div class="alert-success">Investasi<br>±Rp1.667,- /mhs
-                          <i class="uil uil-question-circle" data-toggle="tooltip" data-placement="right" title="Kampus Anda Hanya Investasi Sekitar Rp1.667,- per Mahasiswa tiap Bulannya"></i>
-                        </div>
                   </td>
                 </tr>
                 <!-- <tr class="d-lg-none">
@@ -2963,9 +2197,6 @@
                 </tr>
                 <tr class="accordion-header">
                   <td class="fitur-add">Pelaporan PPSDM (Pusat Pengembangan Sumber Daya Manusia Minyak dan Gas)</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2974,9 +2205,6 @@
                 </tr>
                 <tr class="accordion-header">
                   <td class="fitur-add">Pelaporan PPSDM PU (Untuk kampus dibawah Kementerian Perhubungan)</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2986,9 +2214,6 @@
                 <tr class="accordion-header">
                   <td class="fitur-add">Pelaporan EMIS KEMENAG (Master mahasiswa, Dosen, lulusan, riwayat dosen)</td>
                   <td>Terbatas</td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
-                  <td>Terbatas</td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -2996,9 +2221,6 @@
                 </tr>
                 <tr class="accordion-header">
                   <td class="fitur-add">Manejemen Uji Kompetensi (UKOM) & kepaniteraan klinik</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -3008,9 +2230,6 @@
                 <tr class="accordion-header">
                   <td class="fitur-add">Integrasi SIMPONI KEMENKEU</td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -3018,9 +2237,6 @@
                 </tr>
                 <tr class="accordion-header">
                   <td class="fitur-add">Laporan Evaluasi Pembelajaran Khusus Politeknik</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
                   <td><i class='uil uil-check-circle'></i></td>
@@ -3035,9 +2251,6 @@
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td>Dengan kontrak terpisah (*)
                     <i class="uil uil-info-circle" data-toggle="tooltip" data-placement="right" title="Rp 20.000.000"></i>
                   </td>
@@ -3046,9 +2259,6 @@
               <tbody>
                 <tr>
                   <td class="sep">Manajemen Persuratan dan Disposisi (e-Office)</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td colspan="3" class="kontrak kontrak-lg">Dengan kontrak terpisah (*)
@@ -3065,9 +2275,6 @@
               <tbody>
                 <tr>
                   <td class="sep">Tanda Tangan Ijazah Elektronik (e-Sign)</td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
-                  <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
                   <td><i class='uil uil-times-circle'></i></td>
@@ -3088,6 +2295,25 @@
 </section>
 <!-- end add on -->
 
-<?php
-get_footer();
-?>
+<!-- CTA EDLINK -->
+<section id="cta-edlink">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 order-lg-2 right">
+        <div class="mockup">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/mockup-edlink.png" alt="Mockup">
+        </div>
+      </div>
+      <div class="col-lg-7 order-lg-1 left">
+        <h2>Perkuliahan Makin Canggih<br>dengan EdLink Pro!</h2>
+        <p>Integrasi siAkadCloud dan platform pembelajaran atau Learning Management System (LMS) EdLink yang dirancang khusus dengan berbagai fasilitas & kemudahan membuat perkuliahan semakin fleksibel!</p>
+        <div class="cta-button">
+          <a href="https://edlink.id/edlink-pro.php" class="btn btn-primary"><span class="d-none d-sm-block">Lebih lanjut tentang EdLink</span><span class="d-sm-none">Lihat EdLink</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END OF CTA EDLINK -->
+
+<?php get_footer(); ?>
