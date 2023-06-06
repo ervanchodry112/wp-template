@@ -6,11 +6,18 @@ Template Name: sync
 <?php
 // data yang diambil
 $table = array('client', 'method', 'client_method');
-//var_dump($table); exit;
+// //var_dump($table); exit;
 $wpdb->query('BEGIN TRANSACTION');
 
 foreach ($table as $v) {
     $rows = request($v);
+
+    if(!$rows) {
+        echo 'Data gagal diupdate <br>';
+        continue;
+    }
+    var_dump($rows);
+    echo '<br/>';
     if ($v == 'client') {
         $ok = insert_client($rows);
     } else if ($v == 'method') {
@@ -63,10 +70,6 @@ function insert_client($data)
         if (empty($result)) {
             // Prepare statement to insert data
             $prepare = $wpdb->prepare("INSERT INTO sp_client (client_id, client_name) VALUES (%s, %s)", $client_id, $client_name);
-
-            // Execute the query
-            $wpdb->query($prepare);
-
 
         } else {
             // If no change continue
@@ -151,3 +154,5 @@ function insert_client_method($data)
     }
     return true;
 }
+
+?>
